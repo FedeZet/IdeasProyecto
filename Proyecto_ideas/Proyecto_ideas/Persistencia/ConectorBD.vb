@@ -16,4 +16,15 @@ Public Class ConectorBD
         Catch ex As Exception
             MsgBox("Conexión falló.")
         End Try
+    End Sub
+    Public Function ejecutar(ByVal sql As String, ByVal seleccion As Boolean) As MySqlDataReader
+        Me.Conectar()
+        Dim cmd As MySqlCommand = New MySqlCommand(sql, Me.objConexion)
+        If seleccion = False Then
+            cmd.ExecuteNonQuery()
+            Return Nothing
+        End If
+        Return cmd.ExecuteReader()
+    End Function
 End Class
+
