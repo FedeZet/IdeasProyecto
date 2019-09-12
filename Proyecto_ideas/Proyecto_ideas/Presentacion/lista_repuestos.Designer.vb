@@ -33,6 +33,7 @@ Partial Class lista_repuestos
         Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnRAgregar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -106,20 +107,30 @@ Partial Class lista_repuestos
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'btnRAgregar
+        '
+        Me.btnRAgregar.Location = New System.Drawing.Point(30, 239)
+        Me.btnRAgregar.Name = "btnRAgregar"
+        Me.btnRAgregar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRAgregar.TabIndex = 10
+        Me.btnRAgregar.Text = "Agregar"
+        Me.btnRAgregar.UseVisualStyleBackColor = True
         '
         'lista_repuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(428, 453)
+        Me.Controls.Add(Me.btnRAgregar)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -146,4 +157,5 @@ Partial Class lista_repuestos
     Friend WithEvents AgregarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NuevoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ModificarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnRAgregar As System.Windows.Forms.Button
 End Class

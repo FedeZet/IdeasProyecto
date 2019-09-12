@@ -138,6 +138,12 @@
     <Compile Include="Presentacion\lista_repuestos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Registro_repuesto.Designer.vb">
+      <DependentUpon>Registro_repuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Registro_repuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Registro_usuario.Designer.vb">
       <DependentUpon>Registro_usuario.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registro_orden.resx">
       <DependentUpon>Registro_orden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Registro_repuesto.resx">
+      <DependentUpon>Registro_repuesto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registro_usuario.resx">
       <DependentUpon>Registro_usuario.vb</DependentUpon>
