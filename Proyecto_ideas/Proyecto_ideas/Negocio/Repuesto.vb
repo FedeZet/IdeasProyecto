@@ -38,4 +38,15 @@
         End Set
     End Property
 
+    Public Sub New(ByVal idRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+        Me._idRepuesto = idRepuesto
+        Me._nombre = nombreRepuesto
+        Me._cantidad = cantidadRepuesto
+    End Sub
+
+    Public Function agregar()
+        Dim obj As DAORepuesto = New DAORepuesto
+        Return obj.agregar(Me)
+
+    End Function
 End Class
