@@ -16,4 +16,5 @@ Public Class ConectorBD
         Catch ex As Exception
             MsgBox("Conexión falló.")
         End Try
+    End Sub
 End Class
