@@ -8,8 +8,7 @@
     Private _tapa As Boolean
     Private _estuche As Boolean
     Private _tmemoria As Boolean
-    Private _numero As String
-    Private _pin As Boolean
+    Private _pin As Integer
 
     Public Property IdDispositivo() As Integer
         Get
@@ -91,24 +90,35 @@
             _tmemoria = Value
         End Set
     End Property
-    Public Property Numero() As String
-        Get
-            ' Return the value stored in the field.
-            Return _numero
-        End Get
-        Set(ByVal Value As String)
-            ' Store the value in the field.
-            _numero = Value
-        End Set
-    End Property
-    Public Property Pin() As Boolean
+
+    Public Property Pin() As Integer
         Get
             ' Return the value stored in the field.
             Return _pin
         End Get
-        Set(ByVal Value As Boolean)
+        Set(ByVal Value As Integer)
             ' Store the value in the field.
             _pin = Value
         End Set
     End Property
+
+    Public Sub New(ByVal IdDispositivo As Integer, ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer)
+        Me._idDispositivo = IdDispositivo
+        Me._modelo = modelo
+        Me._bateria = bateria
+        Me._sim = sim
+        Me._cargador = cargador
+        Me._tapa = tapa
+        Me._estuche = estuche
+        Me._tmemoria = tmemoria
+        Me._pin = pin
+    End Sub
+
+    Public Function guardar()
+
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.guardar(Me)
+
+    End Function
+
 End Class

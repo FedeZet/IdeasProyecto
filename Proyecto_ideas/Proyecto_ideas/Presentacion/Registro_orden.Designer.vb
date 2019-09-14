@@ -28,29 +28,29 @@ Partial Class Registro_orden
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
+        Me.txtPIN = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtTel = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCrearOrden = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.chbBateria = New System.Windows.Forms.CheckBox()
+        Me.chbSIM = New System.Windows.Forms.CheckBox()
+        Me.chbCargador = New System.Windows.Forms.CheckBox()
+        Me.chbTapa = New System.Windows.Forms.CheckBox()
+        Me.chbEstuche = New System.Windows.Forms.CheckBox()
+        Me.chbMemoria = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
@@ -58,6 +58,8 @@ Partial Class Registro_orden
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtIDDis = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -113,19 +115,19 @@ Partial Class Registro_orden
         Me.TextBox1.Size = New System.Drawing.Size(179, 20)
         Me.TextBox1.TabIndex = 5
         '
-        'TextBox2
+        'txtModelo
         '
-        Me.TextBox2.Location = New System.Drawing.Point(85, 68)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.txtModelo.Location = New System.Drawing.Point(85, 68)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(179, 20)
+        Me.txtModelo.TabIndex = 6
         '
-        'TextBox3
+        'txtPIN
         '
-        Me.TextBox3.Location = New System.Drawing.Point(85, 94)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox3.TabIndex = 7
+        Me.txtPIN.Location = New System.Drawing.Point(85, 94)
+        Me.txtPIN.Name = "txtPIN"
+        Me.txtPIN.Size = New System.Drawing.Size(179, 20)
+        Me.txtPIN.TabIndex = 7
         '
         'TextBox4
         '
@@ -171,12 +173,12 @@ Partial Class Registro_orden
         Me.Label13.TabIndex = 17
         Me.Label13.Text = "Tel:"
         '
-        'TextBox6
+        'txtTel
         '
-        Me.TextBox6.Location = New System.Drawing.Point(393, 39)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(187, 20)
-        Me.TextBox6.TabIndex = 18
+        Me.txtTel.Location = New System.Drawing.Point(393, 39)
+        Me.txtTel.Name = "txtTel"
+        Me.txtTel.Size = New System.Drawing.Size(187, 20)
+        Me.txtTel.TabIndex = 18
         '
         'TextBox7
         '
@@ -192,14 +194,14 @@ Partial Class Registro_orden
         Me.TextBox8.Size = New System.Drawing.Size(130, 20)
         Me.TextBox8.TabIndex = 20
         '
-        'Button1
+        'btnCrearOrden
         '
-        Me.Button1.Location = New System.Drawing.Point(582, 199)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Crear Orden"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCrearOrden.Location = New System.Drawing.Point(582, 199)
+        Me.btnCrearOrden.Name = "btnCrearOrden"
+        Me.btnCrearOrden.Size = New System.Drawing.Size(100, 23)
+        Me.btnCrearOrden.TabIndex = 26
+        Me.btnCrearOrden.Text = "Crear Orden"
+        Me.btnCrearOrden.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -254,65 +256,65 @@ Partial Class Registro_orden
         Me.CheckBox1.Text = "Dolar"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'chbBateria
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(336, 329)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(59, 17)
-        Me.CheckBox2.TabIndex = 33
-        Me.CheckBox2.Text = "Bateria"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chbBateria.AutoSize = True
+        Me.chbBateria.Location = New System.Drawing.Point(336, 329)
+        Me.chbBateria.Name = "chbBateria"
+        Me.chbBateria.Size = New System.Drawing.Size(59, 17)
+        Me.chbBateria.TabIndex = 33
+        Me.chbBateria.Text = "Bateria"
+        Me.chbBateria.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'chbSIM
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(336, 352)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(45, 17)
-        Me.CheckBox3.TabIndex = 34
-        Me.CheckBox3.Text = "SIM"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.chbSIM.AutoSize = True
+        Me.chbSIM.Location = New System.Drawing.Point(336, 352)
+        Me.chbSIM.Name = "chbSIM"
+        Me.chbSIM.Size = New System.Drawing.Size(45, 17)
+        Me.chbSIM.TabIndex = 34
+        Me.chbSIM.Text = "SIM"
+        Me.chbSIM.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'chbCargador
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(336, 375)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(69, 17)
-        Me.CheckBox4.TabIndex = 35
-        Me.CheckBox4.Text = "Cargador"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.chbCargador.AutoSize = True
+        Me.chbCargador.Location = New System.Drawing.Point(336, 375)
+        Me.chbCargador.Name = "chbCargador"
+        Me.chbCargador.Size = New System.Drawing.Size(69, 17)
+        Me.chbCargador.TabIndex = 35
+        Me.chbCargador.Text = "Cargador"
+        Me.chbCargador.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'chbTapa
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(336, 398)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(51, 17)
-        Me.CheckBox5.TabIndex = 36
-        Me.CheckBox5.Text = "Tapa"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.chbTapa.AutoSize = True
+        Me.chbTapa.Location = New System.Drawing.Point(336, 398)
+        Me.chbTapa.Name = "chbTapa"
+        Me.chbTapa.Size = New System.Drawing.Size(51, 17)
+        Me.chbTapa.TabIndex = 36
+        Me.chbTapa.Text = "Tapa"
+        Me.chbTapa.UseVisualStyleBackColor = True
         '
-        'CheckBox6
+        'chbEstuche
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(336, 421)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(65, 17)
-        Me.CheckBox6.TabIndex = 37
-        Me.CheckBox6.Text = "Estuche"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.chbEstuche.AutoSize = True
+        Me.chbEstuche.Location = New System.Drawing.Point(336, 421)
+        Me.chbEstuche.Name = "chbEstuche"
+        Me.chbEstuche.Size = New System.Drawing.Size(65, 17)
+        Me.chbEstuche.TabIndex = 37
+        Me.chbEstuche.Text = "Estuche"
+        Me.chbEstuche.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'chbMemoria
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(336, 444)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(66, 17)
-        Me.CheckBox7.TabIndex = 38
-        Me.CheckBox7.Text = "Memoria"
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.chbMemoria.AutoSize = True
+        Me.chbMemoria.Location = New System.Drawing.Point(336, 444)
+        Me.chbMemoria.Name = "chbMemoria"
+        Me.chbMemoria.Size = New System.Drawing.Size(66, 17)
+        Me.chbMemoria.TabIndex = 38
+        Me.chbMemoria.Text = "Memoria"
+        Me.chbMemoria.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -389,37 +391,55 @@ Partial Class Registro_orden
         Me.Label11.TabIndex = 41
         Me.Label11.Text = "1/1/1111"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(85, 120)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(178, 20)
+        Me.TextBox2.TabIndex = 42
+        '
+        'txtIDDis
+        '
+        Me.txtIDDis.AutoSize = True
+        Me.txtIDDis.Location = New System.Drawing.Point(4, 120)
+        Me.txtIDDis.Name = "txtIDDis"
+        Me.txtIDDis.Size = New System.Drawing.Size(75, 13)
+        Me.txtIDDis.TabIndex = 43
+        Me.txtIDDis.Text = "ID Dispositivo:"
+        '
         'Registro_orden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(689, 475)
+        Me.Controls.Add(Me.txtIDDis)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.chbMemoria)
+        Me.Controls.Add(Me.chbEstuche)
+        Me.Controls.Add(Me.chbTapa)
+        Me.Controls.Add(Me.chbCargador)
+        Me.Controls.Add(Me.chbSIM)
+        Me.Controls.Add(Me.chbBateria)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCrearOrden)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.txtTel)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtPIN)
+        Me.Controls.Add(Me.txtModelo)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -440,29 +460,29 @@ Partial Class Registro_orden
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtModelo As System.Windows.Forms.TextBox
+    Friend WithEvents txtPIN As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTel As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnCrearOrden As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+    Friend WithEvents chbBateria As System.Windows.Forms.CheckBox
+    Friend WithEvents chbSIM As System.Windows.Forms.CheckBox
+    Friend WithEvents chbCargador As System.Windows.Forms.CheckBox
+    Friend WithEvents chbTapa As System.Windows.Forms.CheckBox
+    Friend WithEvents chbEstuche As System.Windows.Forms.CheckBox
+    Friend WithEvents chbMemoria As System.Windows.Forms.CheckBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
@@ -470,4 +490,6 @@ Partial Class Registro_orden
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtIDDis As System.Windows.Forms.Label
 End Class
