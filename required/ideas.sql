@@ -1,22 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
+-- version 3.5.1
+-- http://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 12-09-2019 a las 14:32:48
--- Versión del servidor: 5.7.26
--- Versión de PHP: 7.2.18
+-- Servidor: localhost
+-- Tiempo de generación: 14-09-2019 a las 01:08:06
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.4.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Base de datos: `ideas`
@@ -28,13 +26,12 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `cliente`
 --
 
-DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE IF NOT EXISTS `cliente` (
   `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_cli` varchar(13) NOT NULL,
   `telefono` varchar(10) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -42,7 +39,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 -- Estructura de tabla para la tabla `dispositivo`
 --
 
-DROP TABLE IF EXISTS `dispositivo`;
 CREATE TABLE IF NOT EXISTS `dispositivo` (
   `id_dispositivo` int(11) NOT NULL AUTO_INCREMENT,
   `modelo` varchar(30) NOT NULL,
@@ -52,9 +48,16 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
   `tapa` tinyint(1) DEFAULT NULL,
   `estuche` tinyint(1) DEFAULT NULL,
   `T_Memoria` tinyint(1) DEFAULT NULL,
-  `pin` tinyint(1) DEFAULT NULL,
+  `pin` int(10) DEFAULT NULL,
   PRIMARY KEY (`id_dispositivo`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `dispositivo`
+--
+
+INSERT INTO `dispositivo` (`id_dispositivo`, `modelo`, `bateria`, `sim`, `cargador`, `tapa`, `estuche`, `T_Memoria`, `pin`) VALUES
+(1, 'no', 1, 1, 1, 1, 1, 1, 120);
 
 -- --------------------------------------------------------
 
@@ -62,7 +65,6 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
 -- Estructura de tabla para la tabla `orden`
 --
 
-DROP TABLE IF EXISTS `orden`;
 CREATE TABLE IF NOT EXISTS `orden` (
   `id_orden` int(11) NOT NULL AUTO_INCREMENT,
   `falla` varchar(140) NOT NULL,
@@ -78,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `orden` (
   KEY `id_usuario` (`id_usuario`),
   KEY `id_cliente` (`id_cliente`),
   KEY `id_dispositivo` (`id_dispositivo`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -86,13 +88,12 @@ CREATE TABLE IF NOT EXISTS `orden` (
 -- Estructura de tabla para la tabla `repuesto`
 --
 
-DROP TABLE IF EXISTS `repuesto`;
 CREATE TABLE IF NOT EXISTS `repuesto` (
   `id_repuesto` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_rep` varchar(13) NOT NULL,
   `cantidad` int(5) NOT NULL,
   PRIMARY KEY (`id_repuesto`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -100,7 +101,6 @@ CREATE TABLE IF NOT EXISTS `repuesto` (
 -- Estructura de tabla para la tabla `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `Nick` varchar(15) NOT NULL,
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `nombre` varchar(32) NOT NULL,
   `telefono` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,6 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Estructura de tabla para la tabla `utiliza`
 --
 
-DROP TABLE IF EXISTS `utiliza`;
 CREATE TABLE IF NOT EXISTS `utiliza` (
   `id_orden` int(11) DEFAULT NULL,
   `id_repuesto` int(11) DEFAULT NULL,
@@ -124,7 +123,6 @@ CREATE TABLE IF NOT EXISTS `utiliza` (
   KEY `id_orden` (`id_orden`),
   KEY `id_repuesto` (`id_repuesto`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
