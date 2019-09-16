@@ -58,7 +58,7 @@ Partial Class Registro_orden
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtDDis = New System.Windows.Forms.TextBox()
         Me.txtIDDis = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -391,12 +391,12 @@ Partial Class Registro_orden
         Me.Label11.TabIndex = 41
         Me.Label11.Text = "1/1/1111"
         '
-        'TextBox2
+        'txtDDis
         '
-        Me.TextBox2.Location = New System.Drawing.Point(85, 120)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(178, 20)
-        Me.TextBox2.TabIndex = 42
+        Me.txtDDis.Location = New System.Drawing.Point(85, 120)
+        Me.txtDDis.Name = "txtDDis"
+        Me.txtDDis.Size = New System.Drawing.Size(178, 20)
+        Me.txtDDis.TabIndex = 42
         '
         'txtIDDis
         '
@@ -413,7 +413,7 @@ Partial Class Registro_orden
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(689, 475)
         Me.Controls.Add(Me.txtIDDis)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtDDis)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.GroupBox1)
@@ -490,6 +490,6 @@ Partial Class Registro_orden
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDDis As System.Windows.Forms.TextBox
     Friend WithEvents txtIDDis As System.Windows.Forms.Label
 End Class

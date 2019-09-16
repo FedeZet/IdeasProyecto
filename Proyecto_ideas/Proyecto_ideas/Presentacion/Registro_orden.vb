@@ -39,6 +39,6 @@
         End If
 
 
-        objManDispositivo.crearDispositivo(Me.txtIDDis.Text, Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
+        objManDispositivo.crearDispositivo(Me.txtDDis.Text, Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
     End Sub
 End Class
