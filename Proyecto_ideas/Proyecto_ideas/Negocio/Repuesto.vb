@@ -1,16 +1,16 @@
 ﻿Public Class Repuesto
 
-    Private _idRepuesto As String
+    Private _idRepuesto As Integer
     Private _nombre As String
     Private _cantidad As Integer
 
 
-    Public Property IdRepuesto() As String
+    Public Property IdRepuesto() As Integer
         Get
             ' Return the value stored in the field.
             Return _idRepuesto
         End Get
-        Set(ByVal Value As String)
+        Set(ByVal Value As Integer)
             ' Store the value in the field.
             _idRepuesto = Value
         End Set
