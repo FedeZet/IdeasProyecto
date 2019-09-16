@@ -23,23 +23,36 @@ Partial Class Historial_usuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(30, 31)
+        Me.DataGridView1.Location = New System.Drawing.Point(40, 38)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(215, 180)
+        Me.DataGridView1.Size = New System.Drawing.Size(287, 222)
         Me.DataGridView1.TabIndex = 0
+        '
+        'btnVolverOrdenesLista
+        '
+        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(12, 286)
+        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
+        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolverOrdenesLista.TabIndex = 2
+        Me.btnVolverOrdenesLista.Text = "Volver"
+        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
         '
         'Historial_usuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(379, 321)
+        Me.Controls.Add(Me.btnVolverOrdenesLista)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Historial_usuario"
         Me.Text = "Historial_usuario"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -47,4 +60,5 @@ Partial Class Historial_usuario
 
     End Sub
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
 End Class

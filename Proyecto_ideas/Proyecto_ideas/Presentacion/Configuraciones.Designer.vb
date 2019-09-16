@@ -22,8 +22,28 @@ Partial Class Configuraciones
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnVolverOrdenesLista
+        '
+        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(12, 12)
+        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
+        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolverOrdenesLista.TabIndex = 2
+        Me.btnVolverOrdenesLista.Text = "Volver"
+        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
+        '
+        'Configuraciones
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(282, 253)
+        Me.Controls.Add(Me.btnVolverOrdenesLista)
+        Me.Name = "Configuraciones"
         Me.Text = "Configuraciones"
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
 End Class

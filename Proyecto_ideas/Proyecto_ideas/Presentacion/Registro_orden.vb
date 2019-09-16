@@ -41,4 +41,9 @@
 
         objManDispositivo.crearDispositivo(Me.txtDDis.Text, Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Menu_Inicio.Show()
+        Me.Close()
+    End Sub
 End Class
