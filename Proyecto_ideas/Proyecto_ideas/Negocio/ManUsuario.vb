@@ -5,4 +5,11 @@
         objUsuario.guardar()
         Return true
     End Function
+
+    Public Function iniciarSesion(ByVal user As String, ByVal password As String) As String
+
+        Dim objIniciar As Usuario = New Usuario(user, password)
+        objIniciar.iniciarSesion()
+        Return True
+    End Function
 End Class

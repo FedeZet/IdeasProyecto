@@ -6,7 +6,6 @@
     Private _nombre As String
     Private _telefono As String
 
-
     Public Property IdUsuario() As Integer
         Get
             ' Return the value stored in the field.
@@ -68,6 +67,18 @@
     Public Function guardar()
         Dim obj As DAOUsuario = New DAOUsuario
         Return obj.guardar(Me)
+
+    End Function
+
+
+    Sub New(ByVal user As String, ByVal password As String)
+        _user = user
+        _password = password
+    End Sub
+
+    Public Function iniciarSesion()
+        Dim objI As DAOUsuario = New DAOUsuario
+        Return objI.iniciarSesion(Me)
 
     End Function
 End Class
