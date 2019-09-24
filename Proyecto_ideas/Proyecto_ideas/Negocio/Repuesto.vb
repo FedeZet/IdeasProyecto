@@ -49,4 +49,9 @@
         Return obj.agregar(Me)
 
     End Function
+
+    Public Shared Function obtenerRepuestos() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim objR As DAORepuesto = New DAORepuesto
+        Return objR.obtenerRepuestos()
+    End Function
 End Class

@@ -12,7 +12,7 @@ Public Class ConectorBD
         Try
             Me.objConexion.Open()
             'Borrar siguiente línea
-            MsgBox("Conexión exitosa.")
+            'MsgBox("Conexión exitosa.")
         Catch ex As Exception
             MsgBox("Conexión falló.")
         End Try
