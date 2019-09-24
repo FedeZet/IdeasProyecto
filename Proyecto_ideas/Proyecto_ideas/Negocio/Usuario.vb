@@ -81,4 +81,9 @@
         Return objI.iniciarSesion(Me)
 
     End Function
+
+    Public Shared Function obtenerUsuarios() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim objR As DAOUsuario = New DAOUsuario
+        Return objR.obtenerUsuarios()
+    End Function
 End Class

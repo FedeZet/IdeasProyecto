@@ -24,4 +24,9 @@
         Me.Hide()
         Historial_ordenes.Show()
     End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        Me.Hide()
+        Historial_usuario.Show()
+    End Sub
 End Class

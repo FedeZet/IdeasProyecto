@@ -18,4 +18,11 @@
 
         Return True
     End Function
+
+    Public Function obtenerUsuarios() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim dao As ConectorBD = New ConectorBD()
+        Dim sentencia As String
+        sentencia = "Select * from usuario"
+        Return dao.ejecutar(sentencia, True)
+    End Function
 End Class

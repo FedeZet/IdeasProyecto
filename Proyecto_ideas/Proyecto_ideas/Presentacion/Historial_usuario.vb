@@ -1,3 +1,36 @@
 ﻿Public Class Historial_usuario
 
+    Public Sub New()
+        InitializeComponent()
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.obtenerUsuario()
+        Me.CargarDGV(hashUsuario)
+
+    End Sub
+    Sub CargarDGV(ByVal colRepuesto As Hashtable)
+        For Each DEntry As DictionaryEntry In colRepuesto
+            Dim objR As Usuario = CType(DEntry.Value, Usuario)
+            Me.dgvListadoUsuario.Rows.Add()
+            Dim cantFilas As Integer = dgvListadoUsuario.Rows.Count - 1
+            Me.dgvListadoUsuario(0, cantFilas).Value = objR.IdUsuario.ToString
+            Me.dgvListadoUsuario(1, cantFilas).Value = objR.User
+            Me.dgvListadoUsuario(2, cantFilas).Value = objR.Nombre.ToString
+            Me.dgvListadoUsuario(3, cantFilas).Value = objR.Telefono.ToString
+
+        Next
+    End Sub
+
+    Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
+        Me.dgvListadoUsuario.Rows.Clear()
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.obtenerUsuario()
+        Me.CargarDGV(hashUsuario)
+    End Sub
+
+    Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
+        Me.Hide()
+        Menu_Inicio.Show()
+    End Sub
 End Class
