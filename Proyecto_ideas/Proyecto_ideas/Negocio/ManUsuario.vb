@@ -1,9 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
-    Public Function crearUsuario(ByVal IdUsuario As Integer, ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
+    Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
 
-        Dim objUsuario As Usuario = New Usuario(IdUsuario, user, password, nombre, telefono)
+        Dim objUsuario As Usuario = New Usuario(user, password, nombre, telefono)
         objUsuario.guardar()
         Return True
     End Function

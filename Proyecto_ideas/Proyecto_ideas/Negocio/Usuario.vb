@@ -64,6 +64,19 @@
         Me._telefono = telefono
     End Sub
 
+    Public Sub New(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
+        'ByVal IdUsuario As Integer, 
+        'Me._idUsuario = IdUsuario
+        Me._user = user
+        Me._password = password
+        Me._nombre = nombre
+        Me._telefono = telefono
+    End Sub
+
+    Public Sub New(ByVal IdUsuario As Integer)
+        Me._idUsuario = IdUsuario
+    End Sub
+
     Public Function guardar()
         Dim obj As DAOUsuario = New DAOUsuario
         Return obj.guardar(Me)
