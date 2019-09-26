@@ -77,26 +77,24 @@
         Me._idUsuario = IdUsuario
     End Sub
 
+    Sub New(ByVal user As String, ByVal password As String)
+        _user = user
+        _password = password
+    End Sub
+
     Public Function guardar()
         Dim obj As DAOUsuario = New DAOUsuario
         Return obj.guardar(Me)
 
     End Function
 
-
-    Sub New(ByVal user As String, ByVal password As String)
-        _user = user
-        _password = password
-    End Sub
-
-    Public Function iniciarSesion()
-        Dim objI As DAOUsuario = New DAOUsuario
-        Return objI.iniciarSesion(Me)
-
-    End Function
-
     Public Shared Function obtenerUsuarios() As MySql.Data.MySqlClient.MySqlDataReader
-        Dim objR As DAOUsuario = New DAOUsuario
-        Return objR.obtenerUsuarios()
+        Dim objU As DAOUsuario = New DAOUsuario
+        Return objU.obtenerUsuarios()
     End Function
+
+    'Public Shared Function iniciarSesion() As MySql.Data.MySqlClient.MySqlDataReader
+    '    Dim objU As DAOUsuario = New DAOUsuario
+    '    Return objU.iniciarSesion()
+    'End Function
 End Class

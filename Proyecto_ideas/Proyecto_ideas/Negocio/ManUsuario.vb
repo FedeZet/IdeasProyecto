@@ -8,19 +8,12 @@ Public Class ManUsuario
         Return True
     End Function
 
-    Public Function iniciarSesion(ByVal user As String, ByVal password As String) As String
-
-        Dim objIniciar As Usuario = New Usuario(user, password)
-        objIniciar.iniciarSesion()
-        Return True
-    End Function
-
     Public Function obtenerUsuario() As Hashtable
         Dim datareader As MySqlDataReader = Usuario.obtenerUsuarios()
-        Dim objR As Usuario = Nothing
+        Dim objU As Usuario = Nothing
         While datareader.Read()
-            objR = New Usuario(datareader("id_usuario"), datareader("nick"), datareader("contrasenia"), datareader("nombre"), datareader("telefono"))
-            Me.hashUsuario.Add(objR.IdUsuario, objR)
+            objU = New Usuario(datareader("id_usuario"), datareader("nick"), datareader("contrasenia"), datareader("nombre"), datareader("telefono"))
+            Me.hashUsuario.Add(objU.IdUsuario, objU)
         End While
         Return Me.hashUsuario
     End Function
