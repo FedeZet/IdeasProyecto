@@ -15,6 +15,13 @@
         Return dao.ejecutar(sentencia, True)
     End Function
 
+    Public Function obtenerTecnico() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim dao As ConectorBD = New ConectorBD()
+        Dim sentencia As String
+        sentencia = "Select id_usuario, nombre from usuario"
+        Return dao.ejecutar(sentencia, True)
+    End Function
+
     'Public Function iniciarSesion(ByVal objU As Usuario) As MySql.Data.MySqlClient.MySqlDataReader
     '    Dim dao = New ConectorBD()
 

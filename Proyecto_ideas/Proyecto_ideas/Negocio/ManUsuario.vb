@@ -17,4 +17,14 @@ Public Class ManUsuario
         End While
         Return Me.hashUsuario
     End Function
+
+    Public Function obtenerTecnico() As Hashtable
+        Dim datareader As MySqlDataReader = Usuario.obtenerUsuarios()
+        Dim objU As Usuario = Nothing
+        While datareader.Read()
+            objU = New Usuario(datareader("id_usuario"), datareader("nombre"))
+            Me.hashUsuario.Add(objU.IdUsuario, objU)
+        End While
+        Return Me.hashUsuario
+    End Function
 End Class

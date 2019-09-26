@@ -43,7 +43,7 @@ Partial Class Registro_orden
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbTecnico = New System.Windows.Forms.ComboBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.chbBateria = New System.Windows.Forms.CheckBox()
         Me.chbSIM = New System.Windows.Forms.CheckBox()
@@ -236,13 +236,13 @@ Partial Class Registro_orden
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'cbTecnico
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(69, 333)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(191, 21)
-        Me.ComboBox1.TabIndex = 31
+        Me.cbTecnico.FormattingEnabled = True
+        Me.cbTecnico.Location = New System.Drawing.Point(69, 333)
+        Me.cbTecnico.Name = "cbTecnico"
+        Me.cbTecnico.Size = New System.Drawing.Size(191, 21)
+        Me.cbTecnico.TabIndex = 31
         '
         'CheckBox1
         '
@@ -404,7 +404,7 @@ Partial Class Registro_orden
         Me.Controls.Add(Me.chbSIM)
         Me.Controls.Add(Me.chbBateria)
         Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbTecnico)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -455,7 +455,7 @@ Partial Class Registro_orden
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbTecnico As System.Windows.Forms.ComboBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents chbBateria As System.Windows.Forms.CheckBox
     Friend WithEvents chbSIM As System.Windows.Forms.CheckBox

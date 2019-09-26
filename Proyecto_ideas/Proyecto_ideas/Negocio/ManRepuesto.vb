@@ -18,4 +18,5 @@ Public Class ManRepuesto
         End While
         Return Me.hashRepuesto
     End Function
+
 End Class

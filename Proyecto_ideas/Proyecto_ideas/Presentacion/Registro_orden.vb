@@ -47,8 +47,24 @@
         objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
     End Sub
 
+
+
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Menu_Inicio.Show()
         Me.Close()
+    End Sub
+
+    Public Sub New()
+        InitializeComponent()
+
+    End Sub
+
+    Sub CargarCBox(ByVal colTecnico As Hashtable)
+        For Each DEntry As DictionaryEntry In colTecnico
+            Dim objU As Usuario = CType(DEntry.Value, Usuario)
+            'Me.cbTecnico.Items.Add()
+
+
+        Next
     End Sub
 End Class
