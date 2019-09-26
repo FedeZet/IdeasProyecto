@@ -114,6 +114,21 @@
         Me._pin = pin
     End Sub
 
+    Public Sub New(ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer)
+        Me._modelo = modelo
+        Me._bateria = bateria
+        Me._sim = sim
+        Me._cargador = cargador
+        Me._tapa = tapa
+        Me._estuche = estuche
+        Me._tmemoria = tmemoria
+        Me._pin = pin
+    End Sub
+
+    Public Sub New(ByVal IdDispositivo As Integer)
+        Me._idDispositivo = IdDispositivo
+    End Sub
+
     Public Function guardar()
 
         Dim obj As DAODispositivo = New DAODispositivo

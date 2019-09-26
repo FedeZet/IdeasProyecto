@@ -1,3 +1,62 @@
 ﻿Public Class Cliente
 
+    Private _id_cliente As Integer
+    Private _nombre As String
+    Private _telefono As String
+
+
+    Public Property IdCliente() As String
+        Get
+            ' Return the value stored in the field.
+            Return _id_cliente
+        End Get
+        Set(ByVal Value As String)
+            ' Store the value in the field.
+            _id_cliente = Value
+        End Set
+    End Property
+
+    Public Property Nombre() As String
+        Get
+            ' Return the value stored in the field.
+            Return _nombre
+        End Get
+        Set(ByVal Value As String)
+            ' Store the value in the field.
+            _nombre = Value
+        End Set
+    End Property
+    Public Property Telefono() As String
+        Get
+            ' Return the value stored in the field.
+            Return _telefono
+        End Get
+        Set(ByVal Value As String)
+            ' Store the value in the field.
+            _telefono = Value
+        End Set
+    End Property
+
+    Public Sub New(ByVal IdCliente As Integer, ByVal nombre As String, ByVal telefono As String)
+        Me._id_cliente = IdCliente
+        Me._nombre = nombre
+        Me._telefono = telefono
+    End Sub
+
+    Public Sub New(ByVal nombre As String, ByVal telefono As String)
+        'ByVal IdUsuario As Integer, 
+        'Me._idUsuario = IdUsuario
+        Me._nombre = nombre
+        Me._telefono = telefono
+    End Sub
+
+    Public Sub New(ByVal IdCliente As Integer)
+        Me._id_cliente = IdCliente
+    End Sub
+
+    Public Function guardar()
+        Dim obj As DAOCliente = New DAOCliente
+        Return obj.guardar(Me)
+
+    End Function
 End Class

@@ -5,6 +5,11 @@
     End Sub
 
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
+        'se crea el cliente
+        Dim objManCliente As ManCliente = New ManCliente
+        objManCliente.crearCliente(Me.txtNombreCli.Text, Me.txtTel.Text)
+
+        'se crea el dispositivo
         Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim bateria, sim, cargador, tapa, estuche, memoria As Boolean
         If chbBateria.Checked = True Then
@@ -39,7 +44,7 @@
         End If
 
 
-        objManDispositivo.crearDispositivo(Me.txtDDis.Text, Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
+        objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
