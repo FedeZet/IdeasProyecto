@@ -49,8 +49,6 @@
         MsgBox("La orden se ha creado exitosamente.")
     End Sub
 
-
-
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Menu_Inicio.Show()
         Me.Close()
@@ -58,14 +56,15 @@
 
     Public Sub New()
         InitializeComponent()
-
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashTecnico As Hashtable
+        hashTecnico = objManUsuario.obtenerTecnico()
+        Me.CargarTecnicos(hashTecnico)
     End Sub
 
-    Sub CargarCBox(ByVal colTecnico As Hashtable)
+    Sub CargarTecnicos(ByVal colTecnico As Hashtable)
         For Each DEntry As DictionaryEntry In colTecnico
             Dim objU As Usuario = CType(DEntry.Value, Usuario)
-            'Me.cbTecnico.Items.Add()
-
 
         Next
     End Sub

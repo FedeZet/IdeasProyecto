@@ -13,7 +13,7 @@ Public Class ManRepuesto
         Dim datareader As MySqlDataReader = Repuesto.obtenerRepuestos()
         Dim objR As Repuesto = Nothing
         While datareader.Read()
-            objR = New Repuesto(datareader("id_repuesto"), datareader("nombre_rep"), datareader("cantidad"))
+            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"))
             Me.hashRepuesto.Add(objR.IdRepuesto, objR)
         End While
         Return Me.hashRepuesto
