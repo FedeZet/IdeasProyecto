@@ -38,8 +38,12 @@
         End Set
     End Property
 
-    Public Sub New(ByVal idRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
-        Me._idRepuesto = idRepuesto
+    Public Sub New(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+        Me._nombre = nombreRepuesto
+        Me._cantidad = cantidadRepuesto
+    End Sub
+
+    Public Sub New(ByVal IdRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
         Me._nombre = nombreRepuesto
         Me._cantidad = cantidadRepuesto
     End Sub

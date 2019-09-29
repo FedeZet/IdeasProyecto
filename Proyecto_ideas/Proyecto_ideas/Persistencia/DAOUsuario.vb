@@ -1,9 +1,8 @@
 ﻿Public Class DAOUsuario
     Public Function guardar(ByVal obj As Usuario)
         Dim dao = New ConectorBD()
-
         Dim sentencia As String
-        sentencia = "insert into usuario(Nick, contrasenia, nombre, telefono) values ('" + obj.User + "','" + obj.Password + "','" + obj.Nombre + "','" + obj.Telefono + "')"
+        sentencia = "INSERT INTO usuario(user, pass, nombreU, telefonoU) VALUES ('" + obj.User + "','" + obj.Password + "','" + obj.Nombre + "','" + obj.Telefono + "')"
         dao.ejecutar(sentencia, False)
         Return True
     End Function
@@ -11,14 +10,14 @@
     Public Function obtenerUsuarios() As MySql.Data.MySqlClient.MySqlDataReader
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "Select * from usuario"
+        sentencia = "SELECT * FROM usuario"
         Return dao.ejecutar(sentencia, True)
     End Function
 
     Public Function obtenerTecnico() As MySql.Data.MySqlClient.MySqlDataReader
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "Select id_usuario, nombre from usuario"
+        sentencia = "SELECT idU, nombreU FROM usuario"
         Return dao.ejecutar(sentencia, True)
     End Function
 

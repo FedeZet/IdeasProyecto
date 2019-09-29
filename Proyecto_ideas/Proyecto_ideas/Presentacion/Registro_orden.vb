@@ -45,6 +45,8 @@
 
 
         objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
+
+        MsgBox("La orden se ha creado exitosamente.")
     End Sub
 
 

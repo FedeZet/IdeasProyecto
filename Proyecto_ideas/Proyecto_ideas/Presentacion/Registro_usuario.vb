@@ -9,6 +9,8 @@
         Dim objManUsuario As ManUsuario = New ManUsuario
 
         objManUsuario.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text)
+
+        MsgBox("El usuario se ha creado exitosamente.")
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

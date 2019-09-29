@@ -27,4 +27,3 @@ Public Class ConectorBD
         Return cmd.ExecuteReader()
     End Function
 End Class
-

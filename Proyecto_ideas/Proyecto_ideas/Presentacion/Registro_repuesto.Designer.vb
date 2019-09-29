@@ -28,27 +28,23 @@ Partial Class Registro_repuesto
         Me.lblRCantidad = New System.Windows.Forms.Label()
         Me.txtRNombre = New System.Windows.Forms.TextBox()
         Me.nudRCantidad = New System.Windows.Forms.NumericUpDown()
-        Me.txtRID = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(48, 177)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAgregar.Location = New System.Drawing.Point(36, 144)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(100, 28)
+        Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregar.TabIndex = 0
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
         'btnRCancelar
         '
-        Me.btnRCancelar.Location = New System.Drawing.Point(177, 177)
-        Me.btnRCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRCancelar.Location = New System.Drawing.Point(133, 144)
         Me.btnRCancelar.Name = "btnRCancelar"
-        Me.btnRCancelar.Size = New System.Drawing.Size(100, 28)
+        Me.btnRCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnRCancelar.TabIndex = 1
         Me.btnRCancelar.Text = "Cancelar"
         Me.btnRCancelar.UseVisualStyleBackColor = True
@@ -56,73 +52,48 @@ Partial Class Registro_repuesto
         'lblRNombre
         '
         Me.lblRNombre.AutoSize = True
-        Me.lblRNombre.Location = New System.Drawing.Point(44, 58)
-        Me.lblRNombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRNombre.Location = New System.Drawing.Point(33, 47)
         Me.lblRNombre.Name = "lblRNombre"
-        Me.lblRNombre.Size = New System.Drawing.Size(58, 17)
+        Me.lblRNombre.Size = New System.Drawing.Size(44, 13)
         Me.lblRNombre.TabIndex = 2
         Me.lblRNombre.Text = "Nombre"
         '
         'lblRCantidad
         '
         Me.lblRCantidad.AutoSize = True
-        Me.lblRCantidad.Location = New System.Drawing.Point(44, 102)
-        Me.lblRCantidad.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRCantidad.Location = New System.Drawing.Point(33, 83)
         Me.lblRCantidad.Name = "lblRCantidad"
-        Me.lblRCantidad.Size = New System.Drawing.Size(64, 17)
+        Me.lblRCantidad.Size = New System.Drawing.Size(49, 13)
         Me.lblRCantidad.TabIndex = 3
         Me.lblRCantidad.Text = "Cantidad"
         '
         'txtRNombre
         '
-        Me.txtRNombre.Location = New System.Drawing.Point(117, 54)
-        Me.txtRNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRNombre.Location = New System.Drawing.Point(88, 44)
         Me.txtRNombre.Name = "txtRNombre"
-        Me.txtRNombre.Size = New System.Drawing.Size(159, 22)
+        Me.txtRNombre.Size = New System.Drawing.Size(120, 20)
         Me.txtRNombre.TabIndex = 4
         '
         'nudRCantidad
         '
-        Me.nudRCantidad.Location = New System.Drawing.Point(117, 100)
-        Me.nudRCantidad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.nudRCantidad.Location = New System.Drawing.Point(88, 81)
         Me.nudRCantidad.Name = "nudRCantidad"
-        Me.nudRCantidad.Size = New System.Drawing.Size(160, 22)
+        Me.nudRCantidad.Size = New System.Drawing.Size(120, 20)
         Me.nudRCantidad.TabIndex = 5
-        '
-        'txtRID
-        '
-        Me.txtRID.Location = New System.Drawing.Point(118, 13)
-        Me.txtRID.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtRID.Name = "txtRID"
-        Me.txtRID.Size = New System.Drawing.Size(159, 22)
-        Me.txtRID.TabIndex = 6
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 17)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "ID REPUESTO"
         '
         'Registro_repuesto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(307, 242)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtRID)
+        Me.ClientSize = New System.Drawing.Size(230, 197)
         Me.Controls.Add(Me.nudRCantidad)
         Me.Controls.Add(Me.txtRNombre)
         Me.Controls.Add(Me.lblRCantidad)
         Me.Controls.Add(Me.lblRNombre)
         Me.Controls.Add(Me.btnRCancelar)
         Me.Controls.Add(Me.btnAgregar)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Registro_repuesto"
-        Me.Text = "Registro_repuesto"
+        Me.Text = "Registrar Repuesto"
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -134,6 +105,4 @@ Partial Class Registro_repuesto
     Friend WithEvents lblRCantidad As System.Windows.Forms.Label
     Friend WithEvents txtRNombre As System.Windows.Forms.TextBox
     Friend WithEvents nudRCantidad As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtRID As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

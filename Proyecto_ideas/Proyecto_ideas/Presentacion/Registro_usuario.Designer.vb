@@ -37,7 +37,7 @@ Partial Class Registro_usuario
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(69, 59)
+        Me.Label1.Location = New System.Drawing.Point(34, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class Registro_usuario
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(69, 98)
+        Me.Label2.Location = New System.Drawing.Point(34, 75)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 1
@@ -55,7 +55,7 @@ Partial Class Registro_usuario
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(69, 138)
+        Me.Label3.Location = New System.Drawing.Point(34, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class Registro_usuario
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(69, 175)
+        Me.Label4.Location = New System.Drawing.Point(34, 152)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 13)
         Me.Label4.TabIndex = 3
@@ -72,35 +72,35 @@ Partial Class Registro_usuario
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(136, 52)
+        Me.txtUsuario.Location = New System.Drawing.Point(101, 29)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(100, 20)
         Me.txtUsuario.TabIndex = 5
         '
         'txtContra
         '
-        Me.txtContra.Location = New System.Drawing.Point(136, 91)
+        Me.txtContra.Location = New System.Drawing.Point(101, 68)
         Me.txtContra.Name = "txtContra"
         Me.txtContra.Size = New System.Drawing.Size(100, 20)
         Me.txtContra.TabIndex = 6
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(136, 135)
+        Me.txtNombre.Location = New System.Drawing.Point(101, 112)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
         Me.txtNombre.TabIndex = 7
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(136, 172)
+        Me.txtTelefono.Location = New System.Drawing.Point(101, 149)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
         Me.txtTelefono.TabIndex = 8
         '
         'btnRegistrarUser
         '
-        Me.btnRegistrarUser.Location = New System.Drawing.Point(51, 234)
+        Me.btnRegistrarUser.Location = New System.Drawing.Point(16, 211)
         Me.btnRegistrarUser.Name = "btnRegistrarUser"
         Me.btnRegistrarUser.Size = New System.Drawing.Size(75, 23)
         Me.btnRegistrarUser.TabIndex = 9
@@ -109,7 +109,7 @@ Partial Class Registro_usuario
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(178, 234)
+        Me.Button2.Location = New System.Drawing.Point(143, 211)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 10
@@ -120,7 +120,7 @@ Partial Class Registro_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(372, 333)
+        Me.ClientSize = New System.Drawing.Size(236, 264)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnRegistrarUser)
         Me.Controls.Add(Me.txtTelefono)
@@ -132,7 +132,7 @@ Partial Class Registro_usuario
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Registro_usuario"
-        Me.Text = "+"
+        Me.Text = "Registrar Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

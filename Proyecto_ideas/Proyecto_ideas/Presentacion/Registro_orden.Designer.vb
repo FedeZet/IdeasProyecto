@@ -427,7 +427,7 @@ Partial Class Registro_orden
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Registro_orden"
-        Me.Text = "Registro_orden"
+        Me.Text = "Registrar Orden"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

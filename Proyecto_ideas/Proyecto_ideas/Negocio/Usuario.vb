@@ -84,11 +84,6 @@
         _password = password
     End Sub
 
-    Sub New(ByVal user As String, ByVal password As String)
-        _user = user
-        _password = password
-    End Sub
-
     'Fin de zona de contrucción
 
 
