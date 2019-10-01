@@ -43,7 +43,7 @@ Partial Class lista_repuestos
         Me.dgvListadoRepuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.nombre, Me.cantidad})
         Me.dgvListadoRepuesto.Location = New System.Drawing.Point(40, 64)
-        Me.dgvListadoRepuesto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvListadoRepuesto.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvListadoRepuesto.Name = "dgvListadoRepuesto"
         Me.dgvListadoRepuesto.ReadOnly = True
         Me.dgvListadoRepuesto.Size = New System.Drawing.Size(457, 185)
@@ -70,7 +70,7 @@ Partial Class lista_repuestos
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(364, 32)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 8
@@ -78,7 +78,7 @@ Partial Class lista_repuestos
         'btnRAgregar
         '
         Me.btnRAgregar.Location = New System.Drawing.Point(91, 272)
-        Me.btnRAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRAgregar.Name = "btnRAgregar"
         Me.btnRAgregar.Size = New System.Drawing.Size(100, 28)
         Me.btnRAgregar.TabIndex = 10
@@ -88,7 +88,7 @@ Partial Class lista_repuestos
         'btnREliminar
         '
         Me.btnREliminar.Location = New System.Drawing.Point(225, 272)
-        Me.btnREliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnREliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnREliminar.Name = "btnREliminar"
         Me.btnREliminar.Size = New System.Drawing.Size(100, 28)
         Me.btnREliminar.TabIndex = 11
@@ -98,7 +98,7 @@ Partial Class lista_repuestos
         'btnRModificar
         '
         Me.btnRModificar.Location = New System.Drawing.Point(357, 272)
-        Me.btnRModificar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRModificar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRModificar.Name = "btnRModificar"
         Me.btnRModificar.Size = New System.Drawing.Size(100, 28)
         Me.btnRModificar.TabIndex = 12
@@ -119,7 +119,7 @@ Partial Class lista_repuestos
         '
         Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
         Me.pbRefresh.Location = New System.Drawing.Point(40, 42)
-        Me.pbRefresh.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbRefresh.Margin = New System.Windows.Forms.Padding(4)
         Me.pbRefresh.Name = "pbRefresh"
         Me.pbRefresh.Size = New System.Drawing.Size(21, 20)
         Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -138,7 +138,7 @@ Partial Class lista_repuestos
         Me.Controls.Add(Me.btnRAgregar)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.dgvListadoRepuesto)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "lista_repuestos"
         Me.Text = "Registro_repuesto"
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).EndInit()

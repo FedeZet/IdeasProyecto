@@ -58,4 +58,9 @@
         Dim objR As DAORepuesto = New DAORepuesto
         Return objR.obtenerRepuestos()
     End Function
+
+    Public Function modificar()
+        Dim obj As DAORepuesto = New DAORepuesto
+        Return obj.modificarRepuesto(Me)
+    End Function
 End Class

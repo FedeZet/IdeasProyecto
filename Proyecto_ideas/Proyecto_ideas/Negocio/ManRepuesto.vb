@@ -19,4 +19,9 @@ Public Class ManRepuesto
         Return Me.hashRepuesto
     End Function
 
+    Public Function modificarRepuesto(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+        Dim objRepuesto As Repuesto = New Repuesto(nombreRepuesto, cantidadRepuesto)
+        objRepuesto.agregar()
+        Return True
+    End Function
 End Class

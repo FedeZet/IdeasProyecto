@@ -38,4 +38,11 @@
         hashRepuesto = objManRepuesto.obtenerRepuesto()
         Me.CargarDGV(hashRepuesto)
     End Sub
+
+    Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
+        Me.Hide()
+        modificadorRepuesto.Show()
+        Dim objManRepuesto As ManRepuesto = New ManRepuesto
+        objManRepuesto.modificarRepuesto(Me.DataBindings)
+    End Sub
 End Class
