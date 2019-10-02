@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 29-09-2019 a las 20:27:14
+-- Tiempo de generación: 02-10-2019 a las 21:22:59
 -- Versión del servidor: 5.7.26
 -- Versión de PHP: 7.2.18
 
@@ -54,7 +54,9 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
   `estuche` bit(1) DEFAULT NULL,
   `tmemoria` bit(1) DEFAULT NULL,
   `pin` int(4) DEFAULT NULL,
-  PRIMARY KEY (`idD`)
+  `idC` int(11) NOT NULL,
+  PRIMARY KEY (`idD`),
+  KEY `idC` (`idC`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
