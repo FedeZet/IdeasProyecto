@@ -103,7 +103,7 @@ Partial Class lista_repuestos
         'btnVolverOrdenesLista
         '
         Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(9, 10)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
         Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(56, 19)
         Me.btnVolverOrdenesLista.TabIndex = 13

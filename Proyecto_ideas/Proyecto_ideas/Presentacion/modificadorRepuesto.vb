@@ -19,5 +19,6 @@
         idRepuesto = id
         txtMUnombre.Text = nombre
         txtMUcantidad.Text = cantidad.ToString
+        Return True
     End Function
 End Class
