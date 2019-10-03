@@ -2,7 +2,7 @@
     Dim idRepuesto
 
     Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
-        Me.Hide()
+        Me.Close()
         lista_repuestos.Show()
     End Sub
 
@@ -15,7 +15,7 @@
         objManRepuesto.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text)
     End Sub
 
-    Public Function modificarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer)
+    Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer)
         idRepuesto = id
         txtMUnombre.Text = nombre
         txtMUcantidad.Text = cantidad.ToString

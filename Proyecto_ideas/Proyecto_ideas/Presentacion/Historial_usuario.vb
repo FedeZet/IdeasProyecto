@@ -35,10 +35,15 @@
     End Sub
 
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
-
+        Me.Hide()
+        modificadorUsuario.Show()
+        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nick").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Telefono").Value.ToString)
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+
+        'Dim objManRepuesto As ManRepuesto = New ManRepuesto
+        'objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString)
 
     End Sub
 End Class

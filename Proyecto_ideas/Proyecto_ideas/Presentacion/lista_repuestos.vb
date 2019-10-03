@@ -42,7 +42,7 @@
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
         Me.Hide()
         modificadorRepuesto.Show()
-        modificadorRepuesto.modificarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
+        modificadorRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
         'Dim objManRepuesto As ManRepuesto = New ManRepuesto
         'objManRepuesto.modificarRepuesto(Me.dgvListadoRepuesto.SelectedRows)
         'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString)

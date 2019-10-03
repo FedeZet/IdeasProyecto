@@ -141,6 +141,12 @@
     <Compile Include="Presentacion\modificadorRepuesto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\modificadorUsuario.Designer.vb">
+      <DependentUpon>modificadorUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\modificadorUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Registro_orden.Designer.vb">
       <DependentUpon>Registro_orden.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\modificadorRepuesto.resx">
       <DependentUpon>modificadorRepuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\modificadorUsuario.resx">
+      <DependentUpon>modificadorUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registro_orden.resx">
       <DependentUpon>Registro_orden.vb</DependentUpon>
