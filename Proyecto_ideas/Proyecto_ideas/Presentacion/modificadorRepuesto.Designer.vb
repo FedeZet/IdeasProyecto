@@ -32,20 +32,20 @@ Partial Class modificadorRepuesto
         '
         'btnModificarR
         '
-        Me.btnModificarR.Location = New System.Drawing.Point(53, 83)
-        Me.btnModificarR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnModificarR.Location = New System.Drawing.Point(37, 83)
+        Me.btnModificarR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificarR.Name = "btnModificarR"
-        Me.btnModificarR.Size = New System.Drawing.Size(56, 19)
+        Me.btnModificarR.Size = New System.Drawing.Size(63, 19)
         Me.btnModificarR.TabIndex = 0
         Me.btnModificarR.Text = "Modificar"
         Me.btnModificarR.UseVisualStyleBackColor = True
         '
         'btnCancelarR
         '
-        Me.btnCancelarR.Location = New System.Drawing.Point(178, 83)
-        Me.btnCancelarR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancelarR.Location = New System.Drawing.Point(171, 83)
+        Me.btnCancelarR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancelarR.Name = "btnCancelarR"
-        Me.btnCancelarR.Size = New System.Drawing.Size(56, 19)
+        Me.btnCancelarR.Size = New System.Drawing.Size(63, 19)
         Me.btnCancelarR.TabIndex = 1
         Me.btnCancelarR.Text = "Cancelar"
         Me.btnCancelarR.UseVisualStyleBackColor = True
@@ -53,7 +53,7 @@ Partial Class modificadorRepuesto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(32, 10)
+        Me.Label1.Location = New System.Drawing.Point(4, 9)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 13)
@@ -63,7 +63,7 @@ Partial Class modificadorRepuesto
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(32, 47)
+        Me.Label2.Location = New System.Drawing.Point(48, 46)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)
@@ -72,16 +72,16 @@ Partial Class modificadorRepuesto
         '
         'txtMUnombre
         '
-        Me.txtMUnombre.Location = New System.Drawing.Point(130, 10)
-        Me.txtMUnombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtMUnombre.Location = New System.Drawing.Point(102, 11)
+        Me.txtMUnombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtMUnombre.Name = "txtMUnombre"
         Me.txtMUnombre.Size = New System.Drawing.Size(132, 20)
         Me.txtMUnombre.TabIndex = 4
         '
         'txtMUcantidad
         '
-        Me.txtMUcantidad.Location = New System.Drawing.Point(84, 45)
-        Me.txtMUcantidad.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtMUcantidad.Location = New System.Drawing.Point(102, 46)
+        Me.txtMUcantidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtMUcantidad.Name = "txtMUcantidad"
         Me.txtMUcantidad.Size = New System.Drawing.Size(71, 20)
         Me.txtMUcantidad.TabIndex = 5
@@ -97,7 +97,7 @@ Partial Class modificadorRepuesto
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCancelarR)
         Me.Controls.Add(Me.btnModificarR)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "modificadorRepuesto"
         Me.Text = "modificadorRepuesto"
         Me.ResumeLayout(False)

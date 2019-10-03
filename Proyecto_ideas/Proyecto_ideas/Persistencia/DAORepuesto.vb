@@ -21,4 +21,12 @@
         dao.ejecutar(sentencia, False)
         Return True
     End Function
+
+    Public Function eliminarRepuesto(ByVal obj As Repuesto)
+        Dim dao As ConectorBD = New ConectorBD
+        Dim sentencia As String
+        sentencia = "Delete from repuesto where idR = " + obj.IdRepuesto.ToString + ";"
+        dao.ejecutar(sentencia, False)
+        Return True
+    End Function
 End Class

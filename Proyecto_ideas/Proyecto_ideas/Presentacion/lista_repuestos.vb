@@ -53,4 +53,11 @@
     Private Sub dgvListadoRepuesto_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoRepuesto.RowHeaderMouseClick
 
     End Sub
+
+    Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
+
+        Dim objManRepuesto As ManRepuesto = New ManRepuesto
+        objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString)
+
+    End Sub
 End Class

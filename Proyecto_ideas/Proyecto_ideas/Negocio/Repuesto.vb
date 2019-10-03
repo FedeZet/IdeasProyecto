@@ -38,6 +38,10 @@
         End Set
     End Property
 
+    Public Sub New(ByVal IdRepuesto As Integer)
+        Me._idRepuesto = IdRepuesto
+    End Sub
+
     Public Sub New(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
         Me._nombre = nombreRepuesto
         Me._cantidad = cantidadRepuesto
@@ -63,5 +67,10 @@
     Public Function modificar()
         Dim obj As DAORepuesto = New DAORepuesto
         Return obj.modificarRepuesto(Me)
+    End Function
+
+    Public Function eliminar()
+        Dim obj As DAORepuesto = New DAORepuesto
+        Return obj.eliminarRepuesto(Me)
     End Function
 End Class
