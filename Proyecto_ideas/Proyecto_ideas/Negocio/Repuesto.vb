@@ -44,6 +44,7 @@
     End Sub
 
     Public Sub New(ByVal IdRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+        Me._idRepuesto = IdRepuesto
         Me._nombre = nombreRepuesto
         Me._cantidad = cantidadRepuesto
     End Sub

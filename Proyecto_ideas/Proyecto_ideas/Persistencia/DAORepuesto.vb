@@ -17,7 +17,7 @@
     Public Function modificarRepuesto(ByVal obj As Repuesto)
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "update * from repuesto"
+        sentencia = "update repuesto set nombreR = '" + obj.Nombre + "' , cantidad = " + obj.Cantidad.ToString + " where idR = " + obj.IdRepuesto.ToString + ";"
         dao.ejecutar(sentencia, False)
         Return True
     End Function
