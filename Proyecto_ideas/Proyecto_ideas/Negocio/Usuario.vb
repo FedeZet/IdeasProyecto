@@ -104,8 +104,8 @@
         Return objU.obtenerTecnico()
     End Function
 
-    'Public Shared Function iniciarSesion() As MySql.Data.MySqlClient.MySqlDataReader
-    '    Dim objU As DAOUsuario = New DAOUsuario
-    '    Return objU.iniciarSesion()
-    'End Function
+    Public Function autenticar(ByVal user As String, ByVal password As String) As Boolean
+        Dim objU As DAOUsuario = New DAOUsuario
+        Return objU.autenticar()
+    End Function
 End Class

@@ -21,11 +21,10 @@
         Return dao.ejecutar(sentencia, True)
     End Function
 
-    'Public Function iniciarSesion(ByVal objU As Usuario) As MySql.Data.MySqlClient.MySqlDataReader
-    '    Dim dao = New ConectorBD()
-
-    '    Dim sentencia As String
-    '    sentencia = "Select Nick, contrasenia From usuario Where Nick=  '" & objU.User & "' And contrasenia= '" + objU.Password + "'"
-    '    Return dao.ejecutar(sentencia, True)
-    'End Function
+    Public Function autenticar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim dao As ConectorBD = New ConectorBD()
+        Dim sentencia As String
+        sentencia = "SELECT * FROM usuario WHERE user='+ + +'"
+        Return dao.ejecutar(sentencia, True)
+    End Function
 End Class
