@@ -27,4 +27,20 @@
         sentencia = "SELECT * FROM usuario WHERE user='+ + +'"
         Return dao.ejecutar(sentencia, True)
     End Function
+
+    Public Function modificarUsuario(ByVal obj As Usuario)
+        Dim dao As ConectorBD = New ConectorBD()
+        Dim sentencia As String
+        sentencia = "update usuario set user = '" + obj.User + "', nombreU = '" + obj.Nombre + "', telefonoU = '" + obj.Telefono + "' where idU = " + obj.IdUsuario.ToString + ";"
+        dao.ejecutar(sentencia, False)
+        Return True
+    End Function
+
+    Public Function eliminarUsuario(ByVal obj As Usuario)
+        Dim dao As ConectorBD = New ConectorBD
+        Dim sentencia As String
+        sentencia = "Delete from usuario where idU = " + obj.IdUsuario.ToString + ";"
+        dao.ejecutar(sentencia, False)
+        Return True
+    End Function
 End Class

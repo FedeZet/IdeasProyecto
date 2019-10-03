@@ -84,6 +84,13 @@
         _password = password
     End Sub
 
+    Public Sub New(ByVal idUsuario As Integer, ByVal user As String, ByVal nombre As String, ByVal telefono As String)
+        Me._idUsuario = idUsuario
+        Me._user = user
+        Me._nombre = nombre
+        Me._telefono = telefono
+    End Sub
+
     'Fin de zona de contrucción
 
 
@@ -107,5 +114,15 @@
     Public Function autenticar(ByVal user As String, ByVal password As String) As Boolean
         Dim objU As DAOUsuario = New DAOUsuario
         'Return objU.autenticar()
+    End Function
+
+    Public Function modificar()
+        Dim obj As DAOUsuario = New DAOUsuario
+        Return obj.modificarUsuario(Me)
+    End Function
+
+    Public Function eliminar()
+        Dim obj As DAOUsuario = New DAOUsuario
+        Return obj.eliminarUsuario(Me)
     End Function
 End Class

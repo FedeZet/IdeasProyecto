@@ -30,29 +30,28 @@ Partial Class Historial_ordenes
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(71, 57)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(53, 46)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(320, 185)
+        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
         Me.DataGridView1.TabIndex = 0
         '
         'btnVolverOrdenesLista
         '
-        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(42, 313)
+        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(32, 254)
+        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
-        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(56, 19)
         Me.btnVolverOrdenesLista.TabIndex = 1
         Me.btnVolverOrdenesLista.Text = "Volver"
         Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
         '
         'Historial_ordenes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(521, 373)
+        Me.ClientSize = New System.Drawing.Size(391, 303)
         Me.Controls.Add(Me.btnVolverOrdenesLista)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Historial_ordenes"
         Me.Text = "Historial_ordenes"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

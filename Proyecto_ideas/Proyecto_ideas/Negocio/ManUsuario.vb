@@ -28,4 +28,16 @@ Public Class ManUsuario
         End While
         Return Me.hashTecnico
     End Function
+
+    Public Function modificarUsuario(ByVal idUsuario As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String)
+        Dim objUsuario As Usuario = New Usuario(idUsuario, nick, nombre, telefono)
+        objUsuario.modificar()
+        Return True
+    End Function
+
+    Public Function eliminarRepuesto(ByVal idUsuario As Integer)
+        Dim objUsuario As Usuario = New Usuario(idUsuario)
+        objUsuario.eliminar()
+        Return True
+    End Function
 End Class

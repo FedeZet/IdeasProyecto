@@ -73,7 +73,7 @@ Partial Class Historial_usuario
         'btnVolverOrdenesLista
         '
         Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(9, 232)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
         Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(56, 19)
         Me.btnVolverOrdenesLista.TabIndex = 2
@@ -83,7 +83,7 @@ Partial Class Historial_usuario
         'btnActualizar
         '
         Me.btnActualizar.Location = New System.Drawing.Point(115, 232)
-        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(65, 19)
         Me.btnActualizar.TabIndex = 3

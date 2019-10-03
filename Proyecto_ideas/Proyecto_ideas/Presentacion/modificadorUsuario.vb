@@ -2,14 +2,15 @@
     Dim idUsuario As Integer
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
 
-        ' Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        ' objManRepuesto.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text)
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        objManUsuario.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text)
 
     End Sub
 
     Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
-        Me.Close()
+
         Historial_usuario.Show()
+        Me.Close()
     End Sub
 
     Public Function cargarUsuario(ByVal id As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String)

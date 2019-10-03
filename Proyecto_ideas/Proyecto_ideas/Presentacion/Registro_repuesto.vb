@@ -10,8 +10,9 @@
     End Sub
 
     Private Sub btnRCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRCancelar.Click
-        Me.Close()
+
         lista_repuestos.Show()
+        Me.Close()
     End Sub
 
     Private Sub Registro_repuesto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

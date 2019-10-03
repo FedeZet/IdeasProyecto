@@ -2,8 +2,9 @@
     Dim idRepuesto
 
     Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
-        Me.Close()
+
         lista_repuestos.Show()
+        Me.Close()
     End Sub
 
     Private Sub modificadorRepuesto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

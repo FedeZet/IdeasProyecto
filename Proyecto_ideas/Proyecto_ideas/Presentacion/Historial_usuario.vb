@@ -30,8 +30,9 @@
     End Sub
 
     Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
-        Me.Hide()
+
         Menu_Inicio.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
@@ -42,8 +43,12 @@
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 
-        'Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        'objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString)
+        Dim objManRepuesto As ManUsuario = New ManUsuario
+        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString)
+
+    End Sub
+
+    Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
