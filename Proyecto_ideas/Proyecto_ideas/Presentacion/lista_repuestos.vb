@@ -43,6 +43,13 @@
         Me.Hide()
         modificadorRepuesto.Show()
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.modificarRepuesto(Me.DataBindings)
+        'objManRepuesto.modificarRepuesto(Me.dgvListadoRepuesto.SelectedRows)
+        MsgBox(dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString)
+        MsgBox(dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
+
+    End Sub
+
+    Private Sub dgvListadoRepuesto_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoRepuesto.RowHeaderMouseClick
+
     End Sub
 End Class

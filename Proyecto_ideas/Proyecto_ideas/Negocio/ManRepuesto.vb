@@ -21,7 +21,7 @@ Public Class ManRepuesto
 
     Public Function modificarRepuesto(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
         Dim objRepuesto As Repuesto = New Repuesto(nombreRepuesto, cantidadRepuesto)
-        objRepuesto.agregar()
+        objRepuesto.modificar()
         Return True
     End Function
 End Class

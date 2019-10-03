@@ -106,6 +106,6 @@
 
     Public Function autenticar(ByVal user As String, ByVal password As String) As Boolean
         Dim objU As DAOUsuario = New DAOUsuario
-        Return objU.autenticar()
+        'Return objU.autenticar()
     End Function
 End Class

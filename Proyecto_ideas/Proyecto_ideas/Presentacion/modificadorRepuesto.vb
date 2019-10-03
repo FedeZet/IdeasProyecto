@@ -5,6 +5,10 @@
     End Sub
 
     Private Sub modificadorRepuesto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        txtMUnombre.Text = dgvListadoRepuest
+        'txtMUnombre.Text = 
+    End Sub
+
+    Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
+
     End Sub
 End Class
