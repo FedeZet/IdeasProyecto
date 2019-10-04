@@ -17,7 +17,7 @@
     Public Function modificarRepuesto(ByVal obj As Repuesto)
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "update repuesto set nombreR = '" + obj.Nombre + "' , cantidad = " + obj.Cantidad.ToString + " where idR = " + obj.IdRepuesto.ToString + ";"
+        sentencia = "UPDATE repuesto SET nombreR = '" + obj.Nombre + "' , cantidad = " + obj.Cantidad.ToString + " WHERE idR = " + obj.IdRepuesto.ToString + ";"
         dao.ejecutar(sentencia, False)
         Return True
     End Function
@@ -25,7 +25,7 @@
     Public Function eliminarRepuesto(ByVal obj As Repuesto)
         Dim dao As ConectorBD = New ConectorBD
         Dim sentencia As String
-        sentencia = "Delete from repuesto where idR = " + obj.IdRepuesto.ToString + ";"
+        sentencia = "DELETE FROM repuesto WHERE idR = " + obj.IdRepuesto.ToString + ";"
         dao.ejecutar(sentencia, False)
         Return True
     End Function
