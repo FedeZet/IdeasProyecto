@@ -30,4 +30,14 @@ Public Class ManRepuesto
         objRepuesto.eliminar()
         Return True
     End Function
+
+    Public Function buscarRepuesto(ByVal nombre As String)
+        Dim objR As Repuesto = New Repuesto(nombre)
+        Dim datareader As MySqlDataReader = objR.buscar
+        While datareader.Read()
+            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"))
+            Me.hashRepuesto.Add(objR.Nombre, objR)
+        End While
+        Return Me.hashRepuesto
+    End Function
 End Class

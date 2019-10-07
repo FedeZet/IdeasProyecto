@@ -64,4 +64,12 @@
     Private Sub lista_repuestos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnBuscadorRep_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorRep.Click
+        Me.dgvListadoRepuesto.Rows.Clear()
+        Dim objManRepuesto As ManRepuesto = New ManRepuesto
+        Dim hashRepuesto As Hashtable
+        hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
+        Me.CargarDGV(hashRepuesto)
+    End Sub
 End Class

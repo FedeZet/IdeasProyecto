@@ -29,4 +29,11 @@
         dao.ejecutar(sentencia, False)
         Return True
     End Function
+
+    Public Function buscarRepuesto(ByVal obj As Repuesto) As MySql.Data.MySqlClient.MySqlDataReader
+        Dim dao As ConectorBD = New ConectorBD
+        Dim sentencia As String
+        sentencia = "select * from repuesto where nombreR like '%" + obj.Nombre + "%';"
+        Return dao.ejecutar(sentencia, True)
+    End Function
 End Class

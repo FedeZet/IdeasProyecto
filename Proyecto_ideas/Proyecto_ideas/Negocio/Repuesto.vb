@@ -53,10 +53,19 @@
         Me._cantidad = cantidadRepuesto
     End Sub
 
+    Public Sub New(ByVal nombreRepuesto As String)
+        Me._nombre = nombreRepuesto
+    End Sub
+
     Public Function agregar()
         Dim obj As DAORepuesto = New DAORepuesto
         Return obj.agregar(Me)
 
+    End Function
+
+    Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAORepuesto = New DAORepuesto
+        Return obj.buscarRepuesto(Me)
     End Function
 
     Public Shared Function obtenerRepuestos() As MySql.Data.MySqlClient.MySqlDataReader
