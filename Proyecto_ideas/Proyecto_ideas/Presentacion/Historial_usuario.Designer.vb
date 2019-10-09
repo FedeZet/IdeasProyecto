@@ -31,6 +31,8 @@ Partial Class Historial_usuario
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.txtBuscadorU = New System.Windows.Forms.TextBox()
+        Me.btnBuscarU = New System.Windows.Forms.Button()
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -108,11 +110,29 @@ Partial Class Historial_usuario
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
+        'txtBuscadorU
+        '
+        Me.txtBuscadorU.Location = New System.Drawing.Point(228, 1)
+        Me.txtBuscadorU.Name = "txtBuscadorU"
+        Me.txtBuscadorU.Size = New System.Drawing.Size(152, 20)
+        Me.txtBuscadorU.TabIndex = 6
+        '
+        'btnBuscarU
+        '
+        Me.btnBuscarU.Location = New System.Drawing.Point(386, 1)
+        Me.btnBuscarU.Name = "btnBuscarU"
+        Me.btnBuscarU.Size = New System.Drawing.Size(75, 23)
+        Me.btnBuscarU.TabIndex = 7
+        Me.btnBuscarU.Text = "Buscar"
+        Me.btnBuscarU.UseVisualStyleBackColor = True
+        '
         'Historial_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(494, 261)
+        Me.Controls.Add(Me.btnBuscarU)
+        Me.Controls.Add(Me.txtBuscadorU)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnActualizar)
@@ -122,6 +142,7 @@ Partial Class Historial_usuario
         Me.Text = "Historial_usuario"
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents dgvListadoUsuario As System.Windows.Forms.DataGridView
@@ -133,4 +154,6 @@ Partial Class Historial_usuario
     Friend WithEvents btnActualizar As System.Windows.Forms.Button
     Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents txtBuscadorU As System.Windows.Forms.TextBox
+    Friend WithEvents btnBuscarU As System.Windows.Forms.Button
 End Class

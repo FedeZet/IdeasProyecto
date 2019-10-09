@@ -43,4 +43,11 @@
         dao.ejecutar(sentencia, False)
         Return True
     End Function
+
+    Public Function buscarUsuario(ByVal obj As Usuario) As MySql.Data.MySqlClient.MySqlDataReader
+        Dim dao As ConectorBD = New ConectorBD
+        Dim sentencia As String
+        sentencia = "select * from usuario where nombreU like '%" + obj.Nombre + "%';"
+        Return dao.ejecutar(sentencia, True)
+    End Function
 End Class

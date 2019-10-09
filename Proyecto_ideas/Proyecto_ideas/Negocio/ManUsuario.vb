@@ -40,4 +40,14 @@ Public Class ManUsuario
         objUsuario.eliminar()
         Return True
     End Function
+
+    Public Function buscarUsuario(ByVal nombre As String)
+        Dim objU As Usuario = New Usuario(nombre)
+        Dim datareader As MySqlDataReader = objU.buscar
+        While datareader.Read()
+            objU = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"))
+            Me.hashUsuario.Add(objU.Nombre, objU)
+        End While
+        Return Me.hashUsuario
+    End Function
 End Class

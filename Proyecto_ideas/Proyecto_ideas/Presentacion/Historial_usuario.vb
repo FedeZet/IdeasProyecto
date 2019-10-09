@@ -51,4 +51,12 @@
     Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnBuscarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscarU.Click
+        Me.dgvListadoUsuario.Rows.Clear()
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
+        Me.CargarDGV(hashUsuario)
+    End Sub
 End Class

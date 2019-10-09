@@ -91,6 +91,10 @@
         Me._telefono = telefono
     End Sub
 
+    Public Sub New(ByVal nombreUsuario As String)
+        Me._nombre = nombreUsuario
+    End Sub
+
     'Fin de zona de contrucción
 
 
@@ -124,5 +128,10 @@
     Public Function eliminar()
         Dim obj As DAOUsuario = New DAOUsuario
         Return obj.eliminarUsuario(Me)
+    End Function
+
+    Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAOUsuario = New DAOUsuario
+        Return obj.buscarUsuario(Me)
     End Function
 End Class
