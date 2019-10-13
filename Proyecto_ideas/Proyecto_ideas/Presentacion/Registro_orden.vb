@@ -1,10 +1,29 @@
 ﻿Public Class Registro_orden
 
-    Private Sub Registro_orden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
+        'se crea la orden
+        Dim estado As Integer
+        Dim garantia As Boolean = False
+
+        If (rdPendiente.Checked = True) Then
+            estado = 1
+        ElseIf (rdEspera.Checked = True) Then
+            estado = 2
+        ElseIf (rdReparado.Checked = True) Then
+            estado = 3
+        ElseIf (rdEntregado.Checked = True) Then
+            estado = 4
+        End If
+
+        If chbGarantia.Checked = True Then
+            garantia = True
+        End If
+
+        Dim hora As DateTime = DateTime.Now.ToShortTimeString()
+
+        Dim objManOrden As ManOrden = New ManOrden
+        objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado)
+
         'se crea el cliente
         Dim objManCliente As ManCliente = New ManCliente
         objManCliente.crearCliente(Me.txtNombreCli.Text, Me.txtTel.Text)
@@ -56,6 +75,8 @@
 
     Public Sub New()
         InitializeComponent()
+        lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy")
+
         Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashTecnico As Hashtable
         hashTecnico = objManUsuario.obtenerTecnico()

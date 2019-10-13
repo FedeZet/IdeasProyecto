@@ -84,4 +84,18 @@
             _estado = Value
         End Set
     End Property
+
+    Public Sub New(ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As Integer)
+        Me._falla = falla
+        Me._importe = importe
+        Me._garantia = garantia
+        Me._fecha = fecha
+        Me._hora = hora
+        Me._estado = estado
+    End Sub
+
+    Public Function agregarOrden()
+        Dim objO As DAOOrden = New DAOOrden
+        Return objO.agregarOrden(Me)
+    End Function
 End Class

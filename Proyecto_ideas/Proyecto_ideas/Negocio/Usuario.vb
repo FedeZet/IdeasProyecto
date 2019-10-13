@@ -115,10 +115,10 @@
         Return objU.obtenerTecnico()
     End Function
 
-    Public Function autenticar(ByVal user As String, ByVal password As String) As Boolean
-        Dim objU As DAOUsuario = New DAOUsuario
-        'Return objU.autenticar()
-    End Function
+    'Public Function autenticar(ByVal user As String, ByVal password As String) As Boolean
+    '    Dim objU As DAOUsuario = New DAOUsuario
+    '    Return objU.autenticar()
+    'End Function
 
     Public Function modificar()
         Dim obj As DAOUsuario = New DAOUsuario

@@ -81,6 +81,7 @@
     <Compile Include="Negocio\Dispositivo.vb" />
     <Compile Include="Negocio\ManCliente.vb" />
     <Compile Include="Negocio\ManDispositivo.vb" />
+    <Compile Include="Negocio\ManOrden.vb" />
     <Compile Include="Negocio\ManRepuesto.vb" />
     <Compile Include="Negocio\ManUsuario.vb" />
     <Compile Include="Negocio\Orden.vb" />
@@ -88,6 +89,7 @@
     <Compile Include="Persistencia\ConectorBD.vb" />
     <Compile Include="Persistencia\DAOCliente.vb" />
     <Compile Include="Persistencia\DAODispositivo.vb" />
+    <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
     <Compile Include="Presentacion\Configuraciones.Designer.vb">
