@@ -67,6 +67,7 @@ Partial Class Historial_ordenes
         Me.Controls.Add(Me.btnVolverOrdenesLista)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Historial_ordenes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Historial_ordenes"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

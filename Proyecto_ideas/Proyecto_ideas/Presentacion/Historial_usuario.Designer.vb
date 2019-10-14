@@ -150,6 +150,7 @@ Partial Class Historial_usuario
         Me.Controls.Add(Me.btnVolverOrdenesLista)
         Me.Controls.Add(Me.dgvListadoUsuario)
         Me.Name = "Historial_usuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Historial_usuario"
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

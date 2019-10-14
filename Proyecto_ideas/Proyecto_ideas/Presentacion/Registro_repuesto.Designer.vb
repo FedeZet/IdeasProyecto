@@ -93,6 +93,7 @@ Partial Class Registro_repuesto
         Me.Controls.Add(Me.btnRCancelar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Name = "Registro_repuesto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Repuesto"
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

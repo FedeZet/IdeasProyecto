@@ -104,7 +104,7 @@ Partial Class lista_repuestos
         'btnVolverOrdenesLista
         '
         Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(9, 10)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
         Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(56, 19)
         Me.btnVolverOrdenesLista.TabIndex = 13
@@ -124,7 +124,7 @@ Partial Class lista_repuestos
         'btnBuscadorRep
         '
         Me.btnBuscadorRep.Location = New System.Drawing.Point(316, 11)
-        Me.btnBuscadorRep.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBuscadorRep.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscadorRep.Name = "btnBuscadorRep"
         Me.btnBuscadorRep.Size = New System.Drawing.Size(56, 19)
         Me.btnBuscadorRep.TabIndex = 15
@@ -145,6 +145,7 @@ Partial Class lista_repuestos
         Me.Controls.Add(Me.txtBuscadorRep)
         Me.Controls.Add(Me.dgvListadoRepuesto)
         Me.Name = "lista_repuestos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registro_repuesto"
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).EndInit()

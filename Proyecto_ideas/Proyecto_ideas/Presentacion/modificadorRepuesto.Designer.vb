@@ -99,6 +99,7 @@ Partial Class modificadorRepuesto
         Me.Controls.Add(Me.btnModificarR)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "modificadorRepuesto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "modificadorRepuesto"
         Me.ResumeLayout(False)
         Me.PerformLayout()

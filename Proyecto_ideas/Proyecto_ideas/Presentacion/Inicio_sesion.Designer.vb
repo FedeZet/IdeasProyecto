@@ -81,6 +81,7 @@ Partial Class Inicio_sesion
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Inicio_sesion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio sesión"
         Me.ResumeLayout(False)
         Me.PerformLayout()

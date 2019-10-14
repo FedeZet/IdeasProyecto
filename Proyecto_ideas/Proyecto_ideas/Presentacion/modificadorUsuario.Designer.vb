@@ -120,6 +120,7 @@ Partial Class modificadorUsuario
         Me.Controls.Add(Me.btnCancelarR)
         Me.Controls.Add(Me.btnModificarR)
         Me.Name = "modificadorUsuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "modificadorUsuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()

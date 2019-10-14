@@ -83,6 +83,7 @@ Partial Class Menu_Inicio
         Me.Controls.Add(Me.btnOrden)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Menu_Inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
         Me.ResumeLayout(False)
 
