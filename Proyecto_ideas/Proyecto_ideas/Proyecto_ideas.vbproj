@@ -92,12 +92,6 @@
     <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
-    <Compile Include="Presentacion\Configuraciones.Designer.vb">
-      <DependentUpon>Configuraciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Configuraciones.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\Historial_ordenes.Designer.vb">
       <DependentUpon>Historial_ordenes.vb</DependentUpon>
     </Compile>
@@ -176,9 +170,6 @@
     <Compile Include="Negocio\Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Presentacion\Configuraciones.resx">
-      <DependentUpon>Configuraciones.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Historial_ordenes.resx">
       <DependentUpon>Historial_ordenes.vb</DependentUpon>
     </EmbeddedResource>

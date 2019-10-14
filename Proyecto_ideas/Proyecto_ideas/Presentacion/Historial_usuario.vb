@@ -59,4 +59,8 @@
         hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
         Me.CargarDGV(hashUsuario)
     End Sub
+
+    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+        Registro_usuario.Show()
+    End Sub
 End Class
