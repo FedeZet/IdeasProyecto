@@ -32,7 +32,7 @@ Partial Class Inicio_sesion
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(107, 22)
+        Me.Label1.Location = New System.Drawing.Point(59, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class Inicio_sesion
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(98, 87)
+        Me.Label2.Location = New System.Drawing.Point(50, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 1
@@ -49,21 +49,21 @@ Partial Class Inicio_sesion
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(79, 38)
+        Me.txtUsuario.Location = New System.Drawing.Point(31, 39)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(100, 20)
         Me.txtUsuario.TabIndex = 2
         '
         'txtContrasenia
         '
-        Me.txtContrasenia.Location = New System.Drawing.Point(79, 103)
+        Me.txtContrasenia.Location = New System.Drawing.Point(31, 104)
         Me.txtContrasenia.Name = "txtContrasenia"
         Me.txtContrasenia.Size = New System.Drawing.Size(100, 20)
         Me.txtContrasenia.TabIndex = 3
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(79, 160)
+        Me.btnLogin.Location = New System.Drawing.Point(31, 161)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(100, 23)
         Me.btnLogin.TabIndex = 4
@@ -74,7 +74,7 @@ Partial Class Inicio_sesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(257, 217)
+        Me.ClientSize = New System.Drawing.Size(162, 217)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtContrasenia)
         Me.Controls.Add(Me.txtUsuario)

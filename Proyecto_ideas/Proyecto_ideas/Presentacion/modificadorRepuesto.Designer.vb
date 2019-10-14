@@ -90,7 +90,7 @@ Partial Class modificadorRepuesto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(281, 123)
+        Me.ClientSize = New System.Drawing.Size(258, 123)
         Me.Controls.Add(Me.txtMUcantidad)
         Me.Controls.Add(Me.txtMUnombre)
         Me.Controls.Add(Me.Label2)

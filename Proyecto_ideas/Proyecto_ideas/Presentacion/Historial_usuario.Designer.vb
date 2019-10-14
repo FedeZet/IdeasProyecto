@@ -113,7 +113,7 @@ Partial Class Historial_usuario
         '
         'txtBuscadorU
         '
-        Me.txtBuscadorU.Location = New System.Drawing.Point(228, 1)
+        Me.txtBuscadorU.Location = New System.Drawing.Point(228, 4)
         Me.txtBuscadorU.Name = "txtBuscadorU"
         Me.txtBuscadorU.Size = New System.Drawing.Size(152, 20)
         Me.txtBuscadorU.TabIndex = 6
@@ -140,7 +140,7 @@ Partial Class Historial_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(494, 261)
+        Me.ClientSize = New System.Drawing.Size(474, 261)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.btnBuscarU)
         Me.Controls.Add(Me.txtBuscadorU)
