@@ -21,8 +21,8 @@
 
         Dim hora As DateTime = DateTime.Now.ToShortTimeString()
 
-        Dim objManOrden As ManOrden = New ManOrden
-        objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado)
+        'Dim objManOrden As ManOrden = New ManOrden
+        'objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado)
 
         'se crea el cliente
         Dim objManCliente As ManCliente = New ManCliente

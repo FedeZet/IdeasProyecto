@@ -7,6 +7,9 @@
     Private _fecha As Date
     Private _hora As DateTime
     Private _estado As Integer
+    Private _idU As Integer
+    Private _idC As Integer
+    Private _idD As Integer
 
     Public Property IdOrden() As String
         Get
@@ -85,13 +88,65 @@
         End Set
     End Property
 
-    Public Sub New(ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As Integer)
+    Public Property idU() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _idU
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _idU = Value
+        End Set
+    End Property
+
+    Public Property idC() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _idC
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _idC = Value
+        End Set
+    End Property
+
+    Public Property idD() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _idD
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _idD = Value
+        End Set
+    End Property
+
+
+    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+        Me._idOrden = idOrden
         Me._falla = falla
         Me._importe = importe
         Me._garantia = garantia
         Me._fecha = fecha
         Me._hora = hora
         Me._estado = estado
+        Me._idU = idU
+        Me._idC = idC
+        Me._idD = idD
+
+    End Sub
+
+    Public Sub New(ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+        Me._falla = falla
+        Me._importe = importe
+        Me._garantia = garantia
+        Me._fecha = fecha
+        Me._hora = hora
+        Me._estado = estado
+        Me._idU = idU
+        Me._idC = idC
+        Me._idD = idD
+
     End Sub
 
     Public Function agregarOrden()
