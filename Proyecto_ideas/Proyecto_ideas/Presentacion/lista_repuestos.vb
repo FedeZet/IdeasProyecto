@@ -1,7 +1,7 @@
 ﻿Public Class lista_repuestos
 
     Private Sub btnRAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRAgregar.Click
-        Registro_orden.Show()
+        Registro_repuesto.Show()
     End Sub
 
     Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
@@ -41,7 +41,7 @@
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
         Me.Hide()
         modificadorRepuesto.Show()
-        modificadorRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
+        modificadorRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
         'Dim objManRepuesto As ManRepuesto = New ManRepuesto
         'objManRepuesto.modificarRepuesto(Me.dgvListadoRepuesto.SelectedRows)
         'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString)
@@ -57,7 +57,7 @@
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
 
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString)
+        objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
 
     End Sub
 
@@ -68,6 +68,4 @@
         hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
         Me.CargarDGV(hashRepuesto)
     End Sub
-
-
 End Class

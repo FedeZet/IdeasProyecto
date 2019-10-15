@@ -23,9 +23,6 @@ Partial Class lista_repuestos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
-        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
         Me.btnRAgregar = New System.Windows.Forms.Button()
         Me.btnREliminar = New System.Windows.Forms.Button()
@@ -33,6 +30,9 @@ Partial Class lista_repuestos
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         Me.pbRefresh = New System.Windows.Forms.PictureBox()
         Me.btnBuscadorRep = New System.Windows.Forms.Button()
+        Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,30 +42,12 @@ Partial Class lista_repuestos
         Me.dgvListadoRepuesto.AllowUserToAddRows = False
         Me.dgvListadoRepuesto.AllowUserToDeleteRows = False
         Me.dgvListadoRepuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codigo, Me.nombre, Me.cantidad})
+        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad})
         Me.dgvListadoRepuesto.Location = New System.Drawing.Point(30, 52)
         Me.dgvListadoRepuesto.Name = "dgvListadoRepuesto"
         Me.dgvListadoRepuesto.ReadOnly = True
         Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 150)
         Me.dgvListadoRepuesto.TabIndex = 4
-        '
-        'codigo
-        '
-        Me.codigo.HeaderText = "ID"
-        Me.codigo.Name = "codigo"
-        Me.codigo.ReadOnly = True
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        '
-        'cantidad
-        '
-        Me.cantidad.HeaderText = "Cantidad"
-        Me.cantidad.Name = "cantidad"
-        Me.cantidad.ReadOnly = True
         '
         'txtBuscadorRep
         '
@@ -133,6 +115,24 @@ Partial Class lista_repuestos
         Me.btnBuscadorRep.Text = "Buscar"
         Me.btnBuscadorRep.UseVisualStyleBackColor = True
         '
+        'idR
+        '
+        Me.idR.HeaderText = "ID"
+        Me.idR.Name = "idR"
+        Me.idR.ReadOnly = True
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        '
+        'cantidad
+        '
+        Me.cantidad.HeaderText = "Cantidad"
+        Me.cantidad.Name = "cantidad"
+        Me.cantidad.ReadOnly = True
+        '
         'lista_repuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -160,10 +160,10 @@ Partial Class lista_repuestos
     Friend WithEvents btnRAgregar As System.Windows.Forms.Button
     Friend WithEvents btnREliminar As System.Windows.Forms.Button
     Friend WithEvents btnRModificar As System.Windows.Forms.Button
-    Friend WithEvents codigo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
     Friend WithEvents pbRefresh As System.Windows.Forms.PictureBox
     Friend WithEvents btnBuscadorRep As System.Windows.Forms.Button
+    Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

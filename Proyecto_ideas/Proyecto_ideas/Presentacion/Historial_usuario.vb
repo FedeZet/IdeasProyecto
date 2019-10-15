@@ -38,12 +38,12 @@
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
         Me.Hide()
         modificadorUsuario.Show()
-        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nick").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Telefono").Value.ToString)
+        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString)
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         Dim objManRepuesto As ManUsuario = New ManUsuario
-        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString)
+        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
 
     End Sub
 
