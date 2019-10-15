@@ -69,7 +69,7 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Menu_Inicio.Show()
+        Historial_ordenes.Show()
         Me.Close()
     End Sub
 
@@ -77,10 +77,10 @@
         InitializeComponent()
         lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy")
 
-        Dim objManUsuario As ManUsuario = New ManUsuario
-        Dim hashTecnico As Hashtable
-        hashTecnico = objManUsuario.obtenerTecnico()
-        Me.CargarTecnicos(hashTecnico)
+        'Dim objManUsuario As ManUsuario = New ManUsuario
+        'Dim hashTecnico As Hashtable
+        'hashTecnico = objManUsuario.obtenerTecnico()
+        'Me.CargarTecnicos(hashTecnico)
     End Sub
 
     Sub CargarTecnicos(ByVal colTecnico As Hashtable)

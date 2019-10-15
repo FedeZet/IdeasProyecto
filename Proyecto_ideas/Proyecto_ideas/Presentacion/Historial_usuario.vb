@@ -38,17 +38,12 @@
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
         Me.Hide()
         modificadorUsuario.Show()
-        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nick").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("Telefono").Value.ToString)
+        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString)
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
-
         Dim objManRepuesto As ManUsuario = New ManUsuario
-        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("id_usuario").Value.ToString)
-
-    End Sub
-
-    Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
 
     End Sub
 
@@ -62,5 +57,10 @@
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         Registro_usuario.Show()
+    End Sub
+
+    Private Sub dgvListadoUsuario_RowHeaderMouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoUsuario.RowHeaderMouseClick
+        btnEliminar.Enabled = True
+        btnModificar.Enabled = True
     End Sub
 End Class

@@ -23,10 +23,6 @@ Partial Class Historial_usuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvListadoUsuario = New System.Windows.Forms.DataGridView()
-        Me.id_usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nick = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -34,6 +30,10 @@ Partial Class Historial_usuario
         Me.txtBuscadorU = New System.Windows.Forms.TextBox()
         Me.btnBuscarU = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.idU = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.user = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,37 +41,15 @@ Partial Class Historial_usuario
         '
         Me.dgvListadoUsuario.AllowUserToAddRows = False
         Me.dgvListadoUsuario.AllowUserToDeleteRows = False
+        Me.dgvListadoUsuario.AllowUserToResizeColumns = False
+        Me.dgvListadoUsuario.AllowUserToResizeRows = False
         Me.dgvListadoUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_usuario, Me.Nick, Me.Nombre, Me.Telefono})
+        Me.dgvListadoUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idU, Me.user, Me.nombre, Me.telefono})
         Me.dgvListadoUsuario.Location = New System.Drawing.Point(12, 27)
         Me.dgvListadoUsuario.Name = "dgvListadoUsuario"
         Me.dgvListadoUsuario.ReadOnly = True
         Me.dgvListadoUsuario.Size = New System.Drawing.Size(442, 180)
         Me.dgvListadoUsuario.TabIndex = 0
-        '
-        'id_usuario
-        '
-        Me.id_usuario.HeaderText = "id_usuario"
-        Me.id_usuario.Name = "id_usuario"
-        Me.id_usuario.ReadOnly = True
-        '
-        'Nick
-        '
-        Me.Nick.HeaderText = "Nick"
-        Me.Nick.Name = "Nick"
-        Me.Nick.ReadOnly = True
-        '
-        'Nombre
-        '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        '
-        'Telefono
-        '
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
         '
         'btnVolverOrdenesLista
         '
@@ -95,6 +73,7 @@ Partial Class Historial_usuario
         '
         'btnModificar
         '
+        Me.btnModificar.Enabled = False
         Me.btnModificar.Location = New System.Drawing.Point(273, 228)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
@@ -104,6 +83,7 @@ Partial Class Historial_usuario
         '
         'btnEliminar
         '
+        Me.btnEliminar.Enabled = False
         Me.btnEliminar.Location = New System.Drawing.Point(354, 228)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
@@ -136,6 +116,30 @@ Partial Class Historial_usuario
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
+        'idU
+        '
+        Me.idU.HeaderText = "ID"
+        Me.idU.Name = "idU"
+        Me.idU.ReadOnly = True
+        '
+        'user
+        '
+        Me.user.HeaderText = "User"
+        Me.user.Name = "user"
+        Me.user.ReadOnly = True
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        '
+        'telefono
+        '
+        Me.telefono.HeaderText = "Teléfono"
+        Me.telefono.Name = "telefono"
+        Me.telefono.ReadOnly = True
+        '
         'Historial_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -159,14 +163,14 @@ Partial Class Historial_usuario
     End Sub
     Friend WithEvents dgvListadoUsuario As System.Windows.Forms.DataGridView
     Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
-    Friend WithEvents id_usuario As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nick As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnActualizar As System.Windows.Forms.Button
     Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents txtBuscadorU As System.Windows.Forms.TextBox
     Friend WithEvents btnBuscarU As System.Windows.Forms.Button
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents idU As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents user As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents telefono As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
