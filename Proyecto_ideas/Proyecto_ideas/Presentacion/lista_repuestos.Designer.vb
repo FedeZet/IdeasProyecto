@@ -85,6 +85,7 @@ Partial Class lista_repuestos
         '
         'btnREliminar
         '
+        Me.btnREliminar.Enabled = False
         Me.btnREliminar.Location = New System.Drawing.Point(169, 221)
         Me.btnREliminar.Name = "btnREliminar"
         Me.btnREliminar.Size = New System.Drawing.Size(75, 23)
@@ -94,6 +95,7 @@ Partial Class lista_repuestos
         '
         'btnRModificar
         '
+        Me.btnRModificar.Enabled = False
         Me.btnRModificar.Location = New System.Drawing.Point(268, 221)
         Me.btnRModificar.Name = "btnRModificar"
         Me.btnRModificar.Size = New System.Drawing.Size(75, 23)

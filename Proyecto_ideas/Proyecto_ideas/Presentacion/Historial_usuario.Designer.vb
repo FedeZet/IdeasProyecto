@@ -41,6 +41,8 @@ Partial Class Historial_usuario
         '
         Me.dgvListadoUsuario.AllowUserToAddRows = False
         Me.dgvListadoUsuario.AllowUserToDeleteRows = False
+        Me.dgvListadoUsuario.AllowUserToResizeColumns = False
+        Me.dgvListadoUsuario.AllowUserToResizeRows = False
         Me.dgvListadoUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_usuario, Me.Nick, Me.Nombre, Me.Telefono})
         Me.dgvListadoUsuario.Location = New System.Drawing.Point(12, 27)
@@ -95,6 +97,7 @@ Partial Class Historial_usuario
         '
         'btnModificar
         '
+        Me.btnModificar.Enabled = False
         Me.btnModificar.Location = New System.Drawing.Point(273, 228)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
@@ -104,6 +107,7 @@ Partial Class Historial_usuario
         '
         'btnEliminar
         '
+        Me.btnEliminar.Enabled = False
         Me.btnEliminar.Location = New System.Drawing.Point(354, 228)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)

@@ -50,17 +50,14 @@
     End Sub
 
     Private Sub dgvListadoRepuesto_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoRepuesto.RowHeaderMouseClick
-
+        btnREliminar.Enabled = True
+        btnRModificar.Enabled = True
     End Sub
 
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
 
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
         objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("codigo").Value.ToString)
-
-    End Sub
-
-    Private Sub lista_repuestos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -71,4 +68,6 @@
         hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
         Me.CargarDGV(hashRepuesto)
     End Sub
+
+
 End Class
