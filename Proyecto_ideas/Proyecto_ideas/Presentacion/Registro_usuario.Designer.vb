@@ -132,6 +132,7 @@ Partial Class Registro_usuario
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Registro_usuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()

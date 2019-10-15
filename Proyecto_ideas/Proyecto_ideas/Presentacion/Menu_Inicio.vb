@@ -1,32 +1,21 @@
 ﻿Public Class Menu_Inicio
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.Hide()
-        Registro_orden.Show()
-    End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Hide()
-        Registro_repuesto.Show()
-    End Sub
-
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Me.Hide()
-        Registro_usuario.Show()
-    End Sub
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Me.Hide()
-        lista_repuestos.Show()
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Me.Hide()
+    Private Sub btnOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOrden.Click
         Historial_ordenes.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+    Private Sub btnRepuesto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRepuesto.Click
+        lista_repuestos.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnUsuario_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUsuario.Click
         Historial_usuario.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnProductividad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnProductividad.Click
+
     End Sub
 End Class

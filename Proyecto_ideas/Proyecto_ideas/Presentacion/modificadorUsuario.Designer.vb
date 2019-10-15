@@ -110,7 +110,7 @@ Partial Class modificadorUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(264, 223)
         Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtNombre)
@@ -120,6 +120,7 @@ Partial Class modificadorUsuario
         Me.Controls.Add(Me.btnCancelarR)
         Me.Controls.Add(Me.btnModificarR)
         Me.Name = "modificadorUsuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "modificadorUsuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()

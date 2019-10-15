@@ -437,6 +437,7 @@ Partial Class Registro_orden
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Registro_orden"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Orden"
         Me.gboEstado.ResumeLayout(False)
         Me.gboEstado.PerformLayout()
