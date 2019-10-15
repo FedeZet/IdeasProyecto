@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 02-10-2019 a las 21:22:59
+-- Tiempo de generación: 15-10-2019 a las 17:05:14
 -- Versión del servidor: 5.7.26
 -- Versión de PHP: 7.2.18
 
@@ -68,8 +68,10 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
 DROP TABLE IF EXISTS `orden`;
 CREATE TABLE IF NOT EXISTS `orden` (
   `idO` int(11) NOT NULL AUTO_INCREMENT,
-  `falla` varchar(140) CHARACTER SET ascii NOT NULL,
-  `importe` int(11) NOT NULL,
+  `detalle` varchar(140) CHARACTER SET ascii DEFAULT NULL,
+  `resolucion` varchar(140) CHARACTER SET ascii DEFAULT NULL,
+  `importe` int(11) DEFAULT NULL,
+  `dolar` bit(1) DEFAULT NULL,
   `garantia` date DEFAULT NULL,
   `fecha` date NOT NULL,
   `hora` time NOT NULL,
@@ -94,6 +96,7 @@ CREATE TABLE IF NOT EXISTS `repuesto` (
   `idR` int(11) NOT NULL AUTO_INCREMENT,
   `nombreR` varchar(32) CHARACTER SET ascii NOT NULL,
   `cantidad` int(5) NOT NULL,
+  `costoRepuesto` int(11) DEFAULT NULL,
   PRIMARY KEY (`idR`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -110,6 +113,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `pass` varchar(16) CHARACTER SET ascii NOT NULL,
   `nombreU` varchar(32) CHARACTER SET ascii NOT NULL,
   `telefonoU` varchar(10) CHARACTER SET ascii DEFAULT NULL,
+  `costoServicio` int(11) DEFAULT NULL,
   PRIMARY KEY (`idU`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
@@ -117,8 +121,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idU`, `user`, `pass`, `nombreU`, `telefonoU`) VALUES
-(1, 'admin', 'admin', 'Juan Andiarena', '');
+INSERT INTO `usuario` (`idU`, `user`, `pass`, `nombreU`, `telefonoU`, `costoServicio`) VALUES
+(1, 'admin', 'admin', 'Juan Andiarena', '', NULL);
 
 -- --------------------------------------------------------
 
