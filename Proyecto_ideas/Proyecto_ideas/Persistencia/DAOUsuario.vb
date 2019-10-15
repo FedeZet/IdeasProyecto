@@ -17,7 +17,7 @@
     Public Function obtenerTecnico() As MySql.Data.MySqlClient.MySqlDataReader
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "SELECT idU, nombreU FROM usuario"
+        sentencia = "SELECT idU ,nombreU FROM usuario"
         Return dao.ejecutar(sentencia, True)
     End Function
 

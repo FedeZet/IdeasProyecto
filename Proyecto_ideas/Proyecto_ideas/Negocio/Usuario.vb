@@ -79,10 +79,10 @@
         Me._idUsuario = IdUsuario
     End Sub
 
-    Sub New(ByVal user As String, ByVal password As String)
-        _user = user
-        _password = password
-    End Sub
+    ' Public Sub New(ByVal user As String, ByVal password As String)
+    '    Me._user = user
+    '   Me._password = password
+    ' End Sub
 
     Public Sub New(ByVal idUsuario As Integer, ByVal user As String, ByVal nombre As String, ByVal telefono As String)
         Me._idUsuario = idUsuario
@@ -92,6 +92,11 @@
     End Sub
 
     Public Sub New(ByVal nombreUsuario As String)
+        Me._nombre = nombreUsuario
+    End Sub
+
+    Public Sub New(ByVal idUsuario As Integer, ByVal nombreUsuario As String)
+        Me._idUsuario = idUsuario
         Me._nombre = nombreUsuario
     End Sub
 

@@ -77,16 +77,16 @@
         InitializeComponent()
         lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy")
 
-        'Dim objManUsuario As ManUsuario = New ManUsuario
-        'Dim hashTecnico As Hashtable
-        'hashTecnico = objManUsuario.obtenerTecnico()
-        'Me.CargarTecnicos(hashTecnico)
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashTecnico As Hashtable
+        hashTecnico = objManUsuario.obtenerTecnico()
+        Me.CargarTecnicos(hashTecnico)
     End Sub
 
     Sub CargarTecnicos(ByVal colTecnico As Hashtable)
         For Each DEntry As DictionaryEntry In colTecnico
             Dim objU As Usuario = CType(DEntry.Value, Usuario)
-
+            cbTecnico.Items.Add(objU.Nombre.ToString)
         Next
     End Sub
 
