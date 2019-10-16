@@ -8,4 +8,9 @@
     Private Sub btnAgregarO_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarO.Click
         Registro_orden.Show()
     End Sub
+
+    Private Sub btnListaImprimir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnListaImprimir.Click
+        Me.Hide()
+        ImprimirOrden.Show()
+    End Sub
 End Class
