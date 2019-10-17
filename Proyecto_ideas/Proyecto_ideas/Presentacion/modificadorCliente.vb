@@ -8,11 +8,11 @@
     End Sub
 
     Private Sub btnCancelarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarC.Click
-        Lista_clientesvb.Show()
+        lista_clientes.Show()
         Me.Close()
     End Sub
 
-    Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal telefono As String)
+    Public Function cargarCliente(ByVal id As Integer, ByVal nombre As String, ByVal telefono As String)
         idCliente = id
         txtMCnombre.Text = nombre
         txtMCtelefono.Text = telefono

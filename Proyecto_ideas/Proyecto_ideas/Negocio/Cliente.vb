@@ -59,4 +59,24 @@
         Return obj.guardar(Me)
 
     End Function
+
+    Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAOCliente = New DAOCliente
+        Return obj.buscarCliente(Me)
+    End Function
+
+    Public Shared Function obtenerClientes() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim objR As DAOCliente = New DAOCliente
+        Return objR.obtenerClientes()
+    End Function
+
+    Public Function modificar()
+        Dim obj As DAOCliente = New DAOCliente
+        Return obj.modificarCliente(Me)
+    End Function
+
+    Public Function eliminar()
+        Dim obj As DAOCliente = New DAOCliente
+        Return obj.eliminarCliente(Me)
+    End Function
 End Class

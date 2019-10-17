@@ -23,16 +23,16 @@ Partial Class lista_repuestos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
+        Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
         Me.btnRAgregar = New System.Windows.Forms.Button()
         Me.btnREliminar = New System.Windows.Forms.Button()
         Me.btnRModificar = New System.Windows.Forms.Button()
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
-        Me.pbRefresh = New System.Windows.Forms.PictureBox()
         Me.btnBuscadorRep = New System.Windows.Forms.Button()
-        Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pbRefresh = New System.Windows.Forms.PictureBox()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,6 +48,24 @@ Partial Class lista_repuestos
         Me.dgvListadoRepuesto.ReadOnly = True
         Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 150)
         Me.dgvListadoRepuesto.TabIndex = 4
+        '
+        'idR
+        '
+        Me.idR.HeaderText = "ID"
+        Me.idR.Name = "idR"
+        Me.idR.ReadOnly = True
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        '
+        'cantidad
+        '
+        Me.cantidad.HeaderText = "Cantidad"
+        Me.cantidad.Name = "cantidad"
+        Me.cantidad.ReadOnly = True
         '
         'txtBuscadorRep
         '
@@ -95,16 +113,6 @@ Partial Class lista_repuestos
         Me.btnVolverOrdenesLista.Text = "Volver"
         Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
         '
-        'pbRefresh
-        '
-        Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
-        Me.pbRefresh.Location = New System.Drawing.Point(30, 34)
-        Me.pbRefresh.Name = "pbRefresh"
-        Me.pbRefresh.Size = New System.Drawing.Size(16, 16)
-        Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbRefresh.TabIndex = 14
-        Me.pbRefresh.TabStop = False
-        '
         'btnBuscadorRep
         '
         Me.btnBuscadorRep.Location = New System.Drawing.Point(316, 11)
@@ -115,23 +123,15 @@ Partial Class lista_repuestos
         Me.btnBuscadorRep.Text = "Buscar"
         Me.btnBuscadorRep.UseVisualStyleBackColor = True
         '
-        'idR
+        'pbRefresh
         '
-        Me.idR.HeaderText = "ID"
-        Me.idR.Name = "idR"
-        Me.idR.ReadOnly = True
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        '
-        'cantidad
-        '
-        Me.cantidad.HeaderText = "Cantidad"
-        Me.cantidad.Name = "cantidad"
-        Me.cantidad.ReadOnly = True
+        Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
+        Me.pbRefresh.Location = New System.Drawing.Point(30, 34)
+        Me.pbRefresh.Name = "pbRefresh"
+        Me.pbRefresh.Size = New System.Drawing.Size(16, 16)
+        Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbRefresh.TabIndex = 14
+        Me.pbRefresh.TabStop = False
         '
         'lista_repuestos
         '

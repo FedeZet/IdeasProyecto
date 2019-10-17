@@ -13,6 +13,7 @@
 
         lista_repuestos.Show()
         Me.Close()
+
     End Sub
 
     Private Sub Registro_repuesto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
