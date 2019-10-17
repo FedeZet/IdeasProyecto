@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ConectorBD
     Private stringConexion As String
+    Private Shared instancia As ConectorBD
     Private objConexion As MySqlConnection
 
     Public Sub New()
@@ -25,5 +26,12 @@ Public Class ConectorBD
             Return Nothing
         End If
         Return cmd.ExecuteReader()
+    End Function
+
+    Private Shared Function getInstancia()
+        If instancia Is Nothing Then
+            instancia = New ConectorBD
+        End If
+        Return instancia
     End Function
 End Class
