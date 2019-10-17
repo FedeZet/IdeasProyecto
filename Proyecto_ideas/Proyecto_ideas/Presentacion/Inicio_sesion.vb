@@ -8,7 +8,25 @@
             Menu_Inicio.Show()
             Me.Hide()
         Else
-            MsgBox("Usuario y/o contraseña incorrectos.")
+            lblError.Text = "       " + "Usuario y/o contraseña incorrectos."
+            lblError.Visible = True
+
         End If
+
+        If txtUsuario.Text <> "" Then
+            If txtContrasenia.Text <> "" Then
+            Else
+                lblError.Text = "       " + "Contraseña vacía."
+                lblError.Visible = True
+            End If
+        Else
+            lblError.Text = "       " + "Usuario vacío."
+            lblError.Visible = True
+
+        End If
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        Application.Exit()
     End Sub
 End Class
