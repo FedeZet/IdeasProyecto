@@ -30,6 +30,8 @@ Partial Class modificadorUsuario
         Me.btnModificarR = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtCostoU = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtNombre
@@ -106,11 +108,31 @@ Partial Class modificadorUsuario
         Me.txtTelefono.Size = New System.Drawing.Size(132, 20)
         Me.txtTelefono.TabIndex = 13
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(12, 141)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(37, 13)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Costo:"
+        '
+        'txtCostoU
+        '
+        Me.txtCostoU.Location = New System.Drawing.Point(110, 141)
+        Me.txtCostoU.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCostoU.Name = "txtCostoU"
+        Me.txtCostoU.Size = New System.Drawing.Size(132, 20)
+        Me.txtCostoU.TabIndex = 15
+        '
         'modificadorUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(264, 223)
+        Me.Controls.Add(Me.txtCostoU)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtNombre)
@@ -134,4 +156,6 @@ Partial Class modificadorUsuario
     Friend WithEvents btnModificarR As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtCostoU As System.Windows.Forms.TextBox
 End Class

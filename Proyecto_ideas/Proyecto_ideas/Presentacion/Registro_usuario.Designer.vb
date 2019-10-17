@@ -32,6 +32,8 @@ Partial Class Registro_usuario
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.btnRegistrarUser = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtCostoServicio = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -116,11 +118,29 @@ Partial Class Registro_usuario
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(8, 181)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(75, 13)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Costo Servicio"
+        '
+        'txtCostoServicio
+        '
+        Me.txtCostoServicio.Location = New System.Drawing.Point(101, 181)
+        Me.txtCostoServicio.Name = "txtCostoServicio"
+        Me.txtCostoServicio.Size = New System.Drawing.Size(100, 20)
+        Me.txtCostoServicio.TabIndex = 12
+        '
         'Registro_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(236, 264)
+        Me.Controls.Add(Me.txtCostoServicio)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnRegistrarUser)
         Me.Controls.Add(Me.txtTelefono)
@@ -148,4 +168,6 @@ Partial Class Registro_usuario
     Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
     Friend WithEvents btnRegistrarUser As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtCostoServicio As System.Windows.Forms.TextBox
 End Class

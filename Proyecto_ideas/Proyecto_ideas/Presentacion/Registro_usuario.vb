@@ -8,7 +8,7 @@
     Private Sub btnRegistrarUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarUser.Click
         Dim objManUsuario As ManUsuario = New ManUsuario
 
-        objManUsuario.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text)
+        objManUsuario.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
 
         MsgBox("El usuario se ha creado exitosamente.")
     End Sub

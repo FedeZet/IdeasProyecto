@@ -2,7 +2,7 @@
     Public Function guardar(ByVal obj As Usuario)
         Dim dao = New ConectorBD()
         Dim sentencia As String
-        sentencia = "INSERT INTO usuario(user, pass, nombreU, telefonoU) VALUES ('" + obj.User + "','" + obj.Password + "','" + obj.Nombre + "','" + obj.Telefono + "')"
+        sentencia = "INSERT INTO usuario(user, pass, nombreU, telefonoU, costoServicio) VALUES ('" + obj.User + "','" + obj.Password + "','" + obj.Nombre + "','" + obj.Telefono + "','" + obj.costoServicio.ToString + "')"
         dao.ejecutar(sentencia, False)
         Return True
     End Function
@@ -29,7 +29,7 @@
         Dim datareader As MySql.Data.MySqlClient.MySqlDataReader = dao.ejecutar(sentencia, True)
         If datareader.HasRows Then
             While datareader.Read()
-                obj = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"))
+                obj = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"), datareader("costoServicio"))
             End While
             datareader.Dispose()
             Return True
@@ -41,7 +41,7 @@
     Public Function modificarUsuario(ByVal obj As Usuario)
         Dim dao As ConectorBD = New ConectorBD()
         Dim sentencia As String
-        sentencia = "UPDATE usuario SET user = '" + obj.User + "', nombreU = '" + obj.Nombre + "', telefonoU = '" + obj.Telefono + "' WHERE idU = " + obj.IdUsuario.ToString + ";"
+        sentencia = "UPDATE usuario SET user = '" + obj.User + "', nombreU = '" + obj.Nombre + "', telefonoU = '" + obj.Telefono + "', costoServicio = '" + obj.costoServicio.ToString + "' WHERE idU = " + obj.IdUsuario.ToString + ";"
         dao.ejecutar(sentencia, False)
         Return True
     End Function

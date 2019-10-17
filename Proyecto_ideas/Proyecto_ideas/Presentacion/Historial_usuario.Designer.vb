@@ -23,6 +23,10 @@ Partial Class Historial_usuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvListadoUsuario = New System.Windows.Forms.DataGridView()
+        Me.idU = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.user = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -30,10 +34,7 @@ Partial Class Historial_usuario
         Me.txtBuscadorU = New System.Windows.Forms.TextBox()
         Me.btnBuscarU = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.idU = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.user = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.costoServicio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,12 +45,36 @@ Partial Class Historial_usuario
         Me.dgvListadoUsuario.AllowUserToResizeColumns = False
         Me.dgvListadoUsuario.AllowUserToResizeRows = False
         Me.dgvListadoUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idU, Me.user, Me.nombre, Me.telefono})
+        Me.dgvListadoUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idU, Me.user, Me.nombre, Me.telefono, Me.costoServicio})
         Me.dgvListadoUsuario.Location = New System.Drawing.Point(12, 27)
         Me.dgvListadoUsuario.Name = "dgvListadoUsuario"
         Me.dgvListadoUsuario.ReadOnly = True
-        Me.dgvListadoUsuario.Size = New System.Drawing.Size(442, 180)
+        Me.dgvListadoUsuario.Size = New System.Drawing.Size(538, 180)
         Me.dgvListadoUsuario.TabIndex = 0
+        '
+        'idU
+        '
+        Me.idU.HeaderText = "ID"
+        Me.idU.Name = "idU"
+        Me.idU.ReadOnly = True
+        '
+        'user
+        '
+        Me.user.HeaderText = "User"
+        Me.user.Name = "user"
+        Me.user.ReadOnly = True
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        '
+        'telefono
+        '
+        Me.telefono.HeaderText = "Teléfono"
+        Me.telefono.Name = "telefono"
+        Me.telefono.ReadOnly = True
         '
         'btnVolverOrdenesLista
         '
@@ -116,35 +141,17 @@ Partial Class Historial_usuario
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'idU
+        'costoServicio
         '
-        Me.idU.HeaderText = "ID"
-        Me.idU.Name = "idU"
-        Me.idU.ReadOnly = True
-        '
-        'user
-        '
-        Me.user.HeaderText = "User"
-        Me.user.Name = "user"
-        Me.user.ReadOnly = True
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        '
-        'telefono
-        '
-        Me.telefono.HeaderText = "Teléfono"
-        Me.telefono.Name = "telefono"
-        Me.telefono.ReadOnly = True
+        Me.costoServicio.HeaderText = "Servicio"
+        Me.costoServicio.Name = "costoServicio"
+        Me.costoServicio.ReadOnly = True
         '
         'Historial_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(474, 261)
+        Me.ClientSize = New System.Drawing.Size(562, 261)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.btnBuscarU)
         Me.Controls.Add(Me.txtBuscadorU)
@@ -173,4 +180,5 @@ Partial Class Historial_usuario
     Friend WithEvents user As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents telefono As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents costoServicio As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

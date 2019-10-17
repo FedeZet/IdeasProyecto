@@ -5,6 +5,7 @@
     Private _password As String
     Private _nombre As String
     Private _telefono As String
+    Private _costoServicio As Integer
    
 
     Public Property IdUsuario() As Integer
@@ -57,36 +58,48 @@
             _telefono = Value
         End Set
     End Property
+    Public Property costoServicio() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _costoServicio
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _costoServicio = Value
+        End Set
+    End Property
 
     'Zona de contrucciòn
-    Public Sub New(ByVal IdUsuario As Integer, ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
+    Public Sub New(ByVal IdUsuario As Integer, ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
         Me._idUsuario = IdUsuario
         Me._user = user
         Me._password = password
         Me._nombre = nombre
         Me._telefono = telefono
+        Me._costoServicio = costoServicio
     End Sub
 
-    Public Sub New(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
+    Public Sub New(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
         'ByVal IdUsuario As Integer, 
         'Me._idUsuario = IdUsuario
         Me._user = user
         Me._password = password
         Me._nombre = nombre
         Me._telefono = telefono
+        Me._costoServicio = costoServicio
     End Sub
 
     Public Sub New(ByVal IdUsuario As Integer)
         Me._idUsuario = IdUsuario
     End Sub
 
-    Public Sub New(ByVal idUsuario As Integer, ByVal user As String, ByVal nombre As String, ByVal telefono As String)
+    Public Sub New(ByVal idUsuario As Integer, ByVal user As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
         Me._idUsuario = idUsuario
         Me._user = user
         Me._nombre = nombre
         Me._telefono = telefono
+        Me._costoServicio = costoServicio
     End Sub
-
     Public Sub New(ByVal nombreUsuario As String)
         Me._nombre = nombreUsuario
     End Sub

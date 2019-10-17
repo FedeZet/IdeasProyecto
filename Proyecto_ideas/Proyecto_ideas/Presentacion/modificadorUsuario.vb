@@ -3,7 +3,7 @@
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
 
         Dim objManUsuario As ManUsuario = New ManUsuario
-        objManUsuario.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text)
+        objManUsuario.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text, txtCostoU.Text)
 
     End Sub
 
@@ -13,12 +13,12 @@
         Me.Close()
     End Sub
 
-    Public Function cargarUsuario(ByVal id As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String)
+    Public Function cargarUsuario(ByVal id As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As String)
         idUsuario = id
         txtNick.Text = nick
         txtNombre.Text = nombre
         txtTelefono.Text = telefono
-
+        txtCostoU.Text = costoServicio
         Return True
 
     End Function

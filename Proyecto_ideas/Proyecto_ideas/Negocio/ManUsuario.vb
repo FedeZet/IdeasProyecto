@@ -2,9 +2,9 @@
 Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
     Dim hashTecnico As Hashtable = New Hashtable
-    Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String)
+    Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
 
-        Dim objUsuario As Usuario = New Usuario(user, password, nombre, telefono)
+        Dim objUsuario As Usuario = New Usuario(user, password, nombre, telefono, costoServicio)
         objUsuario.guardar()
         Return True
     End Function
@@ -13,7 +13,7 @@ Public Class ManUsuario
         Dim datareader As MySqlDataReader = Usuario.obtenerUsuarios()
         Dim objU As Usuario = Nothing
         While datareader.Read()
-            objU = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"))
+            objU = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"), datareader("costoServicio"))
             Me.hashUsuario.Add(objU.IdUsuario, objU)
         End While
         Return Me.hashUsuario
@@ -29,8 +29,8 @@ Public Class ManUsuario
         Return Me.hashTecnico
     End Function
 
-    Public Function modificarUsuario(ByVal idUsuario As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String)
-        Dim objUsuario As Usuario = New Usuario(idUsuario, nick, nombre, telefono)
+    Public Function modificarUsuario(ByVal idUsuario As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
+        Dim objUsuario As Usuario = New Usuario(idUsuario, nick, nombre, telefono, costoServicio)
         objUsuario.modificar()
         Return True
     End Function
@@ -45,7 +45,7 @@ Public Class ManUsuario
         Dim objU As Usuario = New Usuario(nombre)
         Dim datareader As MySqlDataReader = objU.buscar
         While datareader.Read()
-            objU = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"))
+            objU = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"), datareader("costoServicio"))
             Me.hashUsuario.Add(objU.Nombre, objU)
         End While
         Return Me.hashUsuario

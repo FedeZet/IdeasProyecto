@@ -17,7 +17,7 @@
             Me.dgvListadoUsuario(1, cantFilas).Value = objR.User
             Me.dgvListadoUsuario(2, cantFilas).Value = objR.Nombre.ToString
             Me.dgvListadoUsuario(3, cantFilas).Value = objR.Telefono.ToString
-
+            Me.dgvListadoUsuario(4, cantFilas).Value = objR.costoServicio.ToString
         Next
     End Sub
 
@@ -38,7 +38,7 @@
     Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
         Me.Hide()
         modificadorUsuario.Show()
-        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString)
+        modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("costoServicio").Value.ToString)
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
