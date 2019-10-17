@@ -47,6 +47,7 @@
 
     End Sub
 
+
     Private Sub btnBuscarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscarU.Click
         Me.dgvListadoUsuario.Rows.Clear()
         Dim objManUsuario As ManUsuario = New ManUsuario
@@ -62,5 +63,13 @@
     Private Sub dgvListadoUsuario_RowHeaderMouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoUsuario.RowHeaderMouseClick
         btnEliminar.Enabled = True
         btnModificar.Enabled = True
+    End Sub
+
+    Private Sub txtBuscadorU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtBuscadorU.KeyPress
+        Me.dgvListadoUsuario.Rows.Clear()
+        Dim objManUsuario As ManUsuario = New ManUsuario
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
+        Me.CargarDGV(hashUsuario)
     End Sub
 End Class
