@@ -92,7 +92,7 @@
 
         For Each DEntry As DictionaryEntry In colTecnico
             Dim objU As Usuario = CType(DEntry.Value, Usuario)
-            cbTecnico.Items.Add(objU.Nombre.ToString)
+            cbTecnico.Items.Add(objU)
 
 
         Next
@@ -105,7 +105,8 @@
 
     Private Sub cbTecnico_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTecnico.SelectedIndexChanged
 
-        MsgBox(cbTecnico.SelectedIndex.ToString)
+        Dim objU As Usuario = CType(cbTecnico.SelectedItem, Usuario)
+        MsgBox(objU.IdUsuario.ToString)
 
     End Sub
 End Class
