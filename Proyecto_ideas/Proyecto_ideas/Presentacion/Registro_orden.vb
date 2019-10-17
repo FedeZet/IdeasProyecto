@@ -1,5 +1,7 @@
 ﻿Public Class Registro_orden
 
+    Dim idU As Integer
+
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
         'se crea la orden
         Dim estado As Integer
@@ -21,8 +23,7 @@
 
         Dim hora As DateTime = DateTime.Now.ToShortTimeString()
 
-        'Dim objManOrden As ManOrden = New ManOrden
-        'objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado)
+        
 
         'se crea el cliente
         Dim objManCliente As ManCliente = New ManCliente
@@ -65,6 +66,10 @@
 
         objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
 
+
+        Dim objManOrden As ManOrden = New ManOrden
+        ' objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado, )
+
         MsgBox("La orden se ha creado exitosamente.")
     End Sub
 
@@ -84,13 +89,23 @@
     End Sub
 
     Sub CargarTecnicos(ByVal colTecnico As Hashtable)
+
         For Each DEntry As DictionaryEntry In colTecnico
             Dim objU As Usuario = CType(DEntry.Value, Usuario)
             cbTecnico.Items.Add(objU.Nombre.ToString)
+
+
         Next
     End Sub
 
+   
     Private Sub Registro_orden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub cbTecnico_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTecnico.SelectedIndexChanged
+
+        MsgBox(cbTecnico.SelectedIndex.ToString)
 
     End Sub
 End Class

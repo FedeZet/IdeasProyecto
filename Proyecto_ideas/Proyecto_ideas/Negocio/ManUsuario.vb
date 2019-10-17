@@ -23,7 +23,7 @@ Public Class ManUsuario
         Dim datareader As MySqlDataReader = Usuario.obtenerTecnico()
         Dim objU As Usuario = Nothing
         While datareader.Read()
-            objU = New Usuario(datareader("idU"), datareader("nombreU"))
+            objU = New Usuario(CType(datareader("idU"), Integer), CType(datareader("nombreU"), String))
             Me.hashTecnico.Add(objU.IdUsuario, objU)
         End While
         Return Me.hashTecnico

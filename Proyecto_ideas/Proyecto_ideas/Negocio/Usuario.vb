@@ -5,6 +5,7 @@
     Private _password As String
     Private _nombre As String
     Private _telefono As String
+   
 
     Public Property IdUsuario() As Integer
         Get
@@ -79,11 +80,6 @@
         Me._idUsuario = IdUsuario
     End Sub
 
-    ' Public Sub New(ByVal user As String, ByVal password As String)
-    '    Me._user = user
-    '   Me._password = password
-    ' End Sub
-
     Public Sub New(ByVal idUsuario As Integer, ByVal user As String, ByVal nombre As String, ByVal telefono As String)
         Me._idUsuario = idUsuario
         Me._user = user
@@ -93,6 +89,11 @@
 
     Public Sub New(ByVal nombreUsuario As String)
         Me._nombre = nombreUsuario
+    End Sub
+
+    Public Sub New(ByVal user As String, ByVal password As String)
+        Me._user = user
+        Me._password = password
     End Sub
 
     Public Sub New(ByVal idUsuario As Integer, ByVal nombreUsuario As String)
