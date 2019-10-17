@@ -21,12 +21,22 @@
         Return dao.ejecutar(sentencia, True)
     End Function
 
-    'Public Function autenticar() As MySql.Data.MySqlClient.MySqlDataReader
-    '    Dim dao As ConectorBD = New ConectorBD()
-    '    Dim sentencia As String
-    '    sentencia = "SELECT * FROM usuario WHERE user='+ + +'"
-    '    Return dao.ejecutar(sentencia, True)
-    'End Function
+    Public Function comprobacion(ByVal obj As Usuario) As Boolean
+        Dim dao As ConectorBD = New ConectorBD()
+        Dim sentencia As String
+        sentencia = "SELECT * FROM usuario WHERE user='" + obj.User + "' AND pass='" + obj.Password + "'"
+
+        Dim datareader As MySql.Data.MySqlClient.MySqlDataReader = dao.ejecutar(sentencia, True)
+        If datareader.HasRows Then
+            While datareader.Read()
+                obj = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"))
+            End While
+            datareader.Dispose()
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 
     Public Function modificarUsuario(ByVal obj As Usuario)
         Dim dao As ConectorBD = New ConectorBD()

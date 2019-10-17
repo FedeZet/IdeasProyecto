@@ -50,4 +50,14 @@ Public Class ManUsuario
         End While
         Return Me.hashUsuario
     End Function
+
+    Public Function iniciarSesion(ByVal user As String, ByVal pass As String)
+        Dim objUsuario As Usuario = New Usuario(user, pass)
+        Dim verificar = objUsuario.autenticar(user, pass)
+        If verificar = True Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 End Class
