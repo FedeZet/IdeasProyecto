@@ -68,7 +68,7 @@
 
 
         Dim objManOrden As ManOrden = New ManOrden
-        ' objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado, )
+        'objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado, idU, )
 
         MsgBox("La orden se ha creado exitosamente.")
     End Sub
@@ -106,7 +106,7 @@
     Private Sub cbTecnico_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTecnico.SelectedIndexChanged
 
         Dim objU As Usuario = CType(cbTecnico.SelectedItem, Usuario)
-        MsgBox(objU.IdUsuario.ToString)
+        idU = objU.IdUsuario.ToString
 
     End Sub
 End Class
