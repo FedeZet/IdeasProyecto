@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-10-2019 a las 17:05:14
+-- Tiempo de generación: 18-10-2019 a las 02:34:17
 -- Versión del servidor: 5.7.26
 -- Versión de PHP: 7.2.18
 
@@ -113,8 +113,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `pass` varchar(16) CHARACTER SET ascii NOT NULL,
   `nombreU` varchar(32) CHARACTER SET ascii NOT NULL,
   `telefonoU` varchar(10) CHARACTER SET ascii DEFAULT NULL,
-  `costoServicio` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idU`)
+  `costoServicio` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`idU`),
+  UNIQUE KEY `user` (`user`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -122,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`idU`, `user`, `pass`, `nombreU`, `telefonoU`, `costoServicio`) VALUES
-(1, 'admin', 'admin', 'Juan Andiarena', '', NULL);
+(1, 'admin', 'admin', 'Juan Andiarena', '47311111', 0);
 
 -- --------------------------------------------------------
 
