@@ -25,17 +25,17 @@ Partial Class Inicio_sesion
         Me.txtContrasenia = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.plLogo = New System.Windows.Forms.Panel()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.lshPassword = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lshUsuario = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lblIniciarSesion = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pbPassword = New System.Windows.Forms.PictureBox()
+        Me.pbUsuario = New System.Windows.Forms.PictureBox()
         Me.lblError = New System.Windows.Forms.Label()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtContrasenia
@@ -76,14 +76,14 @@ Partial Class Inicio_sesion
         Me.txtUsuario.TabIndex = 1
         Me.txtUsuario.Tag = ""
         '
-        'Panel1
+        'plLogo
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 280)
-        Me.Panel1.TabIndex = 5
+        Me.plLogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.plLogo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.plLogo.Location = New System.Drawing.Point(0, 0)
+        Me.plLogo.Name = "plLogo"
+        Me.plLogo.Size = New System.Drawing.Size(220, 280)
+        Me.plLogo.TabIndex = 5
         '
         'ShapeContainer1
         '
@@ -141,23 +141,23 @@ Partial Class Inicio_sesion
         Me.btnExit.TabIndex = 4
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'pbPassword
         '
-        Me.PictureBox2.Image = Global.Proyecto_ideas.My.Resources.Resources.password
-        Me.PictureBox2.Location = New System.Drawing.Point(265, 136)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox2.TabIndex = 9
-        Me.PictureBox2.TabStop = False
+        Me.pbPassword.Image = Global.Proyecto_ideas.My.Resources.Resources.password
+        Me.pbPassword.Location = New System.Drawing.Point(265, 136)
+        Me.pbPassword.Name = "pbPassword"
+        Me.pbPassword.Size = New System.Drawing.Size(32, 32)
+        Me.pbPassword.TabIndex = 9
+        Me.pbPassword.TabStop = False
         '
-        'PictureBox1
+        'pbUsuario
         '
-        Me.PictureBox1.Image = Global.Proyecto_ideas.My.Resources.Resources.avatar
-        Me.PictureBox1.Location = New System.Drawing.Point(265, 67)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
+        Me.pbUsuario.Image = Global.Proyecto_ideas.My.Resources.Resources.avatar
+        Me.pbUsuario.Location = New System.Drawing.Point(265, 67)
+        Me.pbUsuario.Name = "pbUsuario"
+        Me.pbUsuario.Size = New System.Drawing.Size(32, 32)
+        Me.pbUsuario.TabIndex = 8
+        Me.pbUsuario.TabStop = False
         '
         'lblError
         '
@@ -180,10 +180,10 @@ Partial Class Inicio_sesion
         Me.ClientSize = New System.Drawing.Size(500, 280)
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbPassword)
+        Me.Controls.Add(Me.pbUsuario)
         Me.Controls.Add(Me.lblIniciarSesion)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.plLogo)
         Me.Controls.Add(Me.txtUsuario)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtContrasenia)
@@ -195,8 +195,8 @@ Partial Class Inicio_sesion
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio sesión"
         Me.TransparencyKey = System.Drawing.Color.Transparent
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -204,13 +204,13 @@ Partial Class Inicio_sesion
     Friend WithEvents txtContrasenia As System.Windows.Forms.TextBox
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents plLogo As System.Windows.Forms.Panel
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents lshUsuario As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents lshPassword As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents lblIniciarSesion As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbUsuario As System.Windows.Forms.PictureBox
+    Friend WithEvents pbPassword As System.Windows.Forms.PictureBox
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lblError As System.Windows.Forms.Label
 End Class

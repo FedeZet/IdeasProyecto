@@ -13,17 +13,22 @@
 
         End If
 
-        If txtUsuario.Text <> "" Then
-            If txtContrasenia.Text <> "" Then
+        If txtUsuario.Text <> "" & txtContrasenia.Text Then
+            If txtUsuario.Text <> "" Then
+                If txtContrasenia.Text <> "" Then
+                Else
+                    lblError.Text = "       " + "Contraseña vacía."
+                    lblError.Visible = True
+                End If
             Else
-                lblError.Text = "       " + "Contraseña vacía."
+                lblError.Text = "       " + "Usuario vacío."
                 lblError.Visible = True
             End If
         Else
-            lblError.Text = "       " + "Usuario vacío."
+            lblError.Text = "       " + "Usuario y contraseña vacíos."
             lblError.Visible = True
-
         End If
+
     End Sub
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click

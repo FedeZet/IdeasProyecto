@@ -18,4 +18,18 @@
     Private Sub btnProductividad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnProductividad.Click
 
     End Sub
+
+    Public Sub New()
+        InitializeComponent()
+        timerHoraFecha.Enabled = True
+
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub timerHoraFecha_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timerHoraFecha.Tick
+        lblHoraFecha.Text = DateTime.Now.ToShortTimeString() + " - " + DateTime.Now.ToString("dd/MM/yyyy")
+    End Sub
 End Class
