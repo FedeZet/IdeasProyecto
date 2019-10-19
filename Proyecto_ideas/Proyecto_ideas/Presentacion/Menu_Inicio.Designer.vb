@@ -23,10 +23,10 @@ Partial Class Menu_Inicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu_Inicio))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblHoraFecha = New System.Windows.Forms.Label()
+        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -34,7 +34,6 @@ Partial Class Menu_Inicio
         Me.btnProductividad = New System.Windows.Forms.Button()
         Me.btnRepuesto = New System.Windows.Forms.Button()
         Me.btnOrden = New System.Windows.Forms.Button()
-        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -74,6 +73,9 @@ Partial Class Menu_Inicio
         Me.lblHoraFecha.Text = "[HoraFecha]"
         Me.lblHoraFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'timerHoraFecha
+        '
+        '
         'Button1
         '
         Me.Button1.FlatAppearance.BorderSize = 0
@@ -82,7 +84,7 @@ Partial Class Menu_Inicio
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Image = Global.Proyecto_ideas.My.Resources.Resources.key
         Me.Button1.Location = New System.Drawing.Point(462, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(46, 46)
@@ -97,7 +99,7 @@ Partial Class Menu_Inicio
         Me.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAbout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAbout.ForeColor = System.Drawing.Color.White
-        Me.btnAbout.Image = CType(resources.GetObject("btnAbout.Image"), System.Drawing.Image)
+        Me.btnAbout.Image = Global.Proyecto_ideas.My.Resources.Resources.exclamation
         Me.btnAbout.Location = New System.Drawing.Point(514, 12)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(46, 46)
@@ -124,7 +126,7 @@ Partial Class Menu_Inicio
         Me.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUsuario.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUsuario.ForeColor = System.Drawing.Color.Transparent
-        Me.btnUsuario.Image = CType(resources.GetObject("btnUsuario.Image"), System.Drawing.Image)
+        Me.btnUsuario.Image = Global.Proyecto_ideas.My.Resources.Resources.employees
         Me.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnUsuario.Location = New System.Drawing.Point(311, 126)
         Me.btnUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -140,7 +142,7 @@ Partial Class Menu_Inicio
         Me.btnProductividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductividad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnProductividad.ForeColor = System.Drawing.Color.Transparent
-        Me.btnProductividad.Image = CType(resources.GetObject("btnProductividad.Image"), System.Drawing.Image)
+        Me.btnProductividad.Image = Global.Proyecto_ideas.My.Resources.Resources.resources
         Me.btnProductividad.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnProductividad.Location = New System.Drawing.Point(451, 126)
         Me.btnProductividad.Margin = New System.Windows.Forms.Padding(2)
@@ -156,7 +158,7 @@ Partial Class Menu_Inicio
         Me.btnRepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRepuesto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRepuesto.ForeColor = System.Drawing.Color.Transparent
-        Me.btnRepuesto.Image = CType(resources.GetObject("btnRepuesto.Image"), System.Drawing.Image)
+        Me.btnRepuesto.Image = Global.Proyecto_ideas.My.Resources.Resources.smartphone
         Me.btnRepuesto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnRepuesto.Location = New System.Drawing.Point(171, 126)
         Me.btnRepuesto.Margin = New System.Windows.Forms.Padding(2)
@@ -172,7 +174,7 @@ Partial Class Menu_Inicio
         Me.btnOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOrden.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrden.ForeColor = System.Drawing.Color.Transparent
-        Me.btnOrden.Image = CType(resources.GetObject("btnOrden.Image"), System.Drawing.Image)
+        Me.btnOrden.Image = Global.Proyecto_ideas.My.Resources.Resources.package
         Me.btnOrden.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnOrden.Location = New System.Drawing.Point(31, 126)
         Me.btnOrden.Margin = New System.Windows.Forms.Padding(2)
@@ -182,9 +184,6 @@ Partial Class Menu_Inicio
         Me.btnOrden.Text = "Orden"
         Me.btnOrden.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnOrden.UseVisualStyleBackColor = True
-        '
-        'timerHoraFecha
-        '
         '
         'Menu_Inicio
         '
