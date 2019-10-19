@@ -4,7 +4,7 @@ Public Class ConectorBD
     Private Shared instancia As ConectorBD
     Private objConexion As MySqlConnection
 
-    Public Sub New()
+    Private Sub New()
         Me.stringConexion = "server=localhost;Database=ideas;uid=root;pwd= "
         Me.objConexion = New MySqlConnection(Me.stringConexion)
     End Sub
@@ -28,7 +28,7 @@ Public Class ConectorBD
         Return cmd.ExecuteReader()
     End Function
 
-    Private Shared Function getInstancia()
+    Public Shared Function getInstancia()
         If instancia Is Nothing Then
             instancia = New ConectorBD
         End If
