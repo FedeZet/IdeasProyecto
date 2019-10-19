@@ -9,6 +9,7 @@
     Private _estuche As Boolean
     Private _tmemoria As Boolean
     Private _pin As Integer
+    Private _idC As Integer
 
     Public Property IdDispositivo() As Integer
         Get
@@ -102,7 +103,18 @@
         End Set
     End Property
 
-    Public Sub New(ByVal IdDispositivo As Integer, ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer)
+    Public Property IdC() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _idC
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _idC = Value
+        End Set
+    End Property
+
+    Public Sub New(ByVal IdDispositivo As Integer, ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer, ByVal idC As Integer)
         Me._idDispositivo = IdDispositivo
         Me._modelo = modelo
         Me._bateria = bateria
@@ -112,9 +124,10 @@
         Me._estuche = estuche
         Me._tmemoria = tmemoria
         Me._pin = pin
+        Me._idC = idC
     End Sub
 
-    Public Sub New(ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer)
+    Public Sub New(ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer, ByVal idC As Integer)
         Me._modelo = modelo
         Me._bateria = bateria
         Me._sim = sim
@@ -123,6 +136,7 @@
         Me._estuche = estuche
         Me._tmemoria = tmemoria
         Me._pin = pin
+        Me._idC = idC
     End Sub
 
     Public Sub New(ByVal IdDispositivo As Integer)
@@ -130,10 +144,28 @@
     End Sub
 
     Public Function guardar()
-
         Dim obj As DAODispositivo = New DAODispositivo
         Return obj.guardar(Me)
+    End Function
 
+    Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.buscarDispositivo(Me)
+    End Function
+
+    Public Shared Function obtenerDispositivo() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.obtenerDispositivo()
+    End Function
+
+    Public Function modificar()
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.modificarDispositivo(Me)
+    End Function
+
+    Public Function eliminar()
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.eliminarDispositivo(Me)
     End Function
 
 End Class
