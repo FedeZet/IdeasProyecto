@@ -173,8 +173,7 @@ Partial Class Inicio_sesion
         '
         'Inicio_sesion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(500, 280)
@@ -191,10 +190,8 @@ Partial Class Inicio_sesion
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "Inicio_sesion"
-        Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio sesión"
-        Me.TransparencyKey = System.Drawing.Color.Transparent
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
