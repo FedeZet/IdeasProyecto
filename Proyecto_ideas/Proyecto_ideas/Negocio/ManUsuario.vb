@@ -3,8 +3,9 @@ Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
     Dim hashTecnico As Hashtable = New Hashtable
     Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
+        Dim passEncriptada As String = Encriptar.SHA256Encriptador(password)
 
-        Dim objUsuario As Usuario = New Usuario(user, password, nombre, telefono, costoServicio)
+        Dim objUsuario As Usuario = New Usuario(user, passEncriptada, nombre, telefono, costoServicio)
         objUsuario.guardar()
         Return True
     End Function
@@ -52,8 +53,10 @@ Public Class ManUsuario
     End Function
 
     Public Function iniciarSesion(ByVal user As String, ByVal pass As String)
-        Dim objUsuario As Usuario = New Usuario(user, pass)
-        Dim verificar = objUsuario.autenticar(user, pass)
+        Dim passEncriptada As String = Encriptar.SHA256Encriptador(pass)
+
+        Dim objUsuario As Usuario = New Usuario(user, passEncriptada)
+        Dim verificar = objUsuario.autenticar(user, passEncriptada)
         If verificar = True Then
             Return True
         Else
