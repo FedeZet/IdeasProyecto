@@ -8,7 +8,7 @@
     Private _garantia As Boolean
     Private _fecha As String
     Private _hora As String
-    Private _estado As Integer
+    Private _estado As String
     Private _idU As Integer
     Private _idC As Integer
     Private _idD As Integer
@@ -101,12 +101,12 @@
         End Set
     End Property
 
-    Public Property Estado() As Integer
+    Public Property Estado() As String
         Get
             ' Return the value stored in the field.
             Return _estado
         End Get
-        Set(ByVal Value As Integer)
+        Set(ByVal Value As String)
             ' Store the value in the field.
             _estado = Value
         End Set

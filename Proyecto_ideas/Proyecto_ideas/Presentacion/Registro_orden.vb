@@ -8,17 +8,17 @@
 
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
         'se crea la orden
-        Dim estado As Integer
+        Dim estado As String = ""
         Dim garantia, dolar As Boolean
 
         If (rdPendiente.Checked = True) Then
-            estado = 1
+            estado = "Pendiente"
         ElseIf (rdEspera.Checked = True) Then
-            estado = 2
+            estado = "En Espera"
         ElseIf (rdReparado.Checked = True) Then
-            estado = 3
+            estado = "Reparado"
         ElseIf (rdEntregado.Checked = True) Then
-            estado = 4
+            estado = "Entregado"
         End If
 
         If chbGarantia.Checked = True Then
