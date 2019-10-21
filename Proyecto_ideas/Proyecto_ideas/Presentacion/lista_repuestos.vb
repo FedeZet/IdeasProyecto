@@ -30,14 +30,6 @@
         Next
     End Sub
 
-    Private Sub pbRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbRefresh.Click
-        Me.dgvListadoRepuesto.Rows.Clear()
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.obtenerRepuesto()
-        Me.CargarDGV(hashRepuesto)
-    End Sub
-
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
         Me.Hide()
         modificadorRepuesto.Show()
@@ -49,15 +41,14 @@
 
     End Sub
 
-    Private Sub dgvListadoRepuesto_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoRepuesto.RowHeaderMouseClick
-        btnREliminar.Enabled = True
-        btnRModificar.Enabled = True
-    End Sub
+
+
 
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
-
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
         objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
+
+        MsgBox("El repuesto ha sido eliminado con éxito.")
 
     End Sub
 
@@ -69,7 +60,11 @@
         Me.CargarDGV(hashRepuesto)
     End Sub
 
-    Private Sub lista_repuestos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+    Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
+        Me.dgvListadoRepuesto.Rows.Clear()
+        Dim objManRepuesto As ManRepuesto = New ManRepuesto
+        Dim hashRepuesto As Hashtable
+        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        Me.CargarDGV(hashRepuesto)
     End Sub
 End Class

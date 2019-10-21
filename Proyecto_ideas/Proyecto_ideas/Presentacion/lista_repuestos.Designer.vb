@@ -22,44 +22,76 @@ Partial Class lista_repuestos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
         Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
-        Me.btnRAgregar = New System.Windows.Forms.Button()
-        Me.btnREliminar = New System.Windows.Forms.Button()
-        Me.btnRModificar = New System.Windows.Forms.Button()
-        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnBuscadorRep = New System.Windows.Forms.Button()
-        Me.pbRefresh = New System.Windows.Forms.PictureBox()
+        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
+        Me.btnRModificar = New System.Windows.Forms.Button()
+        Me.btnREliminar = New System.Windows.Forms.Button()
+        Me.btnRAgregar = New System.Windows.Forms.Button()
+        Me.lblIniciarSesion = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvListadoRepuesto
         '
         Me.dgvListadoRepuesto.AllowUserToAddRows = False
         Me.dgvListadoRepuesto.AllowUserToDeleteRows = False
+        Me.dgvListadoRepuesto.AllowUserToResizeColumns = False
+        Me.dgvListadoRepuesto.AllowUserToResizeRows = False
+        Me.dgvListadoRepuesto.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.dgvListadoRepuesto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgvListadoRepuesto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListadoRepuesto.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoRepuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad})
-        Me.dgvListadoRepuesto.Location = New System.Drawing.Point(30, 52)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvListadoRepuesto.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvListadoRepuesto.GridColor = System.Drawing.Color.White
+        Me.dgvListadoRepuesto.Location = New System.Drawing.Point(12, 90)
         Me.dgvListadoRepuesto.Name = "dgvListadoRepuesto"
         Me.dgvListadoRepuesto.ReadOnly = True
-        Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 150)
+        Me.dgvListadoRepuesto.RowHeadersVisible = False
+        Me.dgvListadoRepuesto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgvListadoRepuesto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 192)
         Me.dgvListadoRepuesto.TabIndex = 4
         '
         'idR
         '
         Me.idR.HeaderText = "ID"
+        Me.idR.MaxInputLength = 5
         Me.idR.Name = "idR"
         Me.idR.ReadOnly = True
+        Me.idR.Width = 50
         '
         'nombre
         '
         Me.nombre.HeaderText = "Nombre"
         Me.nombre.Name = "nombre"
         Me.nombre.ReadOnly = True
+        Me.nombre.Width = 190
         '
         'cantidad
         '
@@ -69,88 +101,128 @@ Partial Class lista_repuestos
         '
         'txtBuscadorRep
         '
-        Me.txtBuscadorRep.Location = New System.Drawing.Point(201, 11)
+        Me.txtBuscadorRep.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtBuscadorRep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBuscadorRep.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscadorRep.ForeColor = System.Drawing.Color.White
+        Me.txtBuscadorRep.Location = New System.Drawing.Point(217, 62)
         Me.txtBuscadorRep.Name = "txtBuscadorRep"
-        Me.txtBuscadorRep.Size = New System.Drawing.Size(100, 20)
+        Me.txtBuscadorRep.Size = New System.Drawing.Size(117, 21)
         Me.txtBuscadorRep.TabIndex = 8
         '
-        'btnRAgregar
+        'btnRefresh
         '
-        Me.btnRAgregar.Location = New System.Drawing.Point(68, 221)
-        Me.btnRAgregar.Name = "btnRAgregar"
-        Me.btnRAgregar.Size = New System.Drawing.Size(75, 23)
-        Me.btnRAgregar.TabIndex = 10
-        Me.btnRAgregar.Text = "Agregar"
-        Me.btnRAgregar.UseVisualStyleBackColor = True
-        '
-        'btnREliminar
-        '
-        Me.btnREliminar.Enabled = False
-        Me.btnREliminar.Location = New System.Drawing.Point(169, 221)
-        Me.btnREliminar.Name = "btnREliminar"
-        Me.btnREliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnREliminar.TabIndex = 11
-        Me.btnREliminar.Text = "Eliminar"
-        Me.btnREliminar.UseVisualStyleBackColor = True
-        '
-        'btnRModificar
-        '
-        Me.btnRModificar.Enabled = False
-        Me.btnRModificar.Location = New System.Drawing.Point(268, 221)
-        Me.btnRModificar.Name = "btnRModificar"
-        Me.btnRModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnRModificar.TabIndex = 12
-        Me.btnRModificar.Text = "Modificar"
-        Me.btnRModificar.UseVisualStyleBackColor = True
-        '
-        'btnVolverOrdenesLista
-        '
-        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(9, 10)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
-        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(56, 19)
-        Me.btnVolverOrdenesLista.TabIndex = 13
-        Me.btnVolverOrdenesLista.Text = "Volver"
-        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
+        Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnRefresh.FlatAppearance.BorderSize = 0
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh1
+        Me.btnRefresh.Location = New System.Drawing.Point(10, 287)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(46, 46)
+        Me.btnRefresh.TabIndex = 16
+        Me.btnRefresh.UseVisualStyleBackColor = True
         '
         'btnBuscadorRep
         '
-        Me.btnBuscadorRep.Location = New System.Drawing.Point(316, 11)
+        Me.btnBuscadorRep.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnBuscadorRep.FlatAppearance.BorderSize = 0
+        Me.btnBuscadorRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscadorRep.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
+        Me.btnBuscadorRep.Location = New System.Drawing.Point(339, 63)
         Me.btnBuscadorRep.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscadorRep.Name = "btnBuscadorRep"
-        Me.btnBuscadorRep.Size = New System.Drawing.Size(56, 19)
+        Me.btnBuscadorRep.Size = New System.Drawing.Size(16, 16)
         Me.btnBuscadorRep.TabIndex = 15
-        Me.btnBuscadorRep.Text = "Buscar"
         Me.btnBuscadorRep.UseVisualStyleBackColor = True
         '
-        'pbRefresh
+        'btnVolverOrdenesLista
         '
-        Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
-        Me.pbRefresh.Location = New System.Drawing.Point(30, 34)
-        Me.pbRefresh.Name = "pbRefresh"
-        Me.pbRefresh.Size = New System.Drawing.Size(16, 16)
-        Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbRefresh.TabIndex = 14
-        Me.pbRefresh.TabStop = False
+        Me.btnVolverOrdenesLista.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnVolverOrdenesLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolverOrdenesLista.Image = Global.Proyecto_ideas.My.Resources.Resources.logout
+        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(11, 287)
+        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
+        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(46, 46)
+        Me.btnVolverOrdenesLista.TabIndex = 13
+        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
+        '
+        'btnRModificar
+        '
+        Me.btnRModificar.FlatAppearance.BorderSize = 0
+        Me.btnRModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRModificar.Image = Global.Proyecto_ideas.My.Resources.Resources.modify
+        Me.btnRModificar.Location = New System.Drawing.Point(10, 194)
+        Me.btnRModificar.Name = "btnRModificar"
+        Me.btnRModificar.Size = New System.Drawing.Size(46, 46)
+        Me.btnRModificar.TabIndex = 12
+        Me.btnRModificar.UseVisualStyleBackColor = True
+        '
+        'btnREliminar
+        '
+        Me.btnREliminar.FlatAppearance.BorderSize = 0
+        Me.btnREliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnREliminar.Image = Global.Proyecto_ideas.My.Resources.Resources.remove
+        Me.btnREliminar.Location = New System.Drawing.Point(10, 102)
+        Me.btnREliminar.Name = "btnREliminar"
+        Me.btnREliminar.Size = New System.Drawing.Size(46, 46)
+        Me.btnREliminar.TabIndex = 11
+        Me.btnREliminar.UseVisualStyleBackColor = True
+        '
+        'btnRAgregar
+        '
+        Me.btnRAgregar.FlatAppearance.BorderSize = 0
+        Me.btnRAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRAgregar.Image = Global.Proyecto_ideas.My.Resources.Resources.add
+        Me.btnRAgregar.Location = New System.Drawing.Point(10, 12)
+        Me.btnRAgregar.Name = "btnRAgregar"
+        Me.btnRAgregar.Size = New System.Drawing.Size(46, 46)
+        Me.btnRAgregar.TabIndex = 10
+        Me.btnRAgregar.UseVisualStyleBackColor = True
+        '
+        'lblIniciarSesion
+        '
+        Me.lblIniciarSesion.AutoSize = True
+        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
+        Me.lblIniciarSesion.Location = New System.Drawing.Point(69, 15)
+        Me.lblIniciarSesion.Name = "lblIniciarSesion"
+        Me.lblIniciarSesion.Size = New System.Drawing.Size(224, 30)
+        Me.lblIniciarSesion.TabIndex = 17
+        Me.lblIniciarSesion.Text = "Lista de repuestos"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnRAgregar)
+        Me.Panel1.Controls.Add(Me.btnREliminar)
+        Me.Panel1.Controls.Add(Me.btnRefresh)
+        Me.Panel1.Controls.Add(Me.btnRModificar)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(383, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(68, 345)
+        Me.Panel1.TabIndex = 18
         '
         'lista_repuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 265)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(451, 345)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lblIniciarSesion)
         Me.Controls.Add(Me.btnBuscadorRep)
-        Me.Controls.Add(Me.pbRefresh)
         Me.Controls.Add(Me.btnVolverOrdenesLista)
-        Me.Controls.Add(Me.btnRModificar)
-        Me.Controls.Add(Me.btnREliminar)
-        Me.Controls.Add(Me.btnRAgregar)
         Me.Controls.Add(Me.txtBuscadorRep)
         Me.Controls.Add(Me.dgvListadoRepuesto)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "lista_repuestos"
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registro_repuesto"
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,8 +233,10 @@ Partial Class lista_repuestos
     Friend WithEvents btnREliminar As System.Windows.Forms.Button
     Friend WithEvents btnRModificar As System.Windows.Forms.Button
     Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
-    Friend WithEvents pbRefresh As System.Windows.Forms.PictureBox
     Friend WithEvents btnBuscadorRep As System.Windows.Forms.Button
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents lblIniciarSesion As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents cantidad As System.Windows.Forms.DataGridViewTextBoxColumn

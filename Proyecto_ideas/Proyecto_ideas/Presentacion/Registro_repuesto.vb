@@ -7,6 +7,7 @@
         lista_repuestos.Show()
 
         MsgBox("El repuesto se ha creado exitosamente.")
+
     End Sub
 
     Private Sub btnRCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRCancelar.Click

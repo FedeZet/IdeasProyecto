@@ -23,34 +23,60 @@ Partial Class Menu_Inicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.plSistema = New System.Windows.Forms.Panel()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.lblHoraFecha = New System.Windows.Forms.Label()
+        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.lblNombre = New System.Windows.Forms.Label()
-        Me.lblHoraFecha = New System.Windows.Forms.Label()
-        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnUsuario = New System.Windows.Forms.Button()
         Me.btnProductividad = New System.Windows.Forms.Button()
         Me.btnRepuesto = New System.Windows.Forms.Button()
         Me.btnOrden = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.plSistema.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'plSistema
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.btnLogout)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnAbout)
-        Me.Panel1.Controls.Add(Me.btnExit)
-        Me.Panel1.Controls.Add(Me.lblNombre)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(624, 69)
-        Me.Panel1.TabIndex = 7
+        Me.plSistema.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.plSistema.Controls.Add(Me.btnLogout)
+        Me.plSistema.Controls.Add(Me.Button1)
+        Me.plSistema.Controls.Add(Me.btnAbout)
+        Me.plSistema.Controls.Add(Me.btnExit)
+        Me.plSistema.Controls.Add(Me.lblNombre)
+        Me.plSistema.Dock = System.Windows.Forms.DockStyle.Top
+        Me.plSistema.Location = New System.Drawing.Point(0, 0)
+        Me.plSistema.Name = "plSistema"
+        Me.plSistema.Size = New System.Drawing.Size(624, 69)
+        Me.plSistema.TabIndex = 7
+        '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(27, 24)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(98, 22)
+        Me.lblNombre.TabIndex = 0
+        Me.lblNombre.Text = "[Nombre]"
+        '
+        'lblHoraFecha
+        '
+        Me.lblHoraFecha.AutoSize = True
+        Me.lblHoraFecha.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraFecha.ForeColor = System.Drawing.Color.White
+        Me.lblHoraFecha.Location = New System.Drawing.Point(412, 86)
+        Me.lblHoraFecha.Name = "lblHoraFecha"
+        Me.lblHoraFecha.Size = New System.Drawing.Size(126, 22)
+        Me.lblHoraFecha.TabIndex = 1
+        Me.lblHoraFecha.Text = "[HoraFecha]"
+        Me.lblHoraFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'timerHoraFecha
+        '
         '
         'btnLogout
         '
@@ -111,32 +137,6 @@ Partial Class Menu_Inicio
         Me.btnExit.Size = New System.Drawing.Size(46, 46)
         Me.btnExit.TabIndex = 5
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'lblNombre
-        '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(27, 24)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(98, 22)
-        Me.lblNombre.TabIndex = 0
-        Me.lblNombre.Text = "[Nombre]"
-        '
-        'lblHoraFecha
-        '
-        Me.lblHoraFecha.AutoSize = True
-        Me.lblHoraFecha.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraFecha.ForeColor = System.Drawing.Color.White
-        Me.lblHoraFecha.Location = New System.Drawing.Point(412, 86)
-        Me.lblHoraFecha.Name = "lblHoraFecha"
-        Me.lblHoraFecha.Size = New System.Drawing.Size(126, 22)
-        Me.lblHoraFecha.TabIndex = 1
-        Me.lblHoraFecha.Text = "[HoraFecha]"
-        Me.lblHoraFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'timerHoraFecha
-        '
         '
         'btnUsuario
         '
@@ -208,7 +208,7 @@ Partial Class Menu_Inicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(624, 301)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.plSistema)
         Me.Controls.Add(Me.btnUsuario)
         Me.Controls.Add(Me.btnProductividad)
         Me.Controls.Add(Me.lblHoraFecha)
@@ -221,8 +221,8 @@ Partial Class Menu_Inicio
         Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Inicio"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.plSistema.ResumeLayout(False)
+        Me.plSistema.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,7 +231,7 @@ Partial Class Menu_Inicio
     Friend WithEvents btnRepuesto As System.Windows.Forms.Button
     Friend WithEvents btnProductividad As System.Windows.Forms.Button
     Friend WithEvents btnUsuario As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents plSistema As System.Windows.Forms.Panel
     Friend WithEvents lblHoraFecha As System.Windows.Forms.Label
     Friend WithEvents lblNombre As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button

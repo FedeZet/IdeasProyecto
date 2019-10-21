@@ -14,6 +14,8 @@
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
         objManRepuesto.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text)
+
+        MsgBox("El repuesto ha sido modificado con éxito.")
     End Sub
 
     Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer)
