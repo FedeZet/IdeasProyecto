@@ -80,6 +80,7 @@
     <Compile Include="Negocio\Admin.vb" />
     <Compile Include="Negocio\Cliente.vb" />
     <Compile Include="Negocio\Dispositivo.vb" />
+    <Compile Include="Negocio\Encriptar.vb" />
     <Compile Include="Negocio\ManCliente.vb" />
     <Compile Include="Negocio\ManDispositivo.vb" />
     <Compile Include="Negocio\ManOrden.vb" />

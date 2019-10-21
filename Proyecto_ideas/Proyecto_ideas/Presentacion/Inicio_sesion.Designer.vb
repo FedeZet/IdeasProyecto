@@ -190,6 +190,7 @@ Partial Class Inicio_sesion
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "Inicio_sesion"
+        Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio sesión"
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).EndInit()
