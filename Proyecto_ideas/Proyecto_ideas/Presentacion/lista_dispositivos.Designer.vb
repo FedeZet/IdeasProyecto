@@ -22,14 +22,15 @@ Partial Class lista_dispositivos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnSeleccionar = New System.Windows.Forms.Button()
         Me.btnBuscadorD = New System.Windows.Forms.Button()
+        Me.pbRefresh = New System.Windows.Forms.PictureBox()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnDModificar = New System.Windows.Forms.Button()
         Me.btnDEliminar = New System.Windows.Forms.Button()
         Me.btnDAgregar = New System.Windows.Forms.Button()
         Me.txtBuscadorD = New System.Windows.Forms.TextBox()
         Me.dgvListadoDispositivo = New System.Windows.Forms.DataGridView()
-        Me.pbRefresh = New System.Windows.Forms.PictureBox()
         Me.idD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.modelo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.bateria = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -40,65 +41,84 @@ Partial Class lista_dispositivos
         Me.tmemoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pin = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.dgvListadoDispositivo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvListadoDispositivo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'btnSeleccionar
+        '
+        Me.btnSeleccionar.Location = New System.Drawing.Point(710, 240)
+        Me.btnSeleccionar.Name = "btnSeleccionar"
+        Me.btnSeleccionar.Size = New System.Drawing.Size(97, 31)
+        Me.btnSeleccionar.TabIndex = 41
+        Me.btnSeleccionar.Text = "Seleccionar"
+        Me.btnSeleccionar.UseVisualStyleBackColor = True
         '
         'btnBuscadorD
         '
-        Me.btnBuscadorD.Location = New System.Drawing.Point(556, 11)
+        Me.btnBuscadorD.Location = New System.Drawing.Point(668, 9)
         Me.btnBuscadorD.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscadorD.Name = "btnBuscadorD"
         Me.btnBuscadorD.Size = New System.Drawing.Size(90, 31)
-        Me.btnBuscadorD.TabIndex = 31
+        Me.btnBuscadorD.TabIndex = 40
         Me.btnBuscadorD.Text = "Buscar"
         Me.btnBuscadorD.UseVisualStyleBackColor = True
         '
+        'pbRefresh
+        '
+        Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
+        Me.pbRefresh.Location = New System.Drawing.Point(346, 10)
+        Me.pbRefresh.Name = "pbRefresh"
+        Me.pbRefresh.Size = New System.Drawing.Size(25, 24)
+        Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbRefresh.TabIndex = 39
+        Me.pbRefresh.TabStop = False
+        '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(89, 11)
+        Me.btnVolver.Location = New System.Drawing.Point(201, 9)
         Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(69, 31)
-        Me.btnVolver.TabIndex = 29
+        Me.btnVolver.TabIndex = 38
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
         '
         'btnDModificar
         '
         Me.btnDModificar.Enabled = False
-        Me.btnDModificar.Location = New System.Drawing.Point(549, 240)
+        Me.btnDModificar.Location = New System.Drawing.Point(549, 238)
         Me.btnDModificar.Name = "btnDModificar"
         Me.btnDModificar.Size = New System.Drawing.Size(97, 34)
-        Me.btnDModificar.TabIndex = 28
+        Me.btnDModificar.TabIndex = 37
         Me.btnDModificar.Text = "Modificar"
         Me.btnDModificar.UseVisualStyleBackColor = True
         '
         'btnDEliminar
         '
         Me.btnDEliminar.Enabled = False
-        Me.btnDEliminar.Location = New System.Drawing.Point(382, 238)
+        Me.btnDEliminar.Location = New System.Drawing.Point(382, 236)
         Me.btnDEliminar.Name = "btnDEliminar"
         Me.btnDEliminar.Size = New System.Drawing.Size(83, 36)
-        Me.btnDEliminar.TabIndex = 27
+        Me.btnDEliminar.TabIndex = 36
         Me.btnDEliminar.Text = "Eliminar"
         Me.btnDEliminar.UseVisualStyleBackColor = True
         '
         'btnDAgregar
         '
-        Me.btnDAgregar.Location = New System.Drawing.Point(189, 240)
+        Me.btnDAgregar.Location = New System.Drawing.Point(189, 238)
         Me.btnDAgregar.Name = "btnDAgregar"
         Me.btnDAgregar.Size = New System.Drawing.Size(105, 34)
-        Me.btnDAgregar.TabIndex = 26
+        Me.btnDAgregar.TabIndex = 35
         Me.btnDAgregar.Text = "Agregar"
         Me.btnDAgregar.UseVisualStyleBackColor = True
         '
         'txtBuscadorD
         '
-        Me.txtBuscadorD.Location = New System.Drawing.Point(292, 12)
+        Me.txtBuscadorD.Location = New System.Drawing.Point(404, 10)
         Me.txtBuscadorD.Name = "txtBuscadorD"
         Me.txtBuscadorD.Size = New System.Drawing.Size(259, 20)
-        Me.txtBuscadorD.TabIndex = 25
+        Me.txtBuscadorD.TabIndex = 34
         '
         'dgvListadoDispositivo
         '
@@ -106,21 +126,11 @@ Partial Class lista_dispositivos
         Me.dgvListadoDispositivo.AllowUserToDeleteRows = False
         Me.dgvListadoDispositivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoDispositivo.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idD, Me.modelo, Me.bateria, Me.sim, Me.cargador, Me.tapa, Me.estuche, Me.tmemoria, Me.pin, Me.idC})
-        Me.dgvListadoDispositivo.Location = New System.Drawing.Point(12, 69)
+        Me.dgvListadoDispositivo.Location = New System.Drawing.Point(12, 67)
         Me.dgvListadoDispositivo.Name = "dgvListadoDispositivo"
         Me.dgvListadoDispositivo.ReadOnly = True
         Me.dgvListadoDispositivo.Size = New System.Drawing.Size(1046, 150)
-        Me.dgvListadoDispositivo.TabIndex = 24
-        '
-        'pbRefresh
-        '
-        Me.pbRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh
-        Me.pbRefresh.Location = New System.Drawing.Point(234, 12)
-        Me.pbRefresh.Name = "pbRefresh"
-        Me.pbRefresh.Size = New System.Drawing.Size(25, 24)
-        Me.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbRefresh.TabIndex = 30
-        Me.pbRefresh.TabStop = False
+        Me.dgvListadoDispositivo.TabIndex = 33
         '
         'idD
         '
@@ -187,6 +197,7 @@ Partial Class lista_dispositivos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1070, 280)
+        Me.Controls.Add(Me.btnSeleccionar)
         Me.Controls.Add(Me.btnBuscadorD)
         Me.Controls.Add(Me.pbRefresh)
         Me.Controls.Add(Me.btnVolver)
@@ -197,12 +208,13 @@ Partial Class lista_dispositivos
         Me.Controls.Add(Me.dgvListadoDispositivo)
         Me.Name = "lista_dispositivos"
         Me.Text = "lista_dispositivos"
-        CType(Me.dgvListadoDispositivo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvListadoDispositivo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnSeleccionar As System.Windows.Forms.Button
     Friend WithEvents btnBuscadorD As System.Windows.Forms.Button
     Friend WithEvents pbRefresh As System.Windows.Forms.PictureBox
     Friend WithEvents btnVolver As System.Windows.Forms.Button

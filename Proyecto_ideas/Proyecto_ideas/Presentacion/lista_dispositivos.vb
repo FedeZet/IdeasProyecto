@@ -144,4 +144,13 @@
         btnDModificar.Enabled = True
 
     End Sub
+
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
+
+        Registro_orden.obtenerDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString, dgvListadoDispositivo.CurrentRow.Cells("modelo").Value.ToString)
+        Me.Close()
+
+    End Sub
+
+
 End Class

@@ -2,10 +2,12 @@
 
     Private _idOrden As String
     Private _falla As String
+    Private _resolucion As String
     Private _importe As Integer
+    Private _dolar As Boolean
     Private _garantia As Boolean
-    Private _fecha As Date
-    Private _hora As DateTime
+    Private _fecha As String
+    Private _hora As String
     Private _estado As Integer
     Private _idU As Integer
     Private _idC As Integer
@@ -33,6 +35,17 @@
         End Set
     End Property
 
+    Public Property Resolucion() As String
+        Get
+            ' Return the value stored in the field.
+            Return _resolucion
+        End Get
+        Set(ByVal Value As String)
+            ' Store the value in the field.
+            _resolucion = Value
+        End Set
+    End Property
+
     Public Property Importe() As Integer
         Get
             ' Return the value stored in the field.
@@ -41,6 +54,17 @@
         Set(ByVal Value As Integer)
             ' Store the value in the field.
             _importe = Value
+        End Set
+    End Property
+
+    Public Property Dolar() As Boolean
+        Get
+            ' Return the value stored in the field.
+            Return _dolar
+        End Get
+        Set(ByVal Value As Boolean)
+            ' Store the value in the field.
+            _dolar = Value
         End Set
     End Property
 
@@ -55,23 +79,23 @@
         End Set
     End Property
 
-    Public Property Fecha() As Date
+    Public Property Fecha() As String
         Get
             ' Return the value stored in the field.
             Return _fecha
         End Get
-        Set(ByVal Value As Date)
+        Set(ByVal Value As String)
             ' Store the value in the field.
             _fecha = Value
         End Set
     End Property
 
-    Public Property Hora() As DateTime
+    Public Property Hora() As String
         Get
             ' Return the value stored in the field.
             Return _hora
         End Get
-        Set(ByVal Value As DateTime)
+        Set(ByVal Value As String)
             ' Store the value in the field.
             _hora = Value
         End Set
@@ -122,10 +146,12 @@
     End Property
 
 
-    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._idOrden = idOrden
         Me._falla = falla
+        Me._resolucion = resolucion
         Me._importe = importe
+        Me._dolar = dolar
         Me._garantia = garantia
         Me._fecha = fecha
         Me._hora = hora
@@ -136,9 +162,11 @@
 
     End Sub
 
-    Public Sub New(ByVal falla As String, ByVal importe As Integer, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._falla = falla
+        Me._resolucion = Resolucion
         Me._importe = importe
+        Me._dolar = Dolar
         Me._garantia = garantia
         Me._fecha = fecha
         Me._hora = hora

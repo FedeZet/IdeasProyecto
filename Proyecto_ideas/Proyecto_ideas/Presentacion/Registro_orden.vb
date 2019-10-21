@@ -1,11 +1,15 @@
 ﻿Public Class Registro_orden
 
     Dim idU As Integer
+    Dim idC As Integer
+    Dim idD As Integer
+
+
 
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
         'se crea la orden
         Dim estado As Integer
-        Dim garantia As Boolean = False
+        Dim garantia, dolar As Boolean
 
         If (rdPendiente.Checked = True) Then
             estado = 1
@@ -20,57 +24,25 @@
         If chbGarantia.Checked = True Then
             garantia = True
         End If
+        If chbDolar.Checked = True Then
+            dolar = True
+        End If
 
         Dim hora As DateTime = DateTime.Now.ToShortTimeString()
 
-        
-
-        'se crea el cliente
-        'Dim objManCliente As ManCliente = New ManCliente
-        ' objManCliente.crearCliente(Me.txtNombreCli.Text, Me.txtTel.Text)
-
-        'se crea el dispositivo
-        'Dim objManDispositivo As ManDispositivo = New ManDispositivo
-        'Dim bateria, sim, cargador, tapa, estuche, memoria As Boolean
-        'If chbBateria.Checked = True Then
-        'bateria = True
-        'Else
-        'bateria = False
-        'End If
-        'If chbSIM.Checked = True Then
-        'sim = True
-        'Else
-        'sim = False
-        'End If
-        'If chbCargador.Checked = True Then
-        'cargador = True
-        'Else
-        'cargador = False
-        'End If
-        'If chbTapa.Checked = True Then
-        'tapa = True
-        'Else
-        'tapa = False
-        'End If
-        'If chbEstuche.Checked = True Then
-        'estuche = True
-        'Else
-        'estuche = False
-        'End If
-        'If chbMemoria.Checked = True Then
-        'memoria = True
-        'Else
-        'memoria = False
-        'End If
 
 
-        'objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text)
 
 
         Dim objManOrden As ManOrden = New ManOrden
-        'objManOrden.agregarOrden(Me.txtFalla.Text, Me.txtImporte.Text, garantia, Me.lblFecha.Text, hora, estado, idU, )
+        If (idU Or idC Or idD) = Nothing Then
+            MsgBox("Seleccione un usuario, cliente y dispositivo")
+        Else
+            objManOrden.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, lblFecha.Text, hora, estado, idU, idC, idD)
 
-        MsgBox("La orden se ha creado exitosamente.")
+            MsgBox("La orden se ha creado exitosamente.")
+        End If
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -86,6 +58,8 @@
         Dim hashTecnico As Hashtable
         hashTecnico = objManUsuario.obtenerTecnico()
         Me.CargarTecnicos(hashTecnico)
+
+
     End Sub
 
     Sub CargarTecnicos(ByVal colTecnico As Hashtable)
@@ -98,7 +72,7 @@
         Next
     End Sub
 
-   
+
     Private Sub Registro_orden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
@@ -107,6 +81,35 @@
 
         Dim objU As Usuario = CType(cbTecnico.SelectedItem, Usuario)
         idU = objU.IdUsuario.ToString
+
+    End Sub
+
+    Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
+
+        lista_clientes.Show()
+        lista_clientes.btnSeleccionar.Enabled = True
+
+    End Sub
+
+    Private Sub btnDipositivo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDipositivo.Click
+
+        lista_dispositivos.Show()
+        lista_dispositivos.btnSeleccionar.Enabled = True
+
+    End Sub
+
+    Public Sub obtenerCliente(ByVal idCliente As Integer, ByVal nombreCliente As String, ByVal telefonoCliente As String)
+
+        idC = idCliente
+        txtNombreCli.Text = nombreCliente
+        txtTel.Text = telefonoCliente
+
+    End Sub
+
+    Public Sub obtenerDispositivo(ByVal idDispositivo As Integer, ByVal modelo As String)
+
+        idD = idDispositivo
+        txtModelo.Text = modelo
 
     End Sub
 End Class

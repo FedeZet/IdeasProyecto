@@ -44,14 +44,16 @@
     End Sub
 
     Public Sub New(ByVal nombre As String, ByVal telefono As String)
-        'ByVal IdUsuario As Integer, 
-        'Me._idUsuario = IdUsuario
         Me._nombre = nombre
         Me._telefono = telefono
     End Sub
 
     Public Sub New(ByVal IdCliente As Integer)
         Me._id_cliente = IdCliente
+    End Sub
+
+    Public Sub New(ByVal nombre As String)
+        Me._nombre = nombre
     End Sub
 
     Public Function guardar()

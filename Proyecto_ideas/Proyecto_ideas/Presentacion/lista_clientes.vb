@@ -1,5 +1,6 @@
 ﻿Public Class lista_clientes
 
+
     Public Sub New()
         InitializeComponent()
         Dim objManCliente As ManCliente = New ManCliente
@@ -47,12 +48,32 @@
 
     End Sub
 
-    
+
     Private Sub btnCModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCModificar.Click
 
         Me.Hide()
         modificadorCliente.Show()
         modificadorCliente.cargarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString)
+
+    End Sub
+
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
+
+        Registro_orden.obtenerCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString)
+        Me.Close()
+
+    End Sub
+
+
+    Private Sub pbRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbRefresh.Click
+        Me.dgvListadoCliente.Rows.Clear()
+        Dim objManCliente As ManCliente = New ManCliente
+        Dim hashCliente As Hashtable
+        hashCliente = objManCliente.obtenerCliente()
+        Me.CargarDGV(hashCliente)
+    End Sub
+
+    Private Sub lista_clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

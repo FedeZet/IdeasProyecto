@@ -234,6 +234,9 @@
     <EmbeddedResource Include="Presentacion\lista_clientes.resx">
       <DependentUpon>lista_clientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\lista_dispositivos.resx">
+      <DependentUpon>lista_dispositivos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\lista_repuestos.resx">
       <DependentUpon>lista_repuestos.vb</DependentUpon>
     </EmbeddedResource>
