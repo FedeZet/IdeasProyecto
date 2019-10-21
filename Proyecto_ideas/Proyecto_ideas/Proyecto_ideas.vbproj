@@ -138,6 +138,12 @@
     <Compile Include="Presentacion\lista_clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\lista_dispositivos.Designer.vb">
+      <DependentUpon>lista_dispositivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\lista_dispositivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Menu_Inicio.Designer.vb">
       <DependentUpon>Menu_Inicio.vb</DependentUpon>
     </Compile>
@@ -148,6 +154,12 @@
       <DependentUpon>modificadorCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\modificadorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\modificadorDispositivo.Designer.vb">
+      <DependentUpon>modificadorDispositivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\modificadorDispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\modificadorRepuesto.Designer.vb">
@@ -166,6 +178,12 @@
       <DependentUpon>Registro_cliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Registro_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Registro_dispositivo.Designer.vb">
+      <DependentUpon>Registro_dispositivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Registro_dispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\Registro_orden.Designer.vb">
@@ -224,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\modificadorCliente.resx">
       <DependentUpon>modificadorCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\modificadorDispositivo.resx">
+      <DependentUpon>modificadorDispositivo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\modificadorRepuesto.resx">
       <DependentUpon>modificadorRepuesto.vb</DependentUpon>
