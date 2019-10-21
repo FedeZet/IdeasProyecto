@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 18-10-2019 a las 02:34:17
+-- Tiempo de generación: 21-10-2019 a las 02:39:55
 -- Versión del servidor: 5.7.26
 -- Versión de PHP: 7.2.18
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `orden` (
   `resolucion` varchar(140) CHARACTER SET ascii DEFAULT NULL,
   `importe` int(11) DEFAULT NULL,
   `dolar` bit(1) DEFAULT NULL,
-  `garantia` date DEFAULT NULL,
+  `garantia` bit(1) DEFAULT NULL,
   `fecha` date NOT NULL,
   `hora` time NOT NULL,
   `estado` varchar(20) CHARACTER SET ascii NOT NULL,
