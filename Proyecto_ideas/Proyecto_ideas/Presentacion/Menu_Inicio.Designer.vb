@@ -24,12 +24,13 @@ Partial Class Menu_Inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblNombre = New System.Windows.Forms.Label()
-        Me.lblHoraFecha = New System.Windows.Forms.Label()
-        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
+        Me.btnLogout = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.lblHoraFecha = New System.Windows.Forms.Label()
+        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnUsuario = New System.Windows.Forms.Button()
         Me.btnProductividad = New System.Windows.Forms.Button()
         Me.btnRepuesto = New System.Windows.Forms.Button()
@@ -40,6 +41,7 @@ Partial Class Menu_Inicio
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnLogout)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnAbout)
         Me.Panel1.Controls.Add(Me.btnExit)
@@ -49,6 +51,66 @@ Partial Class Menu_Inicio
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(624, 69)
         Me.Panel1.TabIndex = 7
+        '
+        'btnLogout
+        '
+        Me.btnLogout.FlatAppearance.BorderSize = 0
+        Me.btnLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout.ForeColor = System.Drawing.Color.White
+        Me.btnLogout.Image = Global.Proyecto_ideas.My.Resources.Resources.logout
+        Me.btnLogout.Location = New System.Drawing.Point(514, 12)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(46, 46)
+        Me.btnLogout.TabIndex = 8
+        Me.btnLogout.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = Global.Proyecto_ideas.My.Resources.Resources.key
+        Me.Button1.Location = New System.Drawing.Point(410, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(46, 46)
+        Me.Button1.TabIndex = 7
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnAbout
+        '
+        Me.btnAbout.FlatAppearance.BorderSize = 0
+        Me.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAbout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAbout.ForeColor = System.Drawing.Color.White
+        Me.btnAbout.Image = Global.Proyecto_ideas.My.Resources.Resources.exclamation
+        Me.btnAbout.Location = New System.Drawing.Point(462, 12)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Size = New System.Drawing.Size(46, 46)
+        Me.btnAbout.TabIndex = 6
+        Me.btnAbout.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.FlatAppearance.BorderSize = 0
+        Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.White
+        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.poweroff
+        Me.btnExit.Location = New System.Drawing.Point(566, 12)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(46, 46)
+        Me.btnExit.TabIndex = 5
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'lblNombre
         '
@@ -75,51 +137,6 @@ Partial Class Menu_Inicio
         '
         'timerHoraFecha
         '
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.Proyecto_ideas.My.Resources.Resources.key
-        Me.Button1.Location = New System.Drawing.Point(462, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 46)
-        Me.Button1.TabIndex = 7
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'btnAbout
-        '
-        Me.btnAbout.FlatAppearance.BorderSize = 0
-        Me.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAbout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAbout.ForeColor = System.Drawing.Color.White
-        Me.btnAbout.Image = Global.Proyecto_ideas.My.Resources.Resources.exclamation
-        Me.btnAbout.Location = New System.Drawing.Point(514, 12)
-        Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(46, 46)
-        Me.btnAbout.TabIndex = 6
-        Me.btnAbout.UseVisualStyleBackColor = True
-        '
-        'btnExit
-        '
-        Me.btnExit.FlatAppearance.BorderSize = 0
-        Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.logout
-        Me.btnExit.Location = New System.Drawing.Point(566, 12)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(46, 46)
-        Me.btnExit.TabIndex = 5
-        Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnUsuario
         '
@@ -221,4 +238,5 @@ Partial Class Menu_Inicio
     Friend WithEvents btnAbout As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents timerHoraFecha As System.Windows.Forms.Timer
+    Friend WithEvents btnLogout As System.Windows.Forms.Button
 End Class

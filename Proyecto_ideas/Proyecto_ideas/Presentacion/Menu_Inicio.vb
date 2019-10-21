@@ -32,4 +32,8 @@
     Private Sub timerHoraFecha_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles timerHoraFecha.Tick
         lblHoraFecha.Text = DateTime.Now.ToShortTimeString() + " - " + DateTime.Now.ToString("dd/MM/yyyy")
     End Sub
+
+    Private Sub btnLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogout.Click
+        Application.Restart()
+    End Sub
 End Class

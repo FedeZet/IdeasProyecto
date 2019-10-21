@@ -30,10 +30,10 @@ Partial Class Inicio_sesion
         Me.lshPassword = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lshUsuario = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.lblIniciarSesion = New System.Windows.Forms.Label()
+        Me.lblError = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.pbPassword = New System.Windows.Forms.PictureBox()
         Me.pbUsuario = New System.Windows.Forms.PictureBox()
-        Me.lblError = New System.Windows.Forms.Label()
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -126,6 +126,18 @@ Partial Class Inicio_sesion
         Me.lblIniciarSesion.TabIndex = 1
         Me.lblIniciarSesion.Text = "Iniciar sesión"
         '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblError.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.lblError.Image = Global.Proyecto_ideas.My.Resources.Resources.cancel
+        Me.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblError.Location = New System.Drawing.Point(243, 189)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 17)
+        Me.lblError.TabIndex = 10
+        '
         'btnExit
         '
         Me.btnExit.FlatAppearance.BorderSize = 0
@@ -134,7 +146,7 @@ Partial Class Inicio_sesion
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.logout
+        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.poweroff
         Me.btnExit.Location = New System.Drawing.Point(419, 215)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(46, 46)
@@ -158,18 +170,6 @@ Partial Class Inicio_sesion
         Me.pbUsuario.Size = New System.Drawing.Size(32, 32)
         Me.pbUsuario.TabIndex = 8
         Me.pbUsuario.TabStop = False
-        '
-        'lblError
-        '
-        Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblError.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.lblError.Image = Global.Proyecto_ideas.My.Resources.Resources.cancel
-        Me.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblError.Location = New System.Drawing.Point(243, 189)
-        Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(0, 17)
-        Me.lblError.TabIndex = 10
         '
         'Inicio_sesion
         '
