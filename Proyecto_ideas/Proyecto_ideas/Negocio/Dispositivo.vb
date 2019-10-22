@@ -139,8 +139,12 @@
         Me._idC = idC
     End Sub
 
-    Public Sub New(ByVal IdDispositivo As Integer)
-        Me._idDispositivo = IdDispositivo
+    'Public Sub New(ByVal IdDispositivo As Integer)
+    '  Me._idDispositivo = IdDispositivo
+    'End Sub
+
+    Public Sub New(ByVal idC As Integer)
+        Me._idC = idC
     End Sub
 
     Public Function guardar()
@@ -151,6 +155,11 @@
     Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
         Dim obj As DAODispositivo = New DAODispositivo
         Return obj.buscarDispositivo(Me)
+    End Function
+
+    Public Function buscarCli() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAODispositivo = New DAODispositivo
+        Return obj.buscarDispositivoCli(Me)
     End Function
 
     Public Shared Function obtenerDispositivo() As MySql.Data.MySqlClient.MySqlDataReader

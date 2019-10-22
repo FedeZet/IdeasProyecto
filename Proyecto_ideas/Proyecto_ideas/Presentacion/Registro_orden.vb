@@ -93,8 +93,15 @@
 
     Private Sub btnDipositivo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDipositivo.Click
 
-        lista_dispositivos.Show()
-        lista_dispositivos.btnSeleccionar.Enabled = True
+        If idC = Nothing Then
+            MsgBox("Debe seleccionar a un cliente.")
+        Else
+            lista_dispositivos.Show()
+            lista_dispositivos.obtenerDisCli(idC)
+            lista_dispositivos.btnSeleccionar.Enabled = True
+        End If
+
+        
 
     End Sub
 

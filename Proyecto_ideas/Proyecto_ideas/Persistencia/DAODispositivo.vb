@@ -36,4 +36,11 @@
         sentencia = "select * from dispositivo where modelo like '%" + obj.Modelo + "%';"
         Return objConexion.ejecutar(sentencia, True)
     End Function
+
+    Public Function buscarDispositivoCli(ByVal obj As Dispositivo) As MySql.Data.MySqlClient.MySqlDataReader
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "select * from dispositivo where dispositivo.idC = " + obj.IdC.ToString + ";"
+        Return objConexion.ejecutar(sentencia, True)
+    End Function
 End Class

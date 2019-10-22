@@ -42,4 +42,14 @@ Public Class ManDispositivo
         End While
         Return Me.hashDispositivo
     End Function
+
+    Public Function buscarDispositivoCli(ByVal idC As Integer)
+        Dim objD As Dispositivo = New Dispositivo(idC)
+        Dim datareader As MySqlDataReader = objD.buscarCli
+        While datareader.Read()
+            objD = New Dispositivo(datareader("idD"), datareader("modelo"), datareader("bateria"), datareader("sim"), datareader("cargador"), datareader("tapa"), datareader("estuche"), datareader("tmemoria"), datareader("pin"), datareader("idC"))
+            Me.hashDispositivo.Add(objD.Modelo, objD)
+        End While
+        Return Me.hashDispositivo
+    End Function
 End Class

@@ -2,10 +2,10 @@
 
     Public Sub New()
         InitializeComponent()
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
-        Dim hashDispositivo As Hashtable
-        hashDispositivo = objManDispositivo.obtenerDispositivo()
-        Me.CargarDGV(hashDispositivo)
+        'Dim objManDispositivo As ManDispositivo = New ManDispositivo
+        'Dim hashDispositivo As Hashtable
+        'hashDispositivo = objManDispositivo.obtenerDispositivo()
+        'Me.CargarDGV(hashDispositivo)
 
     End Sub
 
@@ -152,5 +152,14 @@
 
     End Sub
 
+    Public Sub obtenerDisCli(ByVal idC As Integer)
+
+        Me.dgvListadoDispositivo.Rows.Clear()
+        Dim objManDispositivo As ManDispositivo = New ManDispositivo
+        Dim hashDispositivo As Hashtable
+        hashDispositivo = objManDispositivo.buscarDispositivoCli(idC)
+        Me.CargarDGV(hashDispositivo)
+
+    End Sub
 
 End Class
