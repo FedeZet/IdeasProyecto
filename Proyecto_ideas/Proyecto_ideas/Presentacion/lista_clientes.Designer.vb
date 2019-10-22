@@ -26,9 +26,6 @@ Partial Class lista_clientes
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtBuscadorCli = New System.Windows.Forms.TextBox()
         Me.dgvListadoCliente = New System.Windows.Forms.DataGridView()
-        Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCSeleccionar = New System.Windows.Forms.Button()
         Me.btnCAgregar = New System.Windows.Forms.Button()
@@ -38,6 +35,10 @@ Partial Class lista_clientes
         Me.lblClientes = New System.Windows.Forms.Label()
         Me.btnCVolver = New System.Windows.Forms.Button()
         Me.btnBuscadorCli = New System.Windows.Forms.Button()
+        Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.mailC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,7 +72,7 @@ Partial Class lista_clientes
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvListadoCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono})
+        Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono, Me.mailC})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -90,27 +91,6 @@ Partial Class lista_clientes
         Me.dgvListadoCliente.Size = New System.Drawing.Size(353, 150)
         Me.dgvListadoCliente.TabIndex = 34
         Me.dgvListadoCliente.TabStop = False
-        '
-        'idC
-        '
-        Me.idC.HeaderText = "ID"
-        Me.idC.Name = "idC"
-        Me.idC.ReadOnly = True
-        Me.idC.Width = 50
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        Me.nombre.Width = 180
-        '
-        'telefono
-        '
-        Me.telefono.HeaderText = "Telefono"
-        Me.telefono.Name = "telefono"
-        Me.telefono.ReadOnly = True
-        Me.telefono.Width = 120
         '
         'Panel1
         '
@@ -224,6 +204,33 @@ Partial Class lista_clientes
         Me.btnBuscadorCli.TabStop = False
         Me.btnBuscadorCli.UseVisualStyleBackColor = True
         '
+        'idC
+        '
+        Me.idC.HeaderText = "ID"
+        Me.idC.Name = "idC"
+        Me.idC.ReadOnly = True
+        Me.idC.Width = 50
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        Me.nombre.Width = 180
+        '
+        'telefono
+        '
+        Me.telefono.HeaderText = "Telefono"
+        Me.telefono.Name = "telefono"
+        Me.telefono.ReadOnly = True
+        Me.telefono.Width = 120
+        '
+        'mailC
+        '
+        Me.mailC.HeaderText = "Correo"
+        Me.mailC.Name = "mailC"
+        Me.mailC.ReadOnly = True
+        '
         'lista_clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -254,11 +261,12 @@ Partial Class lista_clientes
     Friend WithEvents btnCEliminar As System.Windows.Forms.Button
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents btnCModificar As System.Windows.Forms.Button
-    Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnBuscadorCli As System.Windows.Forms.Button
     Friend WithEvents btnCSeleccionar As System.Windows.Forms.Button
     Friend WithEvents btnCVolver As System.Windows.Forms.Button
     Friend WithEvents lblClientes As System.Windows.Forms.Label
+    Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents telefono As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents mailC As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

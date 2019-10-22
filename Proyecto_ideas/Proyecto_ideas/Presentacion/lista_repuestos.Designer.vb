@@ -25,9 +25,6 @@ Partial Class lista_repuestos
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
-        Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
         Me.lblListaRepuestos = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -37,6 +34,10 @@ Partial Class lista_repuestos
         Me.btnRModificar = New System.Windows.Forms.Button()
         Me.btnBuscadorRep = New System.Windows.Forms.Button()
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
+        Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.costoRep = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -59,7 +60,7 @@ Partial Class lista_repuestos
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvListadoRepuesto.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoRepuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad})
+        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad, Me.costoRep})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -78,27 +79,6 @@ Partial Class lista_repuestos
         Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 192)
         Me.dgvListadoRepuesto.TabIndex = 4
         Me.dgvListadoRepuesto.TabStop = False
-        '
-        'idR
-        '
-        Me.idR.HeaderText = "ID"
-        Me.idR.MaxInputLength = 5
-        Me.idR.Name = "idR"
-        Me.idR.ReadOnly = True
-        Me.idR.Width = 50
-        '
-        'nombre
-        '
-        Me.nombre.HeaderText = "Nombre"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        Me.nombre.Width = 190
-        '
-        'cantidad
-        '
-        Me.cantidad.HeaderText = "Cantidad"
-        Me.cantidad.Name = "cantidad"
-        Me.cantidad.ReadOnly = True
         '
         'txtBuscadorRep
         '
@@ -210,6 +190,33 @@ Partial Class lista_repuestos
         Me.btnVolverOrdenesLista.TabIndex = 6
         Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
         '
+        'idR
+        '
+        Me.idR.HeaderText = "ID"
+        Me.idR.MaxInputLength = 5
+        Me.idR.Name = "idR"
+        Me.idR.ReadOnly = True
+        Me.idR.Width = 50
+        '
+        'nombre
+        '
+        Me.nombre.HeaderText = "Nombre"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        Me.nombre.Width = 190
+        '
+        'cantidad
+        '
+        Me.cantidad.HeaderText = "Cantidad"
+        Me.cantidad.Name = "cantidad"
+        Me.cantidad.ReadOnly = True
+        '
+        'costoRep
+        '
+        Me.costoRep.HeaderText = "Costo Rep."
+        Me.costoRep.Name = "costoRep"
+        Me.costoRep.ReadOnly = True
+        '
         'lista_repuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -246,4 +253,5 @@ Partial Class lista_repuestos
     Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents costoRep As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
