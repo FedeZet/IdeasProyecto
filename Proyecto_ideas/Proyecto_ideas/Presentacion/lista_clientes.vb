@@ -76,4 +76,9 @@
     Private Sub lista_clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub dgvListadoCliente_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoCliente.RowHeaderMouseClick
+        btnCEliminar.Enabled = True
+        btnCModificar.Enabled = True
+    End Sub
 End Class

@@ -27,6 +27,7 @@ Partial Class Historial_usuario
         Me.user = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.costoServicio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -34,7 +35,6 @@ Partial Class Historial_usuario
         Me.txtBuscadorU = New System.Windows.Forms.TextBox()
         Me.btnBuscarU = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.costoServicio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,6 +75,12 @@ Partial Class Historial_usuario
         Me.telefono.HeaderText = "Teléfono"
         Me.telefono.Name = "telefono"
         Me.telefono.ReadOnly = True
+        '
+        'costoServicio
+        '
+        Me.costoServicio.HeaderText = "Servicio"
+        Me.costoServicio.Name = "costoServicio"
+        Me.costoServicio.ReadOnly = True
         '
         'btnVolverOrdenesLista
         '
@@ -140,12 +146,6 @@ Partial Class Historial_usuario
         Me.btnAgregar.TabIndex = 8
         Me.btnAgregar.Text = "Agregar"
         Me.btnAgregar.UseVisualStyleBackColor = True
-        '
-        'costoServicio
-        '
-        Me.costoServicio.HeaderText = "Servicio"
-        Me.costoServicio.Name = "costoServicio"
-        Me.costoServicio.ReadOnly = True
         '
         'Historial_usuario
         '

@@ -11,4 +11,8 @@
         Me.Hide()
         Historial_ordenes.Show()
     End Sub
+
+    Private Sub ImprimirOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

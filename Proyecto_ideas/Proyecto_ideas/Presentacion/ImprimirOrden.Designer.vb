@@ -46,9 +46,10 @@ Partial Class ImprimirOrden
         '
         'btnImprimir
         '
-        Me.btnImprimir.Location = New System.Drawing.Point(88, 225)
+        Me.btnImprimir.Location = New System.Drawing.Point(66, 183)
+        Me.btnImprimir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(75, 23)
+        Me.btnImprimir.Size = New System.Drawing.Size(56, 19)
         Me.btnImprimir.TabIndex = 0
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = True
@@ -56,37 +57,41 @@ Partial Class ImprimirOrden
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 62)
+        Me.Label1.Location = New System.Drawing.Point(26, 50)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 17)
+        Me.Label1.Size = New System.Drawing.Size(50, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre :"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(107, 62)
+        Me.TextBox1.Location = New System.Drawing.Point(80, 50)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
         Me.TextBox1.TabIndex = 2
         '
         'btnCancelarImp
         '
-        Me.btnCancelarImp.Location = New System.Drawing.Point(236, 225)
+        Me.btnCancelarImp.Location = New System.Drawing.Point(177, 183)
+        Me.btnCancelarImp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCancelarImp.Name = "btnCancelarImp"
-        Me.btnCancelarImp.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelarImp.Size = New System.Drawing.Size(56, 19)
         Me.btnCancelarImp.TabIndex = 3
         Me.btnCancelarImp.Text = "Cancelar"
         Me.btnCancelarImp.UseVisualStyleBackColor = True
         '
         'ImprimirOrden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(534, 310)
+        Me.ClientSize = New System.Drawing.Size(400, 252)
         Me.Controls.Add(Me.btnCancelarImp)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnImprimir)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ImprimirOrden"
         Me.Text = "ImprimirOrden"
         Me.ResumeLayout(False)
