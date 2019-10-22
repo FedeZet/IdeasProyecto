@@ -21,7 +21,7 @@
         Next
     End Sub
 
-    Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
+    Private Sub btnURefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnURefresh.Click
         Me.dgvListadoUsuario.Rows.Clear()
         Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
@@ -29,26 +29,26 @@
         Me.CargarDGV(hashUsuario)
     End Sub
 
-    Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
-
+    Private Sub btnUVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUVolver.Click
         Menu_Inicio.Show()
         Me.Close()
+
     End Sub
 
-    Private Sub btnModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificar.Click
+    Private Sub btnUModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUModificar.Click
         Me.Hide()
         modificadorUsuario.Show()
         modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("costoServicio").Value.ToString)
     End Sub
 
-    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+    Private Sub btnUEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUEliminar.Click
         Dim objManRepuesto As ManUsuario = New ManUsuario
         objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
 
     End Sub
 
 
-    Private Sub btnBuscarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscarU.Click
+    Private Sub btnBuscadorUsu_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorUsu.Click
         Me.dgvListadoUsuario.Rows.Clear()
         Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
@@ -56,13 +56,8 @@
         Me.CargarDGV(hashUsuario)
     End Sub
 
-    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUAgregar.Click
         Registro_usuario.Show()
-    End Sub
-
-    Private Sub dgvListadoUsuario_RowHeaderMouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoUsuario.RowHeaderMouseClick
-        btnEliminar.Enabled = True
-        btnModificar.Enabled = True
     End Sub
 
     Private Sub txtBuscadorU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtBuscadorU.KeyPress
@@ -71,9 +66,5 @@
         Dim hashUsuario As Hashtable
         hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
         Me.CargarDGV(hashUsuario)
-    End Sub
-
-    Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

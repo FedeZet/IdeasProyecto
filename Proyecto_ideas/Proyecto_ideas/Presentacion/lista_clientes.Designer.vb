@@ -22,6 +22,7 @@ Partial Class lista_clientes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtBuscadorCli = New System.Windows.Forms.TextBox()
         Me.dgvListadoCliente = New System.Windows.Forms.DataGridView()
@@ -29,14 +30,14 @@ Partial Class lista_clientes
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblIniciarSesion = New System.Windows.Forms.Label()
-        Me.btnCVolver = New System.Windows.Forms.Button()
-        Me.btnBuscadorCli = New System.Windows.Forms.Button()
         Me.btnCSeleccionar = New System.Windows.Forms.Button()
         Me.btnCAgregar = New System.Windows.Forms.Button()
         Me.btnCEliminar = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnCModificar = New System.Windows.Forms.Button()
+        Me.lblIniciarSesion = New System.Windows.Forms.Label()
+        Me.btnCVolver = New System.Windows.Forms.Button()
+        Me.btnBuscadorCli = New System.Windows.Forms.Button()
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,16 +62,24 @@ Partial Class lista_clientes
         Me.dgvListadoCliente.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.dgvListadoCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvListadoCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvListadoCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListadoCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvListadoCliente.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvListadoCliente.GridColor = System.Drawing.Color.White
         Me.dgvListadoCliente.Location = New System.Drawing.Point(12, 69)
         Me.dgvListadoCliente.Name = "dgvListadoCliente"
@@ -116,44 +125,6 @@ Partial Class lista_clientes
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(68, 278)
         Me.Panel1.TabIndex = 2
-        '
-        'lblIniciarSesion
-        '
-        Me.lblIniciarSesion.AutoSize = True
-        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 18.0!)
-        Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
-        Me.lblIniciarSesion.Location = New System.Drawing.Point(12, 9)
-        Me.lblIniciarSesion.Name = "lblIniciarSesion"
-        Me.lblIniciarSesion.Size = New System.Drawing.Size(110, 30)
-        Me.lblIniciarSesion.TabIndex = 46
-        Me.lblIniciarSesion.Text = "Clientes"
-        '
-        'btnCVolver
-        '
-        Me.btnCVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnCVolver.FlatAppearance.BorderSize = 0
-        Me.btnCVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
-        Me.btnCVolver.Location = New System.Drawing.Point(11, 224)
-        Me.btnCVolver.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCVolver.Name = "btnCVolver"
-        Me.btnCVolver.Size = New System.Drawing.Size(46, 46)
-        Me.btnCVolver.TabIndex = 7
-        Me.btnCVolver.UseVisualStyleBackColor = True
-        '
-        'btnBuscadorCli
-        '
-        Me.btnBuscadorCli.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnBuscadorCli.FlatAppearance.BorderSize = 0
-        Me.btnBuscadorCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscadorCli.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
-        Me.btnBuscadorCli.Location = New System.Drawing.Point(349, 42)
-        Me.btnBuscadorCli.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnBuscadorCli.Name = "btnBuscadorCli"
-        Me.btnBuscadorCli.Size = New System.Drawing.Size(16, 16)
-        Me.btnBuscadorCli.TabIndex = 44
-        Me.btnBuscadorCli.TabStop = False
-        Me.btnBuscadorCli.UseVisualStyleBackColor = True
         '
         'btnCSeleccionar
         '
@@ -214,6 +185,44 @@ Partial Class lista_clientes
         Me.btnCModificar.Size = New System.Drawing.Size(46, 46)
         Me.btnCModificar.TabIndex = 5
         Me.btnCModificar.UseVisualStyleBackColor = True
+        '
+        'lblIniciarSesion
+        '
+        Me.lblIniciarSesion.AutoSize = True
+        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
+        Me.lblIniciarSesion.Location = New System.Drawing.Point(12, 9)
+        Me.lblIniciarSesion.Name = "lblIniciarSesion"
+        Me.lblIniciarSesion.Size = New System.Drawing.Size(110, 30)
+        Me.lblIniciarSesion.TabIndex = 46
+        Me.lblIniciarSesion.Text = "Clientes"
+        '
+        'btnCVolver
+        '
+        Me.btnCVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnCVolver.FlatAppearance.BorderSize = 0
+        Me.btnCVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnCVolver.Location = New System.Drawing.Point(11, 224)
+        Me.btnCVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCVolver.Name = "btnCVolver"
+        Me.btnCVolver.Size = New System.Drawing.Size(46, 46)
+        Me.btnCVolver.TabIndex = 7
+        Me.btnCVolver.UseVisualStyleBackColor = True
+        '
+        'btnBuscadorCli
+        '
+        Me.btnBuscadorCli.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnBuscadorCli.FlatAppearance.BorderSize = 0
+        Me.btnBuscadorCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscadorCli.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
+        Me.btnBuscadorCli.Location = New System.Drawing.Point(349, 42)
+        Me.btnBuscadorCli.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBuscadorCli.Name = "btnBuscadorCli"
+        Me.btnBuscadorCli.Size = New System.Drawing.Size(16, 16)
+        Me.btnBuscadorCli.TabIndex = 44
+        Me.btnBuscadorCli.TabStop = False
+        Me.btnBuscadorCli.UseVisualStyleBackColor = True
         '
         'lista_clientes
         '

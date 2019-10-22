@@ -156,7 +156,7 @@ Partial Class lista_repuestos
         Me.btnREliminar.Location = New System.Drawing.Point(10, 287)
         Me.btnREliminar.Name = "btnREliminar"
         Me.btnREliminar.Size = New System.Drawing.Size(46, 46)
-        Me.btnREliminar.TabIndex = 4
+        Me.btnREliminar.TabIndex = 5
         Me.btnREliminar.UseVisualStyleBackColor = True
         '
         'btnRefresh
@@ -180,7 +180,7 @@ Partial Class lista_repuestos
         Me.btnRModificar.Location = New System.Drawing.Point(10, 202)
         Me.btnRModificar.Name = "btnRModificar"
         Me.btnRModificar.Size = New System.Drawing.Size(46, 46)
-        Me.btnRModificar.TabIndex = 5
+        Me.btnRModificar.TabIndex = 4
         Me.btnRModificar.UseVisualStyleBackColor = True
         '
         'btnBuscadorRep
