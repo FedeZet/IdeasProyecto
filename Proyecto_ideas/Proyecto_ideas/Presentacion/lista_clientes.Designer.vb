@@ -35,7 +35,7 @@ Partial Class lista_clientes
         Me.btnCEliminar = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnCModificar = New System.Windows.Forms.Button()
-        Me.lblIniciarSesion = New System.Windows.Forms.Label()
+        Me.lblClientes = New System.Windows.Forms.Label()
         Me.btnCVolver = New System.Windows.Forms.Button()
         Me.btnBuscadorCli = New System.Windows.Forms.Button()
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -186,16 +186,16 @@ Partial Class lista_clientes
         Me.btnCModificar.TabIndex = 5
         Me.btnCModificar.UseVisualStyleBackColor = True
         '
-        'lblIniciarSesion
+        'lblClientes
         '
-        Me.lblIniciarSesion.AutoSize = True
-        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 18.0!)
-        Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
-        Me.lblIniciarSesion.Location = New System.Drawing.Point(12, 9)
-        Me.lblIniciarSesion.Name = "lblIniciarSesion"
-        Me.lblIniciarSesion.Size = New System.Drawing.Size(110, 30)
-        Me.lblIniciarSesion.TabIndex = 46
-        Me.lblIniciarSesion.Text = "Clientes"
+        Me.lblClientes.AutoSize = True
+        Me.lblClientes.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblClientes.ForeColor = System.Drawing.Color.White
+        Me.lblClientes.Location = New System.Drawing.Point(12, 9)
+        Me.lblClientes.Name = "lblClientes"
+        Me.lblClientes.Size = New System.Drawing.Size(110, 30)
+        Me.lblClientes.TabIndex = 46
+        Me.lblClientes.Text = "Clientes"
         '
         'btnCVolver
         '
@@ -230,7 +230,7 @@ Partial Class lista_clientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(457, 278)
-        Me.Controls.Add(Me.lblIniciarSesion)
+        Me.Controls.Add(Me.lblClientes)
         Me.Controls.Add(Me.btnCVolver)
         Me.Controls.Add(Me.btnBuscadorCli)
         Me.Controls.Add(Me.Panel1)
@@ -260,5 +260,5 @@ Partial Class lista_clientes
     Friend WithEvents btnBuscadorCli As System.Windows.Forms.Button
     Friend WithEvents btnCSeleccionar As System.Windows.Forms.Button
     Friend WithEvents btnCVolver As System.Windows.Forms.Button
-    Friend WithEvents lblIniciarSesion As System.Windows.Forms.Label
+    Friend WithEvents lblClientes As System.Windows.Forms.Label
 End Class

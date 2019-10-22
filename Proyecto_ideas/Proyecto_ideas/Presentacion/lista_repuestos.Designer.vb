@@ -29,7 +29,7 @@ Partial Class lista_repuestos
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
-        Me.lblIniciarSesion = New System.Windows.Forms.Label()
+        Me.lblListaRepuestos = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnRAgregar = New System.Windows.Forms.Button()
         Me.btnREliminar = New System.Windows.Forms.Button()
@@ -111,16 +111,16 @@ Partial Class lista_repuestos
         Me.txtBuscadorRep.Size = New System.Drawing.Size(117, 21)
         Me.txtBuscadorRep.TabIndex = 1
         '
-        'lblIniciarSesion
+        'lblListaRepuestos
         '
-        Me.lblIniciarSesion.AutoSize = True
-        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 18.0!)
-        Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
-        Me.lblIniciarSesion.Location = New System.Drawing.Point(69, 15)
-        Me.lblIniciarSesion.Name = "lblIniciarSesion"
-        Me.lblIniciarSesion.Size = New System.Drawing.Size(224, 30)
-        Me.lblIniciarSesion.TabIndex = 17
-        Me.lblIniciarSesion.Text = "Lista de repuestos"
+        Me.lblListaRepuestos.AutoSize = True
+        Me.lblListaRepuestos.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblListaRepuestos.ForeColor = System.Drawing.Color.White
+        Me.lblListaRepuestos.Location = New System.Drawing.Point(69, 15)
+        Me.lblListaRepuestos.Name = "lblListaRepuestos"
+        Me.lblListaRepuestos.Size = New System.Drawing.Size(224, 30)
+        Me.lblListaRepuestos.TabIndex = 17
+        Me.lblListaRepuestos.Text = "Lista de repuestos"
         '
         'Panel1
         '
@@ -217,7 +217,7 @@ Partial Class lista_repuestos
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(451, 345)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.lblIniciarSesion)
+        Me.Controls.Add(Me.lblListaRepuestos)
         Me.Controls.Add(Me.btnBuscadorRep)
         Me.Controls.Add(Me.btnVolverOrdenesLista)
         Me.Controls.Add(Me.txtBuscadorRep)
@@ -241,7 +241,7 @@ Partial Class lista_repuestos
     Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
     Friend WithEvents btnBuscadorRep As System.Windows.Forms.Button
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
-    Friend WithEvents lblIniciarSesion As System.Windows.Forms.Label
+    Friend WithEvents lblListaRepuestos As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
