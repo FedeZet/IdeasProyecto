@@ -26,14 +26,14 @@
             Me.dgvListadoRepuesto(0, cantFilas).Value = objR.IdRepuesto.ToString
             Me.dgvListadoRepuesto(1, cantFilas).Value = objR.Nombre
             Me.dgvListadoRepuesto(2, cantFilas).Value = objR.Cantidad.ToString
-
+            Me.dgvListadoRepuesto(3, cantFilas).Value = objR.costo.ToString
         Next
     End Sub
 
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
         Me.Hide()
         modificadorRepuesto.Show()
-        modificadorRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
+        modificadorRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("costoRep").Value.ToString)
         'Dim objManRepuesto As ManRepuesto = New ManRepuesto
         'objManRepuesto.modificarRepuesto(Me.dgvListadoRepuesto.SelectedRows)
         'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString)

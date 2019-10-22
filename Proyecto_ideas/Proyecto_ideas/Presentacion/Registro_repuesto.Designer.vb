@@ -28,6 +28,8 @@ Partial Class Registro_repuesto
         Me.lblRCantidad = New System.Windows.Forms.Label()
         Me.txtRNombre = New System.Windows.Forms.TextBox()
         Me.nudRCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCostoRe = New System.Windows.Forms.TextBox()
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,23 +71,41 @@ Partial Class Registro_repuesto
         '
         'txtRNombre
         '
-        Me.txtRNombre.Location = New System.Drawing.Point(88, 44)
+        Me.txtRNombre.Location = New System.Drawing.Point(111, 44)
         Me.txtRNombre.Name = "txtRNombre"
         Me.txtRNombre.Size = New System.Drawing.Size(120, 20)
         Me.txtRNombre.TabIndex = 4
         '
         'nudRCantidad
         '
-        Me.nudRCantidad.Location = New System.Drawing.Point(88, 81)
+        Me.nudRCantidad.Location = New System.Drawing.Point(111, 81)
         Me.nudRCantidad.Name = "nudRCantidad"
         Me.nudRCantidad.Size = New System.Drawing.Size(120, 20)
         Me.nudRCantidad.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 113)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Costo por unidad :"
+        '
+        'txtCostoRe
+        '
+        Me.txtCostoRe.Location = New System.Drawing.Point(111, 110)
+        Me.txtCostoRe.Name = "txtCostoRe"
+        Me.txtCostoRe.Size = New System.Drawing.Size(120, 20)
+        Me.txtCostoRe.TabIndex = 7
         '
         'Registro_repuesto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(230, 197)
+        Me.ClientSize = New System.Drawing.Size(270, 197)
+        Me.Controls.Add(Me.txtCostoRe)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.nudRCantidad)
         Me.Controls.Add(Me.txtRNombre)
         Me.Controls.Add(Me.lblRCantidad)
@@ -106,4 +126,6 @@ Partial Class Registro_repuesto
     Friend WithEvents lblRCantidad As System.Windows.Forms.Label
     Friend WithEvents txtRNombre As System.Windows.Forms.TextBox
     Friend WithEvents nudRCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtCostoRe As System.Windows.Forms.TextBox
 End Class

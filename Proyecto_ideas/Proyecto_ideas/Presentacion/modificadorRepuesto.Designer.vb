@@ -28,11 +28,13 @@ Partial Class modificadorRepuesto
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtMUnombre = New System.Windows.Forms.TextBox()
         Me.txtMUcantidad = New System.Windows.Forms.TextBox()
+        Me.txtMCostoRep = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnModificarR
         '
-        Me.btnModificarR.Location = New System.Drawing.Point(37, 83)
+        Me.btnModificarR.Location = New System.Drawing.Point(37, 127)
         Me.btnModificarR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificarR.Name = "btnModificarR"
         Me.btnModificarR.Size = New System.Drawing.Size(63, 19)
@@ -42,7 +44,7 @@ Partial Class modificadorRepuesto
         '
         'btnCancelarR
         '
-        Me.btnCancelarR.Location = New System.Drawing.Point(171, 83)
+        Me.btnCancelarR.Location = New System.Drawing.Point(171, 127)
         Me.btnCancelarR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancelarR.Name = "btnCancelarR"
         Me.btnCancelarR.Size = New System.Drawing.Size(63, 19)
@@ -86,11 +88,31 @@ Partial Class modificadorRepuesto
         Me.txtMUcantidad.Size = New System.Drawing.Size(71, 20)
         Me.txtMUcantidad.TabIndex = 5
         '
+        'txtMCostoRep
+        '
+        Me.txtMCostoRep.Location = New System.Drawing.Point(102, 85)
+        Me.txtMCostoRep.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtMCostoRep.Name = "txtMCostoRep"
+        Me.txtMCostoRep.Size = New System.Drawing.Size(110, 20)
+        Me.txtMCostoRep.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(7, 88)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(93, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Costo por unidad :"
+        '
         'modificadorRepuesto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(258, 123)
+        Me.ClientSize = New System.Drawing.Size(258, 157)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtMCostoRep)
         Me.Controls.Add(Me.txtMUcantidad)
         Me.Controls.Add(Me.txtMUnombre)
         Me.Controls.Add(Me.Label2)
@@ -111,4 +133,6 @@ Partial Class modificadorRepuesto
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtMUnombre As System.Windows.Forms.TextBox
     Friend WithEvents txtMUcantidad As System.Windows.Forms.TextBox
+    Friend WithEvents txtMCostoRep As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

@@ -37,6 +37,7 @@ Partial Class lista_repuestos
         Me.btnRAgregar = New System.Windows.Forms.Button()
         Me.lblIniciarSesion = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.costoRep = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -59,7 +60,7 @@ Partial Class lista_repuestos
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvListadoRepuesto.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoRepuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad})
+        Me.dgvListadoRepuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idR, Me.nombre, Me.cantidad, Me.costoRep})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -75,7 +76,7 @@ Partial Class lista_repuestos
         Me.dgvListadoRepuesto.RowHeadersVisible = False
         Me.dgvListadoRepuesto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvListadoRepuesto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvListadoRepuesto.Size = New System.Drawing.Size(343, 192)
+        Me.dgvListadoRepuesto.Size = New System.Drawing.Size(444, 192)
         Me.dgvListadoRepuesto.TabIndex = 4
         '
         'idR
@@ -199,17 +200,23 @@ Partial Class lista_repuestos
         Me.Panel1.Controls.Add(Me.btnRefresh)
         Me.Panel1.Controls.Add(Me.btnRModificar)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(383, 0)
+        Me.Panel1.Location = New System.Drawing.Point(488, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(68, 345)
         Me.Panel1.TabIndex = 18
+        '
+        'costoRep
+        '
+        Me.costoRep.HeaderText = "Costo Rep."
+        Me.costoRep.Name = "costoRep"
+        Me.costoRep.ReadOnly = True
         '
         'lista_repuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(451, 345)
+        Me.ClientSize = New System.Drawing.Size(556, 345)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lblIniciarSesion)
         Me.Controls.Add(Me.btnBuscadorRep)
@@ -240,4 +247,5 @@ Partial Class lista_repuestos
     Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents costoRep As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

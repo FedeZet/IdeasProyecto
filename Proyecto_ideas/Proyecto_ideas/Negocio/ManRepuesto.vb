@@ -3,8 +3,8 @@
 Public Class ManRepuesto
     Dim hashRepuesto As Hashtable = New Hashtable
 
-    Public Function agregarRepuesto(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
-        Dim objRepuesto As Repuesto = New Repuesto(nombreRepuesto, cantidadRepuesto)
+    Public Function agregarRepuesto(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer, ByVal costo As Integer)
+        Dim objRepuesto As Repuesto = New Repuesto(nombreRepuesto, cantidadRepuesto, costo)
         objRepuesto.agregar()
         Return True
     End Function
@@ -13,14 +13,14 @@ Public Class ManRepuesto
         Dim datareader As MySqlDataReader = Repuesto.obtenerRepuestos()
         Dim objR As Repuesto = Nothing
         While datareader.Read()
-            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"))
+            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"), datareader("costoRepuesto"))
             Me.hashRepuesto.Add(objR.IdRepuesto, objR)
         End While
         Return Me.hashRepuesto
     End Function
 
-    Public Function modificarRepuesto(ByVal idRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
-        Dim objRepuesto As Repuesto = New Repuesto(idRepuesto, nombreRepuesto, cantidadRepuesto)
+    Public Function modificarRepuesto(ByVal idRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer, ByVal costo As Integer)
+        Dim objRepuesto As Repuesto = New Repuesto(idRepuesto, nombreRepuesto, cantidadRepuesto, costo)
         objRepuesto.modificar()
         Return True
     End Function
@@ -35,7 +35,7 @@ Public Class ManRepuesto
         Dim objR As Repuesto = New Repuesto(nombre)
         Dim datareader As MySqlDataReader = objR.buscar
         While datareader.Read()
-            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"))
+            objR = New Repuesto(datareader("idR"), datareader("nombreR"), datareader("cantidad"), datareader("costoRepuesto"))
             Me.hashRepuesto.Add(objR.Nombre, objR)
         End While
         Return Me.hashRepuesto

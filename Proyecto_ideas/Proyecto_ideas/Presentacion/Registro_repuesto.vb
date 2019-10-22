@@ -2,7 +2,7 @@
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.agregarRepuesto(Me.txtRNombre.Text, Me.nudRCantidad.Text)
+        objManRepuesto.agregarRepuesto(Me.txtRNombre.Text, Me.nudRCantidad.Text, Me.txtCostoRe.Text)
         Me.Hide()
         lista_repuestos.Show()
 

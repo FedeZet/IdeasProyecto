@@ -3,6 +3,7 @@
     Private _idRepuesto As Integer
     Private _nombre As String
     Private _cantidad As Integer
+    Private _costo As Integer
 
 
     Public Property IdRepuesto() As Integer
@@ -37,20 +38,32 @@
             _cantidad = Value
         End Set
     End Property
+    Public Property costo() As Integer
+        Get
+            ' Return the value stored in the field.
+            Return _costo
+        End Get
+        Set(ByVal Value As Integer)
+            ' Store the value in the field.
+            _costo = Value
+        End Set
+    End Property
 
     Public Sub New(ByVal IdRepuesto As Integer)
         Me._idRepuesto = IdRepuesto
     End Sub
 
-    Public Sub New(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+    Public Sub New(ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer, ByVal costo As Integer)
         Me._nombre = nombreRepuesto
         Me._cantidad = cantidadRepuesto
+        Me._costo = costo
     End Sub
 
-    Public Sub New(ByVal IdRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer)
+    Public Sub New(ByVal IdRepuesto As Integer, ByVal nombreRepuesto As String, ByVal cantidadRepuesto As Integer, ByVal costo As Integer)
         Me._idRepuesto = IdRepuesto
         Me._nombre = nombreRepuesto
         Me._cantidad = cantidadRepuesto
+        Me._costo = costo
     End Sub
 
     Public Sub New(ByVal nombreRepuesto As String)
