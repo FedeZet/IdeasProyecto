@@ -105,16 +105,16 @@ Partial Class Registro_usuario
         Me.btnRegistrarUser.Location = New System.Drawing.Point(16, 211)
         Me.btnRegistrarUser.Name = "btnRegistrarUser"
         Me.btnRegistrarUser.Size = New System.Drawing.Size(75, 23)
-        Me.btnRegistrarUser.TabIndex = 9
+        Me.btnRegistrarUser.TabIndex = 10
         Me.btnRegistrarUser.Text = "Registrar"
         Me.btnRegistrarUser.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(143, 211)
+        Me.Button2.Location = New System.Drawing.Point(149, 211)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 10
+        Me.Button2.TabIndex = 12
         Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -132,7 +132,7 @@ Partial Class Registro_usuario
         Me.txtCostoServicio.Location = New System.Drawing.Point(101, 181)
         Me.txtCostoServicio.Name = "txtCostoServicio"
         Me.txtCostoServicio.Size = New System.Drawing.Size(100, 20)
-        Me.txtCostoServicio.TabIndex = 12
+        Me.txtCostoServicio.TabIndex = 9
         '
         'Registro_usuario
         '

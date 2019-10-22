@@ -177,8 +177,36 @@
 
     End Sub
 
+    Public Sub New(ByVal IdOrden As Integer)
+        Me._idOrden = IdOrden
+    End Sub
+
+    Public Sub New(ByVal estado As String)
+        Me._estado = estado
+    End Sub
+
     Public Function agregarOrden()
         Dim objO As DAOOrden = New DAOOrden
         Return objO.agregarOrden(Me)
+    End Function
+
+    Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAOOrden = New DAOOrden
+        Return obj.buscarOrden(Me)
+    End Function
+
+    Public Shared Function obtenerOrdenes() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim objR As DAOOrden = New DAOOrden
+        Return objR.obtenerOrdenes()
+    End Function
+
+    Public Function modificar()
+        Dim obj As DAOOrden = New DAOOrden
+        Return obj.modificarOrden(Me)
+    End Function
+
+    Public Function eliminar()
+        Dim obj As DAOOrden = New DAOOrden
+        Return obj.eliminarOrden(Me)
     End Function
 End Class

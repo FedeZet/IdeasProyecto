@@ -6,4 +6,34 @@
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
+
+    Public Function obtenerOrdenes() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "SELECT * FROM orden"
+        Return objConexion.ejecutar(sentencia, True)
+    End Function
+
+    Public Function modificarOrden(ByVal obj As Orden)
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "UPDATE orden SET detalle = '" + obj.Falla + "' , resolucion = '" + obj.Resolucion + "', importe = " + obj.Importe.ToString + ", dolar = " + obj.Dolar.ToString + ", garantia = " + obj.Garantia.ToString + ", fecha = STR_TO_DATE(REPLACE('" + obj.Fecha.ToString + "','/','.') ,GET_FORMAT(date,'EUR')), hora = '" + obj.Hora.ToString + "', estado = '" + obj.Estado + "', idU = " + obj.idU.ToString + ", idC = " + obj.idC.ToString + ", idD = " + obj.idD.ToString + " WHERE idO = " + obj.IdOrden.ToString + ";"
+        objConexion.ejecutar(sentencia, False)
+        Return True
+    End Function
+
+    Public Function eliminarOrden(ByVal obj As Orden)
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "DELETE FROM orden WHERE idO = " + obj.IdOrden.ToString + ";"
+        objConexion.ejecutar(sentencia, False)
+        Return True
+    End Function
+
+    Public Function buscarOrden(ByVal obj As Orden) As MySql.Data.MySqlClient.MySqlDataReader
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "select * from orden where estado like '%" + obj.Estado + "%';"
+        Return objConexion.ejecutar(sentencia, True)
+    End Function
 End Class
