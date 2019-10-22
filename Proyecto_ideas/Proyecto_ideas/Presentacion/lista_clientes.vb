@@ -42,10 +42,14 @@
     End Sub
 
     Private Sub btnCEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCEliminar.Click
-
         Dim objManCliente As ManCliente = New ManCliente
-        objManCliente.eliminarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString)
-
+        Dim resultado As Integer = MsgBox("Desea Eliminar este cliente? ", vbYesNo + vbQuestion)
+        If resultado = vbYes Then
+            objManCliente.eliminarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString)
+            MsgBox("El cliente ha sido eliminado con éxito.")
+        Else
+            MsgBox("El cliente no ha sido eliminado.")
+        End If
     End Sub
 
 

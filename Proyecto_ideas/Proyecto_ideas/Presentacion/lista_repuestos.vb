@@ -40,16 +40,15 @@
         'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
 
     End Sub
-
-
-
-
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
         Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
-
-        MsgBox("El repuesto ha sido eliminado con éxito.")
-
+        Dim resultado As Integer = MsgBox("Desea Eliminar este repuesto? ", vbYesNo + vbQuestion)
+        If resultado = vbYes Then
+            objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
+            MsgBox("El repuesto ha sido eliminado con éxito.")
+        Else
+            MsgBox("El repuesto no ha sido eliminado.")
+        End If
     End Sub
 
     Private Sub btnBuscadorRep_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorRep.Click

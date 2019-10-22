@@ -43,8 +43,13 @@
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         Dim objManRepuesto As ManUsuario = New ManUsuario
-        objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
-
+        Dim resultado As Integer = MsgBox("Desea Eliminar este usuario? ", vbYesNo + vbQuestion)
+        If resultado = vbYes Then
+            objManRepuesto.eliminarRepuesto(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
+            MsgBox("El usuario ha sido eliminado con éxito.")
+        Else
+            MsgBox("El usuario no ha sido eliminado.")
+        End If
     End Sub
 
 
