@@ -1,20 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 22-10-2019 a las 21:50:48
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 22-10-2019 a las 22:49:18
+-- Versión del servidor: 5.7.26
+-- Versión de PHP: 7.2.18
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `ideas`
@@ -26,13 +28,14 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `cliente`
 --
 
+DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE IF NOT EXISTS `cliente` (
   `idC` int(11) NOT NULL AUTO_INCREMENT,
   `nombreC` varchar(32) NOT NULL,
   `telefonoC` varchar(10) NOT NULL,
   `email` varchar(60) NOT NULL,
   PRIMARY KEY (`idC`)
-) ENGINE=MyISAM  DEFAULT CHARSET=ascii AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM DEFAULT CHARSET=ascii;
 
 -- --------------------------------------------------------
 
@@ -40,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 -- Estructura de tabla para la tabla `dispositivo`
 --
 
+DROP TABLE IF EXISTS `dispositivo`;
 CREATE TABLE IF NOT EXISTS `dispositivo` (
   `idD` int(11) NOT NULL AUTO_INCREMENT,
   `modelo` varchar(30) NOT NULL,
@@ -53,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
   `idC` int(11) NOT NULL,
   PRIMARY KEY (`idD`),
   KEY `idC` (`idC`)
-) ENGINE=MyISAM DEFAULT CHARSET=ascii AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=ascii;
 
 -- --------------------------------------------------------
 
@@ -61,6 +65,7 @@ CREATE TABLE IF NOT EXISTS `dispositivo` (
 -- Estructura de tabla para la tabla `orden`
 --
 
+DROP TABLE IF EXISTS `orden`;
 CREATE TABLE IF NOT EXISTS `orden` (
   `idO` int(11) NOT NULL AUTO_INCREMENT,
   `detalle` varchar(140) DEFAULT NULL,
@@ -78,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `orden` (
   KEY `idU` (`idU`),
   KEY `idC` (`idC`),
   KEY `idD` (`idD`)
-) ENGINE=MyISAM DEFAULT CHARSET=ascii AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=ascii;
 
 -- --------------------------------------------------------
 
@@ -86,21 +91,14 @@ CREATE TABLE IF NOT EXISTS `orden` (
 -- Estructura de tabla para la tabla `repuesto`
 --
 
+DROP TABLE IF EXISTS `repuesto`;
 CREATE TABLE IF NOT EXISTS `repuesto` (
   `idR` int(11) NOT NULL AUTO_INCREMENT,
   `nombreR` varchar(32) NOT NULL,
   `cantidad` int(5) NOT NULL,
   `costoRepuesto` int(11) DEFAULT NULL,
   PRIMARY KEY (`idR`)
-) ENGINE=MyISAM  DEFAULT CHARSET=ascii AUTO_INCREMENT=4 ;
-
---
--- Volcado de datos para la tabla `repuesto`
---
-
-INSERT INTO `repuesto` (`idR`, `nombreR`, `cantidad`, `costoRepuesto`) VALUES
-(1, 'Pantalla J200', 3, 0),
-(3, 'Bateria Samsung S9+', 3, 9000);
+) ENGINE=MyISAM DEFAULT CHARSET=ascii;
 
 -- --------------------------------------------------------
 
@@ -108,6 +106,7 @@ INSERT INTO `repuesto` (`idR`, `nombreR`, `cantidad`, `costoRepuesto`) VALUES
 -- Estructura de tabla para la tabla `usuario`
 --
 
+DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `idU` int(11) NOT NULL AUTO_INCREMENT,
   `user` varchar(15) NOT NULL,
@@ -117,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `costoServicio` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idU`),
   UNIQUE KEY `user` (`user`)
-) ENGINE=MyISAM  DEFAULT CHARSET=ascii AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=ascii;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -132,6 +131,7 @@ INSERT INTO `usuario` (`idU`, `user`, `pass`, `nombreU`, `telefonoU`, `costoServ
 -- Estructura de tabla para la tabla `utiliza`
 --
 
+DROP TABLE IF EXISTS `utiliza`;
 CREATE TABLE IF NOT EXISTS `utiliza` (
   `idO` int(11) DEFAULT NULL,
   `idR` int(11) DEFAULT NULL,
@@ -139,6 +139,7 @@ CREATE TABLE IF NOT EXISTS `utiliza` (
   KEY `idO` (`idO`),
   KEY `idR` (`idR`)
 ) ENGINE=MyISAM DEFAULT CHARSET=ascii;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

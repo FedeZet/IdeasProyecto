@@ -24,18 +24,20 @@ Partial Class Menu_Inicio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.plSistema = New System.Windows.Forms.Panel()
-        Me.lblNombre = New System.Windows.Forms.Label()
-        Me.lblHoraFecha = New System.Windows.Forms.Label()
-        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.lblHoraFecha = New System.Windows.Forms.Label()
+        Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnUsuario = New System.Windows.Forms.Button()
         Me.btnProductividad = New System.Windows.Forms.Button()
         Me.btnRepuesto = New System.Windows.Forms.Button()
         Me.btnOrden = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.plSistema.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'plSistema
@@ -51,32 +53,6 @@ Partial Class Menu_Inicio
         Me.plSistema.Name = "plSistema"
         Me.plSistema.Size = New System.Drawing.Size(624, 69)
         Me.plSistema.TabIndex = 7
-        '
-        'lblNombre
-        '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(27, 24)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(98, 22)
-        Me.lblNombre.TabIndex = 0
-        Me.lblNombre.Text = "[Nombre]"
-        '
-        'lblHoraFecha
-        '
-        Me.lblHoraFecha.AutoSize = True
-        Me.lblHoraFecha.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHoraFecha.ForeColor = System.Drawing.Color.White
-        Me.lblHoraFecha.Location = New System.Drawing.Point(412, 86)
-        Me.lblHoraFecha.Name = "lblHoraFecha"
-        Me.lblHoraFecha.Size = New System.Drawing.Size(126, 22)
-        Me.lblHoraFecha.TabIndex = 1
-        Me.lblHoraFecha.Text = "[HoraFecha]"
-        Me.lblHoraFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'timerHoraFecha
-        '
         '
         'btnLogout
         '
@@ -138,11 +114,38 @@ Partial Class Menu_Inicio
         Me.btnExit.TabIndex = 5
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(27, 24)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(98, 22)
+        Me.lblNombre.TabIndex = 0
+        Me.lblNombre.Text = "[Nombre]"
+        '
+        'lblHoraFecha
+        '
+        Me.lblHoraFecha.AutoSize = True
+        Me.lblHoraFecha.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoraFecha.ForeColor = System.Drawing.Color.White
+        Me.lblHoraFecha.Location = New System.Drawing.Point(412, 86)
+        Me.lblHoraFecha.Name = "lblHoraFecha"
+        Me.lblHoraFecha.Size = New System.Drawing.Size(126, 22)
+        Me.lblHoraFecha.TabIndex = 1
+        Me.lblHoraFecha.Text = "[HoraFecha]"
+        Me.lblHoraFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'timerHoraFecha
+        '
+        '
         'btnUsuario
         '
+        Me.btnUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUsuario.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUsuario.ForeColor = System.Drawing.Color.Transparent
+        Me.btnUsuario.ForeColor = System.Drawing.Color.White
         Me.btnUsuario.Image = Global.Proyecto_ideas.My.Resources.Resources.employees
         Me.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnUsuario.Location = New System.Drawing.Point(311, 126)
@@ -152,13 +155,14 @@ Partial Class Menu_Inicio
         Me.btnUsuario.TabIndex = 6
         Me.btnUsuario.Text = "Usuarios"
         Me.btnUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnUsuario.UseVisualStyleBackColor = True
+        Me.btnUsuario.UseVisualStyleBackColor = False
         '
         'btnProductividad
         '
+        Me.btnProductividad.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnProductividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductividad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductividad.ForeColor = System.Drawing.Color.Transparent
+        Me.btnProductividad.ForeColor = System.Drawing.Color.White
         Me.btnProductividad.Image = Global.Proyecto_ideas.My.Resources.Resources.resources
         Me.btnProductividad.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnProductividad.Location = New System.Drawing.Point(451, 126)
@@ -168,13 +172,14 @@ Partial Class Menu_Inicio
         Me.btnProductividad.TabIndex = 5
         Me.btnProductividad.Text = "Productividad"
         Me.btnProductividad.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnProductividad.UseVisualStyleBackColor = True
+        Me.btnProductividad.UseVisualStyleBackColor = False
         '
         'btnRepuesto
         '
+        Me.btnRepuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnRepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRepuesto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRepuesto.ForeColor = System.Drawing.Color.Transparent
+        Me.btnRepuesto.ForeColor = System.Drawing.Color.White
         Me.btnRepuesto.Image = Global.Proyecto_ideas.My.Resources.Resources.smartphone
         Me.btnRepuesto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnRepuesto.Location = New System.Drawing.Point(171, 126)
@@ -184,13 +189,14 @@ Partial Class Menu_Inicio
         Me.btnRepuesto.TabIndex = 3
         Me.btnRepuesto.Text = "Repuesto"
         Me.btnRepuesto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnRepuesto.UseVisualStyleBackColor = True
+        Me.btnRepuesto.UseVisualStyleBackColor = False
         '
         'btnOrden
         '
+        Me.btnOrden.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOrden.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOrden.ForeColor = System.Drawing.Color.Transparent
+        Me.btnOrden.ForeColor = System.Drawing.Color.White
         Me.btnOrden.Image = Global.Proyecto_ideas.My.Resources.Resources.package
         Me.btnOrden.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnOrden.Location = New System.Drawing.Point(31, 126)
@@ -200,20 +206,34 @@ Partial Class Menu_Inicio
         Me.btnOrden.TabIndex = 2
         Me.btnOrden.Text = "Orden"
         Me.btnOrden.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnOrden.UseVisualStyleBackColor = True
+        Me.btnOrden.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Proyecto_ideas.My.Resources.Resources.ideasLogo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Location = New System.Drawing.Point(482, 236)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(130, 53)
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'Menu_Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(624, 301)
         Me.Controls.Add(Me.plSistema)
         Me.Controls.Add(Me.btnUsuario)
         Me.Controls.Add(Me.btnProductividad)
         Me.Controls.Add(Me.lblHoraFecha)
         Me.Controls.Add(Me.btnRepuesto)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnOrden)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
@@ -223,6 +243,7 @@ Partial Class Menu_Inicio
         Me.Text = "Menu_Inicio"
         Me.plSistema.ResumeLayout(False)
         Me.plSistema.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,4 +260,5 @@ Partial Class Menu_Inicio
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents timerHoraFecha As System.Windows.Forms.Timer
     Friend WithEvents btnLogout As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

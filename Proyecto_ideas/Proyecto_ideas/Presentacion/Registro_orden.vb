@@ -89,7 +89,7 @@
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
 
         lista_clientes.Show()
-        lista_clientes.btnSeleccionar.Enabled = True
+        lista_clientes.btnCSeleccionar.Enabled = True
 
     End Sub
 

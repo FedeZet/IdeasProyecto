@@ -22,13 +22,12 @@
         Next
     End Sub
 
-    Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
-        Menu_Inicio.Show()
+    Private Sub btnCVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCVolver.Click
         Me.Close()
+
     End Sub
 
     Private Sub btnBuscadorCli_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorCli.Click
-
         Me.dgvListadoCliente.Rows.Clear()
         Dim objManCliente As ManCliente = New ManCliente
         Dim hashCliente As Hashtable
@@ -39,6 +38,7 @@
 
     Private Sub btnCAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCAgregar.Click
         Registro_cliente.Show()
+
     End Sub
 
     Private Sub btnCEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCEliminar.Click
@@ -54,35 +54,30 @@
 
 
     Private Sub btnCModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCModificar.Click
-
         Me.Hide()
         modificadorCliente.Show()
         modificadorCliente.cargarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString)
 
     End Sub
 
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
-
+    Private Sub btnCSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCSeleccionar.Click
         Registro_orden.obtenerCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString)
         Me.Close()
 
     End Sub
 
 
-    Private Sub pbRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbRefresh.Click
+    Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListadoCliente.Rows.Clear()
         Dim objManCliente As ManCliente = New ManCliente
         Dim hashCliente As Hashtable
         hashCliente = objManCliente.obtenerCliente()
         Me.CargarDGV(hashCliente)
-    End Sub
-
-    Private Sub lista_clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub dgvListadoCliente_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoCliente.RowHeaderMouseClick
-        btnCEliminar.Enabled = True
-        btnCModificar.Enabled = True
-    End Sub
+    'Private Sub dgvListadoCliente_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoCliente.RowHeaderMouseClick
+    '    btnCEliminar.Enabled = True
+    '    btnCModificar.Enabled = True
+    'End Sub
 End Class
