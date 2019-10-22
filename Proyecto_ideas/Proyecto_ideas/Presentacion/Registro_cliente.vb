@@ -3,7 +3,7 @@
     Private Sub btnCAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCAgregar.Click
 
         Dim objManCliente As ManCliente = New ManCliente
-        objManCliente.crearCliente(Me.txtCNombre.Text, Me.txtCTelefono.Text)
+        objManCliente.crearCliente(Me.txtCNombre.Text, Me.txtCTelefono.Text, Me.txtMailC.Text)
         Me.Hide()
 
 

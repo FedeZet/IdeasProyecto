@@ -3,6 +3,7 @@
     Private _id_cliente As Integer
     Private _nombre As String
     Private _telefono As String
+    Private _correo As String
 
 
     Public Property IdCliente() As String
@@ -36,16 +37,28 @@
             _telefono = Value
         End Set
     End Property
+    Public Property correo() As String
+        Get
+            ' Return the value stored in the field.
+            Return _correo
+        End Get
+        Set(ByVal Value As String)
+            ' Store the value in the field.
+            _correo = Value
+        End Set
+    End Property
 
-    Public Sub New(ByVal IdCliente As Integer, ByVal nombre As String, ByVal telefono As String)
+    Public Sub New(ByVal IdCliente As Integer, ByVal nombre As String, ByVal telefono As String, ByVal correo As String)
         Me._id_cliente = IdCliente
         Me._nombre = nombre
         Me._telefono = telefono
+        Me._correo = correo
     End Sub
 
-    Public Sub New(ByVal nombre As String, ByVal telefono As String)
+    Public Sub New(ByVal nombre As String, ByVal telefono As String, ByVal correo As String)
         Me._nombre = nombre
         Me._telefono = telefono
+        Me._correo = correo
     End Sub
 
     Public Sub New(ByVal IdCliente As Integer)

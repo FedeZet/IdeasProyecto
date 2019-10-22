@@ -34,6 +34,7 @@ Partial Class lista_clientes
         Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.mailC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.pbRefresh, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -119,11 +120,11 @@ Partial Class lista_clientes
         Me.dgvListadoCliente.AllowUserToAddRows = False
         Me.dgvListadoCliente.AllowUserToDeleteRows = False
         Me.dgvListadoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono})
+        Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono, Me.mailC})
         Me.dgvListadoCliente.Location = New System.Drawing.Point(45, 54)
         Me.dgvListadoCliente.Name = "dgvListadoCliente"
         Me.dgvListadoCliente.ReadOnly = True
-        Me.dgvListadoCliente.Size = New System.Drawing.Size(343, 150)
+        Me.dgvListadoCliente.Size = New System.Drawing.Size(433, 150)
         Me.dgvListadoCliente.TabIndex = 34
         '
         'idC
@@ -144,11 +145,17 @@ Partial Class lista_clientes
         Me.telefono.Name = "telefono"
         Me.telefono.ReadOnly = True
         '
+        'mailC
+        '
+        Me.mailC.HeaderText = "Correo"
+        Me.mailC.Name = "mailC"
+        Me.mailC.ReadOnly = True
+        '
         'lista_clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(432, 261)
+        Me.ClientSize = New System.Drawing.Size(490, 261)
         Me.Controls.Add(Me.btnSeleccionar)
         Me.Controls.Add(Me.btnBuscadorCli)
         Me.Controls.Add(Me.pbRefresh)
@@ -178,4 +185,5 @@ Partial Class lista_clientes
     Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents telefono As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents mailC As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

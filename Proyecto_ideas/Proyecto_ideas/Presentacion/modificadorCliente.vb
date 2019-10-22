@@ -4,7 +4,7 @@
 
     Private Sub btnModificarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarC.Click
         Dim objManCliente As ManCliente = New ManCliente
-        objManCliente.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text)
+        objManCliente.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text, txtModCEmail.Text)
     End Sub
 
     Private Sub btnCancelarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarC.Click

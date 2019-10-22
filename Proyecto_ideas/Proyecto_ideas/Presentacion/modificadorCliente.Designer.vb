@@ -28,6 +28,8 @@ Partial Class modificadorCliente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCancelarC = New System.Windows.Forms.Button()
         Me.btnModificarC = New System.Windows.Forms.Button()
+        Me.lblModCorreo = New System.Windows.Forms.Label()
+        Me.txtModCEmail = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtMCtelefono
@@ -68,7 +70,7 @@ Partial Class modificadorCliente
         '
         'btnCancelarC
         '
-        Me.btnCancelarC.Location = New System.Drawing.Point(179, 113)
+        Me.btnCancelarC.Location = New System.Drawing.Point(179, 131)
         Me.btnCancelarC.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancelarC.Name = "btnCancelarC"
         Me.btnCancelarC.Size = New System.Drawing.Size(63, 19)
@@ -78,7 +80,7 @@ Partial Class modificadorCliente
         '
         'btnModificarC
         '
-        Me.btnModificarC.Location = New System.Drawing.Point(45, 113)
+        Me.btnModificarC.Location = New System.Drawing.Point(45, 131)
         Me.btnModificarC.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificarC.Name = "btnModificarC"
         Me.btnModificarC.Size = New System.Drawing.Size(63, 19)
@@ -86,11 +88,31 @@ Partial Class modificadorCliente
         Me.btnModificarC.Text = "Modificar"
         Me.btnModificarC.UseVisualStyleBackColor = True
         '
+        'lblModCorreo
+        '
+        Me.lblModCorreo.AutoSize = True
+        Me.lblModCorreo.Location = New System.Drawing.Point(56, 107)
+        Me.lblModCorreo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblModCorreo.Name = "lblModCorreo"
+        Me.lblModCorreo.Size = New System.Drawing.Size(41, 13)
+        Me.lblModCorreo.TabIndex = 12
+        Me.lblModCorreo.Text = "Correo:"
+        '
+        'txtModCEmail
+        '
+        Me.txtModCEmail.Location = New System.Drawing.Point(110, 107)
+        Me.txtModCEmail.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtModCEmail.Name = "txtModCEmail"
+        Me.txtModCEmail.Size = New System.Drawing.Size(132, 20)
+        Me.txtModCEmail.TabIndex = 13
+        '
         'modificadorCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 161)
+        Me.Controls.Add(Me.txtModCEmail)
+        Me.Controls.Add(Me.lblModCorreo)
         Me.Controls.Add(Me.txtMCtelefono)
         Me.Controls.Add(Me.txtMCnombre)
         Me.Controls.Add(Me.Label2)
@@ -109,4 +131,6 @@ Partial Class modificadorCliente
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnCancelarC As System.Windows.Forms.Button
     Friend WithEvents btnModificarC As System.Windows.Forms.Button
+    Friend WithEvents lblModCorreo As System.Windows.Forms.Label
+    Friend WithEvents txtModCEmail As System.Windows.Forms.TextBox
 End Class

@@ -2,7 +2,7 @@
     Public Function guardar(ByVal obj As Cliente)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "INSERT INTO cliente(nombreC, telefonoC) VALUES ('" + obj.Nombre + "','" + obj.Telefono + "')"
+        sentencia = "INSERT INTO cliente(nombreC, telefonoC, email) VALUES ('" + obj.Nombre + "','" + obj.Telefono + "','" + obj.correo + "')"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
@@ -17,7 +17,7 @@
     Public Function modificarCliente(ByVal obj As Cliente)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "UPDATE cliente SET nombreC = '" + obj.Nombre + "' , telefonoC = " + obj.Telefono + " WHERE idU = " + obj.IdCliente.ToString + ";"
+        sentencia = "UPDATE cliente SET nombreC = '" + obj.Nombre + "' , telefonoC = '" + obj.Telefono + "', email = '" + obj.correo + "' WHERE idU = " + obj.IdCliente.ToString + ";"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
@@ -25,7 +25,7 @@
     Public Function eliminarCliente(ByVal obj As Cliente)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "DELETE FROM cliente WHERE idU = " + obj.IdCliente.ToString + ";"
+        sentencia = "DELETE FROM cliente WHERE idC = " + obj.IdCliente.ToString + ";"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function

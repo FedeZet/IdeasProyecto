@@ -2,9 +2,9 @@
 Public Class ManCliente
     Dim hashCliente As Hashtable = New Hashtable
 
-    Public Function crearCliente(ByVal nombre As String, ByVal telefono As String)
+    Public Function crearCliente(ByVal nombre As String, ByVal telefono As String, ByVal correo As String)
 
-        Dim objCliente As Cliente = New Cliente(nombre, telefono)
+        Dim objCliente As Cliente = New Cliente(nombre, telefono, correo)
         objCliente.guardar()
         Return True
     End Function
@@ -13,14 +13,14 @@ Public Class ManCliente
         Dim datareader As MySqlDataReader = Cliente.obtenerClientes()
         Dim objC As Cliente = Nothing
         While datareader.Read()
-            objC = New Cliente(datareader("idC"), datareader("nombreC"), datareader("telefonoC"))
+            objC = New Cliente(datareader("idC"), datareader("nombreC"), datareader("telefonoC"), datareader("email"))
             Me.hashCliente.Add(objC.IdCliente, objC)
         End While
         Return Me.hashCliente
     End Function
 
-    Public Function modificarCliente(ByVal idCliente As Integer, ByVal nombreCliente As String, ByVal telefonoCliente As String)
-        Dim objCliente As Cliente = New Cliente(idCliente, nombreCliente, telefonoCliente)
+    Public Function modificarCliente(ByVal idCliente As Integer, ByVal nombreCliente As String, ByVal telefonoCliente As String, ByVal correoCliente As String)
+        Dim objCliente As Cliente = New Cliente(idCliente, nombreCliente, telefonoCliente, correoCliente)
         objCliente.modificar()
         Return True
     End Function
@@ -35,7 +35,7 @@ Public Class ManCliente
         Dim objCliente As Cliente = New Cliente(nombre)
         Dim datareader As MySqlDataReader = objCliente.buscar
         While datareader.Read()
-            objCliente = New Cliente(datareader("idC"), datareader("nombreC"), datareader("telefonoC"))
+            objCliente = New Cliente(datareader("idC"), datareader("nombreC"), datareader("telefonoC"), datareader("email"))
             Me.hashCliente.Add(objCliente.Nombre, objCliente)
         End While
         Return Me.hashCliente

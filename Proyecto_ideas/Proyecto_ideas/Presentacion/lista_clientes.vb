@@ -18,7 +18,7 @@
             Me.dgvListadoCliente(0, cantFilas).Value = objR.IdCliente.ToString
             Me.dgvListadoCliente(1, cantFilas).Value = objR.Nombre
             Me.dgvListadoCliente(2, cantFilas).Value = objR.Telefono.ToString
-
+            Me.dgvListadoCliente(3, cantFilas).Value = objR.correo.ToString
         Next
     End Sub
 
