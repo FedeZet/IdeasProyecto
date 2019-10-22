@@ -41,6 +41,8 @@
             objManOrden.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, lblFecha.Text, hora, estado, idU, idC, idD)
 
             MsgBox("La orden se ha creado exitosamente.")
+            Me.Close()
+
         End If
 
     End Sub
