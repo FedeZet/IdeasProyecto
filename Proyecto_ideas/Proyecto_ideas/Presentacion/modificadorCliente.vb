@@ -19,7 +19,11 @@
         Return True
     End Function
 
-    Private Sub modificadorCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub txtMCnombre_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMCnombre.KeyPress
+        Letras(e)
+    End Sub
 
+    Private Sub txtMCtelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMCtelefono.KeyPress
+        Numeros(e)
     End Sub
 End Class

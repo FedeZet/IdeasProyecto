@@ -49,4 +49,8 @@
     Private Sub Registro_dispositivo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPIN.KeyPress
+        Numeros(e)
+    End Sub
 End Class

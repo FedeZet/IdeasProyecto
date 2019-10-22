@@ -24,4 +24,9 @@
         txtMUcantidad.Text = cantidad.ToString
         Return True
     End Function
+
+
+    Private Sub txtMUcantidad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMUcantidad.KeyPress
+        Numeros(e)
+    End Sub
 End Class

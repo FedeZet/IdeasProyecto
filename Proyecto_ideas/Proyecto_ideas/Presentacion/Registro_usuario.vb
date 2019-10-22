@@ -17,4 +17,16 @@
         Menu_Inicio.Show()
         Me.Close()
     End Sub
+
+    Private Sub txtCostoServicio_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCostoServicio.KeyPress
+        Numeros(e)
+    End Sub
+
+    Private Sub txtNombre_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNombre.KeyPress
+        Letras(e)
+    End Sub
+
+    Private Sub txtTelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtTelefono.KeyPress
+        Numeros(e)
+    End Sub
 End Class

@@ -88,6 +88,8 @@
     <Compile Include="Negocio\ManUsuario.vb" />
     <Compile Include="Negocio\Orden.vb" />
     <Compile Include="Negocio\Repuesto.vb" />
+    <Compile Include="Negocio\SoloLetras.vb" />
+    <Compile Include="Negocio\SoloNumeros.vb" />
     <Compile Include="Persistencia\ConectorBD.vb" />
     <Compile Include="Persistencia\DAOCliente.vb" />
     <Compile Include="Persistencia\DAODispositivo.vb" />

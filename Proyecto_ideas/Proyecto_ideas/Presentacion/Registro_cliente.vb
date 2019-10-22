@@ -17,4 +17,12 @@
         Me.Close()
 
     End Sub
+
+    Private Sub txtCNombre_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCNombre.KeyPress
+        Letras(e)
+    End Sub
+
+    Private Sub txtCTelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCTelefono.KeyPress
+        Numeros(e)
+    End Sub
 End Class
