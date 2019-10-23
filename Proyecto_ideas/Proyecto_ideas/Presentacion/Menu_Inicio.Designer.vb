@@ -52,7 +52,7 @@ Partial Class Menu_Inicio
         Me.plSistema.Location = New System.Drawing.Point(0, 0)
         Me.plSistema.Name = "plSistema"
         Me.plSistema.Size = New System.Drawing.Size(624, 69)
-        Me.plSistema.TabIndex = 7
+        Me.plSistema.TabIndex = 5
         '
         'btnLogout
         '
@@ -66,7 +66,7 @@ Partial Class Menu_Inicio
         Me.btnLogout.Location = New System.Drawing.Point(514, 12)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(46, 46)
-        Me.btnLogout.TabIndex = 8
+        Me.btnLogout.TabIndex = 7
         Me.btnLogout.UseVisualStyleBackColor = True
         '
         'Button1
@@ -81,7 +81,7 @@ Partial Class Menu_Inicio
         Me.Button1.Location = New System.Drawing.Point(410, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(46, 46)
-        Me.Button1.TabIndex = 7
+        Me.Button1.TabIndex = 5
         Me.Button1.UseVisualStyleBackColor = True
         '
         'btnAbout
@@ -111,7 +111,7 @@ Partial Class Menu_Inicio
         Me.btnExit.Location = New System.Drawing.Point(566, 12)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(46, 46)
-        Me.btnExit.TabIndex = 5
+        Me.btnExit.TabIndex = 8
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'lblNombre
@@ -152,7 +152,7 @@ Partial Class Menu_Inicio
         Me.btnUsuario.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUsuario.Name = "btnUsuario"
         Me.btnUsuario.Size = New System.Drawing.Size(136, 105)
-        Me.btnUsuario.TabIndex = 6
+        Me.btnUsuario.TabIndex = 3
         Me.btnUsuario.Text = "Usuarios"
         Me.btnUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnUsuario.UseVisualStyleBackColor = False
@@ -169,7 +169,7 @@ Partial Class Menu_Inicio
         Me.btnProductividad.Margin = New System.Windows.Forms.Padding(2)
         Me.btnProductividad.Name = "btnProductividad"
         Me.btnProductividad.Size = New System.Drawing.Size(136, 105)
-        Me.btnProductividad.TabIndex = 5
+        Me.btnProductividad.TabIndex = 4
         Me.btnProductividad.Text = "Productividad"
         Me.btnProductividad.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnProductividad.UseVisualStyleBackColor = False
@@ -186,7 +186,7 @@ Partial Class Menu_Inicio
         Me.btnRepuesto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRepuesto.Name = "btnRepuesto"
         Me.btnRepuesto.Size = New System.Drawing.Size(136, 105)
-        Me.btnRepuesto.TabIndex = 3
+        Me.btnRepuesto.TabIndex = 2
         Me.btnRepuesto.Text = "Repuesto"
         Me.btnRepuesto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnRepuesto.UseVisualStyleBackColor = False
@@ -203,7 +203,7 @@ Partial Class Menu_Inicio
         Me.btnOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.btnOrden.Name = "btnOrden"
         Me.btnOrden.Size = New System.Drawing.Size(136, 105)
-        Me.btnOrden.TabIndex = 2
+        Me.btnOrden.TabIndex = 1
         Me.btnOrden.Text = "Orden"
         Me.btnOrden.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnOrden.UseVisualStyleBackColor = False
