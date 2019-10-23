@@ -6,8 +6,8 @@
     Private _importe As Integer
     Private _dolar As Boolean
     Private _garantia As Boolean
-    Private _fecha As String
-    Private _hora As String
+    Private _fecha As Date
+    Private _hora As TimeSpan
     Private _estado As String
     Private _idU As Integer
     Private _idC As Integer
@@ -79,23 +79,23 @@
         End Set
     End Property
 
-    Public Property Fecha() As String
+    Public Property Fecha() As Date
         Get
             ' Return the value stored in the field.
             Return _fecha
         End Get
-        Set(ByVal Value As String)
+        Set(ByVal Value As Date)
             ' Store the value in the field.
             _fecha = Value
         End Set
     End Property
 
-    Public Property Hora() As String
+    Public Property Hora() As TimeSpan
         Get
             ' Return the value stored in the field.
             Return _hora
         End Get
-        Set(ByVal Value As String)
+        Set(ByVal Value As TimeSpan)
             ' Store the value in the field.
             _hora = Value
         End Set
@@ -146,7 +146,7 @@
     End Property
 
 
-    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._idOrden = idOrden
         Me._falla = falla
         Me._resolucion = resolucion
@@ -162,11 +162,11 @@
 
     End Sub
 
-    Public Sub New(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As DateTime, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._falla = falla
-        Me._resolucion = Resolucion
+        Me._resolucion = resolucion
         Me._importe = importe
-        Me._dolar = Dolar
+        Me._dolar = dolar
         Me._garantia = garantia
         Me._fecha = fecha
         Me._hora = hora
@@ -196,8 +196,8 @@
     End Function
 
     Public Shared Function obtenerOrdenes() As MySql.Data.MySqlClient.MySqlDataReader
-        Dim objR As DAOOrden = New DAOOrden
-        Return objR.obtenerOrdenes()
+        Dim obj As DAOOrden = New DAOOrden
+        Return obj.obtenerOrdenes()
     End Function
 
     Public Function modificar()

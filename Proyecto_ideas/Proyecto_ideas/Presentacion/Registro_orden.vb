@@ -28,11 +28,8 @@
             dolar = True
         End If
 
-        Dim hora As DateTime = DateTime.Now.ToShortTimeString()
-
-
-
-
+        Dim horaDateTime As DateTime = DateTime.Now.ToString("HH:mm")
+        Dim hora As TimeSpan = horaDateTime.TimeOfDay
 
         Dim objManOrden As ManOrden = New ManOrden
         If (idU Or idC Or idD) = Nothing Then
@@ -103,7 +100,7 @@
             lista_dispositivos.btnSeleccionar.Enabled = True
         End If
 
-        
+
 
     End Sub
 
