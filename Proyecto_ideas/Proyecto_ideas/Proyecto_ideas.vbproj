@@ -96,7 +96,7 @@
     <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
-    <Compile Include="Presentacion\Historial_ordenes.Designer.vb">
+    <Compile Include="Presentacion\Historial_ordenes.designer.vb">
       <DependentUpon>Historial_ordenes.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Historial_ordenes.vb">
