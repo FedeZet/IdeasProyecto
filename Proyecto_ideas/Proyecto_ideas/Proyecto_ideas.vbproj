@@ -177,6 +177,12 @@
     <Compile Include="Presentacion\modificadorUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\Prueba.Designer.vb">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\Registro_cliente.Designer.vb">
       <DependentUpon>Registro_cliente.vb</DependentUpon>
     </Compile>
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\modificadorUsuario.resx">
       <DependentUpon>modificadorUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Prueba.resx">
+      <DependentUpon>Prueba.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Registro_cliente.resx">
       <DependentUpon>Registro_cliente.vb</DependentUpon>

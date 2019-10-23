@@ -2,8 +2,8 @@
     Public Function agregarOrden(ByVal objO As Orden)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        'sentencia = "INSERT INTO orden(detalle, resolucion, importe, dolar, garantia, fecha, hora, estado, idU, idC, idD) VALUES ('" + objO.Falla + "', '" + objO.Resolucion + "', " + objO.Importe.ToString + ", " + objO.Dolar.ToString + ", " + objO.Garantia.ToString + ", STR_TO_DATE(REPLACE('" + objO.Fecha.ToString + "','/','.') ,GET_FORMAT(date,'EUR')), '" + objO.Hora.ToString + "', '" + objO.Estado + "', " + objO.idU.ToString + ", " + objO.idC.ToString + ", " + objO.idD.ToString + ")"
-        sentencia = "INSERT INTO orden(detalle, resolucion, importe, dolar, garantia, fecha, hora, estado, idU, idC, idD) VALUES ('" + objO.Falla + "', '" + objO.Resolucion + "', " + objO.Importe.ToString + ", " + objO.Dolar.ToString + ", " + objO.Garantia.ToString + ", " + objO.Fecha + ", " + objO.Hora.ToString + ", '" + objO.Estado + "', " + objO.idU.ToString + ", " + objO.idC.ToString + ", " + objO.idD.ToString + ")"
+        sentencia = "INSERT INTO orden(detalle, resolucion, importe, dolar, garantia, fecha, hora, estado, idU, idC, idD) VALUES ('" + objO.Falla + "', '" + objO.Resolucion + "', " + objO.Importe.ToString + ", " + objO.Dolar.ToString + ", " + objO.Garantia.ToString + ", STR_TO_DATE('" + objO.Fecha + "', '%d/%m/%Y'), '" + objO.Hora.ToString + "', '" + objO.Estado + "', " + objO.idU.ToString + ", " + objO.idC.ToString + ", " + objO.idD.ToString + ")"
+        'sentencia = "INSERT INTO orden(detalle, resolucion, importe, dolar, garantia, fecha, hora, estado, idU, idC, idD) VALUES ('" + objO.Falla + "', '" + objO.Resolucion + "', " + objO.Importe.ToString + ", " + objO.Dolar.ToString + ", " + objO.Garantia.ToString + ", " + objO.Fecha + ", '" + objO.Hora.ToString + "', '" + objO.Estado + "', " + objO.idU.ToString + ", " + objO.idC.ToString + ", " + objO.idD.ToString + ")"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
@@ -18,7 +18,7 @@
     Public Function modificarOrden(ByVal obj As Orden)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "UPDATE orden SET detalle = '" + obj.Falla + "' , resolucion = '" + obj.Resolucion + "', importe = " + obj.Importe.ToString + ", dolar = " + obj.Dolar.ToString + ", garantia = " + obj.Garantia.ToString + ", fecha = STR_TO_DATE(REPLACE('" + obj.Fecha.ToString + "','/','.') ,GET_FORMAT(date,'EUR')), hora = '" + obj.Hora.ToString + "', estado = '" + obj.Estado + "', idU = " + obj.idU.ToString + ", idC = " + obj.idC.ToString + ", idD = " + obj.idD.ToString + " WHERE idO = " + obj.IdOrden.ToString + ";"
+        sentencia = "UPDATE orden SET detalle = '" + obj.Falla + "' , resolucion = '" + obj.Resolucion + "', importe = " + obj.Importe.ToString + ", dolar = " + obj.Dolar.ToString + ", garantia = " + obj.Garantia.ToString + ", fecha = STR_TO_DATE('" + obj.Fecha + "', '%d/%m/%Y'), hora = '" + obj.Hora.ToString + "', estado = '" + obj.Estado + "', idU = " + obj.idU.ToString + ", idC = " + obj.idC.ToString + ", idD = " + obj.idD.ToString + " WHERE idO = " + obj.IdOrden.ToString + ";"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function

@@ -6,7 +6,7 @@
     Private _importe As Integer
     Private _dolar As Boolean
     Private _garantia As Boolean
-    Private _fecha As Date
+    Private _fecha As DateTime
     Private _hora As TimeSpan
     Private _estado As String
     Private _idU As Integer
@@ -79,12 +79,12 @@
         End Set
     End Property
 
-    Public Property Fecha() As Date
+    Public Property Fecha() As DateTime
         Get
             ' Return the value stored in the field.
             Return _fecha
         End Get
-        Set(ByVal Value As Date)
+        Set(ByVal Value As DateTime)
             ' Store the value in the field.
             _fecha = Value
         End Set
@@ -146,7 +146,7 @@
     End Property
 
 
-    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As DateTime, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._idOrden = idOrden
         Me._falla = falla
         Me._resolucion = resolucion
@@ -162,7 +162,7 @@
 
     End Sub
 
-    Public Sub New(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
+    Public Sub New(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As DateTime, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Me._falla = falla
         Me._resolucion = resolucion
         Me._importe = importe

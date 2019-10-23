@@ -28,14 +28,17 @@
             dolar = True
         End If
 
-        Dim horaDateTime As DateTime = DateTime.Now.ToString("HH:mm")
+        Dim horaDateTime As DateTime = DateTime.Now.ToString("HH:mm:ss")
         Dim hora As TimeSpan = horaDateTime.TimeOfDay
+
+        Dim fecha As DateTime = DateTime.Now.ToString("dd/MM/yyyy")
+
 
         Dim objManOrden As ManOrden = New ManOrden
         If (idU Or idC Or idD) = Nothing Then
             MsgBox("Seleccione un usuario, cliente y dispositivo")
         Else
-            objManOrden.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, lblFecha.Text, hora, estado, idU, idC, idD)
+            objManOrden.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, fecha, hora, estado, idU, idC, idD)
 
             MsgBox("La orden se ha creado exitosamente.")
             Me.Close()
