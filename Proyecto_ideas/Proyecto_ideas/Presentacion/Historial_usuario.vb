@@ -36,7 +36,7 @@
     End Sub
 
     Private Sub btnUModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUModificar.Click
-        Me.Hide()
+        'Me.Hide()
         modificadorUsuario.Show()
         modificadorUsuario.cargarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("user").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("nombre").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("telefono").Value.ToString, dgvListadoUsuario.CurrentRow.Cells("costoServicio").Value.ToString)
     End Sub

@@ -11,6 +11,12 @@
         objManUsuario.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
 
         MsgBox("El usuario se ha creado exitosamente.")
+
+        Historial_usuario.dgvListadoUsuario.Rows.Clear()
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.obtenerUsuario()
+        Historial_usuario.CargarDGV(hashUsuario)
+        Me.Close()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

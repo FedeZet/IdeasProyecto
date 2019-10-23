@@ -5,6 +5,11 @@
         Dim objManUsuario As ManUsuario = New ManUsuario
         objManUsuario.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text, txtCostoU.Text)
 
+        Historial_usuario.dgvListadoUsuario.Rows.Clear()
+        Dim hashUsuario As Hashtable
+        hashUsuario = objManUsuario.obtenerUsuario()
+        Historial_usuario.CargarDGV(hashUsuario)
+        Me.Close()
     End Sub
 
     Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
