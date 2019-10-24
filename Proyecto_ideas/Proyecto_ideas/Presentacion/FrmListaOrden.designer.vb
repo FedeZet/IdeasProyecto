@@ -25,6 +25,7 @@ Partial Class FrmListaOrden
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaOrden))
         Me.dgvListaOrdenes = New System.Windows.Forms.DataGridView()
         Me.idO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.detalle = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,7 +47,9 @@ Partial Class FrmListaOrden
         Me.btnOModificar = New System.Windows.Forms.Button()
         Me.btnOEliminar = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
-        Me.lblListaRepuestos = New System.Windows.Forms.Label()
+        Me.lblListaOrden = New System.Windows.Forms.Label()
+        Me.btnBuscadorO = New System.Windows.Forms.Button()
+        Me.txtBuscadorO = New System.Windows.Forms.TextBox()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -78,7 +81,7 @@ Partial Class FrmListaOrden
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvListaOrdenes.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvListaOrdenes.GridColor = System.Drawing.Color.White
-        Me.dgvListaOrdenes.Location = New System.Drawing.Point(12, 62)
+        Me.dgvListaOrdenes.Location = New System.Drawing.Point(11, 62)
         Me.dgvListaOrdenes.Name = "dgvListaOrdenes"
         Me.dgvListaOrdenes.ReadOnly = True
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -92,7 +95,7 @@ Partial Class FrmListaOrden
         Me.dgvListaOrdenes.RowHeadersVisible = False
         Me.dgvListaOrdenes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvListaOrdenes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvListaOrdenes.Size = New System.Drawing.Size(834, 235)
+        Me.dgvListaOrdenes.Size = New System.Drawing.Size(833, 235)
         Me.dgvListaOrdenes.TabIndex = 0
         '
         'idO
@@ -198,8 +201,8 @@ Partial Class FrmListaOrden
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 315)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(858, 68)
-        Me.Panel1.TabIndex = 46
+        Me.Panel1.Size = New System.Drawing.Size(857, 68)
+        Me.Panel1.TabIndex = 2
         '
         'btnOImprimir
         '
@@ -207,7 +210,7 @@ Partial Class FrmListaOrden
         Me.btnOImprimir.FlatAppearance.BorderSize = 0
         Me.btnOImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOImprimir.Image = Global.Proyecto_ideas.My.Resources.Resources.printing_tool
-        Me.btnOImprimir.Location = New System.Drawing.Point(800, 10)
+        Me.btnOImprimir.Location = New System.Drawing.Point(798, 10)
         Me.btnOImprimir.Name = "btnOImprimir"
         Me.btnOImprimir.Size = New System.Drawing.Size(46, 46)
         Me.btnOImprimir.TabIndex = 6
@@ -269,39 +272,67 @@ Partial Class FrmListaOrden
         Me.btnVolver.FlatAppearance.BorderSize = 0
         Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
-        Me.btnVolver.Location = New System.Drawing.Point(801, 11)
+        Me.btnVolver.Location = New System.Drawing.Point(11, 11)
         Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(46, 46)
-        Me.btnVolver.TabIndex = 47
+        Me.btnVolver.TabIndex = 7
         Me.btnVolver.UseVisualStyleBackColor = True
         '
-        'lblListaRepuestos
+        'lblListaOrden
         '
-        Me.lblListaRepuestos.AutoSize = True
-        Me.lblListaRepuestos.Font = New System.Drawing.Font("Century Gothic", 18.0!)
-        Me.lblListaRepuestos.ForeColor = System.Drawing.Color.White
-        Me.lblListaRepuestos.Location = New System.Drawing.Point(323, 14)
-        Me.lblListaRepuestos.Name = "lblListaRepuestos"
-        Me.lblListaRepuestos.Size = New System.Drawing.Size(206, 30)
-        Me.lblListaRepuestos.TabIndex = 48
-        Me.lblListaRepuestos.Text = "Lista de órdenes"
+        Me.lblListaOrden.AutoSize = True
+        Me.lblListaOrden.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblListaOrden.ForeColor = System.Drawing.Color.White
+        Me.lblListaOrden.Location = New System.Drawing.Point(315, 14)
+        Me.lblListaOrden.Name = "lblListaOrden"
+        Me.lblListaOrden.Size = New System.Drawing.Size(206, 30)
+        Me.lblListaOrden.TabIndex = 48
+        Me.lblListaOrden.Text = "Lista de órdenes"
+        '
+        'btnBuscadorO
+        '
+        Me.btnBuscadorO.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnBuscadorO.FlatAppearance.BorderSize = 0
+        Me.btnBuscadorO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscadorO.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
+        Me.btnBuscadorO.Location = New System.Drawing.Point(824, 36)
+        Me.btnBuscadorO.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBuscadorO.Name = "btnBuscadorO"
+        Me.btnBuscadorO.Size = New System.Drawing.Size(16, 16)
+        Me.btnBuscadorO.TabIndex = 50
+        Me.btnBuscadorO.TabStop = False
+        Me.btnBuscadorO.UseVisualStyleBackColor = True
+        '
+        'txtBuscadorO
+        '
+        Me.txtBuscadorO.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtBuscadorO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBuscadorO.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscadorO.ForeColor = System.Drawing.Color.White
+        Me.txtBuscadorO.Location = New System.Drawing.Point(702, 35)
+        Me.txtBuscadorO.Name = "txtBuscadorO"
+        Me.txtBuscadorO.Size = New System.Drawing.Size(117, 21)
+        Me.txtBuscadorO.TabIndex = 1
         '
         'FrmListaOrden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(858, 383)
-        Me.Controls.Add(Me.lblListaRepuestos)
+        Me.ClientSize = New System.Drawing.Size(857, 383)
+        Me.Controls.Add(Me.btnBuscadorO)
+        Me.Controls.Add(Me.txtBuscadorO)
+        Me.Controls.Add(Me.lblListaOrden)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.dgvListaOrdenes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmListaOrden"
         Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Historial_ordenes"
+        Me.Text = "Ide@s"
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -329,5 +360,7 @@ Partial Class FrmListaOrden
     Friend WithEvents btnOModificar As System.Windows.Forms.Button
     Friend WithEvents btnOEliminar As System.Windows.Forms.Button
     Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents lblListaRepuestos As System.Windows.Forms.Label
+    Friend WithEvents lblListaOrden As System.Windows.Forms.Label
+    Friend WithEvents btnBuscadorO As System.Windows.Forms.Button
+    Friend WithEvents txtBuscadorO As System.Windows.Forms.TextBox
 End Class

@@ -22,7 +22,7 @@
         Next
     End Sub
 
-    Private Sub btnCVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCVolver.Click
+    Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
         Me.Close()
 
     End Sub

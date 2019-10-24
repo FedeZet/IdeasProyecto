@@ -24,6 +24,7 @@ Partial Class FrmListaRepuesto
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaRepuesto))
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
         Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,7 +38,7 @@ Partial Class FrmListaRepuesto
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnRModificar = New System.Windows.Forms.Button()
         Me.btnBuscadorRep = New System.Windows.Forms.Button()
-        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -204,18 +205,18 @@ Partial Class FrmListaRepuesto
         Me.btnBuscadorRep.TabStop = False
         Me.btnBuscadorRep.UseVisualStyleBackColor = True
         '
-        'btnVolverOrdenesLista
+        'btnVolver
         '
-        Me.btnVolverOrdenesLista.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnVolverOrdenesLista.FlatAppearance.BorderSize = 0
-        Me.btnVolverOrdenesLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolverOrdenesLista.Image = Global.Proyecto_ideas.My.Resources.Resources.back
-        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(11, 287)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
-        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(46, 46)
-        Me.btnVolverOrdenesLista.TabIndex = 6
-        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnVolver.Location = New System.Drawing.Point(11, 287)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(46, 46)
+        Me.btnVolver.TabIndex = 6
+        Me.btnVolver.UseVisualStyleBackColor = True
         '
         'FrmListaRepuesto
         '
@@ -226,14 +227,15 @@ Partial Class FrmListaRepuesto
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lblListaRepuestos)
         Me.Controls.Add(Me.btnBuscadorRep)
-        Me.Controls.Add(Me.btnVolverOrdenesLista)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.txtBuscadorRep)
         Me.Controls.Add(Me.dgvListadoRepuesto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmListaRepuesto"
         Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registro_repuesto"
+        Me.Text = "Ide@s"
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -245,7 +247,7 @@ Partial Class FrmListaRepuesto
     Friend WithEvents btnRAgregar As System.Windows.Forms.Button
     Friend WithEvents btnREliminar As System.Windows.Forms.Button
     Friend WithEvents btnRModificar As System.Windows.Forms.Button
-    Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents btnBuscadorRep As System.Windows.Forms.Button
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents lblListaRepuestos As System.Windows.Forms.Label

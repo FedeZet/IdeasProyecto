@@ -22,6 +22,7 @@ Partial Class FrmIniciarSesion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmIniciarSesion))
         Me.txtContrasenia = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
@@ -35,6 +36,7 @@ Partial Class FrmIniciarSesion
         Me.btnExit = New System.Windows.Forms.Button()
         Me.pbPassword = New System.Windows.Forms.PictureBox()
         Me.pbUsuario = New System.Windows.Forms.PictureBox()
+        Me.lblSoftware = New System.Windows.Forms.Label()
         Me.plLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,6 +84,7 @@ Partial Class FrmIniciarSesion
         'plLogo
         '
         Me.plLogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.plLogo.Controls.Add(Me.lblSoftware)
         Me.plLogo.Controls.Add(Me.PictureBox1)
         Me.plLogo.Dock = System.Windows.Forms.DockStyle.Left
         Me.plLogo.Location = New System.Drawing.Point(0, 0)
@@ -185,6 +188,18 @@ Partial Class FrmIniciarSesion
         Me.pbUsuario.TabIndex = 8
         Me.pbUsuario.TabStop = False
         '
+        'lblSoftware
+        '
+        Me.lblSoftware.AutoSize = True
+        Me.lblSoftware.Font = New System.Drawing.Font("Century Gothic", 15.75!)
+        Me.lblSoftware.ForeColor = System.Drawing.Color.White
+        Me.lblSoftware.Location = New System.Drawing.Point(37, 134)
+        Me.lblSoftware.Name = "lblSoftware"
+        Me.lblSoftware.Size = New System.Drawing.Size(151, 72)
+        Me.lblSoftware.TabIndex = 2
+        Me.lblSoftware.Text = "Software de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestión de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reparaciones"
+        Me.lblSoftware.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'FrmIniciarSesion
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -202,12 +217,14 @@ Partial Class FrmIniciarSesion
         Me.Controls.Add(Me.txtContrasenia)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FrmIniciarSesion"
         Me.Opacity = 0.9R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Inicio sesión"
+        Me.Text = "Ide@s"
         Me.plLogo.ResumeLayout(False)
+        Me.plLogo.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).EndInit()
@@ -228,4 +245,5 @@ Partial Class FrmIniciarSesion
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lblError As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents lblSoftware As System.Windows.Forms.Label
 End Class

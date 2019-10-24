@@ -25,6 +25,7 @@ Partial Class FrmListaUsuario
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaUsuario))
         Me.dgvListadoUsuario = New System.Windows.Forms.DataGridView()
         Me.idU = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.user = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -246,10 +247,11 @@ Partial Class FrmListaUsuario
         Me.Controls.Add(Me.txtBuscadorU)
         Me.Controls.Add(Me.dgvListadoUsuario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmListaUsuario"
         Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Historial_usuario"
+        Me.Text = "Ide@s"
         CType(Me.dgvListadoUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)

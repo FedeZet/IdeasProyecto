@@ -100,10 +100,8 @@
         Else
             FrmListaDispositivo.Show()
             FrmListaDispositivo.obtenerDisCli(idC)
-            FrmListaDispositivo.btnSeleccionar.Enabled = True
+            FrmListaDispositivo.btnDSeleccionar.Enabled = True
         End If
-
-
 
     End Sub
 

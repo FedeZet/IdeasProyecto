@@ -58,8 +58,6 @@
             idCli = objD.IdC
         Next
 
-
-
     End Sub
 
     Private Sub lista_dispositivos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -67,10 +65,10 @@
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
-
+        Me.Close()
     End Sub
 
-    Private Sub pbRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbRefresh.Click
+    Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListadoDispositivo.Rows.Clear()
         Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim hashDispositivo As Hashtable
@@ -149,16 +147,7 @@
 
     End Sub
 
-
-
-    Private Sub dgvListadoDispositivo_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoDispositivo.RowHeaderMouseClick
-
-        btnDEliminar.Enabled = True
-        btnDModificar.Enabled = True
-
-    End Sub
-
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
+    Private Sub btnDSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDSeleccionar.Click
 
         FrmRegistroOrden.obtenerDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString, dgvListadoDispositivo.CurrentRow.Cells("modelo").Value.ToString)
         Me.Close()
@@ -175,4 +164,8 @@
 
     End Sub
 
+    Private Sub dgvListadoDispositivo_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvListadoDispositivo.SelectionChanged
+        btnDEliminar.Enabled = True
+        btnDModificar.Enabled = True
+    End Sub
 End Class

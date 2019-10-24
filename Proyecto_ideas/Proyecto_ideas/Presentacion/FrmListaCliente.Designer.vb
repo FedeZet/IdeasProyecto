@@ -22,8 +22,9 @@ Partial Class FrmListaCliente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaCliente))
         Me.txtBuscadorCli = New System.Windows.Forms.TextBox()
         Me.dgvListadoCliente = New System.Windows.Forms.DataGridView()
         Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,7 +38,7 @@ Partial Class FrmListaCliente
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnCModificar = New System.Windows.Forms.Button()
         Me.lblListaClientes = New System.Windows.Forms.Label()
-        Me.btnCVolver = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnBuscadorCli = New System.Windows.Forms.Button()
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -63,24 +64,24 @@ Partial Class FrmListaCliente
         Me.dgvListadoCliente.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.dgvListadoCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvListadoCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvListadoCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListadoCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvListadoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idC, Me.nombre, Me.telefono, Me.mailC})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvListadoCliente.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvListadoCliente.DefaultCellStyle = DataGridViewCellStyle6
         Me.dgvListadoCliente.GridColor = System.Drawing.Color.White
         Me.dgvListadoCliente.Location = New System.Drawing.Point(12, 69)
         Me.dgvListadoCliente.Name = "dgvListadoCliente"
@@ -201,22 +202,22 @@ Partial Class FrmListaCliente
         Me.lblListaClientes.ForeColor = System.Drawing.Color.White
         Me.lblListaClientes.Location = New System.Drawing.Point(189, 9)
         Me.lblListaClientes.Name = "lblListaClientes"
-        Me.lblListaClientes.Size = New System.Drawing.Size(207, 30)
+        Me.lblListaClientes.Size = New System.Drawing.Size(203, 30)
         Me.lblListaClientes.TabIndex = 46
-        Me.lblListaClientes.Text = "Lista de Clientes"
+        Me.lblListaClientes.Text = "Lista de clientes"
         '
-        'btnCVolver
+        'btnVolver
         '
-        Me.btnCVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnCVolver.FlatAppearance.BorderSize = 0
-        Me.btnCVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
-        Me.btnCVolver.Location = New System.Drawing.Point(11, 224)
-        Me.btnCVolver.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCVolver.Name = "btnCVolver"
-        Me.btnCVolver.Size = New System.Drawing.Size(46, 46)
-        Me.btnCVolver.TabIndex = 7
-        Me.btnCVolver.UseVisualStyleBackColor = True
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnVolver.Location = New System.Drawing.Point(11, 224)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(46, 46)
+        Me.btnVolver.TabIndex = 7
+        Me.btnVolver.UseVisualStyleBackColor = True
         '
         'btnBuscadorCli
         '
@@ -239,16 +240,18 @@ Partial Class FrmListaCliente
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(648, 278)
         Me.Controls.Add(Me.lblListaClientes)
-        Me.Controls.Add(Me.btnCVolver)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnBuscadorCli)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtBuscadorCli)
         Me.Controls.Add(Me.dgvListadoCliente)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimizeBox = False
         Me.Name = "FrmListaCliente"
         Me.Opacity = 0.95R
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "lista_clientes"
         CType(Me.dgvListadoCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -264,7 +267,7 @@ Partial Class FrmListaCliente
     Friend WithEvents btnCModificar As System.Windows.Forms.Button
     Friend WithEvents btnBuscadorCli As System.Windows.Forms.Button
     Friend WithEvents btnCSeleccionar As System.Windows.Forms.Button
-    Friend WithEvents btnCVolver As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents lblListaClientes As System.Windows.Forms.Label
     Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn

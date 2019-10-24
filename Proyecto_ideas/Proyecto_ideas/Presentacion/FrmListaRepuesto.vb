@@ -4,7 +4,7 @@
         FrmRegistroRepuesto.Show()
     End Sub
 
-    Private Sub btnVolverOrdenesLista_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolverOrdenesLista.Click
+    Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
         FrmInicio.Show()
         Me.Close()
     End Sub
