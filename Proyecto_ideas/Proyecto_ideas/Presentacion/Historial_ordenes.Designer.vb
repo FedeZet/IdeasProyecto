@@ -22,6 +22,10 @@ Partial Class Historial_ordenes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Historial_ordenes))
         Me.dgvListaOrdenes = New System.Windows.Forms.DataGridView()
         Me.idO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.detalle = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,33 +39,69 @@ Partial Class Historial_ordenes
         Me.idU = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idC = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
-        Me.btnAgregarO = New System.Windows.Forms.Button()
-        Me.btnListaImprimir = New System.Windows.Forms.Button()
-        Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnCEliminar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnOImprimir = New System.Windows.Forms.Button()
+        Me.btnOAgregar = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnOModificar = New System.Windows.Forms.Button()
         Me.btnOEliminar = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.lblListaRepuestos = New System.Windows.Forms.Label()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvListaOrdenes
         '
         Me.dgvListaOrdenes.AllowUserToAddRows = False
         Me.dgvListaOrdenes.AllowUserToDeleteRows = False
-        Me.dgvListaOrdenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListaOrdenes.AllowUserToResizeColumns = False
+        Me.dgvListaOrdenes.AllowUserToResizeRows = False
+        Me.dgvListaOrdenes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.dgvListaOrdenes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListaOrdenes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvListaOrdenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvListaOrdenes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idO, Me.detalle, Me.resolucion, Me.importe, Me.dolar, Me.garantia, Me.fecha, Me.hora, Me.estado, Me.idU, Me.idC, Me.idD})
-        Me.dgvListaOrdenes.Location = New System.Drawing.Point(32, 12)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvListaOrdenes.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvListaOrdenes.GridColor = System.Drawing.Color.White
+        Me.dgvListaOrdenes.Location = New System.Drawing.Point(12, 62)
         Me.dgvListaOrdenes.Name = "dgvListaOrdenes"
         Me.dgvListaOrdenes.ReadOnly = True
-        Me.dgvListaOrdenes.Size = New System.Drawing.Size(1242, 210)
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListaOrdenes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvListaOrdenes.RowHeadersVisible = False
+        Me.dgvListaOrdenes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgvListaOrdenes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvListaOrdenes.Size = New System.Drawing.Size(834, 235)
         Me.dgvListaOrdenes.TabIndex = 0
         '
         'idO
         '
-        Me.idO.HeaderText = "Id Orden"
+        Me.idO.HeaderText = "ID"
         Me.idO.Name = "idO"
         Me.idO.ReadOnly = True
+        Me.idO.Width = 50
         '
         'detalle
         '
@@ -80,91 +120,63 @@ Partial Class Historial_ordenes
         Me.importe.HeaderText = "Importe"
         Me.importe.Name = "importe"
         Me.importe.ReadOnly = True
+        Me.importe.Width = 90
         '
         'dolar
         '
         Me.dolar.HeaderText = "Dolar"
         Me.dolar.Name = "dolar"
         Me.dolar.ReadOnly = True
+        Me.dolar.Width = 50
         '
         'garantia
         '
         Me.garantia.HeaderText = "Garantia"
         Me.garantia.Name = "garantia"
         Me.garantia.ReadOnly = True
+        Me.garantia.Width = 70
         '
         'fecha
         '
         Me.fecha.HeaderText = "Fecha"
         Me.fecha.Name = "fecha"
         Me.fecha.ReadOnly = True
+        Me.fecha.Width = 80
         '
         'hora
         '
         Me.hora.HeaderText = "Hora"
         Me.hora.Name = "hora"
         Me.hora.ReadOnly = True
+        Me.hora.Width = 70
         '
         'estado
         '
         Me.estado.HeaderText = "Estado"
         Me.estado.Name = "estado"
         Me.estado.ReadOnly = True
+        Me.estado.Width = 70
         '
         'idU
         '
-        Me.idU.HeaderText = "Id Us. "
+        Me.idU.HeaderText = "IDU"
         Me.idU.Name = "idU"
         Me.idU.ReadOnly = True
+        Me.idU.Width = 50
         '
         'idC
         '
-        Me.idC.HeaderText = "Id Cli."
+        Me.idC.HeaderText = "IDC"
         Me.idC.Name = "idC"
         Me.idC.ReadOnly = True
+        Me.idC.Width = 50
         '
         'idD
         '
-        Me.idD.HeaderText = "id Disp."
+        Me.idD.HeaderText = "IDD"
         Me.idD.Name = "idD"
         Me.idD.ReadOnly = True
-        '
-        'btnVolverOrdenesLista
-        '
-        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(343, 269)
-        Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
-        Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(75, 23)
-        Me.btnVolverOrdenesLista.TabIndex = 1
-        Me.btnVolverOrdenesLista.Text = "Volver"
-        Me.btnVolverOrdenesLista.UseVisualStyleBackColor = True
-        '
-        'btnAgregarO
-        '
-        Me.btnAgregarO.Location = New System.Drawing.Point(524, 268)
-        Me.btnAgregarO.Name = "btnAgregarO"
-        Me.btnAgregarO.Size = New System.Drawing.Size(75, 23)
-        Me.btnAgregarO.TabIndex = 2
-        Me.btnAgregarO.Text = "Agregar"
-        Me.btnAgregarO.UseVisualStyleBackColor = True
-        '
-        'btnListaImprimir
-        '
-        Me.btnListaImprimir.Location = New System.Drawing.Point(711, 268)
-        Me.btnListaImprimir.Name = "btnListaImprimir"
-        Me.btnListaImprimir.Size = New System.Drawing.Size(75, 23)
-        Me.btnListaImprimir.TabIndex = 3
-        Me.btnListaImprimir.Text = "Imprimir"
-        Me.btnListaImprimir.UseVisualStyleBackColor = True
-        '
-        'btnActualizar
-        '
-        Me.btnActualizar.Location = New System.Drawing.Point(433, 268)
-        Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
-        Me.btnActualizar.TabIndex = 43
-        Me.btnActualizar.Text = "Actualizar"
-        Me.btnActualizar.UseVisualStyleBackColor = True
+        Me.idD.Width = 50
         '
         'btnCEliminar
         '
@@ -176,49 +188,129 @@ Partial Class Historial_ordenes
         Me.btnCEliminar.Text = "Eliminar"
         Me.btnCEliminar.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnOImprimir)
+        Me.Panel1.Controls.Add(Me.btnOAgregar)
+        Me.Panel1.Controls.Add(Me.btnRefresh)
+        Me.Panel1.Controls.Add(Me.btnOModificar)
+        Me.Panel1.Controls.Add(Me.btnOEliminar)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 315)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(858, 68)
+        Me.Panel1.TabIndex = 46
+        '
+        'btnOImprimir
+        '
+        Me.btnOImprimir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOImprimir.FlatAppearance.BorderSize = 0
+        Me.btnOImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOImprimir.Image = CType(resources.GetObject("btnOImprimir.Image"), System.Drawing.Image)
+        Me.btnOImprimir.Location = New System.Drawing.Point(800, 10)
+        Me.btnOImprimir.Name = "btnOImprimir"
+        Me.btnOImprimir.Size = New System.Drawing.Size(46, 46)
+        Me.btnOImprimir.TabIndex = 6
+        Me.btnOImprimir.UseVisualStyleBackColor = True
+        '
+        'btnOAgregar
+        '
+        Me.btnOAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOAgregar.FlatAppearance.BorderSize = 0
+        Me.btnOAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOAgregar.Image = Global.Proyecto_ideas.My.Resources.Resources.add
+        Me.btnOAgregar.Location = New System.Drawing.Point(201, 10)
+        Me.btnOAgregar.Name = "btnOAgregar"
+        Me.btnOAgregar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOAgregar.TabIndex = 3
+        Me.btnOAgregar.UseVisualStyleBackColor = True
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnRefresh.FlatAppearance.BorderSize = 0
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh1
+        Me.btnRefresh.Location = New System.Drawing.Point(12, 10)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(46, 46)
+        Me.btnRefresh.TabIndex = 2
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
         'btnOModificar
         '
         Me.btnOModificar.Enabled = False
-        Me.btnOModificar.Location = New System.Drawing.Point(614, 268)
+        Me.btnOModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOModificar.FlatAppearance.BorderSize = 0
+        Me.btnOModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOModificar.Image = Global.Proyecto_ideas.My.Resources.Resources.modify
+        Me.btnOModificar.Location = New System.Drawing.Point(407, 10)
         Me.btnOModificar.Name = "btnOModificar"
-        Me.btnOModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnOModificar.TabIndex = 45
-        Me.btnOModificar.Text = "Modificar"
+        Me.btnOModificar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOModificar.TabIndex = 4
         Me.btnOModificar.UseVisualStyleBackColor = True
         '
         'btnOEliminar
         '
         Me.btnOEliminar.Enabled = False
-        Me.btnOEliminar.Location = New System.Drawing.Point(810, 268)
+        Me.btnOEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOEliminar.FlatAppearance.BorderSize = 0
+        Me.btnOEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOEliminar.Image = Global.Proyecto_ideas.My.Resources.Resources.remove
+        Me.btnOEliminar.Location = New System.Drawing.Point(612, 10)
         Me.btnOEliminar.Name = "btnOEliminar"
-        Me.btnOEliminar.Size = New System.Drawing.Size(75, 23)
-        Me.btnOEliminar.TabIndex = 44
-        Me.btnOEliminar.Text = "Eliminar"
+        Me.btnOEliminar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOEliminar.TabIndex = 5
         Me.btnOEliminar.UseVisualStyleBackColor = True
+        '
+        'btnVolver
+        '
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnVolver.Location = New System.Drawing.Point(801, 11)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(46, 46)
+        Me.btnVolver.TabIndex = 47
+        Me.btnVolver.UseVisualStyleBackColor = True
+        '
+        'lblListaRepuestos
+        '
+        Me.lblListaRepuestos.AutoSize = True
+        Me.lblListaRepuestos.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblListaRepuestos.ForeColor = System.Drawing.Color.White
+        Me.lblListaRepuestos.Location = New System.Drawing.Point(323, 14)
+        Me.lblListaRepuestos.Name = "lblListaRepuestos"
+        Me.lblListaRepuestos.Size = New System.Drawing.Size(206, 30)
+        Me.lblListaRepuestos.TabIndex = 48
+        Me.lblListaRepuestos.Text = "Lista de órdenes"
         '
         'Historial_ordenes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1298, 303)
-        Me.Controls.Add(Me.btnOModificar)
-        Me.Controls.Add(Me.btnOEliminar)
-        Me.Controls.Add(Me.btnActualizar)
-        Me.Controls.Add(Me.btnListaImprimir)
-        Me.Controls.Add(Me.btnAgregarO)
-        Me.Controls.Add(Me.btnVolverOrdenesLista)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(858, 383)
+        Me.Controls.Add(Me.lblListaRepuestos)
+        Me.Controls.Add(Me.btnVolver)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.dgvListaOrdenes)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Historial_ordenes"
+        Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Historial_ordenes"
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents dgvListaOrdenes As System.Windows.Forms.DataGridView
-    Friend WithEvents btnVolverOrdenesLista As System.Windows.Forms.Button
-    Friend WithEvents btnAgregarO As System.Windows.Forms.Button
-    Friend WithEvents btnListaImprimir As System.Windows.Forms.Button
+    Friend WithEvents btnCEliminar As System.Windows.Forms.Button
     Friend WithEvents idO As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents detalle As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents resolucion As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -231,8 +323,12 @@ Partial Class Historial_ordenes
     Friend WithEvents idU As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idD As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents btnActualizar As System.Windows.Forms.Button
-    Friend WithEvents btnCEliminar As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnOImprimir As System.Windows.Forms.Button
+    Friend WithEvents btnOAgregar As System.Windows.Forms.Button
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents btnOModificar As System.Windows.Forms.Button
     Friend WithEvents btnOEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
+    Friend WithEvents lblListaRepuestos As System.Windows.Forms.Label
 End Class
