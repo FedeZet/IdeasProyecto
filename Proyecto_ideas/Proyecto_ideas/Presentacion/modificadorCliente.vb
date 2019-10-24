@@ -6,6 +6,8 @@
         Dim objManCliente As ManCliente = New ManCliente
         objManCliente.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text, txtModCEmail.Text)
 
+        MsgBox("El cliente ha sido modificado con éxito.")
+
         lista_clientes.dgvListadoCliente.Rows.Clear()
 
         Dim hashCliente As Hashtable

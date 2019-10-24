@@ -70,6 +70,16 @@
 
         Dim objManDispositivo As ManDispositivo = New ManDispositivo
         objManDispositivo.modificarDispositivo(idDispositivo, txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, txtPIN.Text, txtIDCli.Text)
+
+        MsgBox("El dispositivo ha sido modificado con éxito.")
+
+        lista_dispositivos.dgvListadoDispositivo.Rows.Clear()
+
+        Dim hashDispositivo As Hashtable
+        hashDispositivo = objManDispositivo.obtenerDispositivo()
+        lista_clientes.CargarDGV(hashDispositivo)
+        Me.Close()
+
     End Sub
 
     Private Sub modificadorDispositivo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
