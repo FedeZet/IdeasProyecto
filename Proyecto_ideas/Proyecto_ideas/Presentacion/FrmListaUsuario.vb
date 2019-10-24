@@ -40,7 +40,7 @@
     End Sub
 
     Private Sub btnUEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUEliminar.Click
-        Dim resultado As Integer = MsgBox("Desea Eliminar este usuario? ", vbYesNo + vbQuestion)
+        Dim resultado As Integer = MsgBox("¿Desea Eliminar este usuario? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
             ManUsuario.getInstancia.eliminarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
             MsgBox("El usuario ha sido eliminado con éxito.")
@@ -48,8 +48,7 @@
             Dim hashUsuario As Hashtable
             hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
             Me.CargarDGV(hashUsuario)
-        Else
-            MsgBox("El usuario no ha sido eliminado.")
+
         End If
     End Sub
 

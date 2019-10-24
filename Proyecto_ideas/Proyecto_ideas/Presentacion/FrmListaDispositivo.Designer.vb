@@ -85,6 +85,7 @@ Partial Class FrmListaDispositivo
         Me.dgvListadoDispositivo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvListadoDispositivo.Size = New System.Drawing.Size(613, 182)
         Me.dgvListadoDispositivo.TabIndex = 33
+        Me.dgvListadoDispositivo.TabStop = False
         '
         'idD
         '
@@ -160,7 +161,7 @@ Partial Class FrmListaDispositivo
         Me.btnBuscadorD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnBuscadorD.FlatAppearance.BorderSize = 0
         Me.btnBuscadorD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscadorD.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
+        Me.btnBuscadorD.Image = Global.Ideas.My.Resources.Resources.search1
         Me.btnBuscadorD.Location = New System.Drawing.Point(605, 57)
         Me.btnBuscadorD.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscadorD.Name = "btnBuscadorD"
@@ -199,7 +200,7 @@ Partial Class FrmListaDispositivo
         Me.btnDSeleccionar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnDSeleccionar.FlatAppearance.BorderSize = 0
         Me.btnDSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDSeleccionar.Image = Global.Proyecto_ideas.My.Resources.Resources._select
+        Me.btnDSeleccionar.Image = Global.Ideas.My.Resources.Resources._select
         Me.btnDSeleccionar.Location = New System.Drawing.Point(152, 10)
         Me.btnDSeleccionar.Name = "btnDSeleccionar"
         Me.btnDSeleccionar.Size = New System.Drawing.Size(46, 46)
@@ -211,7 +212,7 @@ Partial Class FrmListaDispositivo
         Me.btnDAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnDAgregar.FlatAppearance.BorderSize = 0
         Me.btnDAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDAgregar.Image = Global.Proyecto_ideas.My.Resources.Resources.add
+        Me.btnDAgregar.Image = Global.Ideas.My.Resources.Resources.add
         Me.btnDAgregar.Location = New System.Drawing.Point(302, 10)
         Me.btnDAgregar.Name = "btnDAgregar"
         Me.btnDAgregar.Size = New System.Drawing.Size(46, 46)
@@ -223,7 +224,7 @@ Partial Class FrmListaDispositivo
         Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnRefresh.FlatAppearance.BorderSize = 0
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh1
+        Me.btnRefresh.Image = Global.Ideas.My.Resources.Resources.refresh1
         Me.btnRefresh.Location = New System.Drawing.Point(12, 10)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(46, 46)
@@ -236,7 +237,7 @@ Partial Class FrmListaDispositivo
         Me.btnDModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnDModificar.FlatAppearance.BorderSize = 0
         Me.btnDModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDModificar.Image = Global.Proyecto_ideas.My.Resources.Resources.modify
+        Me.btnDModificar.Image = Global.Ideas.My.Resources.Resources.modify
         Me.btnDModificar.Location = New System.Drawing.Point(442, 10)
         Me.btnDModificar.Name = "btnDModificar"
         Me.btnDModificar.Size = New System.Drawing.Size(46, 46)
@@ -249,7 +250,7 @@ Partial Class FrmListaDispositivo
         Me.btnDEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnDEliminar.FlatAppearance.BorderSize = 0
         Me.btnDEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDEliminar.Image = Global.Proyecto_ideas.My.Resources.Resources.remove
+        Me.btnDEliminar.Image = Global.Ideas.My.Resources.Resources.remove
         Me.btnDEliminar.Location = New System.Drawing.Point(580, 10)
         Me.btnDEliminar.Name = "btnDEliminar"
         Me.btnDEliminar.Size = New System.Drawing.Size(46, 46)
@@ -272,7 +273,7 @@ Partial Class FrmListaDispositivo
         Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnVolver.FlatAppearance.BorderSize = 0
         Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnVolver.Image = Global.Ideas.My.Resources.Resources.back
         Me.btnVolver.Location = New System.Drawing.Point(11, 11)
         Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolver.Name = "btnVolver"

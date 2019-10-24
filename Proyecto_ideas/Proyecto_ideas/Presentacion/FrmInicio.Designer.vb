@@ -63,7 +63,7 @@ Partial Class FrmInicio
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Image = Global.Proyecto_ideas.My.Resources.Resources.logout
+        Me.btnLogout.Image = Global.Ideas.My.Resources.Resources.logout
         Me.btnLogout.Location = New System.Drawing.Point(514, 12)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(46, 46)
@@ -78,7 +78,7 @@ Partial Class FrmInicio
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.Proyecto_ideas.My.Resources.Resources.key
+        Me.Button1.Image = Global.Ideas.My.Resources.Resources.key
         Me.Button1.Location = New System.Drawing.Point(410, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(46, 46)
@@ -93,7 +93,7 @@ Partial Class FrmInicio
         Me.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAbout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAbout.ForeColor = System.Drawing.Color.White
-        Me.btnAbout.Image = Global.Proyecto_ideas.My.Resources.Resources.exclamation
+        Me.btnAbout.Image = Global.Ideas.My.Resources.Resources.exclamation
         Me.btnAbout.Location = New System.Drawing.Point(462, 12)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(46, 46)
@@ -108,7 +108,7 @@ Partial Class FrmInicio
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.poweroff
+        Me.btnExit.Image = Global.Ideas.My.Resources.Resources.poweroff
         Me.btnExit.Location = New System.Drawing.Point(566, 12)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(46, 46)
@@ -147,7 +147,7 @@ Partial Class FrmInicio
         Me.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUsuario.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUsuario.ForeColor = System.Drawing.Color.White
-        Me.btnUsuario.Image = Global.Proyecto_ideas.My.Resources.Resources.employees
+        Me.btnUsuario.Image = Global.Ideas.My.Resources.Resources.employees
         Me.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnUsuario.Location = New System.Drawing.Point(311, 126)
         Me.btnUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -164,7 +164,7 @@ Partial Class FrmInicio
         Me.btnProductividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductividad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnProductividad.ForeColor = System.Drawing.Color.White
-        Me.btnProductividad.Image = Global.Proyecto_ideas.My.Resources.Resources.resources
+        Me.btnProductividad.Image = Global.Ideas.My.Resources.Resources.resources
         Me.btnProductividad.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnProductividad.Location = New System.Drawing.Point(451, 126)
         Me.btnProductividad.Margin = New System.Windows.Forms.Padding(2)
@@ -181,7 +181,7 @@ Partial Class FrmInicio
         Me.btnRepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRepuesto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRepuesto.ForeColor = System.Drawing.Color.White
-        Me.btnRepuesto.Image = Global.Proyecto_ideas.My.Resources.Resources.smartphone
+        Me.btnRepuesto.Image = Global.Ideas.My.Resources.Resources.smartphone
         Me.btnRepuesto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnRepuesto.Location = New System.Drawing.Point(171, 126)
         Me.btnRepuesto.Margin = New System.Windows.Forms.Padding(2)
@@ -198,7 +198,7 @@ Partial Class FrmInicio
         Me.btnOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOrden.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrden.ForeColor = System.Drawing.Color.White
-        Me.btnOrden.Image = Global.Proyecto_ideas.My.Resources.Resources.package
+        Me.btnOrden.Image = Global.Ideas.My.Resources.Resources.package
         Me.btnOrden.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnOrden.Location = New System.Drawing.Point(31, 126)
         Me.btnOrden.Margin = New System.Windows.Forms.Padding(2)
@@ -211,7 +211,7 @@ Partial Class FrmInicio
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.Proyecto_ideas.My.Resources.Resources.ideasLogo
+        Me.PictureBox1.BackgroundImage = Global.Ideas.My.Resources.Resources.ideasLogo
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Enabled = False
         Me.PictureBox1.Location = New System.Drawing.Point(482, 236)

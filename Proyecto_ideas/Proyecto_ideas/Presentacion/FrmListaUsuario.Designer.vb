@@ -153,7 +153,7 @@ Partial Class FrmListaUsuario
         Me.btnUAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnUAgregar.FlatAppearance.BorderSize = 0
         Me.btnUAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUAgregar.Image = Global.Proyecto_ideas.My.Resources.Resources.add
+        Me.btnUAgregar.Image = Global.Ideas.My.Resources.Resources.add
         Me.btnUAgregar.Location = New System.Drawing.Point(10, 98)
         Me.btnUAgregar.Name = "btnUAgregar"
         Me.btnUAgregar.Size = New System.Drawing.Size(46, 46)
@@ -165,7 +165,7 @@ Partial Class FrmListaUsuario
         Me.btnUEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnUEliminar.FlatAppearance.BorderSize = 0
         Me.btnUEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUEliminar.Image = Global.Proyecto_ideas.My.Resources.Resources.remove
+        Me.btnUEliminar.Image = Global.Ideas.My.Resources.Resources.remove
         Me.btnUEliminar.Location = New System.Drawing.Point(10, 278)
         Me.btnUEliminar.Name = "btnUEliminar"
         Me.btnUEliminar.Size = New System.Drawing.Size(46, 46)
@@ -177,7 +177,7 @@ Partial Class FrmListaUsuario
         Me.btnURefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnURefresh.FlatAppearance.BorderSize = 0
         Me.btnURefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnURefresh.Image = Global.Proyecto_ideas.My.Resources.Resources.refresh1
+        Me.btnURefresh.Image = Global.Ideas.My.Resources.Resources.refresh1
         Me.btnURefresh.Location = New System.Drawing.Point(10, 15)
         Me.btnURefresh.Name = "btnURefresh"
         Me.btnURefresh.Size = New System.Drawing.Size(46, 46)
@@ -189,7 +189,7 @@ Partial Class FrmListaUsuario
         Me.btnUModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnUModificar.FlatAppearance.BorderSize = 0
         Me.btnUModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUModificar.Image = Global.Proyecto_ideas.My.Resources.Resources.modify
+        Me.btnUModificar.Image = Global.Ideas.My.Resources.Resources.modify
         Me.btnUModificar.Location = New System.Drawing.Point(10, 189)
         Me.btnUModificar.Name = "btnUModificar"
         Me.btnUModificar.Size = New System.Drawing.Size(46, 46)
@@ -201,7 +201,7 @@ Partial Class FrmListaUsuario
         Me.btnUVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnUVolver.FlatAppearance.BorderSize = 0
         Me.btnUVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUVolver.Image = Global.Proyecto_ideas.My.Resources.Resources.back
+        Me.btnUVolver.Image = Global.Ideas.My.Resources.Resources.back
         Me.btnUVolver.Location = New System.Drawing.Point(11, 279)
         Me.btnUVolver.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUVolver.Name = "btnUVolver"
@@ -214,7 +214,7 @@ Partial Class FrmListaUsuario
         Me.btnBuscadorUsu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.btnBuscadorUsu.FlatAppearance.BorderSize = 0
         Me.btnBuscadorUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscadorUsu.Image = Global.Proyecto_ideas.My.Resources.Resources.search1
+        Me.btnBuscadorUsu.Image = Global.Ideas.My.Resources.Resources.search1
         Me.btnBuscadorUsu.Location = New System.Drawing.Point(519, 68)
         Me.btnBuscadorUsu.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscadorUsu.Name = "btnBuscadorUsu"

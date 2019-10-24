@@ -94,7 +94,7 @@ Partial Class FrmIniciarSesion
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.Proyecto_ideas.My.Resources.Resources.ideasLogo
+        Me.PictureBox1.BackgroundImage = Global.Ideas.My.Resources.Resources.ideasLogo
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(12, 20)
         Me.PictureBox1.Name = "PictureBox1"
@@ -148,7 +148,7 @@ Partial Class FrmIniciarSesion
         Me.lblError.AutoSize = True
         Me.lblError.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblError.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.lblError.Image = Global.Proyecto_ideas.My.Resources.Resources.cancel
+        Me.lblError.Image = Global.Ideas.My.Resources.Resources.cancel
         Me.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblError.Location = New System.Drawing.Point(243, 189)
         Me.lblError.Name = "lblError"
@@ -163,7 +163,7 @@ Partial Class FrmIniciarSesion
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Image = Global.Proyecto_ideas.My.Resources.Resources.poweroff
+        Me.btnExit.Image = Global.Ideas.My.Resources.Resources.poweroff
         Me.btnExit.Location = New System.Drawing.Point(419, 215)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(46, 46)
@@ -172,7 +172,7 @@ Partial Class FrmIniciarSesion
         '
         'pbPassword
         '
-        Me.pbPassword.Image = Global.Proyecto_ideas.My.Resources.Resources.password
+        Me.pbPassword.Image = Global.Ideas.My.Resources.Resources.password
         Me.pbPassword.Location = New System.Drawing.Point(265, 136)
         Me.pbPassword.Name = "pbPassword"
         Me.pbPassword.Size = New System.Drawing.Size(32, 32)
@@ -181,7 +181,7 @@ Partial Class FrmIniciarSesion
         '
         'pbUsuario
         '
-        Me.pbUsuario.Image = Global.Proyecto_ideas.My.Resources.Resources.avatar
+        Me.pbUsuario.Image = Global.Ideas.My.Resources.Resources.avatar
         Me.pbUsuario.Location = New System.Drawing.Point(265, 67)
         Me.pbUsuario.Name = "pbUsuario"
         Me.pbUsuario.Size = New System.Drawing.Size(32, 32)

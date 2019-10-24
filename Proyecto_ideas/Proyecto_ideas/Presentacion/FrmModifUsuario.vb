@@ -1,8 +1,12 @@
 ﻿Public Class FrmModifUsuario
     Dim idUsuario As Integer
-    Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
+    Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUModificar.Click
 
-        ManUsuario.getInstancia.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text, txtCostoU.Text)
+        If txtCostoServicio.Text = "" Then
+            txtCostoServicio.Text = "0"
+        End If
+
+        ManUsuario.getInstancia.modificarUsuario(idUsuario, txtUsuario.Text, txtNombre.Text, txtTelefono.Text, txtCostoServicio.Text)
 
         FrmListaUsuario.dgvListadoUsuario.Rows.Clear()
         Dim hashUsuario As Hashtable
@@ -11,18 +15,16 @@
         Me.Close()
     End Sub
 
-    Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
-
-        FrmListaUsuario.Show()
+    Private Sub btnUCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUCancelar.Click
         Me.Close()
     End Sub
 
     Public Function cargarUsuario(ByVal id As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As String)
         idUsuario = id
-        txtNick.Text = nick
+        txtUsuario.Text = nick
         txtNombre.Text = nombre
         txtTelefono.Text = telefono
-        txtCostoU.Text = costoServicio
+        txtCostoServicio.Text = costoServicio
         Return True
 
     End Function
@@ -32,7 +34,7 @@
 
     End Sub
 
-    Private Sub txtCostoU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCostoU.KeyPress
+    Private Sub txtCostoU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCostoServicio.KeyPress
         Numeros(e)
     End Sub
 

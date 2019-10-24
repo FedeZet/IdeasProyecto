@@ -1,25 +1,23 @@
 ﻿Public Class FrmRegistroUsuario
 
-    Private Sub Registro_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub btnURegistrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnURegistrar.Click
 
-    End Sub
+        If txtCostoServicio.Text = "" Then
+            txtCostoServicio.Text = "0"
+        End If
 
-
-    Private Sub btnRegistrarUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarUser.Click
-
-        ManRepuesto.getInstancia.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
+        ManUsuario.getInstancia.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
 
         MsgBox("El usuario se ha creado exitosamente.")
 
         FrmListaUsuario.dgvListadoUsuario.Rows.Clear()
         Dim hashUsuario As Hashtable
-        hashUsuario = ManRepuesto.getInstancia.obtenerUsuario()
+        hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
         FrmListaUsuario.CargarDGV(hashUsuario)
         Me.Close()
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        FrmInicio.Show()
+    Private Sub btnUCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUCancelar.Click
         Me.Close()
     End Sub
 

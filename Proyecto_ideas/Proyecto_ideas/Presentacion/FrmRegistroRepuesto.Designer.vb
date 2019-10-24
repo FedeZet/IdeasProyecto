@@ -79,6 +79,7 @@ Partial Class FrmRegistroRepuesto
         'nudRCantidad
         '
         Me.nudRCantidad.Location = New System.Drawing.Point(111, 81)
+        Me.nudRCantidad.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.nudRCantidad.Name = "nudRCantidad"
         Me.nudRCantidad.Size = New System.Drawing.Size(120, 20)
         Me.nudRCantidad.TabIndex = 5
@@ -100,7 +101,7 @@ Partial Class FrmRegistroRepuesto
         Me.txtCostoRe.TabIndex = 7
         Me.txtCostoRe.Text = "0"
         '
-        'Registro_repuesto
+        'FrmRegistroRepuesto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -113,7 +114,7 @@ Partial Class FrmRegistroRepuesto
         Me.Controls.Add(Me.lblRNombre)
         Me.Controls.Add(Me.btnRCancelar)
         Me.Controls.Add(Me.btnAgregar)
-        Me.Name = "Registro_repuesto"
+        Me.Name = "FrmRegistroRepuesto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registrar Repuesto"
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).EndInit()

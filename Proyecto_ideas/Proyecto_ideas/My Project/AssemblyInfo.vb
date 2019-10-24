@@ -1,4 +1,6 @@
-﻿Imports System
+﻿Imports System.Resources
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,14 +10,14 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Proyecto_ideas")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Proyecto_ideas")> 
+<Assembly: AssemblyTitle("Ideas")> 
+<Assembly: AssemblyDescription("Gestión de reparaciones")> 
+<Assembly: AssemblyCompany("AtomCore S.R.L.")> 
+<Assembly: AssemblyProduct("Ideas")> 
 <Assembly: AssemblyCopyright("Copyright ©  2019")> 
 <Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(False)> 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("01071131-a19b-4fca-b905-7d8712b6c448")> 
@@ -33,3 +35,5 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
 <Assembly: AssemblyFileVersion("1.0.0.0")> 
+
+<Assembly: NeutralResourcesLanguageAttribute("es-UY")> 
