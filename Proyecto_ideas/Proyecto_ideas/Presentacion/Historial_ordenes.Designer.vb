@@ -38,8 +38,10 @@ Partial Class Historial_ordenes
         Me.btnVolverOrdenesLista = New System.Windows.Forms.Button()
         Me.btnAgregarO = New System.Windows.Forms.Button()
         Me.btnListaImprimir = New System.Windows.Forms.Button()
-        Me.btnCModificar = New System.Windows.Forms.Button()
+        Me.btnActualizar = New System.Windows.Forms.Button()
         Me.btnCEliminar = New System.Windows.Forms.Button()
+        Me.btnOModificar = New System.Windows.Forms.Button()
+        Me.btnOEliminar = New System.Windows.Forms.Button()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -129,7 +131,7 @@ Partial Class Historial_ordenes
         '
         'btnVolverOrdenesLista
         '
-        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(425, 269)
+        Me.btnVolverOrdenesLista.Location = New System.Drawing.Point(343, 269)
         Me.btnVolverOrdenesLista.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolverOrdenesLista.Name = "btnVolverOrdenesLista"
         Me.btnVolverOrdenesLista.Size = New System.Drawing.Size(75, 23)
@@ -155,15 +157,14 @@ Partial Class Historial_ordenes
         Me.btnListaImprimir.Text = "Imprimir"
         Me.btnListaImprimir.UseVisualStyleBackColor = True
         '
-        'btnCModificar
+        'btnActualizar
         '
-        Me.btnCModificar.Enabled = False
-        Me.btnCModificar.Location = New System.Drawing.Point(616, 268)
-        Me.btnCModificar.Name = "btnCModificar"
-        Me.btnCModificar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCModificar.TabIndex = 40
-        Me.btnCModificar.Text = "Modificar"
-        Me.btnCModificar.UseVisualStyleBackColor = True
+        Me.btnActualizar.Location = New System.Drawing.Point(433, 268)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(75, 23)
+        Me.btnActualizar.TabIndex = 43
+        Me.btnActualizar.Text = "Actualizar"
+        Me.btnActualizar.UseVisualStyleBackColor = True
         '
         'btnCEliminar
         '
@@ -175,13 +176,34 @@ Partial Class Historial_ordenes
         Me.btnCEliminar.Text = "Eliminar"
         Me.btnCEliminar.UseVisualStyleBackColor = True
         '
+        'btnOModificar
+        '
+        Me.btnOModificar.Enabled = False
+        Me.btnOModificar.Location = New System.Drawing.Point(614, 268)
+        Me.btnOModificar.Name = "btnOModificar"
+        Me.btnOModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnOModificar.TabIndex = 45
+        Me.btnOModificar.Text = "Modificar"
+        Me.btnOModificar.UseVisualStyleBackColor = True
+        '
+        'btnOEliminar
+        '
+        Me.btnOEliminar.Enabled = False
+        Me.btnOEliminar.Location = New System.Drawing.Point(810, 268)
+        Me.btnOEliminar.Name = "btnOEliminar"
+        Me.btnOEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnOEliminar.TabIndex = 44
+        Me.btnOEliminar.Text = "Eliminar"
+        Me.btnOEliminar.UseVisualStyleBackColor = True
+        '
         'Historial_ordenes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1298, 303)
-        Me.Controls.Add(Me.btnCModificar)
-        Me.Controls.Add(Me.btnCEliminar)
+        Me.Controls.Add(Me.btnOModificar)
+        Me.Controls.Add(Me.btnOEliminar)
+        Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.btnListaImprimir)
         Me.Controls.Add(Me.btnAgregarO)
         Me.Controls.Add(Me.btnVolverOrdenesLista)
@@ -209,6 +231,8 @@ Partial Class Historial_ordenes
     Friend WithEvents idU As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idC As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents idD As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents btnCModificar As System.Windows.Forms.Button
+    Friend WithEvents btnActualizar As System.Windows.Forms.Button
     Friend WithEvents btnCEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnOModificar As System.Windows.Forms.Button
+    Friend WithEvents btnOEliminar As System.Windows.Forms.Button
 End Class
