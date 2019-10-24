@@ -4,7 +4,6 @@
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         'se crea el dispositivo
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim bateria, sim, cargador, tapa, estuche, memoria As Boolean
         If chbBateria.Checked = True Then
             bateria = True
@@ -38,7 +37,7 @@
         End If
 
 
-        objManDispositivo.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text, Me.txtIDCli.Text)
+        ManDispositivo.getInstancia.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text, Me.txtIDCli.Text)
         MsgBox("El dispositivo se ha creado exitosamente.")
     End Sub
 

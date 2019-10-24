@@ -2,8 +2,7 @@
 
     Private Sub btnCAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCAgregar.Click
 
-        Dim objManCliente As ManCliente = New ManCliente
-        objManCliente.crearCliente(Me.txtCNombre.Text, Me.txtCTelefono.Text, Me.txtMailC.Text)
+        ManCliente.getInstancia.crearCliente(Me.txtCNombre.Text, Me.txtCTelefono.Text, Me.txtMailC.Text)
         Me.Hide()
 
 
@@ -12,7 +11,7 @@
         FrmListaCliente.dgvListadoCliente.Rows.Clear()
 
         Dim hashCliente As Hashtable
-        hashCliente = objManCliente.obtenerCliente()
+        hashCliente = ManCliente.getInstancia.obtenerCliente()
         FrmListaCliente.CargarDGV(hashCliente)
 
     End Sub
@@ -30,5 +29,9 @@
 
     Private Sub txtCTelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCTelefono.KeyPress
         Numeros(e)
+    End Sub
+
+    Private Sub FrmRegistroCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

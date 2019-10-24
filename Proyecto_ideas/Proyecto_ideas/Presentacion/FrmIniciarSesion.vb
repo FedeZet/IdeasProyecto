@@ -1,8 +1,8 @@
 ﻿Public Class FrmIniciarSesion
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-        Dim objManUsuario As ManUsuario = New ManUsuario
-        Dim validacion = objManUsuario.iniciarSesion(Me.txtUsuario.Text, Me.txtContrasenia.Text)
+
+        Dim validacion = ManUsuario.getInstancia.iniciarSesion(Me.txtUsuario.Text, Me.txtContrasenia.Text)
 
         If validacion = True Then
             FrmInicio.Show()
@@ -35,5 +35,9 @@
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
         Application.Exit()
+    End Sub
+
+    Private Sub plLogo_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles plLogo.Paint
+
     End Sub
 End Class

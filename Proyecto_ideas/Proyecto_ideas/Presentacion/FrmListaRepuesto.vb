@@ -11,9 +11,8 @@
 
     Public Sub New()
         InitializeComponent()
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
         Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         Me.CargarDGV(hashRepuesto)
 
     End Sub
@@ -41,14 +40,13 @@
 
     End Sub
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
         Dim resultado As Integer = MsgBox("Desea Eliminar este repuesto? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
+            ManRepuesto.getInstancia.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
             MsgBox("El repuesto ha sido eliminado con éxito.")
             Me.dgvListadoRepuesto.Rows.Clear()
             Dim hashRepuesto As Hashtable
-            hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
+            hashRepuesto = ManRepuesto.getInstancia.buscarRepuesto(Me.txtBuscadorRep.Text)
             Me.CargarDGV(hashRepuesto)
         Else
             MsgBox("El repuesto no ha sido eliminado.")
@@ -57,17 +55,15 @@
 
     Private Sub btnBuscadorRep_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorRep.Click
         Me.dgvListadoRepuesto.Rows.Clear()
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
         Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
+        hashRepuesto = ManRepuesto.getInstancia.buscarRepuesto(Me.txtBuscadorRep.Text)
         Me.CargarDGV(hashRepuesto)
     End Sub
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListadoRepuesto.Rows.Clear()
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
         Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         Me.CargarDGV(hashRepuesto)
     End Sub
 

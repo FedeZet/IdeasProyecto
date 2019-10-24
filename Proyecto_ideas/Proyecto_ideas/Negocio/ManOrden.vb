@@ -2,6 +2,7 @@
 
 Public Class ManOrden
     Dim hashOrden As Hashtable = New Hashtable
+    Private Shared instancia As ManOrden
 
     Public Function agregarOrden(ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
         Dim objO As Orden = New Orden(falla, resolucion, importe, dolar, garantia, fecha, hora, estado, idU, idC, idD)
@@ -10,6 +11,7 @@ Public Class ManOrden
     End Function
 
     Public Function obtenerOrden() As Hashtable
+        hashOrden.Clear()
         Dim datareader As MySqlDataReader = Orden.obtenerOrdenes()
         Dim objO As Orden = Nothing
         While datareader.Read()
@@ -33,6 +35,7 @@ Public Class ManOrden
     End Function
 
     Public Function buscarOrden(ByVal estado As String)
+        hashOrden.Clear()
         Dim objO As Orden = New Orden(estado)
         Dim datareader As MySqlDataReader = objO.buscar
         While datareader.Read()
@@ -40,5 +43,16 @@ Public Class ManOrden
             Me.hashOrden.Add(objO.Estado, objO)
         End While
         Return Me.hashOrden
+    End Function
+
+    Private Sub New()
+
+    End Sub
+
+    Public Shared Function getInstancia()
+        If instancia Is Nothing Then
+            instancia = New ManOrden
+        End If
+        Return instancia
     End Function
 End Class

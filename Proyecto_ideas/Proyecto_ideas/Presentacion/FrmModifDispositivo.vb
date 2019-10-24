@@ -68,15 +68,14 @@
         End If
 
 
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
-        objManDispositivo.modificarDispositivo(idDispositivo, txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, txtPIN.Text, txtIDCli.Text)
+        ManDispositivo.getInstancia.modificarDispositivo(idDispositivo, txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, txtPIN.Text, txtIDCli.Text)
 
         MsgBox("El dispositivo ha sido modificado con éxito.")
 
         FrmListaDispositivo.dgvListadoDispositivo.Rows.Clear()
 
         Dim hashDispositivo As Hashtable
-        hashDispositivo = objManDispositivo.obtenerDispositivo()
+        hashDispositivo = ManDispositivo.getInstancia.obtenerDispositivo()
         FrmListaCliente.CargarDGV(hashDispositivo)
         Me.Close()
 

@@ -2,12 +2,11 @@
     Dim idUsuario As Integer
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
 
-        Dim objManUsuario As ManUsuario = New ManUsuario
-        objManUsuario.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text, txtCostoU.Text)
+        ManUsuario.getInstancia.modificarUsuario(idUsuario, txtNick.Text, txtNombre.Text, txtTelefono.Text, txtCostoU.Text)
 
         FrmListaUsuario.dgvListadoUsuario.Rows.Clear()
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.obtenerUsuario()
+        hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
         FrmListaUsuario.CargarDGV(hashUsuario)
         Me.Close()
     End Sub

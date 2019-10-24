@@ -2,9 +2,8 @@
 
     Public Sub New()
         InitializeComponent()
-        Dim objManOrden As ManOrden = New ManOrden
         Dim hashOrden As Hashtable
-        hashOrden = objManOrden.obtenerOrden()
+        hashOrden = ManOrden.getInstancia.obtenerOrden()
         Me.CargarDGV(hashOrden)
 
     End Sub
@@ -57,10 +56,9 @@
     End Sub
 
     Private Sub btnOEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOEliminar.Click
-        Dim objManOrden As ManOrden = New ManOrden
         Dim resultado As Integer = MsgBox("Desea Eliminar esta orden? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            objManOrden.eliminarOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value.ToString)
+            ManOrden.getInstancia.eliminarOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value.ToString)
             MsgBox("La orden ha sido eliminada con éxito.")
             btnRefresh.PerformClick()
         Else
@@ -76,9 +74,8 @@
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListaOrdenes.Rows.Clear()
-        Dim objManOrden As ManOrden = New ManOrden
         Dim hashOrden As Hashtable
-        hashOrden = objManOrden.obtenerOrden()
+        hashOrden = ManOrden.getInstancia.obtenerOrden()
         Me.CargarDGV(hashOrden)
     End Sub
 
@@ -89,4 +86,7 @@
     End Sub
 
 
+    Private Sub FrmListaOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

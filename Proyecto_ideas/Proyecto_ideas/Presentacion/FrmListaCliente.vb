@@ -3,9 +3,8 @@
 
     Public Sub New()
         InitializeComponent()
-        Dim objManCliente As ManCliente = New ManCliente
         Dim hashCliente As Hashtable
-        hashCliente = objManCliente.obtenerCliente()
+        hashCliente = ManCliente.getInstancia.obtenerCliente()
         Me.CargarDGV(hashCliente)
 
     End Sub
@@ -29,9 +28,8 @@
 
     Private Sub btnBuscadorCli_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorCli.Click
         Me.dgvListadoCliente.Rows.Clear()
-        Dim objManCliente As ManCliente = New ManCliente
         Dim hashCliente As Hashtable
-        hashCliente = objManCliente.buscarCliente(Me.txtBuscadorCli.Text)
+        hashCliente = ManCliente.getInstancia.buscarCliente(Me.txtBuscadorCli.Text)
         Me.CargarDGV(hashCliente)
 
     End Sub
@@ -42,14 +40,13 @@
     End Sub
 
     Private Sub btnCEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCEliminar.Click
-        Dim objManCliente As ManCliente = New ManCliente
         Dim resultado As Integer = MsgBox("Desea Eliminar este cliente? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            objManCliente.eliminarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString)
+            ManCliente.getInstancia.eliminarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString)
             MsgBox("El cliente ha sido eliminado con éxito.")
             Me.dgvListadoCliente.Rows.Clear()
             Dim hashCliente As Hashtable
-            hashCliente = objManCliente.obtenerCliente()
+            hashCliente = ManCliente.getInstancia.obtenerCliente()
             Me.CargarDGV(hashCliente)
 
         Else
@@ -74,9 +71,8 @@
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListadoCliente.Rows.Clear()
-        Dim objManCliente As ManCliente = New ManCliente
         Dim hashCliente As Hashtable
-        hashCliente = objManCliente.obtenerCliente()
+        hashCliente = ManCliente.getInstancia.obtenerCliente()
         Me.CargarDGV(hashCliente)
 
     End Sub
@@ -85,4 +81,8 @@
     '    btnCEliminar.Enabled = True
     '    btnCModificar.Enabled = True
     'End Sub
+
+    Private Sub FrmListaCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
