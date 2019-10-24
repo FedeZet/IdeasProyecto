@@ -77,7 +77,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Negocio\Admin.vb" />
     <Compile Include="Negocio\Cliente.vb" />
     <Compile Include="Negocio\Dispositivo.vb" />
     <Compile Include="Negocio\Encriptar.vb" />
@@ -96,28 +95,28 @@
     <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
-    <Compile Include="Presentacion\Historial_ordenes.designer.vb">
-      <DependentUpon>Historial_ordenes.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmListaOrden.designer.vb">
+      <DependentUpon>FrmListaOrden.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Historial_ordenes.vb">
+    <Compile Include="Presentacion\FrmListaOrden.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Historial_usuario.Designer.vb">
-      <DependentUpon>Historial_usuario.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmListaUsuario.Designer.vb">
+      <DependentUpon>FrmListaUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Historial_usuario.vb">
+    <Compile Include="Presentacion\FrmListaUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\ImprimirOrden.Designer.vb">
-      <DependentUpon>ImprimirOrden.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmImprimirOrden.Designer.vb">
+      <DependentUpon>FrmImprimirOrden.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\ImprimirOrden.vb">
+    <Compile Include="Presentacion\FrmImprimirOrden.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Inicio_sesion.Designer.vb">
-      <DependentUpon>Inicio_sesion.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmIniciarSesion.Designer.vb">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Inicio_sesion.vb">
+    <Compile Include="Presentacion\FrmIniciarSesion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -135,104 +134,98 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Presentacion\lista_clientes.Designer.vb">
-      <DependentUpon>lista_clientes.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmListaCliente.Designer.vb">
+      <DependentUpon>FrmListaCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\lista_clientes.vb">
+    <Compile Include="Presentacion\FrmListaCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\lista_dispositivos.Designer.vb">
-      <DependentUpon>lista_dispositivos.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmListaDispositivo.Designer.vb">
+      <DependentUpon>FrmListaDispositivo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\lista_dispositivos.vb">
+    <Compile Include="Presentacion\FrmListaDispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Menu_Inicio.Designer.vb">
-      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Menu_Inicio.vb">
+    <Compile Include="Presentacion\FrmInicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\modificadorCliente.Designer.vb">
-      <DependentUpon>modificadorCliente.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmModifCliente.Designer.vb">
+      <DependentUpon>FrmModifCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\modificadorCliente.vb">
+    <Compile Include="Presentacion\FrmModifCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\modificadorDispositivo.Designer.vb">
-      <DependentUpon>modificadorDispositivo.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmModifDispositivo.Designer.vb">
+      <DependentUpon>FrmModifDispositivo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\modificadorDispositivo.vb">
+    <Compile Include="Presentacion\FrmModifDispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\modificadorRepuesto.Designer.vb">
-      <DependentUpon>modificadorRepuesto.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmModifRepuesto.Designer.vb">
+      <DependentUpon>FrmModifRepuesto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\modificadorRepuesto.vb">
+    <Compile Include="Presentacion\FrmModifRepuesto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\modificadorUsuario.Designer.vb">
-      <DependentUpon>modificadorUsuario.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmModifUsuario.Designer.vb">
+      <DependentUpon>FrmModifUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\modificadorUsuario.vb">
+    <Compile Include="Presentacion\FrmModifUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Prueba.Designer.vb">
-      <DependentUpon>Prueba.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmRegistroCliente.Designer.vb">
+      <DependentUpon>FrmRegistroCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Prueba.vb">
+    <Compile Include="Presentacion\FrmRegistroCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Registro_cliente.Designer.vb">
-      <DependentUpon>Registro_cliente.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmRegistroDispositivo.Designer.vb">
+      <DependentUpon>FrmRegistroDispositivo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Registro_cliente.vb">
+    <Compile Include="Presentacion\FrmRegistroDispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Registro_dispositivo.Designer.vb">
-      <DependentUpon>Registro_dispositivo.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmRegistroOrden.Designer.vb">
+      <DependentUpon>FrmRegistroOrden.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Registro_dispositivo.vb">
+    <Compile Include="Presentacion\FrmRegistroOrden.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Registro_orden.Designer.vb">
-      <DependentUpon>Registro_orden.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmListaRepuesto.Designer.vb">
+      <DependentUpon>FrmListaRepuesto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Registro_orden.vb">
+    <Compile Include="Presentacion\FrmListaRepuesto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\lista_repuestos.Designer.vb">
-      <DependentUpon>lista_repuestos.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmRegistroRepuesto.Designer.vb">
+      <DependentUpon>FrmRegistroRepuesto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\lista_repuestos.vb">
+    <Compile Include="Presentacion\FrmRegistroRepuesto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Registro_repuesto.Designer.vb">
-      <DependentUpon>Registro_repuesto.vb</DependentUpon>
+    <Compile Include="Presentacion\FrmRegistroUsuario.Designer.vb">
+      <DependentUpon>FrmRegistroUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Registro_repuesto.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Registro_usuario.Designer.vb">
-      <DependentUpon>Registro_usuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Registro_usuario.vb">
+    <Compile Include="Presentacion\FrmRegistroUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Negocio\Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Presentacion\Historial_ordenes.resx">
-      <DependentUpon>Historial_ordenes.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmListaOrden.resx">
+      <DependentUpon>FrmListaOrden.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Historial_usuario.resx">
-      <DependentUpon>Historial_usuario.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmListaUsuario.resx">
+      <DependentUpon>FrmListaUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\ImprimirOrden.resx">
-      <DependentUpon>ImprimirOrden.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmImprimirOrden.resx">
+      <DependentUpon>FrmImprimirOrden.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Inicio_sesion.resx">
-      <DependentUpon>Inicio_sesion.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmIniciarSesion.resx">
+      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -240,44 +233,41 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\lista_clientes.resx">
-      <DependentUpon>lista_clientes.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmListaCliente.resx">
+      <DependentUpon>FrmListaCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\lista_dispositivos.resx">
-      <DependentUpon>lista_dispositivos.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmListaDispositivo.resx">
+      <DependentUpon>FrmListaDispositivo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\lista_repuestos.resx">
-      <DependentUpon>lista_repuestos.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmListaRepuesto.resx">
+      <DependentUpon>FrmListaRepuesto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Menu_Inicio.resx">
-      <DependentUpon>Menu_Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmInicio.resx">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\modificadorCliente.resx">
-      <DependentUpon>modificadorCliente.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmModifCliente.resx">
+      <DependentUpon>FrmModifCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\modificadorDispositivo.resx">
-      <DependentUpon>modificadorDispositivo.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmModifDispositivo.resx">
+      <DependentUpon>FrmModifDispositivo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\modificadorRepuesto.resx">
-      <DependentUpon>modificadorRepuesto.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmModifRepuesto.resx">
+      <DependentUpon>FrmModifRepuesto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\modificadorUsuario.resx">
-      <DependentUpon>modificadorUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmModifUsuario.resx">
+      <DependentUpon>FrmModifUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Prueba.resx">
-      <DependentUpon>Prueba.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmRegistroCliente.resx">
+      <DependentUpon>FrmRegistroCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Registro_cliente.resx">
-      <DependentUpon>Registro_cliente.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmRegistroOrden.resx">
+      <DependentUpon>FrmRegistroOrden.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Registro_orden.resx">
-      <DependentUpon>Registro_orden.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmRegistroRepuesto.resx">
+      <DependentUpon>FrmRegistroRepuesto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Registro_repuesto.resx">
-      <DependentUpon>Registro_repuesto.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Registro_usuario.resx">
-      <DependentUpon>Registro_usuario.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\FrmRegistroUsuario.resx">
+      <DependentUpon>FrmRegistroUsuario.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -365,6 +355,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ideasLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing-tool.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
