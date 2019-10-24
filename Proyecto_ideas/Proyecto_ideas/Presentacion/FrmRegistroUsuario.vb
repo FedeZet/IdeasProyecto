@@ -6,15 +6,14 @@
 
 
     Private Sub btnRegistrarUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrarUser.Click
-        Dim objManUsuario As ManUsuario = New ManUsuario
 
-        objManUsuario.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
+        ManRepuesto.getInstancia.crearUsuario(Me.txtUsuario.Text, Me.txtContra.Text, Me.txtNombre.Text, Me.txtTelefono.Text, Me.txtCostoServicio.Text)
 
         MsgBox("El usuario se ha creado exitosamente.")
 
         FrmListaUsuario.dgvListadoUsuario.Rows.Clear()
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.obtenerUsuario()
+        hashUsuario = ManRepuesto.getInstancia.obtenerUsuario()
         FrmListaUsuario.CargarDGV(hashUsuario)
         Me.Close()
     End Sub

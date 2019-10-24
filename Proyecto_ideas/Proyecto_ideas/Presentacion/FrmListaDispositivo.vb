@@ -70,18 +70,16 @@
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListadoDispositivo.Rows.Clear()
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim hashDispositivo As Hashtable
-        hashDispositivo = objManDispositivo.obtenerDispositivo()
+        hashDispositivo = ManDispositivo.getInstancia.obtenerDispositivo()
         Me.CargarDGV(hashDispositivo)
     End Sub
 
     Private Sub btnBuscadorD_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorD.Click
 
         Me.dgvListadoDispositivo.Rows.Clear()
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim hashDispositivo As Hashtable
-        hashDispositivo = objManDispositivo.buscarDispositivo(Me.txtBuscadorD.Text)
+        hashDispositivo = ManDispositivo.getInstancia.buscarDispositivo(Me.txtBuscadorD.Text)
         Me.CargarDGV(hashDispositivo)
 
     End Sub
@@ -92,15 +90,14 @@
     End Sub
 
     Private Sub btnDEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDEliminar.Click
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim resultado As Integer = MsgBox("¿Desea Eliminar este dispositivo? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            objManDispositivo.eliminarDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString)
+            ManDispositivo.getInstancia.eliminarDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString)
             MsgBox("El dispositivo ha sido eliminado con éxito.")
 
             Me.dgvListadoDispositivo.Rows.Clear()
             Dim hashDispositivo As Hashtable
-            hashDispositivo = objManDispositivo.obtenerDispositivo()
+            hashDispositivo = ManDispositivo.getInstancia.obtenerDispositivo()
             Me.CargarDGV(hashDispositivo)
         Else
             MsgBox("El dispositivo no ha sido eliminado.")
@@ -157,9 +154,8 @@
     Public Sub obtenerDisCli(ByVal idC As Integer)
 
         Me.dgvListadoDispositivo.Rows.Clear()
-        Dim objManDispositivo As ManDispositivo = New ManDispositivo
         Dim hashDispositivo As Hashtable
-        hashDispositivo = objManDispositivo.buscarDispositivoCli(idC)
+        hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(idC)
         Me.CargarDGV(hashDispositivo)
 
     End Sub

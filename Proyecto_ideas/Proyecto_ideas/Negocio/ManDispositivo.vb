@@ -3,6 +3,7 @@
 Public Class ManDispositivo
 
     Dim hashDispositivo As Hashtable = New Hashtable
+    Private Shared instancia As ManDispositivo
 
     Public Function crearDispositivo(ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer, ByVal idC As Integer)
 
@@ -12,6 +13,7 @@ Public Class ManDispositivo
     End Function
 
     Public Function obtenerDispositivo() As Hashtable
+        hashDispositivo.Clear()
         Dim datareader As MySqlDataReader = Dispositivo.obtenerDispositivo()
         Dim objD As Dispositivo = Nothing
         While datareader.Read()
@@ -34,6 +36,7 @@ Public Class ManDispositivo
     End Function
 
     Public Function buscarDispositivo(ByVal modelo As String)
+        hashDispositivo.Clear()
         Dim objD As Dispositivo = New Dispositivo(modelo)
         Dim datareader As MySqlDataReader = objD.buscar
         While datareader.Read()
@@ -44,6 +47,7 @@ Public Class ManDispositivo
     End Function
 
     Public Function buscarDispositivoCli(ByVal idC As Integer)
+        hashDispositivo.Clear()
         Dim objD As Dispositivo = New Dispositivo(idC)
         Dim datareader As MySqlDataReader = objD.buscarCli
         While datareader.Read()
@@ -51,5 +55,16 @@ Public Class ManDispositivo
             Me.hashDispositivo.Add(objD.Modelo, objD)
         End While
         Return Me.hashDispositivo
+    End Function
+
+    Private Sub New()
+
+    End Sub
+
+    Public Shared Function getInstancia()
+        If instancia Is Nothing Then
+            instancia = New ManDispositivo
+        End If
+        Return instancia
     End Function
 End Class

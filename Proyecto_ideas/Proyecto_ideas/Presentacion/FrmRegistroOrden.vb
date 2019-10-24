@@ -34,11 +34,10 @@
         Dim fecha As DateTime = DateTime.Now.ToString("dd/MM/yyyy")
 
 
-        Dim objManOrden As ManOrden = New ManOrden
         If (idU Or idC Or idD) = Nothing Then
             MsgBox("Seleccione un usuario, cliente y dispositivo")
         Else
-            objManOrden.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, fecha, hora, estado, idU, idC, idD)
+            ManOrden.getInstancia.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, fecha, hora, estado, idU, idC, idD)
 
             MsgBox("La orden se ha creado exitosamente.")
             Me.Close()
@@ -56,9 +55,8 @@
         InitializeComponent()
         lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy")
 
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashTecnico As Hashtable
-        hashTecnico = objManUsuario.obtenerTecnico()
+        hashTecnico = ManUsuario.getInstancia.obtenerTecnico()
         Me.CargarTecnicos(hashTecnico)
 
 

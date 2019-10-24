@@ -1,8 +1,7 @@
 ﻿Public Class FrmRegistroRepuesto
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.agregarRepuesto(Me.txtRNombre.Text, Me.nudRCantidad.Text, Me.txtCostoRe.Text)
+        ManRepuesto.getInstancia.agregarRepuesto(Me.txtRNombre.Text, Me.nudRCantidad.Text, Me.txtCostoRe.Text)
         Me.Hide()
         FrmListaRepuesto.Show()
 
@@ -10,7 +9,7 @@
 
         FrmListaRepuesto.dgvListadoRepuesto.Rows.Clear()
         Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         FrmListaRepuesto.CargarDGV(hashRepuesto)
     End Sub
 

@@ -12,14 +12,13 @@
     End Sub
 
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
-        Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        objManRepuesto.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text, txtMCostoRep.Text)
+        ManRepuesto.getInstancia.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text, txtMCostoRep.Text)
 
         MsgBox("El repuesto ha sido modificado con éxito.")
 
         FrmListaRepuesto.dgvListadoRepuesto.Rows.Clear()
         Dim hashRepuesto As Hashtable
-        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         FrmListaRepuesto.CargarDGV(hashRepuesto)
         Me.Close()
         FrmListaRepuesto.Show()

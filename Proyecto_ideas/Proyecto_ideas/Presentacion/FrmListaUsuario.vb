@@ -2,9 +2,8 @@
 
     Public Sub New()
         InitializeComponent()
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.obtenerUsuario()
+        hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
         Me.CargarDGV(hashUsuario)
 
     End Sub
@@ -23,9 +22,8 @@
 
     Private Sub btnURefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnURefresh.Click
         Me.dgvListadoUsuario.Rows.Clear()
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.obtenerUsuario()
+        hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
         Me.CargarDGV(hashUsuario)
     End Sub
 
@@ -42,14 +40,13 @@
     End Sub
 
     Private Sub btnUEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUEliminar.Click
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim resultado As Integer = MsgBox("Desea Eliminar este usuario? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            objManUsuario.eliminarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
+            ManUsuario.getInstancia.eliminarUsuario(dgvListadoUsuario.CurrentRow.Cells("idU").Value.ToString)
             MsgBox("El usuario ha sido eliminado con éxito.")
             Me.dgvListadoUsuario.Rows.Clear()
             Dim hashUsuario As Hashtable
-            hashUsuario = objManUsuario.obtenerUsuario()
+            hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
             Me.CargarDGV(hashUsuario)
         Else
             MsgBox("El usuario no ha sido eliminado.")
@@ -59,9 +56,8 @@
 
     Private Sub btnBuscadorUsu_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorUsu.Click
         Me.dgvListadoUsuario.Rows.Clear()
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
+        hashUsuario = ManUsuario.getInstancia.buscarUsuario(Me.txtBuscadorU.Text)
         Me.CargarDGV(hashUsuario)
     End Sub
 
@@ -77,9 +73,8 @@
 
     Private Sub txtBuscadorU_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscadorU.TextChanged
         Me.dgvListadoUsuario.Rows.Clear()
-        Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable
-        hashUsuario = objManUsuario.buscarUsuario(Me.txtBuscadorU.Text)
+        hashUsuario = ManUsuario.getInstancia.buscarUsuario(Me.txtBuscadorU.Text)
         Me.CargarDGV(hashUsuario)
     End Sub
 End Class

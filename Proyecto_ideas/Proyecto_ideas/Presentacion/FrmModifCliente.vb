@@ -3,15 +3,14 @@
     Dim idCliente
 
     Private Sub btnModificarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarC.Click
-        Dim objManCliente As ManCliente = New ManCliente
-        objManCliente.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text, txtModCEmail.Text)
+        ManCliente.getInstancia.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text, txtModCEmail.Text)
 
         MsgBox("El cliente ha sido modificado con éxito.")
 
         FrmListaCliente.dgvListadoCliente.Rows.Clear()
 
         Dim hashCliente As Hashtable
-        hashCliente = objManCliente.obtenerCliente()
+        hashCliente = ManCliente.getInstancia.obtenerCliente()
         FrmListaCliente.CargarDGV(hashCliente)
         Me.Close()
     End Sub
@@ -34,5 +33,9 @@
 
     Private Sub txtMCtelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMCtelefono.KeyPress
         Numeros(e)
+    End Sub
+
+    Private Sub FrmModifCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

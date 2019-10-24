@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class ManCliente
     Dim hashCliente As Hashtable = New Hashtable
+    Private Shared instancia As ManCliente
 
     Public Function crearCliente(ByVal nombre As String, ByVal telefono As String, ByVal correo As String)
 
@@ -10,6 +11,7 @@ Public Class ManCliente
     End Function
 
     Public Function obtenerCliente() As Hashtable
+        hashCliente.Clear()
         Dim datareader As MySqlDataReader = Cliente.obtenerClientes()
         Dim objC As Cliente = Nothing
         While datareader.Read()
@@ -32,6 +34,7 @@ Public Class ManCliente
     End Function
 
     Public Function buscarCliente(ByVal nombre As String)
+        hashCliente.Clear()
         Dim objCliente As Cliente = New Cliente(nombre)
         Dim datareader As MySqlDataReader = objCliente.buscar
         While datareader.Read()
@@ -41,4 +44,15 @@ Public Class ManCliente
         Return Me.hashCliente
     End Function
 
+    Private Sub New()
+
+    End Sub
+
+
+    Public Shared Function getInstancia()
+        If instancia Is Nothing Then
+            instancia = New ManCliente
+        End If
+        Return instancia
+    End Function
 End Class
