@@ -69,7 +69,13 @@
         Registro_usuario.Show()
     End Sub
 
-    Private Sub txtBuscadorU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtBuscadorU.KeyPress
+    
+
+    Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub txtBuscadorU_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscadorU.TextChanged
         Me.dgvListadoUsuario.Rows.Clear()
         Dim objManUsuario As ManUsuario = New ManUsuario
         Dim hashUsuario As Hashtable

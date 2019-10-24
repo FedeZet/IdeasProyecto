@@ -32,7 +32,7 @@
             Me.dgvListaOrdenes(3, cantFilas).Value = objO.Importe.ToString
             Me.dgvListaOrdenes(4, cantFilas).Value = dolar
             Me.dgvListaOrdenes(5, cantFilas).Value = garantia
-            Me.dgvListaOrdenes(6, cantFilas).Value = objO.Fecha
+            Me.dgvListaOrdenes(6, cantFilas).Value = objO.Fecha.ToString("dd/MM/yyyy")
             Me.dgvListaOrdenes(7, cantFilas).Value = objO.Hora
             Me.dgvListaOrdenes(8, cantFilas).Value = objO.Estado
             Me.dgvListaOrdenes(9, cantFilas).Value = objO.idU.ToString

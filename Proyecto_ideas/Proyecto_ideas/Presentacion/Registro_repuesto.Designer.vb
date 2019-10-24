@@ -98,6 +98,7 @@ Partial Class Registro_repuesto
         Me.txtCostoRe.Name = "txtCostoRe"
         Me.txtCostoRe.Size = New System.Drawing.Size(120, 20)
         Me.txtCostoRe.TabIndex = 7
+        Me.txtCostoRe.Text = "0"
         '
         'Registro_repuesto
         '
