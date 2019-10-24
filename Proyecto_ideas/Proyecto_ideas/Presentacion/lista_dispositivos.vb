@@ -1,5 +1,5 @@
 ﻿Public Class lista_dispositivos
-
+    Dim idCli As Integer
     Public Sub New()
         InitializeComponent()
         'Dim objManDispositivo As ManDispositivo = New ManDispositivo
@@ -55,8 +55,11 @@
             Me.dgvListadoDispositivo(7, cantFilas).Value = tmemoria
             Me.dgvListadoDispositivo(8, cantFilas).Value = objD.Pin.ToString
             Me.dgvListadoDispositivo(9, cantFilas).Value = objD.IdC.ToString
-
+            idCli = objD.IdC
         Next
+
+
+
     End Sub
 
     Private Sub lista_dispositivos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -87,6 +90,7 @@
 
     Private Sub btnDAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDAgregar.Click
         Registro_dispositivo.Show()
+        Registro_dispositivo.obtenerIDcli(idCli)
     End Sub
 
     Private Sub btnDEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDEliminar.Click

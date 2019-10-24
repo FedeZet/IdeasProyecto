@@ -1,5 +1,7 @@
 ﻿Public Class Registro_dispositivo
 
+
+
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         'se crea el dispositivo
         Dim objManDispositivo As ManDispositivo = New ManDispositivo
@@ -52,5 +54,9 @@
 
     Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPIN.KeyPress
         Numeros(e)
+    End Sub
+
+    Public Sub obtenerIDcli(ByVal id As Integer)
+        txtIDCli.Text = id.ToString
     End Sub
 End Class

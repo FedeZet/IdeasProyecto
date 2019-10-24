@@ -32,7 +32,7 @@
             Me.dgvListaOrdenes(3, cantFilas).Value = objO.Importe.ToString
             Me.dgvListaOrdenes(4, cantFilas).Value = dolar
             Me.dgvListaOrdenes(5, cantFilas).Value = garantia
-            Me.dgvListaOrdenes(6, cantFilas).Value = objO.Fecha.ToString("dd/MM/yyyy")
+            Me.dgvListaOrdenes(6, cantFilas).Value = objO.Fecha
             Me.dgvListaOrdenes(7, cantFilas).Value = objO.Hora
             Me.dgvListaOrdenes(8, cantFilas).Value = objO.Estado
             Me.dgvListaOrdenes(9, cantFilas).Value = objO.idU.ToString
@@ -56,24 +56,43 @@
         ImprimirOrden.Show()
     End Sub
 
-    Private Sub btnCModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCModificar.Click
 
-    End Sub
-
-    Private Sub btnCEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCEliminar.Click
+    Private Sub btnCEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOEliminar.Click, btnCEliminar.Click
 
         Dim objManOrden As ManOrden = New ManOrden
         Dim resultado As Integer = MsgBox("Desea Eliminar esta orden? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
             objManOrden.eliminarOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value.ToString)
             MsgBox("La orden ha sido eliminada con éxito.")
+            btnActualizar.PerformClick()
         Else
             MsgBox("La orden no ha sido eliminada.")
+
+
         End If
 
     End Sub
 
     Private Sub Historial_ordenes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+
+
+    Private Sub dgvListaOrdenes_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListaOrdenes.RowHeaderMouseClick
+        btnOEliminar.Enabled = True
+        btnOModificar.Enabled = True
+    End Sub
+
+    Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
+        Me.dgvListaOrdenes.Rows.Clear()
+        Dim objManOrden As ManOrden = New ManOrden
+        Dim hashOrden As Hashtable
+        hashOrden = objManOrden.obtenerOrden()
+        Me.CargarDGV(hashOrden)
+    End Sub
+
+    Private Sub btnOModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOModificar.Click
 
     End Sub
 End Class
