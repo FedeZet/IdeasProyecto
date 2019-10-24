@@ -9,6 +9,12 @@
 
         MsgBox("El cliente se ha creado exitosamente.")
 
+        lista_clientes.dgvListadoCliente.Rows.Clear()
+
+        Dim hashCliente As Hashtable
+        hashCliente = objManCliente.obtenerCliente()
+        lista_clientes.CargarDGV(hashCliente)
+
     End Sub
 
     Private Sub btnCCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCCancelar.Click

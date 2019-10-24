@@ -91,10 +91,15 @@
 
     Private Sub btnDEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDEliminar.Click
         Dim objManDispositivo As ManDispositivo = New ManDispositivo
-        Dim resultado As Integer = MsgBox("Desea Eliminar este dispositivo? ", vbYesNo + vbQuestion)
+        Dim resultado As Integer = MsgBox("¿Desea Eliminar este dispositivo? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
             objManDispositivo.eliminarDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString)
             MsgBox("El dispositivo ha sido eliminado con éxito.")
+
+            Me.dgvListadoDispositivo.Rows.Clear()
+            Dim hashDispositivo As Hashtable
+            hashDispositivo = objManDispositivo.obtenerDispositivo()
+            Me.CargarDGV(hashDispositivo)
         Else
             MsgBox("El dispositivo no ha sido eliminado.")
         End If

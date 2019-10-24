@@ -36,7 +36,7 @@ Public Class ManUsuario
         Return True
     End Function
 
-    Public Function eliminarRepuesto(ByVal idUsuario As Integer)
+    Public Function eliminarUsuario(ByVal idUsuario As Integer)
         Dim objUsuario As Usuario = New Usuario(idUsuario)
         objUsuario.eliminar()
         Return True

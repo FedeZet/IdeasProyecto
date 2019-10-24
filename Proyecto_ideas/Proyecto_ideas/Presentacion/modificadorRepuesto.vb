@@ -16,6 +16,13 @@
         objManRepuesto.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text, txtMCostoRep.Text)
 
         MsgBox("El repuesto ha sido modificado con éxito.")
+
+        lista_repuestos.dgvListadoRepuesto.Rows.Clear()
+        Dim hashRepuesto As Hashtable
+        hashRepuesto = objManRepuesto.obtenerRepuesto()
+        lista_repuestos.CargarDGV(hashRepuesto)
+        Me.Close()
+        lista_repuestos.Show()
     End Sub
 
     Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer, ByVal costo As Integer)

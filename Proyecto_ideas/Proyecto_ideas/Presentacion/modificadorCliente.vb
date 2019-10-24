@@ -5,6 +5,13 @@
     Private Sub btnModificarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarC.Click
         Dim objManCliente As ManCliente = New ManCliente
         objManCliente.modificarCliente(idCliente, txtMCnombre.Text, txtMCtelefono.Text, txtModCEmail.Text)
+
+        lista_clientes.dgvListadoCliente.Rows.Clear()
+
+        Dim hashCliente As Hashtable
+        hashCliente = objManCliente.obtenerCliente()
+        lista_clientes.CargarDGV(hashCliente)
+        Me.Close()
     End Sub
 
     Private Sub btnCancelarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarC.Click

@@ -46,6 +46,10 @@
         If resultado = vbYes Then
             objManRepuesto.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
             MsgBox("El repuesto ha sido eliminado con éxito.")
+            Me.dgvListadoRepuesto.Rows.Clear()
+            Dim hashRepuesto As Hashtable
+            hashRepuesto = objManRepuesto.buscarRepuesto(Me.txtBuscadorRep.Text)
+            Me.CargarDGV(hashRepuesto)
         Else
             MsgBox("El repuesto no ha sido eliminado.")
         End If

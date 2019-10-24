@@ -47,6 +47,11 @@
         If resultado = vbYes Then
             objManCliente.eliminarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString)
             MsgBox("El cliente ha sido eliminado con éxito.")
+            Me.dgvListadoCliente.Rows.Clear()
+            Dim hashCliente As Hashtable
+            hashCliente = objManCliente.obtenerCliente()
+            Me.CargarDGV(hashCliente)
+
         Else
             MsgBox("El cliente no ha sido eliminado.")
         End If
