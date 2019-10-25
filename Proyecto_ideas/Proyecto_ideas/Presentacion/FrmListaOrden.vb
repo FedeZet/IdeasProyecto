@@ -79,6 +79,25 @@
         Me.CargarDGV(hashOrden)
     End Sub
 
+    Private Sub dgvListaOrdenes_CellFormatting(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvListaOrdenes.CellFormatting
+        Dim EstadoC As String
+        If dgvListaOrdenes.Columns(e.ColumnIndex).Name.Equals("estado") Then
+            EstadoC = (dgvListaOrdenes.Rows(e.RowIndex).Cells(e.ColumnIndex).Value)
+
+            If EstadoC = "Pendiente" Then
+                e.CellStyle.BackColor = ColorTranslator.FromHtml("#F1948A")
+            ElseIf EstadoC = "En Espera" Then
+                e.CellStyle.BackColor = ColorTranslator.FromHtml("#F7DC6F")
+            ElseIf EstadoC = "Reparado" Then
+                e.CellStyle.BackColor = ColorTranslator.FromHtml("#ABEBC6")
+            ElseIf EstadoC = "Entregado" Then
+                e.CellStyle.BackColor = ColorTranslator.FromHtml("#A9CCE3")
+            End If
+
+
+        End If
+    End Sub
+
     Private Sub dgvListaOrdenes_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvListaOrdenes.SelectionChanged
         btnOEliminar.Enabled = True
         btnOModificar.Enabled = True
