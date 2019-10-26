@@ -56,9 +56,8 @@
 
 
     Private Sub btnCModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCModificar.Click
-        Me.Hide()
         FrmModifCliente.Show()
-        FrmModifCliente.cargarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString)
+        FrmModifCliente.cargarCliente(dgvListadoCliente.CurrentRow.Cells("idC").Value.ToString, dgvListadoCliente.CurrentRow.Cells("nombre").Value.ToString, dgvListadoCliente.CurrentRow.Cells("telefono").Value.ToString, dgvListadoCliente.CurrentRow.Cells("mailC").Value.ToString)
 
     End Sub
 
@@ -81,8 +80,4 @@
     '    btnCEliminar.Enabled = True
     '    btnCModificar.Enabled = True
     'End Sub
-
-    Private Sub FrmListaCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
