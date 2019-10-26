@@ -1,18 +1,16 @@
 ﻿Public Class FrmModifRepuesto
     Dim idRepuesto
 
-    Private Sub btnCancelarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarR.Click
-
-        FrmListaRepuesto.Show()
+    Private Sub btnRCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRCancelar.Click
         Me.Close()
     End Sub
 
-    Private Sub modificadorRepuesto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
+        If txtRCosto.Text = "" Then
+            txtRCosto.Text = "0"
+        End If
 
-    End Sub
-
-    Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarR.Click
-        ManRepuesto.getInstancia.modificarRepuesto(idRepuesto, txtMUnombre.Text, txtMUcantidad.Text, txtMCostoRep.Text)
+        ManRepuesto.getInstancia.modificarRepuesto(idRepuesto, txtRNombre.Text, nudRCantidad.Text, txtRCosto.Text)
 
         MsgBox("El repuesto ha sido modificado con éxito.")
 
@@ -20,20 +18,19 @@
         Dim hashRepuesto As Hashtable
         hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         FrmListaRepuesto.CargarDGV(hashRepuesto)
+
         Me.Close()
-        FrmListaRepuesto.Show()
     End Sub
 
     Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer, ByVal costo As Integer)
         idRepuesto = id
-        txtMUnombre.Text = nombre
-        txtMUcantidad.Text = cantidad.ToString
-        txtMCostoRep.Text = costo.ToString
+        txtRNombre.Text = nombre
+        nudRCantidad.Text = cantidad.ToString
+        txtRCosto.Text = costo.ToString
         Return True
     End Function
 
-
-    Private Sub txtMUcantidad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtMUcantidad.KeyPress
+    Private Sub txtMUcantidad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
     End Sub
 End Class

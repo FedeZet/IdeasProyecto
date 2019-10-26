@@ -22,117 +22,168 @@ Partial Class FrmModifRepuesto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnModificarR = New System.Windows.Forms.Button()
-        Me.btnCancelarR = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtMUnombre = New System.Windows.Forms.TextBox()
-        Me.txtMUcantidad = New System.Windows.Forms.TextBox()
-        Me.txtMCostoRep = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmModifRepuesto))
+        Me.lblModificarRepuesto = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnRModificar = New System.Windows.Forms.Button()
+        Me.btnRCancelar = New System.Windows.Forms.Button()
+        Me.txtRCosto = New System.Windows.Forms.TextBox()
+        Me.txtRNombre = New System.Windows.Forms.TextBox()
+        Me.lblCantidad = New System.Windows.Forms.Label()
+        Me.lblCosto = New System.Windows.Forms.Label()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.nudRCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.Panel1.SuspendLayout()
+        CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnModificarR
+        'lblModificarRepuesto
         '
-        Me.btnModificarR.Location = New System.Drawing.Point(37, 127)
-        Me.btnModificarR.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnModificarR.Name = "btnModificarR"
-        Me.btnModificarR.Size = New System.Drawing.Size(63, 19)
-        Me.btnModificarR.TabIndex = 0
-        Me.btnModificarR.Text = "Modificar"
-        Me.btnModificarR.UseVisualStyleBackColor = True
+        Me.lblModificarRepuesto.AutoSize = True
+        Me.lblModificarRepuesto.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblModificarRepuesto.ForeColor = System.Drawing.Color.White
+        Me.lblModificarRepuesto.Location = New System.Drawing.Point(58, 35)
+        Me.lblModificarRepuesto.Name = "lblModificarRepuesto"
+        Me.lblModificarRepuesto.Size = New System.Drawing.Size(238, 30)
+        Me.lblModificarRepuesto.TabIndex = 77
+        Me.lblModificarRepuesto.Text = "Modificar repuesto"
         '
-        'btnCancelarR
+        'Panel1
         '
-        Me.btnCancelarR.Location = New System.Drawing.Point(171, 127)
-        Me.btnCancelarR.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnCancelarR.Name = "btnCancelarR"
-        Me.btnCancelarR.Size = New System.Drawing.Size(63, 19)
-        Me.btnCancelarR.TabIndex = 1
-        Me.btnCancelarR.Text = "Cancelar"
-        Me.btnCancelarR.UseVisualStyleBackColor = True
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnRModificar)
+        Me.Panel1.Controls.Add(Me.btnRCancelar)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 243)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(355, 57)
+        Me.Panel1.TabIndex = 4
         '
-        'Label1
+        'btnRModificar
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 9)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Nombre Repuesto:"
+        Me.btnRModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRModificar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRModificar.ForeColor = System.Drawing.Color.White
+        Me.btnRModificar.Location = New System.Drawing.Point(52, 10)
+        Me.btnRModificar.Name = "btnRModificar"
+        Me.btnRModificar.Size = New System.Drawing.Size(115, 35)
+        Me.btnRModificar.TabIndex = 4
+        Me.btnRModificar.Text = "Registrar"
+        Me.btnRModificar.UseVisualStyleBackColor = True
         '
-        'Label2
+        'btnRCancelar
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 46)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Cantidad:"
+        Me.btnRCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnRCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnRCancelar.Location = New System.Drawing.Point(185, 10)
+        Me.btnRCancelar.Name = "btnRCancelar"
+        Me.btnRCancelar.Size = New System.Drawing.Size(115, 35)
+        Me.btnRCancelar.TabIndex = 5
+        Me.btnRCancelar.Text = "Cancelar"
+        Me.btnRCancelar.UseVisualStyleBackColor = True
         '
-        'txtMUnombre
+        'txtRCosto
         '
-        Me.txtMUnombre.Location = New System.Drawing.Point(102, 11)
-        Me.txtMUnombre.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtMUnombre.Name = "txtMUnombre"
-        Me.txtMUnombre.Size = New System.Drawing.Size(132, 20)
-        Me.txtMUnombre.TabIndex = 4
+        Me.txtRCosto.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtRCosto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRCosto.ForeColor = System.Drawing.Color.White
+        Me.txtRCosto.Location = New System.Drawing.Point(171, 171)
+        Me.txtRCosto.Name = "txtRCosto"
+        Me.txtRCosto.Size = New System.Drawing.Size(142, 27)
+        Me.txtRCosto.TabIndex = 3
+        Me.txtRCosto.Text = "0"
         '
-        'txtMUcantidad
+        'txtRNombre
         '
-        Me.txtMUcantidad.Location = New System.Drawing.Point(102, 46)
-        Me.txtMUcantidad.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtMUcantidad.Name = "txtMUcantidad"
-        Me.txtMUcantidad.Size = New System.Drawing.Size(71, 20)
-        Me.txtMUcantidad.TabIndex = 5
+        Me.txtRNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtRNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRNombre.ForeColor = System.Drawing.Color.White
+        Me.txtRNombre.Location = New System.Drawing.Point(171, 105)
+        Me.txtRNombre.Name = "txtRNombre"
+        Me.txtRNombre.Size = New System.Drawing.Size(142, 27)
+        Me.txtRNombre.TabIndex = 1
         '
-        'txtMCostoRep
+        'lblCantidad
         '
-        Me.txtMCostoRep.Location = New System.Drawing.Point(102, 85)
-        Me.txtMCostoRep.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtMCostoRep.Name = "txtMCostoRep"
-        Me.txtMCostoRep.Size = New System.Drawing.Size(110, 20)
-        Me.txtMCostoRep.TabIndex = 6
+        Me.lblCantidad.AutoSize = True
+        Me.lblCantidad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCantidad.ForeColor = System.Drawing.Color.White
+        Me.lblCantidad.Location = New System.Drawing.Point(42, 140)
+        Me.lblCantidad.Name = "lblCantidad"
+        Me.lblCantidad.Size = New System.Drawing.Size(91, 21)
+        Me.lblCantidad.TabIndex = 74
+        Me.lblCantidad.Text = "Cantidad:"
         '
-        'Label3
+        'lblCosto
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 88)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(93, 13)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Costo por unidad :"
+        Me.lblCosto.AutoSize = True
+        Me.lblCosto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCosto.ForeColor = System.Drawing.Color.White
+        Me.lblCosto.Location = New System.Drawing.Point(42, 174)
+        Me.lblCosto.Name = "lblCosto"
+        Me.lblCosto.Size = New System.Drawing.Size(60, 21)
+        Me.lblCosto.TabIndex = 73
+        Me.lblCosto.Text = "Costo:"
         '
-        'modificadorRepuesto
+        'lblNombre
+        '
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(42, 108)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(77, 21)
+        Me.lblNombre.TabIndex = 71
+        Me.lblNombre.Text = "Nombre:"
+        '
+        'nudRCantidad
+        '
+        Me.nudRCantidad.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.nudRCantidad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nudRCantidad.ForeColor = System.Drawing.Color.White
+        Me.nudRCantidad.Location = New System.Drawing.Point(171, 138)
+        Me.nudRCantidad.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
+        Me.nudRCantidad.Name = "nudRCantidad"
+        Me.nudRCantidad.Size = New System.Drawing.Size(142, 27)
+        Me.nudRCantidad.TabIndex = 2
+        '
+        'FrmModifRepuesto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(258, 157)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtMCostoRep)
-        Me.Controls.Add(Me.txtMUcantidad)
-        Me.Controls.Add(Me.txtMUnombre)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnCancelarR)
-        Me.Controls.Add(Me.btnModificarR)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(355, 300)
+        Me.Controls.Add(Me.lblModificarRepuesto)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.txtRCosto)
+        Me.Controls.Add(Me.txtRNombre)
+        Me.Controls.Add(Me.lblCantidad)
+        Me.Controls.Add(Me.lblCosto)
+        Me.Controls.Add(Me.lblNombre)
+        Me.Controls.Add(Me.nudRCantidad)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "modificadorRepuesto"
+        Me.Name = "FrmModifRepuesto"
+        Me.Opacity = 0.98R
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "modificadorRepuesto"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnModificarR As System.Windows.Forms.Button
-    Friend WithEvents btnCancelarR As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtMUnombre As System.Windows.Forms.TextBox
-    Friend WithEvents txtMUcantidad As System.Windows.Forms.TextBox
-    Friend WithEvents txtMCostoRep As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblModificarRepuesto As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnRModificar As System.Windows.Forms.Button
+    Friend WithEvents btnRCancelar As System.Windows.Forms.Button
+    Friend WithEvents txtRCosto As System.Windows.Forms.TextBox
+    Friend WithEvents txtRNombre As System.Windows.Forms.TextBox
+    Friend WithEvents lblCantidad As System.Windows.Forms.Label
+    Friend WithEvents lblCosto As System.Windows.Forms.Label
+    Friend WithEvents lblNombre As System.Windows.Forms.Label
+    Friend WithEvents nudRCantidad As System.Windows.Forms.NumericUpDown
 End Class

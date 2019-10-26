@@ -93,8 +93,6 @@
             ElseIf EstadoC = "Entregado" Then
                 e.CellStyle.BackColor = ColorTranslator.FromHtml("#A9CCE3")
             End If
-
-
         End If
     End Sub
 

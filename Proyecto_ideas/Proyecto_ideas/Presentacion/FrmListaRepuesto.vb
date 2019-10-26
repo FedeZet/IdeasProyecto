@@ -30,7 +30,6 @@
     End Sub
 
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
-        Me.Hide()
         FrmModifRepuesto.Show()
         FrmModifRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("costoRep").Value.ToString)
         'Dim objManRepuesto As ManRepuesto = New ManRepuesto
@@ -65,10 +64,6 @@
         Dim hashRepuesto As Hashtable
         hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         Me.CargarDGV(hashRepuesto)
-    End Sub
-
-    Private Sub lista_repuestos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
     End Sub
 
     Private Sub txtBuscadorRep_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscadorRep.TextChanged

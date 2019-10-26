@@ -129,7 +129,7 @@ Partial Class FrmRegistroUsuario
         Me.btnURegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnURegistrar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnURegistrar.ForeColor = System.Drawing.Color.White
-        Me.btnURegistrar.Location = New System.Drawing.Point(55, 10)
+        Me.btnURegistrar.Location = New System.Drawing.Point(53, 10)
         Me.btnURegistrar.Name = "btnURegistrar"
         Me.btnURegistrar.Size = New System.Drawing.Size(115, 35)
         Me.btnURegistrar.TabIndex = 6
@@ -142,7 +142,7 @@ Partial Class FrmRegistroUsuario
         Me.btnUCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnUCancelar.Location = New System.Drawing.Point(188, 10)
+        Me.btnUCancelar.Location = New System.Drawing.Point(186, 10)
         Me.btnUCancelar.Name = "btnUCancelar"
         Me.btnUCancelar.Size = New System.Drawing.Size(115, 35)
         Me.btnUCancelar.TabIndex = 7
