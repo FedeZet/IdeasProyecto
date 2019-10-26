@@ -27,6 +27,7 @@ Partial Class FrmIniciarSesion
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.plLogo = New System.Windows.Forms.Panel()
+        Me.lblSoftware = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.lshPassword = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -36,7 +37,6 @@ Partial Class FrmIniciarSesion
         Me.btnExit = New System.Windows.Forms.Button()
         Me.pbPassword = New System.Windows.Forms.PictureBox()
         Me.pbUsuario = New System.Windows.Forms.PictureBox()
-        Me.lblSoftware = New System.Windows.Forms.Label()
         Me.plLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,12 +47,12 @@ Partial Class FrmIniciarSesion
         '
         Me.txtContrasenia.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.txtContrasenia.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtContrasenia.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContrasenia.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContrasenia.ForeColor = System.Drawing.Color.White
         Me.txtContrasenia.Location = New System.Drawing.Point(315, 141)
         Me.txtContrasenia.Name = "txtContrasenia"
         Me.txtContrasenia.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.txtContrasenia.Size = New System.Drawing.Size(149, 24)
+        Me.txtContrasenia.Size = New System.Drawing.Size(149, 22)
         Me.txtContrasenia.TabIndex = 2
         '
         'btnLogin
@@ -60,7 +60,7 @@ Partial Class FrmIniciarSesion
         Me.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Location = New System.Drawing.Point(265, 222)
         Me.btnLogin.Name = "btnLogin"
@@ -73,11 +73,11 @@ Partial Class FrmIniciarSesion
         '
         Me.txtUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtUsuario.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsuario.ForeColor = System.Drawing.Color.White
         Me.txtUsuario.Location = New System.Drawing.Point(313, 73)
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(149, 24)
+        Me.txtUsuario.Size = New System.Drawing.Size(149, 22)
         Me.txtUsuario.TabIndex = 1
         Me.txtUsuario.Tag = ""
         '
@@ -91,6 +91,18 @@ Partial Class FrmIniciarSesion
         Me.plLogo.Name = "plLogo"
         Me.plLogo.Size = New System.Drawing.Size(220, 280)
         Me.plLogo.TabIndex = 5
+        '
+        'lblSoftware
+        '
+        Me.lblSoftware.AutoSize = True
+        Me.lblSoftware.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
+        Me.lblSoftware.ForeColor = System.Drawing.Color.White
+        Me.lblSoftware.Location = New System.Drawing.Point(37, 134)
+        Me.lblSoftware.Name = "lblSoftware"
+        Me.lblSoftware.Size = New System.Drawing.Size(145, 75)
+        Me.lblSoftware.TabIndex = 2
+        Me.lblSoftware.Text = "Software de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestión de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reparaciones"
+        Me.lblSoftware.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
@@ -135,24 +147,24 @@ Partial Class FrmIniciarSesion
         'lblIniciarSesion
         '
         Me.lblIniciarSesion.AutoSize = True
-        Me.lblIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 15.75!)
+        Me.lblIniciarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!)
         Me.lblIniciarSesion.ForeColor = System.Drawing.Color.White
         Me.lblIniciarSesion.Location = New System.Drawing.Point(290, 20)
         Me.lblIniciarSesion.Name = "lblIniciarSesion"
-        Me.lblIniciarSesion.Size = New System.Drawing.Size(134, 24)
+        Me.lblIniciarSesion.Size = New System.Drawing.Size(138, 25)
         Me.lblIniciarSesion.TabIndex = 1
         Me.lblIniciarSesion.Text = "Iniciar sesión"
         '
         'lblError
         '
         Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblError.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblError.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.lblError.Image = Global.Ideas.My.Resources.Resources.cancel
         Me.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.lblError.Location = New System.Drawing.Point(243, 189)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(0, 17)
+        Me.lblError.Size = New System.Drawing.Size(0, 15)
         Me.lblError.TabIndex = 10
         '
         'btnExit
@@ -161,7 +173,7 @@ Partial Class FrmIniciarSesion
         Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
         Me.btnExit.Image = Global.Ideas.My.Resources.Resources.poweroff
         Me.btnExit.Location = New System.Drawing.Point(419, 215)
@@ -188,20 +200,9 @@ Partial Class FrmIniciarSesion
         Me.pbUsuario.TabIndex = 8
         Me.pbUsuario.TabStop = False
         '
-        'lblSoftware
-        '
-        Me.lblSoftware.AutoSize = True
-        Me.lblSoftware.Font = New System.Drawing.Font("Century Gothic", 15.75!)
-        Me.lblSoftware.ForeColor = System.Drawing.Color.White
-        Me.lblSoftware.Location = New System.Drawing.Point(37, 134)
-        Me.lblSoftware.Name = "lblSoftware"
-        Me.lblSoftware.Size = New System.Drawing.Size(151, 72)
-        Me.lblSoftware.TabIndex = 2
-        Me.lblSoftware.Text = "Software de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestión de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reparaciones"
-        Me.lblSoftware.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'FrmIniciarSesion
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
