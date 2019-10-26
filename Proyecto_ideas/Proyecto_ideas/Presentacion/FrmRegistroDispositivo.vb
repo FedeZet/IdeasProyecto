@@ -1,8 +1,6 @@
 ﻿Public Class FrmRegistroDispositivo
 
-
-
-    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+    Private Sub btnDRegistrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDRegistrar.Click
         'se crea el dispositivo
         Dim bateria, sim, cargador, tapa, estuche, memoria As Boolean
         If chbBateria.Checked = True Then
@@ -39,19 +37,16 @@
 
         ManDispositivo.getInstancia.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text, Me.txtIDCli.Text)
         MsgBox("El dispositivo se ha creado exitosamente.")
-    End Sub
 
-
-    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
-        FrmListaDispositivo.Show()
         Me.Close()
     End Sub
 
-    Private Sub Registro_dispositivo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+    Private Sub btnDCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDCancelar.Click
+        Me.Close()
     End Sub
 
-    Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPIN.KeyPress
+    Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
     End Sub
 

@@ -29,12 +29,11 @@
         Return True
     End Function
 
-    Private Sub btnCancelarD_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarD.Click
-        FrmListaDispositivo.Show()
+    Private Sub btnDCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDCancelar.Click
         Me.Close()
     End Sub
 
-    Private Sub btnModificarD_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarD.Click
+    Private Sub btnDModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDModificar.Click
         Dim bateria, sim, cargador, tapa, estuche, memoria As Boolean
         If chbBateria.Checked = True Then
             bateria = True
@@ -77,15 +76,11 @@
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.obtenerDispositivo()
         FrmListaCliente.CargarDGV(hashDispositivo)
+
         Me.Close()
-
     End Sub
 
-    Private Sub modificadorDispositivo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPIN.KeyPress
+    Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
     End Sub
 End Class

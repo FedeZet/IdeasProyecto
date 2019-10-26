@@ -84,6 +84,7 @@ Partial Class FrmRegistroRepuesto
         '
         'btnRCancelar
         '
+        Me.btnRCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnRCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnRCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -151,9 +152,11 @@ Partial Class FrmRegistroRepuesto
         '
         'FrmRegistroRepuesto
         '
+        Me.AcceptButton = Me.btnRRegistrar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.CancelButton = Me.btnRCancelar
         Me.ClientSize = New System.Drawing.Size(355, 300)
         Me.Controls.Add(Me.lblRegistroRepuesto)
         Me.Controls.Add(Me.Panel1)
@@ -169,7 +172,6 @@ Partial Class FrmRegistroRepuesto
         Me.Opacity = 0.98R
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registrar Repuesto"
         CType(Me.nudRCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)

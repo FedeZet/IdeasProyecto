@@ -72,6 +72,7 @@ Partial Class FrmRegistroCliente
         '
         'btnCCancelar
         '
+        Me.btnCCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnCCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -148,9 +149,11 @@ Partial Class FrmRegistroCliente
         '
         'FrmRegistroCliente
         '
+        Me.AcceptButton = Me.btnCRegistrar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.CancelButton = Me.btnCCancelar
         Me.ClientSize = New System.Drawing.Size(355, 300)
         Me.Controls.Add(Me.txtCTelefono)
         Me.Controls.Add(Me.lblRegistroCliente)

@@ -27,6 +27,7 @@ Partial Class FrmIniciarSesion
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.plLogo = New System.Windows.Forms.Panel()
+        Me.lblSoftware = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.lshPassword = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -36,7 +37,6 @@ Partial Class FrmIniciarSesion
         Me.btnExit = New System.Windows.Forms.Button()
         Me.pbPassword = New System.Windows.Forms.PictureBox()
         Me.pbUsuario = New System.Windows.Forms.PictureBox()
-        Me.lblSoftware = New System.Windows.Forms.Label()
         Me.plLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPassword, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,6 +57,7 @@ Partial Class FrmIniciarSesion
         '
         'btnLogin
         '
+        Me.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -91,6 +92,18 @@ Partial Class FrmIniciarSesion
         Me.plLogo.Name = "plLogo"
         Me.plLogo.Size = New System.Drawing.Size(220, 280)
         Me.plLogo.TabIndex = 5
+        '
+        'lblSoftware
+        '
+        Me.lblSoftware.AutoSize = True
+        Me.lblSoftware.Font = New System.Drawing.Font("Century Gothic", 15.75!)
+        Me.lblSoftware.ForeColor = System.Drawing.Color.White
+        Me.lblSoftware.Location = New System.Drawing.Point(37, 134)
+        Me.lblSoftware.Name = "lblSoftware"
+        Me.lblSoftware.Size = New System.Drawing.Size(151, 72)
+        Me.lblSoftware.TabIndex = 2
+        Me.lblSoftware.Text = "Software de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestión de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reparaciones"
+        Me.lblSoftware.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
@@ -157,6 +170,7 @@ Partial Class FrmIniciarSesion
         '
         'btnExit
         '
+        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.FlatAppearance.BorderSize = 0
         Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -188,23 +202,13 @@ Partial Class FrmIniciarSesion
         Me.pbUsuario.TabIndex = 8
         Me.pbUsuario.TabStop = False
         '
-        'lblSoftware
-        '
-        Me.lblSoftware.AutoSize = True
-        Me.lblSoftware.Font = New System.Drawing.Font("Century Gothic", 15.75!)
-        Me.lblSoftware.ForeColor = System.Drawing.Color.White
-        Me.lblSoftware.Location = New System.Drawing.Point(37, 134)
-        Me.lblSoftware.Name = "lblSoftware"
-        Me.lblSoftware.Size = New System.Drawing.Size(151, 72)
-        Me.lblSoftware.TabIndex = 2
-        Me.lblSoftware.Text = "Software de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestión de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reparaciones"
-        Me.lblSoftware.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'FrmIniciarSesion
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(500, 280)
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.btnExit)

@@ -60,4 +60,5 @@
         sentencia = "select * from usuario where nombreU like '%" + obj.Nombre + "%';"
         Return objConexion.ejecutar(sentencia, True)
     End Function
+
 End Class

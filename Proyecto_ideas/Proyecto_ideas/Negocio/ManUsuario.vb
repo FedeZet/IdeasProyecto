@@ -2,6 +2,7 @@
 Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
     Dim hashTecnico As Hashtable = New Hashtable
+
     Private Shared instancia As ManUsuario
     Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
         Dim passEncriptada As String = Encriptar.SHA256Encriptador(password)
@@ -23,7 +24,7 @@ Public Class ManUsuario
     End Function
 
     Public Function obtenerTecnico() As Hashtable
-        hashUsuario.Clear()
+        hashTecnico.Clear()
         Dim datareader As MySqlDataReader = Usuario.obtenerTecnico()
         Dim objU As Usuario = Nothing
         While datareader.Read()
@@ -67,10 +68,6 @@ Public Class ManUsuario
             Return False
         End If
     End Function
-
-    Private Sub New()
-
-    End Sub
 
     Public Shared Function getInstancia()
         If instancia Is Nothing Then

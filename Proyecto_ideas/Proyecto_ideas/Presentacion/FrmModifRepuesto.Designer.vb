@@ -73,6 +73,7 @@ Partial Class FrmModifRepuesto
         '
         'btnRCancelar
         '
+        Me.btnRCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnRCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnRCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -151,9 +152,11 @@ Partial Class FrmModifRepuesto
         '
         'FrmModifRepuesto
         '
+        Me.AcceptButton = Me.btnRModificar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.CancelButton = Me.btnRCancelar
         Me.ClientSize = New System.Drawing.Size(355, 300)
         Me.Controls.Add(Me.lblModificarRepuesto)
         Me.Controls.Add(Me.Panel1)

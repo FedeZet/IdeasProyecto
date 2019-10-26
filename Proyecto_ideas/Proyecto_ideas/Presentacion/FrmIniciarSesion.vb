@@ -7,7 +7,7 @@
         If validacion = True Then
             FrmInicio.Show()
             Me.Hide()
-            FrmInicio.cargarNombre(txtUsuario.Text)
+            FrmInicio.cargarUsuario(txtUsuario.Text)
         Else
             lblError.Text = "       " + "Usuario y/o contraseña incorrectos."
             lblError.Visible = True

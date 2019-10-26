@@ -22,6 +22,7 @@
     Public Sub New()
         InitializeComponent()
         timerHoraFecha.Enabled = True
+
     End Sub
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
@@ -36,7 +37,7 @@
         Application.Restart()
     End Sub
 
-    Public Function cargarNombre(ByVal user As String)
+    Public Function cargarUsuario(ByVal user As String)
         If user <> "admin" Then
             btnUsuario.Visible = False
             btnProductividad.Visible = False

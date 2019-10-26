@@ -22,251 +22,320 @@ Partial Class FrmRegistroDispositivo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtModelo = New System.Windows.Forms.TextBox()
-        Me.txtIDCli = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.btnCancelar = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRegistroDispositivo))
+        Me.lblBateria = New System.Windows.Forms.Label()
+        Me.lblSIM = New System.Windows.Forms.Label()
+        Me.lblEstuche = New System.Windows.Forms.Label()
+        Me.lblTapa = New System.Windows.Forms.Label()
+        Me.lblCargador = New System.Windows.Forms.Label()
+        Me.lblIDCli = New System.Windows.Forms.Label()
+        Me.lblPIN = New System.Windows.Forms.Label()
+        Me.lblTMemoria = New System.Windows.Forms.Label()
         Me.chbBateria = New System.Windows.Forms.CheckBox()
         Me.chbSIM = New System.Windows.Forms.CheckBox()
         Me.chbCargador = New System.Windows.Forms.CheckBox()
         Me.chbEstuche = New System.Windows.Forms.CheckBox()
         Me.chbTapa = New System.Windows.Forms.CheckBox()
         Me.chbMemoria = New System.Windows.Forms.CheckBox()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
+        Me.lblModelo = New System.Windows.Forms.Label()
+        Me.txtIDCli = New System.Windows.Forms.TextBox()
         Me.txtPIN = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnDRegistrar = New System.Windows.Forms.Button()
+        Me.btnDCancelar = New System.Windows.Forms.Button()
+        Me.lblRegistroUsuario = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txtModelo
+        'lblBateria
         '
-        Me.txtModelo.Location = New System.Drawing.Point(184, 25)
-        Me.txtModelo.Name = "txtModelo"
-        Me.txtModelo.Size = New System.Drawing.Size(195, 20)
-        Me.txtModelo.TabIndex = 0
+        Me.lblBateria.AutoSize = True
+        Me.lblBateria.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBateria.ForeColor = System.Drawing.Color.White
+        Me.lblBateria.Location = New System.Drawing.Point(35, 218)
+        Me.lblBateria.Name = "lblBateria"
+        Me.lblBateria.Size = New System.Drawing.Size(46, 16)
+        Me.lblBateria.TabIndex = 10
+        Me.lblBateria.Text = "Bateria"
         '
-        'txtIDCli
+        'lblSIM
         '
-        Me.txtIDCli.Location = New System.Drawing.Point(184, 309)
-        Me.txtIDCli.Name = "txtIDCli"
-        Me.txtIDCli.Size = New System.Drawing.Size(195, 20)
-        Me.txtIDCli.TabIndex = 8
+        Me.lblSIM.AutoSize = True
+        Me.lblSIM.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSIM.ForeColor = System.Drawing.Color.White
+        Me.lblSIM.Location = New System.Drawing.Point(36, 253)
+        Me.lblSIM.Name = "lblSIM"
+        Me.lblSIM.Size = New System.Drawing.Size(28, 16)
+        Me.lblSIM.TabIndex = 11
+        Me.lblSIM.Text = "SIM"
         '
-        'Label1
+        'lblEstuche
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 13)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Modelo"
+        Me.lblEstuche.AutoSize = True
+        Me.lblEstuche.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstuche.ForeColor = System.Drawing.Color.White
+        Me.lblEstuche.Location = New System.Drawing.Point(219, 218)
+        Me.lblEstuche.Name = "lblEstuche"
+        Me.lblEstuche.Size = New System.Drawing.Size(50, 16)
+        Me.lblEstuche.TabIndex = 14
+        Me.lblEstuche.Text = "Estuche"
         '
-        'Label2
+        'lblTapa
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 61)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 13)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Bateria"
+        Me.lblTapa.AutoSize = True
+        Me.lblTapa.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTapa.ForeColor = System.Drawing.Color.White
+        Me.lblTapa.Location = New System.Drawing.Point(120, 254)
+        Me.lblTapa.Name = "lblTapa"
+        Me.lblTapa.Size = New System.Drawing.Size(37, 16)
+        Me.lblTapa.TabIndex = 13
+        Me.lblTapa.Text = "Tapa"
         '
-        'Label3
+        'lblCargador
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(24, 96)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "SIM"
+        Me.lblCargador.AutoSize = True
+        Me.lblCargador.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCargador.ForeColor = System.Drawing.Color.White
+        Me.lblCargador.Location = New System.Drawing.Point(120, 218)
+        Me.lblCargador.Name = "lblCargador"
+        Me.lblCargador.Size = New System.Drawing.Size(61, 16)
+        Me.lblCargador.TabIndex = 12
+        Me.lblCargador.Text = "Cargador"
         '
-        'Label4
+        'lblIDCli
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 202)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 13)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "Estuche"
+        Me.lblIDCli.AutoSize = True
+        Me.lblIDCli.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIDCli.ForeColor = System.Drawing.Color.White
+        Me.lblIDCli.Location = New System.Drawing.Point(59, 167)
+        Me.lblIDCli.Name = "lblIDCli"
+        Me.lblIDCli.Size = New System.Drawing.Size(54, 21)
+        Me.lblIDCli.TabIndex = 17
+        Me.lblIDCli.Text = "ID Cli."
         '
-        'Label5
+        'lblPIN
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(24, 167)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(32, 13)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Tapa"
+        Me.lblPIN.AutoSize = True
+        Me.lblPIN.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPIN.ForeColor = System.Drawing.Color.White
+        Me.lblPIN.Location = New System.Drawing.Point(59, 132)
+        Me.lblPIN.Name = "lblPIN"
+        Me.lblPIN.Size = New System.Drawing.Size(36, 21)
+        Me.lblPIN.TabIndex = 16
+        Me.lblPIN.Text = "PIN"
         '
-        'Label6
+        'lblTMemoria
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(24, 131)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 13)
-        Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Cargador"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(24, 309)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 13)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "ID Cli."
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(24, 274)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(25, 13)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "PIN"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(24, 238)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(60, 13)
-        Me.Label9.TabIndex = 15
-        Me.Label9.Text = "T. Memoria"
-        '
-        'btnAgregar
-        '
-        Me.btnAgregar.Location = New System.Drawing.Point(27, 345)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(117, 23)
-        Me.btnAgregar.TabIndex = 19
-        Me.btnAgregar.Text = "Agregar"
-        Me.btnAgregar.UseVisualStyleBackColor = True
-        '
-        'btnCancelar
-        '
-        Me.btnCancelar.Location = New System.Drawing.Point(262, 345)
-        Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(117, 23)
-        Me.btnCancelar.TabIndex = 20
-        Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
+        Me.lblTMemoria.AutoSize = True
+        Me.lblTMemoria.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTMemoria.ForeColor = System.Drawing.Color.White
+        Me.lblTMemoria.Location = New System.Drawing.Point(219, 252)
+        Me.lblTMemoria.Name = "lblTMemoria"
+        Me.lblTMemoria.Size = New System.Drawing.Size(67, 16)
+        Me.lblTMemoria.TabIndex = 15
+        Me.lblTMemoria.Text = "T. Memoria"
         '
         'chbBateria
         '
         Me.chbBateria.AutoSize = True
-        Me.chbBateria.Location = New System.Drawing.Point(184, 61)
+        Me.chbBateria.Location = New System.Drawing.Point(87, 219)
         Me.chbBateria.Name = "chbBateria"
         Me.chbBateria.Size = New System.Drawing.Size(15, 14)
-        Me.chbBateria.TabIndex = 21
+        Me.chbBateria.TabIndex = 4
         Me.chbBateria.UseVisualStyleBackColor = True
         '
         'chbSIM
         '
         Me.chbSIM.AutoSize = True
-        Me.chbSIM.Location = New System.Drawing.Point(184, 96)
+        Me.chbSIM.Location = New System.Drawing.Point(87, 254)
         Me.chbSIM.Name = "chbSIM"
         Me.chbSIM.Size = New System.Drawing.Size(15, 14)
-        Me.chbSIM.TabIndex = 22
+        Me.chbSIM.TabIndex = 7
         Me.chbSIM.UseVisualStyleBackColor = True
         '
         'chbCargador
         '
         Me.chbCargador.AutoSize = True
-        Me.chbCargador.Location = New System.Drawing.Point(184, 131)
+        Me.chbCargador.Location = New System.Drawing.Point(187, 219)
         Me.chbCargador.Name = "chbCargador"
         Me.chbCargador.Size = New System.Drawing.Size(15, 14)
-        Me.chbCargador.TabIndex = 23
+        Me.chbCargador.TabIndex = 5
         Me.chbCargador.UseVisualStyleBackColor = True
         '
         'chbEstuche
         '
         Me.chbEstuche.AutoSize = True
-        Me.chbEstuche.Location = New System.Drawing.Point(184, 202)
+        Me.chbEstuche.Location = New System.Drawing.Point(292, 219)
         Me.chbEstuche.Name = "chbEstuche"
         Me.chbEstuche.Size = New System.Drawing.Size(15, 14)
-        Me.chbEstuche.TabIndex = 25
+        Me.chbEstuche.TabIndex = 6
         Me.chbEstuche.UseVisualStyleBackColor = True
         '
         'chbTapa
         '
         Me.chbTapa.AutoSize = True
-        Me.chbTapa.Location = New System.Drawing.Point(184, 167)
+        Me.chbTapa.Location = New System.Drawing.Point(187, 254)
         Me.chbTapa.Name = "chbTapa"
         Me.chbTapa.Size = New System.Drawing.Size(15, 14)
-        Me.chbTapa.TabIndex = 24
+        Me.chbTapa.TabIndex = 8
         Me.chbTapa.UseVisualStyleBackColor = True
         '
         'chbMemoria
         '
         Me.chbMemoria.AutoSize = True
-        Me.chbMemoria.Location = New System.Drawing.Point(184, 238)
+        Me.chbMemoria.Location = New System.Drawing.Point(292, 253)
         Me.chbMemoria.Name = "chbMemoria"
         Me.chbMemoria.Size = New System.Drawing.Size(15, 14)
-        Me.chbMemoria.TabIndex = 26
+        Me.chbMemoria.TabIndex = 9
         Me.chbMemoria.UseVisualStyleBackColor = True
+        '
+        'txtModelo
+        '
+        Me.txtModelo.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtModelo.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtModelo.ForeColor = System.Drawing.Color.White
+        Me.txtModelo.Location = New System.Drawing.Point(148, 96)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(142, 27)
+        Me.txtModelo.TabIndex = 1
+        '
+        'lblModelo
+        '
+        Me.lblModelo.AutoSize = True
+        Me.lblModelo.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModelo.ForeColor = System.Drawing.Color.White
+        Me.lblModelo.Location = New System.Drawing.Point(59, 99)
+        Me.lblModelo.Name = "lblModelo"
+        Me.lblModelo.Size = New System.Drawing.Size(73, 21)
+        Me.lblModelo.TabIndex = 28
+        Me.lblModelo.Text = "Modelo:"
+        '
+        'txtIDCli
+        '
+        Me.txtIDCli.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtIDCli.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIDCli.ForeColor = System.Drawing.Color.White
+        Me.txtIDCli.Location = New System.Drawing.Point(148, 164)
+        Me.txtIDCli.Name = "txtIDCli"
+        Me.txtIDCli.Size = New System.Drawing.Size(142, 27)
+        Me.txtIDCli.TabIndex = 3
         '
         'txtPIN
         '
-        Me.txtPIN.Location = New System.Drawing.Point(184, 274)
+        Me.txtPIN.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.txtPIN.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPIN.ForeColor = System.Drawing.Color.White
+        Me.txtPIN.Location = New System.Drawing.Point(148, 129)
         Me.txtPIN.Name = "txtPIN"
-        Me.txtPIN.Size = New System.Drawing.Size(195, 20)
-        Me.txtPIN.TabIndex = 27
+        Me.txtPIN.Size = New System.Drawing.Size(142, 27)
+        Me.txtPIN.TabIndex = 2
         '
-        'Registro_dispositivo
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnDRegistrar)
+        Me.Panel1.Controls.Add(Me.btnDCancelar)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 293)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(355, 57)
+        Me.Panel1.TabIndex = 10
+        '
+        'btnDRegistrar
+        '
+        Me.btnDRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDRegistrar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDRegistrar.ForeColor = System.Drawing.Color.White
+        Me.btnDRegistrar.Location = New System.Drawing.Point(52, 10)
+        Me.btnDRegistrar.Name = "btnDRegistrar"
+        Me.btnDRegistrar.Size = New System.Drawing.Size(115, 35)
+        Me.btnDRegistrar.TabIndex = 10
+        Me.btnDRegistrar.Text = "Registrar"
+        Me.btnDRegistrar.UseVisualStyleBackColor = True
+        '
+        'btnDCancelar
+        '
+        Me.btnDCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnDCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnDCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDCancelar.ForeColor = System.Drawing.Color.White
+        Me.btnDCancelar.Location = New System.Drawing.Point(185, 10)
+        Me.btnDCancelar.Name = "btnDCancelar"
+        Me.btnDCancelar.Size = New System.Drawing.Size(115, 35)
+        Me.btnDCancelar.TabIndex = 11
+        Me.btnDCancelar.Text = "Cancelar"
+        Me.btnDCancelar.UseVisualStyleBackColor = True
+        '
+        'lblRegistroUsuario
+        '
+        Me.lblRegistroUsuario.AutoSize = True
+        Me.lblRegistroUsuario.Font = New System.Drawing.Font("Century Gothic", 18.0!)
+        Me.lblRegistroUsuario.ForeColor = System.Drawing.Color.White
+        Me.lblRegistroUsuario.Location = New System.Drawing.Point(52, 27)
+        Me.lblRegistroUsuario.Name = "lblRegistroUsuario"
+        Me.lblRegistroUsuario.Size = New System.Drawing.Size(246, 30)
+        Me.lblRegistroUsuario.TabIndex = 48
+        Me.lblRegistroUsuario.Text = "Registrar dispositivo"
+        '
+        'FrmRegistroDispositivo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(406, 390)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(355, 350)
+        Me.Controls.Add(Me.lblRegistroUsuario)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtPIN)
+        Me.Controls.Add(Me.txtIDCli)
+        Me.Controls.Add(Me.txtModelo)
+        Me.Controls.Add(Me.lblModelo)
         Me.Controls.Add(Me.chbMemoria)
         Me.Controls.Add(Me.chbEstuche)
         Me.Controls.Add(Me.chbTapa)
         Me.Controls.Add(Me.chbCargador)
         Me.Controls.Add(Me.chbSIM)
         Me.Controls.Add(Me.chbBateria)
-        Me.Controls.Add(Me.btnCancelar)
-        Me.Controls.Add(Me.btnAgregar)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtIDCli)
-        Me.Controls.Add(Me.txtModelo)
-        Me.Name = "Registro_dispositivo"
-        Me.Text = "Registro_dispositivo"
+        Me.Controls.Add(Me.lblIDCli)
+        Me.Controls.Add(Me.lblPIN)
+        Me.Controls.Add(Me.lblTMemoria)
+        Me.Controls.Add(Me.lblEstuche)
+        Me.Controls.Add(Me.lblTapa)
+        Me.Controls.Add(Me.lblCargador)
+        Me.Controls.Add(Me.lblSIM)
+        Me.Controls.Add(Me.lblBateria)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "FrmRegistroDispositivo"
+        Me.Opacity = 0.98R
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtModelo As System.Windows.Forms.TextBox
-    Friend WithEvents txtIDCli As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents btnAgregar As System.Windows.Forms.Button
-    Friend WithEvents btnCancelar As System.Windows.Forms.Button
+    Friend WithEvents lblBateria As System.Windows.Forms.Label
+    Friend WithEvents lblSIM As System.Windows.Forms.Label
+    Friend WithEvents lblEstuche As System.Windows.Forms.Label
+    Friend WithEvents lblTapa As System.Windows.Forms.Label
+    Friend WithEvents lblCargador As System.Windows.Forms.Label
+    Friend WithEvents lblIDCli As System.Windows.Forms.Label
+    Friend WithEvents lblPIN As System.Windows.Forms.Label
+    Friend WithEvents lblTMemoria As System.Windows.Forms.Label
     Friend WithEvents chbBateria As System.Windows.Forms.CheckBox
     Friend WithEvents chbSIM As System.Windows.Forms.CheckBox
     Friend WithEvents chbCargador As System.Windows.Forms.CheckBox
     Friend WithEvents chbEstuche As System.Windows.Forms.CheckBox
     Friend WithEvents chbTapa As System.Windows.Forms.CheckBox
     Friend WithEvents chbMemoria As System.Windows.Forms.CheckBox
+    Friend WithEvents txtModelo As System.Windows.Forms.TextBox
+    Friend WithEvents lblModelo As System.Windows.Forms.Label
+    Friend WithEvents txtIDCli As System.Windows.Forms.TextBox
     Friend WithEvents txtPIN As System.Windows.Forms.TextBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnDRegistrar As System.Windows.Forms.Button
+    Friend WithEvents btnDCancelar As System.Windows.Forms.Button
+    Friend WithEvents lblRegistroUsuario As System.Windows.Forms.Label
 End Class

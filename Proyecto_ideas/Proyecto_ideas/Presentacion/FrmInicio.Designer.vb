@@ -102,6 +102,7 @@ Partial Class FrmInicio
         '
         'btnExit
         '
+        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.FlatAppearance.BorderSize = 0
         Me.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
@@ -226,6 +227,7 @@ Partial Class FrmInicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(624, 301)
         Me.Controls.Add(Me.plSistema)
         Me.Controls.Add(Me.btnUsuario)

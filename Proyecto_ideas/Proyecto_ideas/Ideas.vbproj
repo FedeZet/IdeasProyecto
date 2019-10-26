@@ -281,6 +281,9 @@
     <EmbeddedResource Include="Presentacion\FrmRegistroCliente.resx">
       <DependentUpon>FrmRegistroCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmRegistroDispositivo.resx">
+      <DependentUpon>FrmRegistroDispositivo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmRegistroOrden.resx">
       <DependentUpon>FrmRegistroOrden.vb</DependentUpon>
     </EmbeddedResource>
