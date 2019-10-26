@@ -7,6 +7,7 @@
         If validacion = True Then
             FrmInicio.Show()
             Me.Hide()
+            FrmInicio.cargarNombre(txtUsuario.Text)
         Else
             lblError.Text = "       " + "Usuario y/o contraseña incorrectos."
             lblError.Visible = True
@@ -28,16 +29,9 @@
             lblError.Text = "       " + "Usuario y contraseña vacíos."
             lblError.Visible = True
         End If
-
-
-
     End Sub
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
         Application.Exit()
-    End Sub
-
-    Private Sub plLogo_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles plLogo.Paint
-
     End Sub
 End Class

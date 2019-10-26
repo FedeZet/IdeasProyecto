@@ -64,12 +64,6 @@
         FrmRegistroUsuario.Show()
     End Sub
 
-
-
-    Private Sub Historial_usuario_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub txtBuscadorU_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscadorU.TextChanged
         Me.dgvListadoUsuario.Rows.Clear()
         Dim hashUsuario As Hashtable
