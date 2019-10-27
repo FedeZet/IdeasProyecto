@@ -28,29 +28,29 @@ Partial Class FrmImprimirOrden
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.txtImporte = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.txtSim = New System.Windows.Forms.TextBox()
+        Me.txtCargador = New System.Windows.Forms.TextBox()
+        Me.txtTapa = New System.Windows.Forms.TextBox()
+        Me.txtEstuche = New System.Windows.Forms.TextBox()
+        Me.txtTMem = New System.Windows.Forms.TextBox()
+        Me.txtBat = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txtFalla = New System.Windows.Forms.TextBox()
+        Me.txtReso = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPin = New System.Windows.Forms.TextBox()
+        Me.txtTel = New System.Windows.Forms.TextBox()
+        Me.txtNSerie = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -65,9 +65,12 @@ Partial Class FrmImprimirOrden
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnCancelarImp = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtOrden = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnImprimir = New System.Windows.Forms.Button()
+        Me.lblFecha = New System.Windows.Forms.Label()
+        Me.lblHora = New System.Windows.Forms.Label()
+        Me.lblPagina = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'PrintForm1
@@ -101,13 +104,13 @@ Partial Class FrmImprimirOrden
         Me.Label24.TabIndex = 83
         Me.Label24.Text = "Firma: ____________________________________________"
         '
-        'TextBox15
+        'txtImporte
         '
-        Me.TextBox15.Location = New System.Drawing.Point(581, 431)
-        Me.TextBox15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(120, 22)
-        Me.TextBox15.TabIndex = 82
+        Me.txtImporte.Location = New System.Drawing.Point(581, 431)
+        Me.txtImporte.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtImporte.Name = "txtImporte"
+        Me.txtImporte.Size = New System.Drawing.Size(120, 22)
+        Me.txtImporte.TabIndex = 82
         '
         'Label23
         '
@@ -118,53 +121,53 @@ Partial Class FrmImprimirOrden
         Me.Label23.TabIndex = 81
         Me.Label23.Text = "Importe:"
         '
-        'TextBox14
+        'txtSim
         '
-        Me.TextBox14.Location = New System.Drawing.Point(88, 434)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox14.TabIndex = 80
+        Me.txtSim.Location = New System.Drawing.Point(88, 434)
+        Me.txtSim.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSim.Name = "txtSim"
+        Me.txtSim.Size = New System.Drawing.Size(39, 22)
+        Me.txtSim.TabIndex = 80
         '
-        'TextBox13
+        'txtCargador
         '
-        Me.TextBox13.Location = New System.Drawing.Point(262, 405)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox13.TabIndex = 79
+        Me.txtCargador.Location = New System.Drawing.Point(262, 405)
+        Me.txtCargador.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCargador.Name = "txtCargador"
+        Me.txtCargador.Size = New System.Drawing.Size(39, 22)
+        Me.txtCargador.TabIndex = 79
         '
-        'TextBox12
+        'txtTapa
         '
-        Me.TextBox12.Location = New System.Drawing.Point(262, 431)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox12.TabIndex = 78
+        Me.txtTapa.Location = New System.Drawing.Point(262, 431)
+        Me.txtTapa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTapa.Name = "txtTapa"
+        Me.txtTapa.Size = New System.Drawing.Size(39, 22)
+        Me.txtTapa.TabIndex = 78
         '
-        'TextBox11
+        'txtEstuche
         '
-        Me.TextBox11.Location = New System.Drawing.Point(447, 410)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox11.TabIndex = 77
+        Me.txtEstuche.Location = New System.Drawing.Point(447, 410)
+        Me.txtEstuche.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtEstuche.Name = "txtEstuche"
+        Me.txtEstuche.Size = New System.Drawing.Size(39, 22)
+        Me.txtEstuche.TabIndex = 77
         '
-        'TextBox10
+        'txtTMem
         '
-        Me.TextBox10.Location = New System.Drawing.Point(447, 436)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox10.TabIndex = 76
+        Me.txtTMem.Location = New System.Drawing.Point(447, 436)
+        Me.txtTMem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTMem.Name = "txtTMem"
+        Me.txtTMem.Size = New System.Drawing.Size(39, 22)
+        Me.txtTMem.TabIndex = 76
         '
-        'TextBox9
+        'txtBat
         '
-        Me.TextBox9.Location = New System.Drawing.Point(87, 408)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(39, 22)
-        Me.TextBox9.TabIndex = 75
+        Me.txtBat.Location = New System.Drawing.Point(87, 408)
+        Me.txtBat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtBat.Name = "txtBat"
+        Me.txtBat.Size = New System.Drawing.Size(39, 22)
+        Me.txtBat.TabIndex = 75
         '
         'Label22
         '
@@ -220,23 +223,23 @@ Partial Class FrmImprimirOrden
         Me.Label17.TabIndex = 69
         Me.Label17.Text = "Bateria:"
         '
-        'TextBox8
+        'txtFalla
         '
-        Me.TextBox8.Location = New System.Drawing.Point(27, 219)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(298, 146)
-        Me.TextBox8.TabIndex = 68
+        Me.txtFalla.Location = New System.Drawing.Point(27, 219)
+        Me.txtFalla.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtFalla.Multiline = True
+        Me.txtFalla.Name = "txtFalla"
+        Me.txtFalla.Size = New System.Drawing.Size(298, 146)
+        Me.txtFalla.TabIndex = 68
         '
-        'TextBox7
+        'txtReso
         '
-        Me.TextBox7.Location = New System.Drawing.Point(392, 219)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(286, 146)
-        Me.TextBox7.TabIndex = 67
+        Me.txtReso.Location = New System.Drawing.Point(392, 219)
+        Me.txtReso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtReso.Multiline = True
+        Me.txtReso.Name = "txtReso"
+        Me.txtReso.Size = New System.Drawing.Size(286, 146)
+        Me.txtReso.TabIndex = 67
         '
         'Label16
         '
@@ -256,45 +259,45 @@ Partial Class FrmImprimirOrden
         Me.Label15.TabIndex = 65
         Me.Label15.Text = "Resolucion:"
         '
-        'TextBox5
+        'txtPin
         '
-        Me.TextBox5.Location = New System.Drawing.Point(565, 134)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox5.TabIndex = 64
+        Me.txtPin.Location = New System.Drawing.Point(565, 134)
+        Me.txtPin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtPin.Name = "txtPin"
+        Me.txtPin.Size = New System.Drawing.Size(100, 22)
+        Me.txtPin.TabIndex = 64
         '
-        'TextBox6
+        'txtTel
         '
-        Me.TextBox6.Location = New System.Drawing.Point(565, 111)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox6.TabIndex = 63
+        Me.txtTel.Location = New System.Drawing.Point(565, 111)
+        Me.txtTel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTel.Name = "txtTel"
+        Me.txtTel.Size = New System.Drawing.Size(100, 22)
+        Me.txtTel.TabIndex = 63
         '
-        'TextBox3
+        'txtNSerie
         '
-        Me.TextBox3.Location = New System.Drawing.Point(321, 134)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox3.TabIndex = 62
+        Me.txtNSerie.Location = New System.Drawing.Point(321, 134)
+        Me.txtNSerie.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNSerie.Name = "txtNSerie"
+        Me.txtNSerie.Size = New System.Drawing.Size(100, 22)
+        Me.txtNSerie.TabIndex = 62
         '
-        'TextBox4
+        'txtNombre
         '
-        Me.TextBox4.Location = New System.Drawing.Point(321, 111)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox4.TabIndex = 61
+        Me.txtNombre.Location = New System.Drawing.Point(321, 111)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(100, 22)
+        Me.txtNombre.TabIndex = 61
         '
-        'TextBox2
+        'txtModelo
         '
-        Me.TextBox2.Location = New System.Drawing.Point(77, 134)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox2.TabIndex = 60
+        Me.txtModelo.Location = New System.Drawing.Point(77, 134)
+        Me.txtModelo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.Size = New System.Drawing.Size(100, 22)
+        Me.txtModelo.TabIndex = 60
         '
         'Label14
         '
@@ -423,13 +426,13 @@ Partial Class FrmImprimirOrden
         Me.btnCancelarImp.Text = "Cancelar"
         Me.btnCancelarImp.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtOrden
         '
-        Me.TextBox1.Location = New System.Drawing.Point(77, 111)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 45
+        Me.txtOrden.Location = New System.Drawing.Point(77, 111)
+        Me.txtOrden.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtOrden.Name = "txtOrden"
+        Me.txtOrden.Size = New System.Drawing.Size(100, 22)
+        Me.txtOrden.TabIndex = 45
         '
         'Label1
         '
@@ -453,36 +456,66 @@ Partial Class FrmImprimirOrden
         Me.btnImprimir.Text = "Imprimir"
         Me.btnImprimir.UseVisualStyleBackColor = False
         '
+        'lblFecha
+        '
+        Me.lblFecha.AutoSize = True
+        Me.lblFecha.Location = New System.Drawing.Point(594, 23)
+        Me.lblFecha.Name = "lblFecha"
+        Me.lblFecha.Size = New System.Drawing.Size(80, 17)
+        Me.lblFecha.TabIndex = 85
+        Me.lblFecha.Text = "00/00/0000"
+        '
+        'lblHora
+        '
+        Me.lblHora.AutoSize = True
+        Me.lblHora.Location = New System.Drawing.Point(594, 40)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(44, 17)
+        Me.lblHora.TabIndex = 86
+        Me.lblHora.Text = "00:00"
+        '
+        'lblPagina
+        '
+        Me.lblPagina.AutoSize = True
+        Me.lblPagina.Location = New System.Drawing.Point(607, 57)
+        Me.lblPagina.Name = "lblPagina"
+        Me.lblPagina.Size = New System.Drawing.Size(16, 17)
+        Me.lblPagina.TabIndex = 87
+        Me.lblPagina.Text = "1"
+        '
         'FrmImprimirOrden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(710, 538)
+        Me.Controls.Add(Me.lblPagina)
+        Me.Controls.Add(Me.lblHora)
+        Me.Controls.Add(Me.lblFecha)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.txtImporte)
         Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.txtSim)
+        Me.Controls.Add(Me.txtCargador)
+        Me.Controls.Add(Me.txtTapa)
+        Me.Controls.Add(Me.txtEstuche)
+        Me.Controls.Add(Me.txtTMem)
+        Me.Controls.Add(Me.txtBat)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.txtFalla)
+        Me.Controls.Add(Me.txtReso)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtPin)
+        Me.Controls.Add(Me.txtTel)
+        Me.Controls.Add(Me.txtNSerie)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtModelo)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -497,7 +530,7 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnCancelarImp)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtOrden)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnImprimir)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -511,29 +544,29 @@ Partial Class FrmImprimirOrden
     Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
-    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents txtImporte As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents txtSim As System.Windows.Forms.TextBox
+    Friend WithEvents txtCargador As System.Windows.Forms.TextBox
+    Friend WithEvents txtTapa As System.Windows.Forms.TextBox
+    Friend WithEvents txtEstuche As System.Windows.Forms.TextBox
+    Friend WithEvents txtTMem As System.Windows.Forms.TextBox
+    Friend WithEvents txtBat As System.Windows.Forms.TextBox
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents txtFalla As System.Windows.Forms.TextBox
+    Friend WithEvents txtReso As System.Windows.Forms.TextBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtPin As System.Windows.Forms.TextBox
+    Friend WithEvents txtTel As System.Windows.Forms.TextBox
+    Friend WithEvents txtNSerie As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
+    Friend WithEvents txtModelo As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
@@ -548,7 +581,10 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnCancelarImp As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtOrden As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnImprimir As System.Windows.Forms.Button
+    Friend WithEvents lblPagina As System.Windows.Forms.Label
+    Friend WithEvents lblHora As System.Windows.Forms.Label
+    Friend WithEvents lblFecha As System.Windows.Forms.Label
 End Class
