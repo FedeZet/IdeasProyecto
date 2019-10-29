@@ -131,7 +131,7 @@ Partial Class FrmImprimirOrden
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(8, 60)
+        Me.Label25.Location = New System.Drawing.Point(43, 60)
         Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(511, 13)
@@ -142,7 +142,7 @@ Partial Class FrmImprimirOrden
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(145, 374)
+        Me.Label24.Location = New System.Drawing.Point(180, 374)
         Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(302, 13)
@@ -151,7 +151,7 @@ Partial Class FrmImprimirOrden
         '
         'txtImporte
         '
-        Me.txtImporte.Location = New System.Drawing.Point(436, 350)
+        Me.txtImporte.Location = New System.Drawing.Point(471, 350)
         Me.txtImporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(91, 20)
@@ -160,7 +160,7 @@ Partial Class FrmImprimirOrden
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(394, 354)
+        Me.Label23.Location = New System.Drawing.Point(422, 356)
         Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(45, 13)
@@ -169,7 +169,7 @@ Partial Class FrmImprimirOrden
         '
         'txtSim
         '
-        Me.txtSim.Location = New System.Drawing.Point(66, 353)
+        Me.txtSim.Location = New System.Drawing.Point(101, 353)
         Me.txtSim.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSim.Name = "txtSim"
         Me.txtSim.Size = New System.Drawing.Size(30, 20)
@@ -177,7 +177,7 @@ Partial Class FrmImprimirOrden
         '
         'txtCargador
         '
-        Me.txtCargador.Location = New System.Drawing.Point(196, 329)
+        Me.txtCargador.Location = New System.Drawing.Point(231, 329)
         Me.txtCargador.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCargador.Name = "txtCargador"
         Me.txtCargador.Size = New System.Drawing.Size(30, 20)
@@ -185,7 +185,7 @@ Partial Class FrmImprimirOrden
         '
         'txtTapa
         '
-        Me.txtTapa.Location = New System.Drawing.Point(196, 350)
+        Me.txtTapa.Location = New System.Drawing.Point(231, 350)
         Me.txtTapa.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTapa.Name = "txtTapa"
         Me.txtTapa.Size = New System.Drawing.Size(30, 20)
@@ -193,7 +193,7 @@ Partial Class FrmImprimirOrden
         '
         'txtEstuche
         '
-        Me.txtEstuche.Location = New System.Drawing.Point(335, 333)
+        Me.txtEstuche.Location = New System.Drawing.Point(370, 333)
         Me.txtEstuche.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEstuche.Name = "txtEstuche"
         Me.txtEstuche.Size = New System.Drawing.Size(30, 20)
@@ -201,7 +201,7 @@ Partial Class FrmImprimirOrden
         '
         'txtTMem
         '
-        Me.txtTMem.Location = New System.Drawing.Point(335, 354)
+        Me.txtTMem.Location = New System.Drawing.Point(370, 354)
         Me.txtTMem.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTMem.Name = "txtTMem"
         Me.txtTMem.Size = New System.Drawing.Size(30, 20)
@@ -209,7 +209,7 @@ Partial Class FrmImprimirOrden
         '
         'txtBat
         '
-        Me.txtBat.Location = New System.Drawing.Point(65, 332)
+        Me.txtBat.Location = New System.Drawing.Point(100, 332)
         Me.txtBat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtBat.Name = "txtBat"
         Me.txtBat.Size = New System.Drawing.Size(30, 20)
@@ -218,7 +218,7 @@ Partial Class FrmImprimirOrden
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(34, 353)
+        Me.Label22.Location = New System.Drawing.Point(69, 353)
         Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(27, 13)
@@ -228,7 +228,7 @@ Partial Class FrmImprimirOrden
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(142, 333)
+        Me.Label21.Location = New System.Drawing.Point(177, 333)
         Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(53, 13)
@@ -238,7 +238,7 @@ Partial Class FrmImprimirOrden
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(158, 354)
+        Me.Label20.Location = New System.Drawing.Point(193, 354)
         Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(35, 13)
@@ -248,7 +248,7 @@ Partial Class FrmImprimirOrden
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(292, 333)
+        Me.Label19.Location = New System.Drawing.Point(313, 339)
         Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(49, 13)
@@ -258,7 +258,7 @@ Partial Class FrmImprimirOrden
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(272, 354)
+        Me.Label18.Location = New System.Drawing.Point(307, 354)
         Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(60, 13)
@@ -268,7 +268,7 @@ Partial Class FrmImprimirOrden
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(19, 332)
+        Me.Label17.Location = New System.Drawing.Point(54, 332)
         Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(43, 13)
@@ -277,7 +277,7 @@ Partial Class FrmImprimirOrden
         '
         'txtFalla
         '
-        Me.txtFalla.Location = New System.Drawing.Point(20, 178)
+        Me.txtFalla.Location = New System.Drawing.Point(55, 178)
         Me.txtFalla.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFalla.Multiline = True
         Me.txtFalla.Name = "txtFalla"
@@ -286,7 +286,7 @@ Partial Class FrmImprimirOrden
         '
         'txtReso
         '
-        Me.txtReso.Location = New System.Drawing.Point(294, 178)
+        Me.txtReso.Location = New System.Drawing.Point(329, 178)
         Me.txtReso.Margin = New System.Windows.Forms.Padding(2)
         Me.txtReso.Multiline = True
         Me.txtReso.Name = "txtReso"
@@ -296,7 +296,7 @@ Partial Class FrmImprimirOrden
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(76, 162)
+        Me.Label16.Location = New System.Drawing.Point(111, 162)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(32, 13)
@@ -306,7 +306,7 @@ Partial Class FrmImprimirOrden
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(388, 162)
+        Me.Label15.Location = New System.Drawing.Point(423, 162)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(63, 13)
@@ -315,7 +315,7 @@ Partial Class FrmImprimirOrden
         '
         'txtPin
         '
-        Me.txtPin.Location = New System.Drawing.Point(424, 109)
+        Me.txtPin.Location = New System.Drawing.Point(459, 109)
         Me.txtPin.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPin.Name = "txtPin"
         Me.txtPin.Size = New System.Drawing.Size(76, 20)
@@ -323,7 +323,7 @@ Partial Class FrmImprimirOrden
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(424, 90)
+        Me.txtTel.Location = New System.Drawing.Point(459, 90)
         Me.txtTel.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(76, 20)
@@ -331,7 +331,7 @@ Partial Class FrmImprimirOrden
         '
         'txtNSerie
         '
-        Me.txtNSerie.Location = New System.Drawing.Point(241, 109)
+        Me.txtNSerie.Location = New System.Drawing.Point(276, 109)
         Me.txtNSerie.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNSerie.Name = "txtNSerie"
         Me.txtNSerie.Size = New System.Drawing.Size(76, 20)
@@ -339,7 +339,7 @@ Partial Class FrmImprimirOrden
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(241, 90)
+        Me.txtNombre.Location = New System.Drawing.Point(276, 90)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(76, 20)
@@ -347,7 +347,7 @@ Partial Class FrmImprimirOrden
         '
         'txtModelo
         '
-        Me.txtModelo.Location = New System.Drawing.Point(58, 109)
+        Me.txtModelo.Location = New System.Drawing.Point(93, 109)
         Me.txtModelo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.Size = New System.Drawing.Size(76, 20)
@@ -356,7 +356,7 @@ Partial Class FrmImprimirOrden
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(395, 94)
+        Me.Label14.Location = New System.Drawing.Point(430, 94)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(25, 13)
@@ -366,7 +366,7 @@ Partial Class FrmImprimirOrden
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(395, 108)
+        Me.Label13.Location = New System.Drawing.Point(430, 108)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(25, 13)
@@ -376,7 +376,7 @@ Partial Class FrmImprimirOrden
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(194, 93)
+        Me.Label12.Location = New System.Drawing.Point(221, 93)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(50, 13)
@@ -386,7 +386,7 @@ Partial Class FrmImprimirOrden
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(18, 106)
+        Me.Label11.Location = New System.Drawing.Point(44, 106)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(45, 13)
@@ -396,7 +396,7 @@ Partial Class FrmImprimirOrden
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(194, 106)
+        Me.Label10.Location = New System.Drawing.Point(229, 106)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
@@ -406,7 +406,7 @@ Partial Class FrmImprimirOrden
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(409, 46)
+        Me.Label9.Location = New System.Drawing.Point(444, 46)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(43, 13)
@@ -416,7 +416,7 @@ Partial Class FrmImprimirOrden
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(409, 19)
+        Me.Label8.Location = New System.Drawing.Point(444, 19)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(40, 13)
@@ -426,7 +426,7 @@ Partial Class FrmImprimirOrden
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(409, 32)
+        Me.Label7.Location = New System.Drawing.Point(444, 32)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(33, 13)
@@ -436,7 +436,7 @@ Partial Class FrmImprimirOrden
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(232, 32)
+        Me.Label6.Location = New System.Drawing.Point(267, 32)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 13)
@@ -446,7 +446,7 @@ Partial Class FrmImprimirOrden
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(207, 46)
+        Me.Label5.Location = New System.Drawing.Point(242, 46)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 13)
@@ -456,7 +456,7 @@ Partial Class FrmImprimirOrden
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 46)
+        Me.Label4.Location = New System.Drawing.Point(53, 46)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 13)
@@ -466,7 +466,7 @@ Partial Class FrmImprimirOrden
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 32)
+        Me.Label3.Location = New System.Drawing.Point(53, 32)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(91, 13)
@@ -476,7 +476,7 @@ Partial Class FrmImprimirOrden
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 9)
+        Me.Label2.Location = New System.Drawing.Point(53, 9)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 13)
@@ -493,7 +493,7 @@ Partial Class FrmImprimirOrden
         Me.btnCancelarImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btnCancelarImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelarImp.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCancelarImp.Location = New System.Drawing.Point(271, 3)
+        Me.btnCancelarImp.Location = New System.Drawing.Point(306, 9)
         Me.btnCancelarImp.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancelarImp.Name = "btnCancelarImp"
         Me.btnCancelarImp.Size = New System.Drawing.Size(56, 19)
@@ -503,7 +503,7 @@ Partial Class FrmImprimirOrden
         '
         'txtOrden
         '
-        Me.txtOrden.Location = New System.Drawing.Point(58, 90)
+        Me.txtOrden.Location = New System.Drawing.Point(93, 90)
         Me.txtOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtOrden.Name = "txtOrden"
         Me.txtOrden.Size = New System.Drawing.Size(76, 20)
@@ -512,7 +512,7 @@ Partial Class FrmImprimirOrden
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 93)
+        Me.Label1.Location = New System.Drawing.Point(53, 93)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
@@ -529,7 +529,7 @@ Partial Class FrmImprimirOrden
         Me.btnImprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnImprimir.ForeColor = System.Drawing.Color.White
-        Me.btnImprimir.Location = New System.Drawing.Point(205, 3)
+        Me.btnImprimir.Location = New System.Drawing.Point(240, 9)
         Me.btnImprimir.Margin = New System.Windows.Forms.Padding(2)
         Me.btnImprimir.Name = "btnImprimir"
         Me.btnImprimir.Size = New System.Drawing.Size(56, 19)
@@ -540,7 +540,7 @@ Partial Class FrmImprimirOrden
         'lblFecha
         '
         Me.lblFecha.AutoSize = True
-        Me.lblFecha.Location = New System.Drawing.Point(446, 19)
+        Me.lblFecha.Location = New System.Drawing.Point(481, 19)
         Me.lblFecha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblFecha.Name = "lblFecha"
         Me.lblFecha.Size = New System.Drawing.Size(65, 13)
@@ -550,7 +550,7 @@ Partial Class FrmImprimirOrden
         'lblHora
         '
         Me.lblHora.AutoSize = True
-        Me.lblHora.Location = New System.Drawing.Point(446, 32)
+        Me.lblHora.Location = New System.Drawing.Point(481, 32)
         Me.lblHora.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHora.Name = "lblHora"
         Me.lblHora.Size = New System.Drawing.Size(34, 13)
@@ -560,7 +560,7 @@ Partial Class FrmImprimirOrden
         'lblPagina
         '
         Me.lblPagina.AutoSize = True
-        Me.lblPagina.Location = New System.Drawing.Point(455, 46)
+        Me.lblPagina.Location = New System.Drawing.Point(490, 46)
         Me.lblPagina.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPagina.Name = "lblPagina"
         Me.lblPagina.Size = New System.Drawing.Size(13, 13)
@@ -570,7 +570,7 @@ Partial Class FrmImprimirOrden
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(472, 441)
+        Me.Label26.Location = New System.Drawing.Point(507, 441)
         Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(13, 13)
@@ -580,7 +580,7 @@ Partial Class FrmImprimirOrden
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(463, 427)
+        Me.Label27.Location = New System.Drawing.Point(498, 427)
         Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(34, 13)
@@ -590,7 +590,7 @@ Partial Class FrmImprimirOrden
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(463, 414)
+        Me.Label28.Location = New System.Drawing.Point(498, 414)
         Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(65, 13)
@@ -600,7 +600,7 @@ Partial Class FrmImprimirOrden
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(25, 455)
+        Me.Label29.Location = New System.Drawing.Point(60, 455)
         Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(511, 13)
@@ -611,7 +611,7 @@ Partial Class FrmImprimirOrden
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(162, 769)
+        Me.Label30.Location = New System.Drawing.Point(197, 769)
         Me.Label30.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(302, 13)
@@ -620,7 +620,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(453, 745)
+        Me.TextBox1.Location = New System.Drawing.Point(488, 745)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(91, 20)
@@ -629,7 +629,7 @@ Partial Class FrmImprimirOrden
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(411, 749)
+        Me.Label31.Location = New System.Drawing.Point(446, 749)
         Me.Label31.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(45, 13)
@@ -638,7 +638,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(83, 748)
+        Me.TextBox2.Location = New System.Drawing.Point(118, 748)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(30, 20)
@@ -646,7 +646,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(213, 724)
+        Me.TextBox3.Location = New System.Drawing.Point(248, 724)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(30, 20)
@@ -654,7 +654,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(213, 745)
+        Me.TextBox4.Location = New System.Drawing.Point(248, 745)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(30, 20)
@@ -662,7 +662,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(352, 728)
+        Me.TextBox5.Location = New System.Drawing.Point(387, 728)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(30, 20)
@@ -670,7 +670,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(352, 749)
+        Me.TextBox6.Location = New System.Drawing.Point(387, 749)
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(30, 20)
@@ -678,7 +678,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(83, 727)
+        Me.TextBox7.Location = New System.Drawing.Point(118, 727)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(30, 20)
@@ -687,7 +687,7 @@ Partial Class FrmImprimirOrden
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(51, 748)
+        Me.Label32.Location = New System.Drawing.Point(86, 748)
         Me.Label32.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(27, 13)
@@ -697,7 +697,7 @@ Partial Class FrmImprimirOrden
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(159, 728)
+        Me.Label33.Location = New System.Drawing.Point(194, 728)
         Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(53, 13)
@@ -707,7 +707,7 @@ Partial Class FrmImprimirOrden
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(175, 749)
+        Me.Label34.Location = New System.Drawing.Point(210, 749)
         Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(35, 13)
@@ -717,7 +717,7 @@ Partial Class FrmImprimirOrden
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(300, 728)
+        Me.Label35.Location = New System.Drawing.Point(335, 728)
         Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(49, 13)
@@ -727,7 +727,7 @@ Partial Class FrmImprimirOrden
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(289, 749)
+        Me.Label36.Location = New System.Drawing.Point(324, 749)
         Me.Label36.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(60, 13)
@@ -737,7 +737,7 @@ Partial Class FrmImprimirOrden
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(36, 727)
+        Me.Label37.Location = New System.Drawing.Point(71, 727)
         Me.Label37.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(43, 13)
@@ -746,7 +746,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(37, 573)
+        Me.TextBox8.Location = New System.Drawing.Point(72, 573)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
@@ -755,7 +755,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(311, 573)
+        Me.TextBox9.Location = New System.Drawing.Point(346, 573)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox9.Multiline = True
         Me.TextBox9.Name = "TextBox9"
@@ -765,7 +765,7 @@ Partial Class FrmImprimirOrden
         'Label38
         '
         Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(93, 557)
+        Me.Label38.Location = New System.Drawing.Point(128, 557)
         Me.Label38.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(32, 13)
@@ -775,7 +775,7 @@ Partial Class FrmImprimirOrden
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(405, 557)
+        Me.Label39.Location = New System.Drawing.Point(440, 557)
         Me.Label39.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(63, 13)
@@ -784,7 +784,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(441, 504)
+        Me.TextBox10.Location = New System.Drawing.Point(476, 504)
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(76, 20)
@@ -792,7 +792,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(441, 485)
+        Me.TextBox11.Location = New System.Drawing.Point(476, 485)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(76, 20)
@@ -800,7 +800,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(258, 504)
+        Me.TextBox12.Location = New System.Drawing.Point(293, 504)
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(76, 20)
@@ -808,7 +808,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(258, 485)
+        Me.TextBox13.Location = New System.Drawing.Point(293, 485)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(76, 20)
@@ -816,7 +816,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(75, 504)
+        Me.TextBox14.Location = New System.Drawing.Point(110, 504)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(76, 20)
@@ -825,7 +825,7 @@ Partial Class FrmImprimirOrden
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(412, 489)
+        Me.Label40.Location = New System.Drawing.Point(447, 489)
         Me.Label40.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(25, 13)
@@ -835,7 +835,7 @@ Partial Class FrmImprimirOrden
         'Label41
         '
         Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(412, 503)
+        Me.Label41.Location = New System.Drawing.Point(447, 503)
         Me.Label41.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(25, 13)
@@ -845,7 +845,7 @@ Partial Class FrmImprimirOrden
         'Label42
         '
         Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(202, 488)
+        Me.Label42.Location = New System.Drawing.Point(237, 488)
         Me.Label42.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(50, 13)
@@ -855,7 +855,7 @@ Partial Class FrmImprimirOrden
         'Label43
         '
         Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(29, 501)
+        Me.Label43.Location = New System.Drawing.Point(64, 501)
         Me.Label43.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(45, 13)
@@ -865,7 +865,7 @@ Partial Class FrmImprimirOrden
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(207, 501)
+        Me.Label44.Location = New System.Drawing.Point(242, 501)
         Me.Label44.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(42, 13)
@@ -875,7 +875,7 @@ Partial Class FrmImprimirOrden
         'Label45
         '
         Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(426, 441)
+        Me.Label45.Location = New System.Drawing.Point(461, 441)
         Me.Label45.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(43, 13)
@@ -885,7 +885,7 @@ Partial Class FrmImprimirOrden
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(426, 414)
+        Me.Label46.Location = New System.Drawing.Point(461, 414)
         Me.Label46.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(40, 13)
@@ -895,7 +895,7 @@ Partial Class FrmImprimirOrden
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(426, 427)
+        Me.Label47.Location = New System.Drawing.Point(461, 427)
         Me.Label47.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(33, 13)
@@ -905,7 +905,7 @@ Partial Class FrmImprimirOrden
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(249, 427)
+        Me.Label48.Location = New System.Drawing.Point(284, 427)
         Me.Label48.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(37, 13)
@@ -915,7 +915,7 @@ Partial Class FrmImprimirOrden
         'Label49
         '
         Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(224, 441)
+        Me.Label49.Location = New System.Drawing.Point(259, 441)
         Me.Label49.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(92, 13)
@@ -925,7 +925,7 @@ Partial Class FrmImprimirOrden
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(35, 441)
+        Me.Label50.Location = New System.Drawing.Point(70, 441)
         Me.Label50.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(78, 13)
@@ -935,7 +935,7 @@ Partial Class FrmImprimirOrden
         'Label51
         '
         Me.Label51.AutoSize = True
-        Me.Label51.Location = New System.Drawing.Point(35, 427)
+        Me.Label51.Location = New System.Drawing.Point(70, 427)
         Me.Label51.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(91, 13)
@@ -945,7 +945,7 @@ Partial Class FrmImprimirOrden
         'Label52
         '
         Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(35, 404)
+        Me.Label52.Location = New System.Drawing.Point(70, 404)
         Me.Label52.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label52.Name = "Label52"
         Me.Label52.Size = New System.Drawing.Size(62, 13)
@@ -954,7 +954,7 @@ Partial Class FrmImprimirOrden
         '
         'TextBox15
         '
-        Me.TextBox15.Location = New System.Drawing.Point(75, 485)
+        Me.TextBox15.Location = New System.Drawing.Point(110, 485)
         Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(76, 20)
@@ -963,7 +963,7 @@ Partial Class FrmImprimirOrden
         'Label53
         '
         Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(35, 488)
+        Me.Label53.Location = New System.Drawing.Point(70, 488)
         Me.Label53.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(39, 13)
