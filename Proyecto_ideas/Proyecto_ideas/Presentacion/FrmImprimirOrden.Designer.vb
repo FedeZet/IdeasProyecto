@@ -71,49 +71,58 @@ Partial Class FrmImprimirOrden
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.lblPagina = New System.Windows.Forms.Label()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PrintForm2 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
+        Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.SuspendLayout()
         '
         'PrintForm1
@@ -142,7 +151,7 @@ Partial Class FrmImprimirOrden
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(180, 374)
+        Me.Label24.Location = New System.Drawing.Point(190, 352)
         Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(302, 13)
@@ -151,7 +160,7 @@ Partial Class FrmImprimirOrden
         '
         'txtImporte
         '
-        Me.txtImporte.Location = New System.Drawing.Point(471, 350)
+        Me.txtImporte.Location = New System.Drawing.Point(484, 300)
         Me.txtImporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(91, 20)
@@ -160,7 +169,7 @@ Partial Class FrmImprimirOrden
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(422, 356)
+        Me.Label23.Location = New System.Drawing.Point(435, 306)
         Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(45, 13)
@@ -169,7 +178,7 @@ Partial Class FrmImprimirOrden
         '
         'txtSim
         '
-        Me.txtSim.Location = New System.Drawing.Point(101, 353)
+        Me.txtSim.Location = New System.Drawing.Point(114, 303)
         Me.txtSim.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSim.Name = "txtSim"
         Me.txtSim.Size = New System.Drawing.Size(30, 20)
@@ -177,7 +186,7 @@ Partial Class FrmImprimirOrden
         '
         'txtCargador
         '
-        Me.txtCargador.Location = New System.Drawing.Point(231, 329)
+        Me.txtCargador.Location = New System.Drawing.Point(244, 279)
         Me.txtCargador.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCargador.Name = "txtCargador"
         Me.txtCargador.Size = New System.Drawing.Size(30, 20)
@@ -185,7 +194,7 @@ Partial Class FrmImprimirOrden
         '
         'txtTapa
         '
-        Me.txtTapa.Location = New System.Drawing.Point(231, 350)
+        Me.txtTapa.Location = New System.Drawing.Point(244, 300)
         Me.txtTapa.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTapa.Name = "txtTapa"
         Me.txtTapa.Size = New System.Drawing.Size(30, 20)
@@ -193,7 +202,7 @@ Partial Class FrmImprimirOrden
         '
         'txtEstuche
         '
-        Me.txtEstuche.Location = New System.Drawing.Point(370, 333)
+        Me.txtEstuche.Location = New System.Drawing.Point(383, 283)
         Me.txtEstuche.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEstuche.Name = "txtEstuche"
         Me.txtEstuche.Size = New System.Drawing.Size(30, 20)
@@ -201,7 +210,7 @@ Partial Class FrmImprimirOrden
         '
         'txtTMem
         '
-        Me.txtTMem.Location = New System.Drawing.Point(370, 354)
+        Me.txtTMem.Location = New System.Drawing.Point(383, 304)
         Me.txtTMem.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTMem.Name = "txtTMem"
         Me.txtTMem.Size = New System.Drawing.Size(30, 20)
@@ -209,7 +218,7 @@ Partial Class FrmImprimirOrden
         '
         'txtBat
         '
-        Me.txtBat.Location = New System.Drawing.Point(100, 332)
+        Me.txtBat.Location = New System.Drawing.Point(113, 282)
         Me.txtBat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtBat.Name = "txtBat"
         Me.txtBat.Size = New System.Drawing.Size(30, 20)
@@ -218,7 +227,7 @@ Partial Class FrmImprimirOrden
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(69, 353)
+        Me.Label22.Location = New System.Drawing.Point(82, 303)
         Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(27, 13)
@@ -228,7 +237,7 @@ Partial Class FrmImprimirOrden
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(177, 333)
+        Me.Label21.Location = New System.Drawing.Point(190, 283)
         Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(53, 13)
@@ -238,7 +247,7 @@ Partial Class FrmImprimirOrden
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(193, 354)
+        Me.Label20.Location = New System.Drawing.Point(206, 304)
         Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(35, 13)
@@ -248,7 +257,7 @@ Partial Class FrmImprimirOrden
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(313, 339)
+        Me.Label19.Location = New System.Drawing.Point(326, 289)
         Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(49, 13)
@@ -258,7 +267,7 @@ Partial Class FrmImprimirOrden
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(307, 354)
+        Me.Label18.Location = New System.Drawing.Point(320, 304)
         Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(60, 13)
@@ -268,7 +277,7 @@ Partial Class FrmImprimirOrden
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(54, 332)
+        Me.Label17.Location = New System.Drawing.Point(67, 282)
         Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(43, 13)
@@ -277,7 +286,7 @@ Partial Class FrmImprimirOrden
         '
         'txtFalla
         '
-        Me.txtFalla.Location = New System.Drawing.Point(55, 178)
+        Me.txtFalla.Location = New System.Drawing.Point(64, 155)
         Me.txtFalla.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFalla.Multiline = True
         Me.txtFalla.Name = "txtFalla"
@@ -286,7 +295,7 @@ Partial Class FrmImprimirOrden
         '
         'txtReso
         '
-        Me.txtReso.Location = New System.Drawing.Point(329, 178)
+        Me.txtReso.Location = New System.Drawing.Point(338, 155)
         Me.txtReso.Margin = New System.Windows.Forms.Padding(2)
         Me.txtReso.Multiline = True
         Me.txtReso.Name = "txtReso"
@@ -296,7 +305,7 @@ Partial Class FrmImprimirOrden
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(111, 162)
+        Me.Label16.Location = New System.Drawing.Point(120, 139)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(32, 13)
@@ -306,7 +315,7 @@ Partial Class FrmImprimirOrden
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(423, 162)
+        Me.Label15.Location = New System.Drawing.Point(432, 139)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(63, 13)
@@ -567,408 +576,482 @@ Partial Class FrmImprimirOrden
         Me.lblPagina.TabIndex = 87
         Me.lblPagina.Text = "1"
         '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(595, 788)
+        Me.ShapeContainer1.TabIndex = 88
+        Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.Location = New System.Drawing.Point(172, 325)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.Size = New System.Drawing.Size(350, 44)
+        '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(507, 441)
+        Me.Label26.Location = New System.Drawing.Point(229, 326)
         Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(13, 13)
-        Me.Label26.TabIndex = 130
-        Me.Label26.Text = "1"
+        Me.Label26.Size = New System.Drawing.Size(260, 13)
+        Me.Label26.TabIndex = 89
+        Me.Label26.Text = "-Presentar este documento para la entrega del equipo"
         '
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(498, 427)
+        Me.Label27.Location = New System.Drawing.Point(229, 339)
         Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(34, 13)
-        Me.Label27.TabIndex = 129
-        Me.Label27.Text = "00:00"
+        Me.Label27.Size = New System.Drawing.Size(240, 13)
+        Me.Label27.TabIndex = 90
+        Me.Label27.Text = "* Importe estimado sujeto a REVISION  TECNICA"
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(498, 414)
+        Me.Label28.Location = New System.Drawing.Point(210, 747)
         Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(65, 13)
-        Me.Label28.TabIndex = 128
-        Me.Label28.Text = "00/00/0000"
+        Me.Label28.Size = New System.Drawing.Size(240, 13)
+        Me.Label28.TabIndex = 137
+        Me.Label28.Text = "* Importe estimado sujeto a REVISION  TECNICA"
         '
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(60, 455)
+        Me.Label29.Location = New System.Drawing.Point(210, 734)
         Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(511, 13)
-        Me.Label29.TabIndex = 127
-        Me.Label29.Text = "_________________________________________________________________________________" & _
-            "___"
+        Me.Label29.Size = New System.Drawing.Size(260, 13)
+        Me.Label29.TabIndex = 136
+        Me.Label29.Text = "-Presentar este documento para la entrega del equipo"
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(197, 769)
+        Me.Label30.Location = New System.Drawing.Point(471, 454)
         Me.Label30.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(302, 13)
-        Me.Label30.TabIndex = 126
-        Me.Label30.Text = "Firma: ____________________________________________"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(488, 745)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(91, 20)
-        Me.TextBox1.TabIndex = 125
+        Me.Label30.Size = New System.Drawing.Size(13, 13)
+        Me.Label30.TabIndex = 135
+        Me.Label30.Text = "1"
         '
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(446, 749)
+        Me.Label31.Location = New System.Drawing.Point(462, 440)
         Me.Label31.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(45, 13)
-        Me.Label31.TabIndex = 124
-        Me.Label31.Text = "Importe:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(118, 748)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox2.TabIndex = 123
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(248, 724)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox3.TabIndex = 122
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(248, 745)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox4.TabIndex = 121
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(387, 728)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox5.TabIndex = 120
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(387, 749)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox6.TabIndex = 119
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(118, 727)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(30, 20)
-        Me.TextBox7.TabIndex = 118
+        Me.Label31.Size = New System.Drawing.Size(34, 13)
+        Me.Label31.TabIndex = 134
+        Me.Label31.Text = "00:00"
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(86, 748)
+        Me.Label32.Location = New System.Drawing.Point(462, 427)
         Me.Label32.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(27, 13)
-        Me.Label32.TabIndex = 117
-        Me.Label32.Text = "Sim:"
+        Me.Label32.Size = New System.Drawing.Size(65, 13)
+        Me.Label32.TabIndex = 133
+        Me.Label32.Text = "00/00/0000"
         '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(194, 728)
+        Me.Label33.Location = New System.Drawing.Point(171, 760)
         Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(53, 13)
-        Me.Label33.TabIndex = 116
-        Me.Label33.Text = "Cargador:"
+        Me.Label33.Size = New System.Drawing.Size(302, 13)
+        Me.Label33.TabIndex = 131
+        Me.Label33.Text = "Firma: ____________________________________________"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(465, 708)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(91, 20)
+        Me.TextBox1.TabIndex = 130
+        '
+        'PrintForm2
+        '
+        Me.PrintForm2.DocumentName = "document"
+        Me.PrintForm2.Form = Me
+        Me.PrintForm2.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
+        Me.PrintForm2.PrinterSettings = CType(resources.GetObject("PrintForm2.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
+        Me.PrintForm2.PrintFileName = Nothing
         '
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(210, 749)
+        Me.Label34.Location = New System.Drawing.Point(24, 468)
         Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(35, 13)
-        Me.Label34.TabIndex = 115
-        Me.Label34.Text = "Tapa:"
+        Me.Label34.Size = New System.Drawing.Size(511, 13)
+        Me.Label34.TabIndex = 132
+        Me.Label34.Text = "_________________________________________________________________________________" & _
+            "___"
         '
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(335, 728)
+        Me.Label35.Location = New System.Drawing.Point(416, 714)
         Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(49, 13)
-        Me.Label35.TabIndex = 114
-        Me.Label35.Text = "Estuche:"
+        Me.Label35.Size = New System.Drawing.Size(45, 13)
+        Me.Label35.TabIndex = 129
+        Me.Label35.Text = "Importe:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(95, 711)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox2.TabIndex = 128
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(225, 687)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox3.TabIndex = 127
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(225, 708)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox4.TabIndex = 126
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(364, 691)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox5.TabIndex = 125
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(364, 712)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox6.TabIndex = 124
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(94, 690)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(30, 20)
+        Me.TextBox7.TabIndex = 123
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(324, 749)
+        Me.Label36.Location = New System.Drawing.Point(63, 711)
         Me.Label36.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(60, 13)
-        Me.Label36.TabIndex = 113
-        Me.Label36.Text = "T.Memoria:"
+        Me.Label36.Size = New System.Drawing.Size(27, 13)
+        Me.Label36.TabIndex = 122
+        Me.Label36.Text = "Sim:"
         '
         'Label37
         '
         Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(71, 727)
+        Me.Label37.Location = New System.Drawing.Point(171, 691)
         Me.Label37.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(43, 13)
-        Me.Label37.TabIndex = 112
-        Me.Label37.Text = "Bateria:"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(72, 573)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(224, 119)
-        Me.TextBox8.TabIndex = 111
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(346, 573)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox9.Multiline = True
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(216, 119)
-        Me.TextBox9.TabIndex = 110
+        Me.Label37.Size = New System.Drawing.Size(53, 13)
+        Me.Label37.TabIndex = 121
+        Me.Label37.Text = "Cargador:"
         '
         'Label38
         '
         Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(128, 557)
+        Me.Label38.Location = New System.Drawing.Point(187, 712)
         Me.Label38.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(32, 13)
-        Me.Label38.TabIndex = 109
-        Me.Label38.Text = "Falla:"
+        Me.Label38.Size = New System.Drawing.Size(35, 13)
+        Me.Label38.TabIndex = 120
+        Me.Label38.Text = "Tapa:"
         '
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(440, 557)
+        Me.Label39.Location = New System.Drawing.Point(307, 697)
         Me.Label39.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(63, 13)
-        Me.Label39.TabIndex = 108
-        Me.Label39.Text = "Resolucion:"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(476, 504)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox10.TabIndex = 107
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(476, 485)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox11.TabIndex = 106
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(293, 504)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox12.TabIndex = 105
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(293, 485)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox13.TabIndex = 104
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(110, 504)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox14.TabIndex = 103
+        Me.Label39.Size = New System.Drawing.Size(49, 13)
+        Me.Label39.TabIndex = 119
+        Me.Label39.Text = "Estuche:"
         '
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(447, 489)
+        Me.Label40.Location = New System.Drawing.Point(301, 712)
         Me.Label40.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(25, 13)
-        Me.Label40.TabIndex = 102
-        Me.Label40.Text = "Tel:"
+        Me.Label40.Size = New System.Drawing.Size(60, 13)
+        Me.Label40.TabIndex = 118
+        Me.Label40.Text = "T.Memoria:"
         '
         'Label41
         '
         Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(447, 503)
+        Me.Label41.Location = New System.Drawing.Point(48, 690)
         Me.Label41.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(25, 13)
-        Me.Label41.TabIndex = 101
-        Me.Label41.Text = "Pin:"
+        Me.Label41.Size = New System.Drawing.Size(43, 13)
+        Me.Label41.TabIndex = 117
+        Me.Label41.Text = "Bateria:"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(45, 563)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox8.Multiline = True
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(224, 119)
+        Me.TextBox8.TabIndex = 116
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(319, 563)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox9.Multiline = True
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(216, 119)
+        Me.TextBox9.TabIndex = 115
         '
         'Label42
         '
         Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(237, 488)
+        Me.Label42.Location = New System.Drawing.Point(101, 547)
         Me.Label42.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(50, 13)
-        Me.Label42.TabIndex = 100
-        Me.Label42.Text = "Nombre :"
+        Me.Label42.Size = New System.Drawing.Size(32, 13)
+        Me.Label42.TabIndex = 114
+        Me.Label42.Text = "Falla:"
         '
         'Label43
         '
         Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(64, 501)
+        Me.Label43.Location = New System.Drawing.Point(413, 547)
         Me.Label43.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(45, 13)
-        Me.Label43.TabIndex = 99
-        Me.Label43.Text = "Modelo:"
+        Me.Label43.Size = New System.Drawing.Size(63, 13)
+        Me.Label43.TabIndex = 113
+        Me.Label43.Text = "Resolucion:"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(440, 517)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox10.TabIndex = 112
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(440, 498)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox11.TabIndex = 111
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(257, 517)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox12.TabIndex = 110
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(257, 498)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox13.TabIndex = 109
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(74, 517)
+        Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox14.TabIndex = 108
         '
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(242, 501)
+        Me.Label44.Location = New System.Drawing.Point(411, 502)
         Me.Label44.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(42, 13)
-        Me.Label44.TabIndex = 98
-        Me.Label44.Text = "NSerie:"
+        Me.Label44.Size = New System.Drawing.Size(25, 13)
+        Me.Label44.TabIndex = 107
+        Me.Label44.Text = "Tel:"
         '
         'Label45
         '
         Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(461, 441)
+        Me.Label45.Location = New System.Drawing.Point(411, 516)
         Me.Label45.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(43, 13)
-        Me.Label45.TabIndex = 97
-        Me.Label45.Text = "Pagina:"
+        Me.Label45.Size = New System.Drawing.Size(25, 13)
+        Me.Label45.TabIndex = 106
+        Me.Label45.Text = "Pin:"
         '
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(461, 414)
+        Me.Label46.Location = New System.Drawing.Point(202, 501)
         Me.Label46.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(40, 13)
-        Me.Label46.TabIndex = 96
-        Me.Label46.Text = "Fecha:"
+        Me.Label46.Size = New System.Drawing.Size(50, 13)
+        Me.Label46.TabIndex = 105
+        Me.Label46.Text = "Nombre :"
         '
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(461, 427)
+        Me.Label47.Location = New System.Drawing.Point(25, 514)
         Me.Label47.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(33, 13)
-        Me.Label47.TabIndex = 95
-        Me.Label47.Text = "Hora:"
+        Me.Label47.Size = New System.Drawing.Size(45, 13)
+        Me.Label47.TabIndex = 104
+        Me.Label47.Text = "Modelo:"
+        '
+        'PrintDialog2
+        '
+        Me.PrintDialog2.UseEXDialog = True
         '
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(284, 427)
+        Me.Label48.Location = New System.Drawing.Point(210, 514)
         Me.Label48.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(37, 13)
-        Me.Label48.TabIndex = 94
-        Me.Label48.Text = "ide@s"
+        Me.Label48.Size = New System.Drawing.Size(42, 13)
+        Me.Label48.TabIndex = 103
+        Me.Label48.Text = "NSerie:"
         '
         'Label49
         '
         Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(259, 441)
+        Me.Label49.Location = New System.Drawing.Point(425, 454)
         Me.Label49.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(92, 13)
-        Me.Label49.TabIndex = 93
-        Me.Label49.Text = "Orden de Servicio"
+        Me.Label49.Size = New System.Drawing.Size(43, 13)
+        Me.Label49.TabIndex = 102
+        Me.Label49.Text = "Pagina:"
         '
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(70, 441)
+        Me.Label50.Location = New System.Drawing.Point(425, 427)
         Me.Label50.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(78, 13)
-        Me.Label50.TabIndex = 92
-        Me.Label50.Text = "tel : 473 35191"
+        Me.Label50.Size = New System.Drawing.Size(40, 13)
+        Me.Label50.TabIndex = 101
+        Me.Label50.Text = "Fecha:"
         '
         'Label51
         '
         Me.Label51.AutoSize = True
-        Me.Label51.Location = New System.Drawing.Point(70, 427)
+        Me.Label51.Location = New System.Drawing.Point(425, 440)
         Me.Label51.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(91, 13)
-        Me.Label51.TabIndex = 91
-        Me.Label51.Text = "Lavalleja 47 Salto"
+        Me.Label51.Size = New System.Drawing.Size(33, 13)
+        Me.Label51.TabIndex = 100
+        Me.Label51.Text = "Hora:"
         '
         'Label52
         '
         Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(70, 404)
+        Me.Label52.Location = New System.Drawing.Point(248, 440)
         Me.Label52.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(62, 13)
-        Me.Label52.TabIndex = 90
-        Me.Label52.Text = "Imarket S.A"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(110, 485)
-        Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox15.TabIndex = 89
+        Me.Label52.Size = New System.Drawing.Size(37, 13)
+        Me.Label52.TabIndex = 99
+        Me.Label52.Text = "ide@s"
         '
         'Label53
         '
         Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(70, 488)
+        Me.Label53.Location = New System.Drawing.Point(223, 454)
         Me.Label53.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(39, 13)
-        Me.Label53.TabIndex = 88
-        Me.Label53.Text = "Orden:"
+        Me.Label53.Size = New System.Drawing.Size(92, 13)
+        Me.Label53.TabIndex = 98
+        Me.Label53.Text = "Orden de Servicio"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Location = New System.Drawing.Point(34, 454)
+        Me.Label54.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(78, 13)
+        Me.Label54.TabIndex = 97
+        Me.Label54.Text = "tel : 473 35191"
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Location = New System.Drawing.Point(34, 440)
+        Me.Label55.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(91, 13)
+        Me.Label55.TabIndex = 96
+        Me.Label55.Text = "Lavalleja 47 Salto"
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Location = New System.Drawing.Point(34, 417)
+        Me.Label56.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(62, 13)
+        Me.Label56.TabIndex = 95
+        Me.Label56.Text = "Imarket S.A"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(74, 498)
+        Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(76, 20)
+        Me.TextBox15.TabIndex = 93
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Location = New System.Drawing.Point(34, 501)
+        Me.Label57.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(39, 13)
+        Me.Label57.TabIndex = 92
+        Me.Label57.Text = "Orden:"
+        '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.Location = New System.Drawing.Point(156, 733)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.Size = New System.Drawing.Size(350, 44)
         '
         'FrmImprimirOrden
         '
@@ -978,38 +1061,36 @@ Partial Class FrmImprimirOrden
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.btnCancelarImp
         Me.ClientSize = New System.Drawing.Size(595, 788)
-        Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.Label29)
         Me.Controls.Add(Me.Label30)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label31)
+        Me.Controls.Add(Me.Label32)
+        Me.Controls.Add(Me.Label33)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label34)
+        Me.Controls.Add(Me.Label35)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.Label32)
-        Me.Controls.Add(Me.Label33)
-        Me.Controls.Add(Me.Label34)
-        Me.Controls.Add(Me.Label35)
         Me.Controls.Add(Me.Label36)
         Me.Controls.Add(Me.Label37)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label38)
         Me.Controls.Add(Me.Label39)
+        Me.Controls.Add(Me.Label40)
+        Me.Controls.Add(Me.Label41)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.Label42)
+        Me.Controls.Add(Me.Label43)
         Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.TextBox12)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.Label40)
-        Me.Controls.Add(Me.Label41)
-        Me.Controls.Add(Me.Label42)
-        Me.Controls.Add(Me.Label43)
         Me.Controls.Add(Me.Label44)
         Me.Controls.Add(Me.Label45)
         Me.Controls.Add(Me.Label46)
@@ -1019,8 +1100,14 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.Label50)
         Me.Controls.Add(Me.Label51)
         Me.Controls.Add(Me.Label52)
-        Me.Controls.Add(Me.TextBox15)
         Me.Controls.Add(Me.Label53)
+        Me.Controls.Add(Me.Label54)
+        Me.Controls.Add(Me.Label55)
+        Me.Controls.Add(Me.Label56)
+        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.Label57)
+        Me.Controls.Add(Me.Label27)
+        Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.lblPagina)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.lblFecha)
@@ -1066,6 +1153,7 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.txtOrden)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnImprimir)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmImprimirOrden"
@@ -1122,38 +1210,40 @@ Partial Class FrmImprimirOrden
     Friend WithEvents lblPagina As System.Windows.Forms.Label
     Friend WithEvents lblHora As System.Windows.Forms.Label
     Friend WithEvents lblFecha As System.Windows.Forms.Label
-    Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
     Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents Label35 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents Label32 As System.Windows.Forms.Label
-    Friend WithEvents Label33 As System.Windows.Forms.Label
-    Friend WithEvents Label34 As System.Windows.Forms.Label
-    Friend WithEvents Label35 As System.Windows.Forms.Label
     Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label37 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents Label39 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents Label43 As System.Windows.Forms.Label
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
-    Friend WithEvents Label40 As System.Windows.Forms.Label
-    Friend WithEvents Label41 As System.Windows.Forms.Label
-    Friend WithEvents Label42 As System.Windows.Forms.Label
-    Friend WithEvents Label43 As System.Windows.Forms.Label
     Friend WithEvents Label44 As System.Windows.Forms.Label
     Friend WithEvents Label45 As System.Windows.Forms.Label
     Friend WithEvents Label46 As System.Windows.Forms.Label
@@ -1163,6 +1253,13 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label50 As System.Windows.Forms.Label
     Friend WithEvents Label51 As System.Windows.Forms.Label
     Friend WithEvents Label52 As System.Windows.Forms.Label
-    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
     Friend WithEvents Label53 As System.Windows.Forms.Label
+    Friend WithEvents Label54 As System.Windows.Forms.Label
+    Friend WithEvents Label55 As System.Windows.Forms.Label
+    Friend WithEvents Label56 As System.Windows.Forms.Label
+    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents Label57 As System.Windows.Forms.Label
+    Friend WithEvents RectangleShape2 As Microsoft.VisualBasic.PowerPacks.RectangleShape
+    Friend WithEvents PrintForm2 As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
+    Friend WithEvents PrintDialog2 As System.Windows.Forms.PrintDialog
 End Class
