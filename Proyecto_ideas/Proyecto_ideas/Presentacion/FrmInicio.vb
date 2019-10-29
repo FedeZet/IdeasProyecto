@@ -23,7 +23,6 @@
         InitializeComponent()
         timerHoraFecha.Enabled = True
 
-        'Dim usuario As String = ManUsuario.getInstancia.datosSesion()
         If UsuarioActivo.user <> "admin" Then
             btnUsuario.Visible = False
             btnProductividad.Visible = False

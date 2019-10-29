@@ -71,12 +71,6 @@ Public Class ManUsuario
         End If
     End Function
 
-    Public Function datosSesion(ByVal user As String, ByVal pass As String)
-        Dim objUsuario As Usuario = New Usuario(user, pass)
-
-        Return user
-    End Function
-
     Public Shared Function getInstancia()
         If instancia Is Nothing Then
             instancia = New ManUsuario
