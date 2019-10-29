@@ -2,8 +2,7 @@
     Private Sub btnImprimir_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnImprimir.Click
         PrintForm1.PrinterSettings = PrintDialog1.PrinterSettings 'permite ajustar tamaño y copias
         If PrintDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-            PrintDialog1.PrinterSettings.PrinterName = "Foxit Reader PDF Printer"
-            PrintForm1.Print()
+            PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.Scrollable)
         End If
     End Sub
 
