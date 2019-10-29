@@ -152,7 +152,7 @@ Partial Class FrmImprimirOrden
         'txtImporte
         '
         Me.txtImporte.Location = New System.Drawing.Point(436, 350)
-        Me.txtImporte.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtImporte.Margin = New System.Windows.Forms.Padding(2)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(91, 20)
         Me.txtImporte.TabIndex = 82
@@ -170,7 +170,7 @@ Partial Class FrmImprimirOrden
         'txtSim
         '
         Me.txtSim.Location = New System.Drawing.Point(66, 353)
-        Me.txtSim.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSim.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSim.Name = "txtSim"
         Me.txtSim.Size = New System.Drawing.Size(30, 20)
         Me.txtSim.TabIndex = 80
@@ -178,7 +178,7 @@ Partial Class FrmImprimirOrden
         'txtCargador
         '
         Me.txtCargador.Location = New System.Drawing.Point(196, 329)
-        Me.txtCargador.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCargador.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCargador.Name = "txtCargador"
         Me.txtCargador.Size = New System.Drawing.Size(30, 20)
         Me.txtCargador.TabIndex = 79
@@ -186,7 +186,7 @@ Partial Class FrmImprimirOrden
         'txtTapa
         '
         Me.txtTapa.Location = New System.Drawing.Point(196, 350)
-        Me.txtTapa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTapa.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTapa.Name = "txtTapa"
         Me.txtTapa.Size = New System.Drawing.Size(30, 20)
         Me.txtTapa.TabIndex = 78
@@ -194,7 +194,7 @@ Partial Class FrmImprimirOrden
         'txtEstuche
         '
         Me.txtEstuche.Location = New System.Drawing.Point(335, 333)
-        Me.txtEstuche.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEstuche.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEstuche.Name = "txtEstuche"
         Me.txtEstuche.Size = New System.Drawing.Size(30, 20)
         Me.txtEstuche.TabIndex = 77
@@ -202,7 +202,7 @@ Partial Class FrmImprimirOrden
         'txtTMem
         '
         Me.txtTMem.Location = New System.Drawing.Point(335, 354)
-        Me.txtTMem.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTMem.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTMem.Name = "txtTMem"
         Me.txtTMem.Size = New System.Drawing.Size(30, 20)
         Me.txtTMem.TabIndex = 76
@@ -210,7 +210,7 @@ Partial Class FrmImprimirOrden
         'txtBat
         '
         Me.txtBat.Location = New System.Drawing.Point(65, 332)
-        Me.txtBat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtBat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtBat.Name = "txtBat"
         Me.txtBat.Size = New System.Drawing.Size(30, 20)
         Me.txtBat.TabIndex = 75
@@ -278,7 +278,7 @@ Partial Class FrmImprimirOrden
         'txtFalla
         '
         Me.txtFalla.Location = New System.Drawing.Point(20, 178)
-        Me.txtFalla.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFalla.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFalla.Multiline = True
         Me.txtFalla.Name = "txtFalla"
         Me.txtFalla.Size = New System.Drawing.Size(224, 119)
@@ -287,7 +287,7 @@ Partial Class FrmImprimirOrden
         'txtReso
         '
         Me.txtReso.Location = New System.Drawing.Point(294, 178)
-        Me.txtReso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtReso.Margin = New System.Windows.Forms.Padding(2)
         Me.txtReso.Multiline = True
         Me.txtReso.Name = "txtReso"
         Me.txtReso.Size = New System.Drawing.Size(216, 119)
@@ -316,7 +316,7 @@ Partial Class FrmImprimirOrden
         'txtPin
         '
         Me.txtPin.Location = New System.Drawing.Point(424, 109)
-        Me.txtPin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPin.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPin.Name = "txtPin"
         Me.txtPin.Size = New System.Drawing.Size(76, 20)
         Me.txtPin.TabIndex = 64
@@ -324,7 +324,7 @@ Partial Class FrmImprimirOrden
         'txtTel
         '
         Me.txtTel.Location = New System.Drawing.Point(424, 90)
-        Me.txtTel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTel.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(76, 20)
         Me.txtTel.TabIndex = 63
@@ -332,7 +332,7 @@ Partial Class FrmImprimirOrden
         'txtNSerie
         '
         Me.txtNSerie.Location = New System.Drawing.Point(241, 109)
-        Me.txtNSerie.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNSerie.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNSerie.Name = "txtNSerie"
         Me.txtNSerie.Size = New System.Drawing.Size(76, 20)
         Me.txtNSerie.TabIndex = 62
@@ -340,7 +340,7 @@ Partial Class FrmImprimirOrden
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(241, 90)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(76, 20)
         Me.txtNombre.TabIndex = 61
@@ -348,7 +348,7 @@ Partial Class FrmImprimirOrden
         'txtModelo
         '
         Me.txtModelo.Location = New System.Drawing.Point(58, 109)
-        Me.txtModelo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtModelo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.Size = New System.Drawing.Size(76, 20)
         Me.txtModelo.TabIndex = 60
@@ -485,8 +485,16 @@ Partial Class FrmImprimirOrden
         '
         'btnCancelarImp
         '
-        Me.btnCancelarImp.Location = New System.Drawing.Point(256, 396)
-        Me.btnCancelarImp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancelarImp.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnCancelarImp.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnCancelarImp.FlatAppearance.BorderSize = 0
+        Me.btnCancelarImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btnCancelarImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnCancelarImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnCancelarImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelarImp.ForeColor = System.Drawing.Color.Transparent
+        Me.btnCancelarImp.Location = New System.Drawing.Point(271, 3)
+        Me.btnCancelarImp.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancelarImp.Name = "btnCancelarImp"
         Me.btnCancelarImp.Size = New System.Drawing.Size(56, 19)
         Me.btnCancelarImp.TabIndex = 46
@@ -496,7 +504,7 @@ Partial Class FrmImprimirOrden
         'txtOrden
         '
         Me.txtOrden.Location = New System.Drawing.Point(58, 90)
-        Me.txtOrden.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.txtOrden.Name = "txtOrden"
         Me.txtOrden.Size = New System.Drawing.Size(76, 20)
         Me.txtOrden.TabIndex = 45
@@ -513,11 +521,16 @@ Partial Class FrmImprimirOrden
         '
         'btnImprimir
         '
-        Me.btnImprimir.BackColor = System.Drawing.Color.Gray
+        Me.btnImprimir.BackColor = System.Drawing.Color.White
+        Me.btnImprimir.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnImprimir.FlatAppearance.BorderSize = 0
+        Me.btnImprimir.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.btnImprimir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnImprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnImprimir.ForeColor = System.Drawing.Color.White
-        Me.btnImprimir.Location = New System.Drawing.Point(190, 396)
-        Me.btnImprimir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnImprimir.Location = New System.Drawing.Point(205, 3)
+        Me.btnImprimir.Margin = New System.Windows.Forms.Padding(2)
         Me.btnImprimir.Name = "btnImprimir"
         Me.btnImprimir.Size = New System.Drawing.Size(56, 19)
         Me.btnImprimir.TabIndex = 43
@@ -959,9 +972,11 @@ Partial Class FrmImprimirOrden
         '
         'FrmImprimirOrden
         '
+        Me.AcceptButton = Me.btnImprimir
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnCancelarImp
         Me.ClientSize = New System.Drawing.Size(595, 788)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.Label27)
@@ -1052,7 +1067,7 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnImprimir)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmImprimirOrden"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ImprimirOrden"
