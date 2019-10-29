@@ -2,8 +2,6 @@
 Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
     Dim hashTecnico As Hashtable = New Hashtable
-    Dim userData As String
-    Dim passData As String
 
     Private Shared instancia As ManUsuario
     Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
@@ -69,6 +67,14 @@ Public Class ManUsuario
         Else
             Return False
         End If
+    End Function
+
+    Public Function cambiarContrasenia(ByVal nuevaPass As String)
+        Dim passEncriptada As String = Encriptar.SHA256Encriptador(nuevaPass)
+        Dim usuario As String = UsuarioActivo.user
+        Dim objUsuario As Usuario = New Usuario(usuario, passEncriptada)
+        objUsuario.cambiarContrasenia()
+        Return True
     End Function
 
     Public Shared Function getInstancia()

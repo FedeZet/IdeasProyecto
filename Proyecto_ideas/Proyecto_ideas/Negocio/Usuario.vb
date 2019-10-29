@@ -154,6 +154,10 @@
         Return obj.buscarUsuario(Me)
     End Function
 
+    Public Function cambiarContrasenia()
+        Dim objUC As DAOUsuario = New DAOUsuario
+        Return objUC.cambiarContrasenia(Me)
+    End Function
 
     Public Overrides Function ToString() As String
         Return Me._nombre

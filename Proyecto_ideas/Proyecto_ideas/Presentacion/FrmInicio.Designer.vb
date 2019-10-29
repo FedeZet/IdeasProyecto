@@ -26,7 +26,7 @@ Partial Class FrmInicio
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmInicio))
         Me.plSistema = New System.Windows.Forms.Panel()
         Me.btnLogout = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCambiarPass = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblNombre = New System.Windows.Forms.Label()
@@ -45,7 +45,7 @@ Partial Class FrmInicio
         '
         Me.plSistema.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.plSistema.Controls.Add(Me.btnLogout)
-        Me.plSistema.Controls.Add(Me.Button1)
+        Me.plSistema.Controls.Add(Me.btnCambiarPass)
         Me.plSistema.Controls.Add(Me.btnAbout)
         Me.plSistema.Controls.Add(Me.btnExit)
         Me.plSistema.Controls.Add(Me.lblNombre)
@@ -70,20 +70,20 @@ Partial Class FrmInicio
         Me.btnLogout.TabIndex = 7
         Me.btnLogout.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnCambiarPass
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.Ideas.My.Resources.Resources.key
-        Me.Button1.Location = New System.Drawing.Point(410, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(46, 46)
-        Me.Button1.TabIndex = 5
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCambiarPass.FlatAppearance.BorderSize = 0
+        Me.btnCambiarPass.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnCambiarPass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.btnCambiarPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCambiarPass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCambiarPass.ForeColor = System.Drawing.Color.White
+        Me.btnCambiarPass.Image = Global.Ideas.My.Resources.Resources.key
+        Me.btnCambiarPass.Location = New System.Drawing.Point(410, 12)
+        Me.btnCambiarPass.Name = "btnCambiarPass"
+        Me.btnCambiarPass.Size = New System.Drawing.Size(46, 46)
+        Me.btnCambiarPass.TabIndex = 5
+        Me.btnCambiarPass.UseVisualStyleBackColor = True
         '
         'btnAbout
         '
@@ -261,7 +261,7 @@ Partial Class FrmInicio
     Friend WithEvents lblNombre As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnAbout As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnCambiarPass As System.Windows.Forms.Button
     Friend WithEvents timerHoraFecha As System.Windows.Forms.Timer
     Friend WithEvents btnLogout As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox

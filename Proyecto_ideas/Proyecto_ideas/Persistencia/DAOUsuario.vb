@@ -17,7 +17,7 @@
     Public Function obtenerTecnico() As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "SELECT idU ,nombreU FROM usuario"
+        sentencia = "SELECT idU, nombreU FROM usuario"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 
@@ -67,4 +67,11 @@
         Return objConexion.ejecutar(sentencia, True)
     End Function
 
+    Public Function cambiarContrasenia(ByVal objUC As Usuario)
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "UPDATE usuario SET pass = '" + objUC.Password + "' WHERE user = '" + objUC.User + "';"
+        objConexion.ejecutar(sentencia, False)
+        Return True
+    End Function
 End Class

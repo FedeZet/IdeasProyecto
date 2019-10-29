@@ -42,4 +42,9 @@
     Private Sub btnLogout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogout.Click
         Application.Restart()
     End Sub
+
+    Private Sub btnCambiarPass_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCambiarPass.Click
+        FrmCambiarPass.Show()
+
+    End Sub
 End Class
