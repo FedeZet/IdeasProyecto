@@ -5,9 +5,10 @@
         Dim validacion = ManUsuario.getInstancia.iniciarSesion(Me.txtUsuario.Text, Me.txtContrasenia.Text)
 
         If validacion = True Then
+            ManUsuario.getInstancia.datosSesion(Me.txtUsuario.Text, Me.txtContrasenia.Text)
             FrmInicio.Show()
             Me.Hide()
-            FrmInicio.cargarUsuario(txtUsuario.Text)
+
         Else
             lblError.Text = "       " + "Usuario y/o contraseña incorrectos."
             lblError.Visible = True

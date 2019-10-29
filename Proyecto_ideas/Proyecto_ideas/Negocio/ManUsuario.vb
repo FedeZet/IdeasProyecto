@@ -2,6 +2,8 @@
 Public Class ManUsuario
     Dim hashUsuario As Hashtable = New Hashtable
     Dim hashTecnico As Hashtable = New Hashtable
+    Dim userData As String
+    Dim passData As String
 
     Private Shared instancia As ManUsuario
     Public Function crearUsuario(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
@@ -61,12 +63,18 @@ Public Class ManUsuario
         Dim passEncriptada As String = Encriptar.SHA256Encriptador(pass)
 
         Dim objUsuario As Usuario = New Usuario(user, passEncriptada)
-        Dim verificar = objUsuario.autenticar(user, passEncriptada)
-        If verificar = True Then
+        Dim usuarioLogueado = objUsuario.autenticar(user, passEncriptada)
+        If usuarioLogueado = True Then
             Return True
         Else
             Return False
         End If
+    End Function
+
+    Public Function datosSesion(ByVal user As String, ByVal pass As String)
+        Dim objUsuario As Usuario = New Usuario(user, pass)
+
+        Return user
     End Function
 
     Public Shared Function getInstancia()

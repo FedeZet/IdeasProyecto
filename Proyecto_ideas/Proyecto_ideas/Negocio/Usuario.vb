@@ -154,6 +154,7 @@
         Return obj.buscarUsuario(Me)
     End Function
 
+
     Public Overrides Function ToString() As String
         Return Me._nombre
     End Function

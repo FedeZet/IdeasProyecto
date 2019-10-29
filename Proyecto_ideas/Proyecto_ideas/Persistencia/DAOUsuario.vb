@@ -29,7 +29,13 @@
         Dim datareader As MySql.Data.MySqlClient.MySqlDataReader = objConexion.ejecutar(sentencia, True)
         If datareader.HasRows Then
             While datareader.Read()
-                obj = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"), datareader("costoServicio"))
+                'obj = New Usuario(datareader("idU"), datareader("user"), datareader("pass"), datareader("nombreU"), datareader("telefonoU"), datareader("costoServicio"))
+                UsuarioActivo.idUser = datareader.GetInt32(0)
+                UsuarioActivo.user = datareader.GetString(1)
+                UsuarioActivo.pass = datareader.GetString(2)
+                UsuarioActivo.nombre = datareader.GetString(3)
+                UsuarioActivo.telefono = datareader.GetString(4)
+                UsuarioActivo.mail = datareader.GetString(5)
             End While
             datareader.Dispose()
             Return True

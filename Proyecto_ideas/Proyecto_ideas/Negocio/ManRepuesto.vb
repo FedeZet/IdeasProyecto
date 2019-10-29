@@ -44,10 +44,6 @@ Public Class ManRepuesto
         Return Me.hashRepuesto
     End Function
 
-    Private Sub New()
-
-    End Sub
-
     Public Shared Function getInstancia()
         If instancia Is Nothing Then
             instancia = New ManRepuesto
