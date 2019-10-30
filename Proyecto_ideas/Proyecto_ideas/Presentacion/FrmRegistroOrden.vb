@@ -4,8 +4,6 @@
     Dim idC As Integer
     Dim idD As Integer
 
-
-
     Private Sub btnCrearOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCrearOrden.Click
         'se crea la orden
         Dim estado As String = ""
@@ -46,7 +44,7 @@
 
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Close()
     End Sub
 
@@ -120,4 +118,5 @@
     Private Sub txtImporte_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtImporte.KeyPress
         Numeros(e)
     End Sub
+
 End Class

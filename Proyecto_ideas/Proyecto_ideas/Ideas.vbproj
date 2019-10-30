@@ -396,8 +396,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ideasIcon.ico" />
-    <None Include="Resources\correct.png" />
-    <None Include="Resources\incorrect.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
