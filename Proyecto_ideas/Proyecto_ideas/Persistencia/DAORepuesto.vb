@@ -22,6 +22,14 @@
         Return True
     End Function
 
+    Public Function modificarCantidadRepuesto(ByVal obj As Repuesto)
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "UPDATE repuesto SET cantidad = " + obj.Cantidad.ToString + " WHERE idR = " + obj.IdRepuesto.ToString + ";"
+        objConexion.ejecutar(sentencia, False)
+        Return True
+    End Function
+
     Public Function eliminarRepuesto(ByVal obj As Repuesto)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD

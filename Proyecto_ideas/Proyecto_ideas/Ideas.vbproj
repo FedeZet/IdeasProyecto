@@ -107,16 +107,19 @@
     <Compile Include="Negocio\ManOrden.vb" />
     <Compile Include="Negocio\ManRepuesto.vb" />
     <Compile Include="Negocio\ManUsuario.vb" />
+    <Compile Include="Negocio\ManUtiliza.vb" />
     <Compile Include="Negocio\Orden.vb" />
     <Compile Include="Negocio\Repuesto.vb" />
     <Compile Include="Negocio\SoloLetras.vb" />
     <Compile Include="Negocio\SoloNumeros.vb" />
+    <Compile Include="Negocio\Utiliza.vb" />
     <Compile Include="Persistencia\ConectorBD.vb" />
     <Compile Include="Persistencia\DAOCliente.vb" />
     <Compile Include="Persistencia\DAODispositivo.vb" />
     <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
+    <Compile Include="Persistencia\DAOUtiliza.vb" />
     <Compile Include="Presentacion\FrmAbout.Designer.vb">
       <DependentUpon>FrmAbout.vb</DependentUpon>
     </Compile>
@@ -133,6 +136,12 @@
       <DependentUpon>FrmListaOrden.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\FrmListaOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmListaRepuestosUtilizados.Designer.vb">
+      <DependentUpon>FrmListaRepuestosUtilizados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmListaRepuestosUtilizados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\FrmListaUsuario.Designer.vb">
@@ -257,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmListaOrden.resx">
       <DependentUpon>FrmListaOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmListaRepuestosUtilizados.resx">
+      <DependentUpon>FrmListaRepuestosUtilizados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmListaUsuario.resx">
       <DependentUpon>FrmListaUsuario.vb</DependentUpon>

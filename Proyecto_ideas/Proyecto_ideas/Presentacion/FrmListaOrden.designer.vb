@@ -50,6 +50,7 @@ Partial Class FrmListaOrden
         Me.lblListaOrden = New System.Windows.Forms.Label()
         Me.btnBuscadorO = New System.Windows.Forms.Button()
         Me.txtBuscadorO = New System.Windows.Forms.TextBox()
+        Me.btnRepuestos = New System.Windows.Forms.Button()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -194,6 +195,7 @@ Partial Class FrmListaOrden
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnRepuestos)
         Me.Panel1.Controls.Add(Me.btnOImprimir)
         Me.Panel1.Controls.Add(Me.btnOAgregar)
         Me.Panel1.Controls.Add(Me.btnRefresh)
@@ -316,6 +318,15 @@ Partial Class FrmListaOrden
         Me.txtBuscadorO.Size = New System.Drawing.Size(117, 21)
         Me.txtBuscadorO.TabIndex = 1
         '
+        'btnRepuestos
+        '
+        Me.btnRepuestos.Location = New System.Drawing.Point(93, 13)
+        Me.btnRepuestos.Name = "btnRepuestos"
+        Me.btnRepuestos.Size = New System.Drawing.Size(54, 43)
+        Me.btnRepuestos.TabIndex = 8
+        Me.btnRepuestos.Text = "Repuestos"
+        Me.btnRepuestos.UseVisualStyleBackColor = True
+        '
         'FrmListaOrden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -364,4 +375,5 @@ Partial Class FrmListaOrden
     Friend WithEvents lblListaOrden As System.Windows.Forms.Label
     Friend WithEvents btnBuscadorO As System.Windows.Forms.Button
     Friend WithEvents txtBuscadorO As System.Windows.Forms.TextBox
+    Friend WithEvents btnRepuestos As System.Windows.Forms.Button
 End Class

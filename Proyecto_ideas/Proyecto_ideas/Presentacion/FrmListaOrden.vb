@@ -106,4 +106,9 @@
     Private Sub FrmListaOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnRepuestos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRepuestos.Click
+        FrmListaRepuestosUtilizados.Show()
+        FrmListaRepuestosUtilizados.obtenerOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
+    End Sub
 End Class

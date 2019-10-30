@@ -27,6 +27,12 @@ Public Class ManRepuesto
         Return True
     End Function
 
+    Public Function modificarCantidadRepuesto(ByVal idRepuesto As Integer, ByVal cantidadRepuesto As Integer)
+        Dim objRepuesto As Repuesto = New Repuesto(idRepuesto, cantidadRepuesto)
+        objRepuesto.modificarCantidad()
+        Return True
+    End Function
+
     Public Function eliminarRepuesto(ByVal idRepuesto As Integer)
         Dim objRepuesto As Repuesto = New Repuesto(idRepuesto)
         objRepuesto.eliminar()
