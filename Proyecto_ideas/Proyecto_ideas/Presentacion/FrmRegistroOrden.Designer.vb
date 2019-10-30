@@ -48,12 +48,12 @@ Partial Class FrmRegistroOrden
         Me.lblModelo = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblImporte = New System.Windows.Forms.Label()
-        Me.btnDipositivo = New System.Windows.Forms.Button()
-        Me.btnCliente = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCrearOrden = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.lblRegistroOrden = New System.Windows.Forms.Label()
+        Me.btnDipositivo = New System.Windows.Forms.Button()
+        Me.btnCliente = New System.Windows.Forms.Button()
         Me.gboEstado.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -339,30 +339,6 @@ Partial Class FrmRegistroOrden
         Me.lblImporte.TabIndex = 45
         Me.lblImporte.Text = "Importe:"
         '
-        'btnDipositivo
-        '
-        Me.btnDipositivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnDipositivo.FlatAppearance.BorderSize = 0
-        Me.btnDipositivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDipositivo.Image = CType(resources.GetObject("btnDipositivo.Image"), System.Drawing.Image)
-        Me.btnDipositivo.Location = New System.Drawing.Point(585, 155)
-        Me.btnDipositivo.Name = "btnDipositivo"
-        Me.btnDipositivo.Size = New System.Drawing.Size(18, 18)
-        Me.btnDipositivo.TabIndex = 69
-        Me.btnDipositivo.UseVisualStyleBackColor = True
-        '
-        'btnCliente
-        '
-        Me.btnCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnCliente.FlatAppearance.BorderSize = 0
-        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCliente.Image = CType(resources.GetObject("btnCliente.Image"), System.Drawing.Image)
-        Me.btnCliente.Location = New System.Drawing.Point(275, 155)
-        Me.btnCliente.Name = "btnCliente"
-        Me.btnCliente.Size = New System.Drawing.Size(18, 18)
-        Me.btnCliente.TabIndex = 68
-        Me.btnCliente.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
@@ -410,6 +386,30 @@ Partial Class FrmRegistroOrden
         Me.lblRegistroOrden.Size = New System.Drawing.Size(191, 30)
         Me.lblRegistroOrden.TabIndex = 78
         Me.lblRegistroOrden.Text = "Registrar orden"
+        '
+        'btnDipositivo
+        '
+        Me.btnDipositivo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnDipositivo.FlatAppearance.BorderSize = 0
+        Me.btnDipositivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDipositivo.Image = Global.Ideas.My.Resources.Resources.add_phone
+        Me.btnDipositivo.Location = New System.Drawing.Point(585, 155)
+        Me.btnDipositivo.Name = "btnDipositivo"
+        Me.btnDipositivo.Size = New System.Drawing.Size(18, 18)
+        Me.btnDipositivo.TabIndex = 69
+        Me.btnDipositivo.UseVisualStyleBackColor = True
+        '
+        'btnCliente
+        '
+        Me.btnCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.btnCliente.FlatAppearance.BorderSize = 0
+        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCliente.Image = Global.Ideas.My.Resources.Resources.add_client
+        Me.btnCliente.Location = New System.Drawing.Point(275, 155)
+        Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Size = New System.Drawing.Size(18, 18)
+        Me.btnCliente.TabIndex = 68
+        Me.btnCliente.UseVisualStyleBackColor = True
         '
         'FrmRegistroOrden
         '

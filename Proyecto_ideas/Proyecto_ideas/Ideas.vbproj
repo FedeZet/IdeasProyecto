@@ -117,6 +117,12 @@
     <Compile Include="Persistencia\DAOOrden.vb" />
     <Compile Include="Persistencia\DAORepuesto.vb" />
     <Compile Include="Persistencia\DAOUsuario.vb" />
+    <Compile Include="Presentacion\FrmAbout.Designer.vb">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrmCambiarPass.Designer.vb">
       <DependentUpon>FrmCambiarPass.vb</DependentUpon>
     </Compile>
@@ -243,6 +249,9 @@
     <Compile Include="Negocio\Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\FrmAbout.resx">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmCambiarPass.resx">
       <DependentUpon>FrmCambiarPass.vb</DependentUpon>
     </EmbeddedResource>
@@ -396,6 +405,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ideasIcon.ico" />
+    <None Include="Resources\AtomCore.png" />
+    <None Include="Resources\ideasLogoTransparent.png" />
+    <None Include="Resources\add-phone.png" />
+    <None Include="Resources\add-client.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

@@ -47,4 +47,8 @@
         FrmCambiarPass.Show()
 
     End Sub
+
+    Private Sub btnAbout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAbout.Click
+        FrmAbout.Show()
+    End Sub
 End Class
