@@ -55,7 +55,7 @@
             Me.dgvListadoDispositivo(7, cantFilas).Value = tmemoria
             Me.dgvListadoDispositivo(8, cantFilas).Value = objD.Pin.ToString
             Me.dgvListadoDispositivo(9, cantFilas).Value = objD.IdC.ToString
-            idCli = objD.IdC
+
         Next
 
     End Sub
@@ -152,7 +152,7 @@
     End Sub
 
     Public Sub obtenerDisCli(ByVal idC As Integer)
-
+        idCli = idC
         Me.dgvListadoDispositivo.Rows.Clear()
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(idC)

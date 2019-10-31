@@ -218,6 +218,7 @@ Partial Class FrmRegistroDispositivo
         Me.txtIDCli.ForeColor = System.Drawing.Color.White
         Me.txtIDCli.Location = New System.Drawing.Point(148, 164)
         Me.txtIDCli.Name = "txtIDCli"
+        Me.txtIDCli.ReadOnly = True
         Me.txtIDCli.Size = New System.Drawing.Size(142, 27)
         Me.txtIDCli.TabIndex = 3
         '
