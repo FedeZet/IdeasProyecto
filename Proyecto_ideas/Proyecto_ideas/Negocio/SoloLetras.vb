@@ -1,4 +1,5 @@
 ﻿Module SoloLetras
+
     Sub Letras(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = True

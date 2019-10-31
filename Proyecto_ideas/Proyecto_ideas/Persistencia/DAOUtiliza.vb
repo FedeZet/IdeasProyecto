@@ -15,14 +15,6 @@
         Return objConexion.ejecutar(sentencia, True)
     End Function
 
-    'Public Function modificarUtiliza(ByVal obj As Utiliza)
-    '    Dim sentencia As String
-    '    Dim objConexion As ConectorBD = New ConectorBD
-    '    sentencia = "UPDATE repuesto SET nombreR = '" + obj.Nombre + "' , cantidad = " + obj.Cantidad.ToString + ", costoRepuesto= " + obj.costo.ToString + " WHERE idR = " + obj.IdRepuesto.ToString + ";"
-    '    objConexion.ejecutar(sentencia, False)
-    '    Return True
-    'End Function
-
     Public Function eliminarUtiliza(ByVal obj As Utiliza)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
@@ -38,12 +30,4 @@
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
-
-    'Public Function buscarUtiliza(ByVal obj As Utiliza) As MySql.Data.MySqlClient.MySqlDataReader
-    '    Dim sentencia As String
-    '    Dim objConexion As ConectorBD = New ConectorBD
-    '    sentencia = "select * from repuesto where nombreR like '%" + obj.Cuantos + "%';"
-    '    Return objConexion.ejecutar(sentencia, True)
-    'End Function
-
 End Class

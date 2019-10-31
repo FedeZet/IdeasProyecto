@@ -5,7 +5,6 @@
     Private _cantidad As Integer
     Private _costo As Integer
 
-
     Public Property IdRepuesto() As Integer
         Get
             ' Return the value stored in the field.
@@ -38,6 +37,7 @@
             _cantidad = Value
         End Set
     End Property
+
     Public Property costo() As Integer
         Get
             ' Return the value stored in the field.

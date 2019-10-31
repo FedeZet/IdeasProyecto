@@ -37,25 +37,26 @@
             Me.dgvListaOrdenes(9, cantFilas).Value = objO.idU.ToString
             Me.dgvListaOrdenes(10, cantFilas).Value = objO.idC.ToString
             Me.dgvListaOrdenes(11, cantFilas).Value = objO.idD.ToString
-
         Next
+
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
         FrmInicio.Show()
         Me.Close()
+
     End Sub
 
     Private Sub btnOAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOAgregar.Click
         FrmRegistroOrden.Show()
+
     End Sub
 
     Private Sub btnOImprimir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOImprimir.Click
-
         Me.Hide()
 
         Dim hashOrden As Hashtable
-        Dim objOrden As Orden
+        Dim objOrden As Orden = Nothing
         hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
         For Each DEntry As DictionaryEntry In hashOrden
             objOrden = CType(DEntry.Value, Orden)
@@ -63,21 +64,21 @@
 
         Dim hashCliente As Hashtable
         hashCliente = ManCliente.getInstancia.buscarClienteID(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objCliente As Cliente
+        Dim objCliente As Cliente = Nothing
         For Each DEntry As DictionaryEntry In hashCliente
             objCliente = CType(DEntry.Value, Cliente)
         Next
 
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objDispositivo As Dispositivo
+        Dim objDispositivo As Dispositivo = Nothing
         For Each DEntry As DictionaryEntry In hashDispositivo
             objDispositivo = CType(DEntry.Value, Dispositivo)
         Next
 
-
         FrmImprimirOrden.Show()
         FrmImprimirOrden.cargarOrden(objOrden, objCliente, objDispositivo)
+
     End Sub
 
     Private Sub btnOEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOEliminar.Click
@@ -90,18 +91,15 @@
             MsgBox("La orden no ha sido eliminada.")
 
         End If
-    End Sub
 
-    'Private Sub dgvListaOrdenes_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListaOrdenes.
-    '    btnOEliminar.Enabled = True
-    '    btnOModificar.Enabled = True
-    'End Sub
+    End Sub
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         Me.dgvListaOrdenes.Rows.Clear()
         Dim hashOrden As Hashtable
         hashOrden = ManOrden.getInstancia.obtenerOrden()
         Me.CargarDGV(hashOrden)
+
     End Sub
 
     Private Sub dgvListaOrdenes_CellFormatting(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dgvListaOrdenes.CellFormatting
@@ -119,6 +117,7 @@
                 e.CellStyle.BackColor = ColorTranslator.FromHtml("#A9CCE3")
             End If
         End If
+
     End Sub
 
     Private Sub dgvListaOrdenes_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvListaOrdenes.SelectionChanged
@@ -130,23 +129,18 @@
     Private Sub btnORepuesto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnORepuesto.Click
         FrmListaRepuestosUtilizados.Show()
         FrmListaRepuestosUtilizados.obtenerOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
+
     End Sub
-
-
-
 
     Private Sub btnOModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOModificar.Click
         Dim hashOrden As Hashtable
-        Dim objOrden As Orden
+        Dim objOrden As Orden = Nothing
         hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
         For Each DEntry As DictionaryEntry In hashOrden
             objOrden = CType(DEntry.Value, Orden)
         Next
         FrmModificadorOrden.Show()
         FrmModificadorOrden.obtenerOrden(objOrden)
-    End Sub
-
-    Private Sub FrmListaOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

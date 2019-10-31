@@ -28,7 +28,6 @@ Partial Class FrmListaRepuestosUtilizados
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaRepuestosUtilizados))
         Me.lblListaRepuestos = New System.Windows.Forms.Label()
-        Me.txtBuscadorRep = New System.Windows.Forms.TextBox()
         Me.dgvListadoRepuesto = New System.Windows.Forms.DataGridView()
         Me.idR = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,7 +42,6 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnREliminar = New System.Windows.Forms.Button()
         Me.btnRGuardar = New System.Windows.Forms.Button()
         Me.btnRAgregar = New System.Windows.Forms.Button()
-        Me.btnBuscadorRep = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
         CType(Me.dgvListadoRepuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvListadoRepuestosUtilizados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,17 +58,6 @@ Partial Class FrmListaRepuestosUtilizados
         Me.lblListaRepuestos.Size = New System.Drawing.Size(224, 30)
         Me.lblListaRepuestos.TabIndex = 23
         Me.lblListaRepuestos.Text = "Lista de repuestos"
-        '
-        'txtBuscadorRep
-        '
-        Me.txtBuscadorRep.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.txtBuscadorRep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBuscadorRep.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscadorRep.ForeColor = System.Drawing.Color.White
-        Me.txtBuscadorRep.Location = New System.Drawing.Point(317, 65)
-        Me.txtBuscadorRep.Name = "txtBuscadorRep"
-        Me.txtBuscadorRep.Size = New System.Drawing.Size(117, 21)
-        Me.txtBuscadorRep.TabIndex = 1
         '
         'dgvListadoRepuesto
         '
@@ -251,20 +238,6 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnRAgregar.TabIndex = 2
         Me.btnRAgregar.UseVisualStyleBackColor = True
         '
-        'btnBuscadorRep
-        '
-        Me.btnBuscadorRep.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnBuscadorRep.FlatAppearance.BorderSize = 0
-        Me.btnBuscadorRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscadorRep.Image = Global.Ideas.My.Resources.Resources.search1
-        Me.btnBuscadorRep.Location = New System.Drawing.Point(439, 66)
-        Me.btnBuscadorRep.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnBuscadorRep.Name = "btnBuscadorRep"
-        Me.btnBuscadorRep.Size = New System.Drawing.Size(16, 16)
-        Me.btnBuscadorRep.TabIndex = 19
-        Me.btnBuscadorRep.TabStop = False
-        Me.btnBuscadorRep.UseVisualStyleBackColor = True
-        '
         'btnVolver
         '
         Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
@@ -287,9 +260,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.dgvListadoRepuestosUtilizados)
         Me.Controls.Add(Me.lblListaRepuestos)
-        Me.Controls.Add(Me.btnBuscadorRep)
         Me.Controls.Add(Me.btnVolver)
-        Me.Controls.Add(Me.txtBuscadorRep)
         Me.Controls.Add(Me.dgvListadoRepuesto)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -306,9 +277,7 @@ Partial Class FrmListaRepuestosUtilizados
     End Sub
     Friend WithEvents btnRAgregar As System.Windows.Forms.Button
     Friend WithEvents lblListaRepuestos As System.Windows.Forms.Label
-    Friend WithEvents btnBuscadorRep As System.Windows.Forms.Button
     Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents txtBuscadorRep As System.Windows.Forms.TextBox
     Friend WithEvents dgvListadoRepuesto As System.Windows.Forms.DataGridView
     Friend WithEvents idR As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombre As System.Windows.Forms.DataGridViewTextBoxColumn

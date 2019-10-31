@@ -1,6 +1,5 @@
 ﻿Public Class FrmListaCliente
 
-
     Public Sub New()
         InitializeComponent()
         Dim hashCliente As Hashtable
@@ -19,6 +18,7 @@
             Me.dgvListadoCliente(2, cantFilas).Value = objR.Telefono.ToString
             Me.dgvListadoCliente(3, cantFilas).Value = objR.correo.ToString
         Next
+
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
@@ -52,6 +52,7 @@
         Else
             MsgBox("El cliente no ha sido eliminado.")
         End If
+
     End Sub
 
 
@@ -73,15 +74,6 @@
         Dim hashCliente As Hashtable
         hashCliente = ManCliente.getInstancia.obtenerCliente()
         Me.CargarDGV(hashCliente)
-
-    End Sub
-
-    'Private Sub dgvListadoCliente_RowHeaderMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgvListadoCliente.RowHeaderMouseClick
-    '    btnCEliminar.Enabled = True
-    '    btnCModificar.Enabled = True
-    'End Sub
-
-    Private Sub FrmListaCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

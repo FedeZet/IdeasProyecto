@@ -21,6 +21,7 @@
             _idDispositivo = Value
         End Set
     End Property
+
     Public Property Modelo() As String
         Get
             ' Return the value stored in the field.
@@ -31,6 +32,7 @@
             _modelo = Value
         End Set
     End Property
+
     Public Property Bateria() As Boolean
         Get
             ' Return the value stored in the field.
@@ -41,6 +43,7 @@
             _bateria = Value
         End Set
     End Property
+
     Public Property Sim() As Boolean
         Get
             ' Return the value stored in the field.
@@ -51,6 +54,7 @@
             _sim = Value
         End Set
     End Property
+
     Public Property Cargador() As Boolean
         Get
             ' Return the value stored in the field.
@@ -61,6 +65,7 @@
             _cargador = Value
         End Set
     End Property
+
     Public Property Tapa() As Boolean
         Get
             ' Return the value stored in the field.
@@ -71,6 +76,7 @@
             _tapa = Value
         End Set
     End Property
+
     Public Property Estuche() As Boolean
         Get
             ' Return the value stored in the field.
@@ -81,6 +87,7 @@
             _estuche = Value
         End Set
     End Property
+
     Public Property Tmemoria() As Boolean
         Get
             ' Return the value stored in the field.
@@ -139,10 +146,6 @@
         Me._idC = idC
     End Sub
 
-    'Public Sub New(ByVal IdDispositivo As Integer)
-    '  Me._idDispositivo = IdDispositivo
-    'End Sub
-
     Public Sub New(ByVal idC As Integer)
         Me._idC = idC
     End Sub
@@ -176,5 +179,4 @@
         Dim obj As DAODispositivo = New DAODispositivo
         Return obj.eliminarDispositivo(Me)
     End Function
-
 End Class

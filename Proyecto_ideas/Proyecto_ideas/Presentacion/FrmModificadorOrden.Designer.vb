@@ -22,6 +22,7 @@ Partial Class FrmModificadorOrden
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmModificadorOrden))
         Me.lblRegistroOrden = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnModificarOrden = New System.Windows.Forms.Button()
@@ -52,7 +53,7 @@ Partial Class FrmModificadorOrden
         Me.lblRegistroOrden.AutoSize = True
         Me.lblRegistroOrden.Font = New System.Drawing.Font("Century Gothic", 18.0!)
         Me.lblRegistroOrden.ForeColor = System.Drawing.Color.White
-        Me.lblRegistroOrden.Location = New System.Drawing.Point(194, 7)
+        Me.lblRegistroOrden.Location = New System.Drawing.Point(191, 22)
         Me.lblRegistroOrden.Name = "lblRegistroOrden"
         Me.lblRegistroOrden.Size = New System.Drawing.Size(204, 30)
         Me.lblRegistroOrden.TabIndex = 103
@@ -66,7 +67,7 @@ Partial Class FrmModificadorOrden
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 445)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(600, 57)
+        Me.Panel1.Size = New System.Drawing.Size(591, 57)
         Me.Panel1.TabIndex = 102
         '
         'btnModificarOrden
@@ -74,10 +75,10 @@ Partial Class FrmModificadorOrden
         Me.btnModificarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificarOrden.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarOrden.ForeColor = System.Drawing.Color.White
-        Me.btnModificarOrden.Location = New System.Drawing.Point(85, 10)
+        Me.btnModificarOrden.Location = New System.Drawing.Point(106, 10)
         Me.btnModificarOrden.Name = "btnModificarOrden"
         Me.btnModificarOrden.Size = New System.Drawing.Size(199, 35)
-        Me.btnModificarOrden.TabIndex = 4
+        Me.btnModificarOrden.TabIndex = 10
         Me.btnModificarOrden.Text = "Modificar orden"
         Me.btnModificarOrden.UseVisualStyleBackColor = True
         '
@@ -88,10 +89,10 @@ Partial Class FrmModificadorOrden
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(357, 10)
+        Me.btnCancelar.Location = New System.Drawing.Point(356, 10)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(115, 35)
-        Me.btnCancelar.TabIndex = 5
+        Me.btnCancelar.TabIndex = 11
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
@@ -100,10 +101,10 @@ Partial Class FrmModificadorOrden
         Me.chbGarantia.AutoSize = True
         Me.chbGarantia.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbGarantia.ForeColor = System.Drawing.Color.White
-        Me.chbGarantia.Location = New System.Drawing.Point(385, 389)
+        Me.chbGarantia.Location = New System.Drawing.Point(385, 352)
         Me.chbGarantia.Name = "chbGarantia"
         Me.chbGarantia.Size = New System.Drawing.Size(77, 20)
-        Me.chbGarantia.TabIndex = 99
+        Me.chbGarantia.TabIndex = 9
         Me.chbGarantia.Text = "Garantia"
         Me.chbGarantia.UseVisualStyleBackColor = True
         '
@@ -112,7 +113,7 @@ Partial Class FrmModificadorOrden
         Me.lblFecha.AutoSize = True
         Me.lblFecha.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.lblFecha.ForeColor = System.Drawing.Color.White
-        Me.lblFecha.Location = New System.Drawing.Point(411, 78)
+        Me.lblFecha.Location = New System.Drawing.Point(416, 78)
         Me.lblFecha.Name = "lblFecha"
         Me.lblFecha.Size = New System.Drawing.Size(71, 21)
         Me.lblFecha.TabIndex = 98
@@ -123,7 +124,7 @@ Partial Class FrmModificadorOrden
         Me.lblNOrden.AutoSize = True
         Me.lblNOrden.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.lblNOrden.ForeColor = System.Drawing.Color.White
-        Me.lblNOrden.Location = New System.Drawing.Point(81, 78)
+        Me.lblNOrden.Location = New System.Drawing.Point(86, 78)
         Me.lblNOrden.Name = "lblNOrden"
         Me.lblNOrden.Size = New System.Drawing.Size(19, 21)
         Me.lblNOrden.TabIndex = 97
@@ -137,10 +138,10 @@ Partial Class FrmModificadorOrden
         Me.gboEstado.Controls.Add(Me.rdPendiente)
         Me.gboEstado.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gboEstado.ForeColor = System.Drawing.Color.White
-        Me.gboEstado.Location = New System.Drawing.Point(62, 320)
+        Me.gboEstado.Location = New System.Drawing.Point(61, 288)
         Me.gboEstado.Name = "gboEstado"
         Me.gboEstado.Size = New System.Drawing.Size(139, 119)
-        Me.gboEstado.TabIndex = 96
+        Me.gboEstado.TabIndex = 3
         Me.gboEstado.TabStop = False
         Me.gboEstado.Text = "Estado"
         '
@@ -150,7 +151,7 @@ Partial Class FrmModificadorOrden
         Me.rdEntregado.Location = New System.Drawing.Point(6, 95)
         Me.rdEntregado.Name = "rdEntregado"
         Me.rdEntregado.Size = New System.Drawing.Size(83, 20)
-        Me.rdEntregado.TabIndex = 3
+        Me.rdEntregado.TabIndex = 6
         Me.rdEntregado.Text = "Entregado"
         Me.rdEntregado.UseVisualStyleBackColor = True
         '
@@ -160,7 +161,7 @@ Partial Class FrmModificadorOrden
         Me.rdReparado.Location = New System.Drawing.Point(6, 69)
         Me.rdReparado.Name = "rdReparado"
         Me.rdReparado.Size = New System.Drawing.Size(82, 20)
-        Me.rdReparado.TabIndex = 2
+        Me.rdReparado.TabIndex = 5
         Me.rdReparado.Text = "Reparado"
         Me.rdReparado.UseVisualStyleBackColor = True
         '
@@ -170,7 +171,7 @@ Partial Class FrmModificadorOrden
         Me.rdEspera.Location = New System.Drawing.Point(6, 43)
         Me.rdEspera.Name = "rdEspera"
         Me.rdEspera.Size = New System.Drawing.Size(78, 20)
-        Me.rdEspera.TabIndex = 1
+        Me.rdEspera.TabIndex = 5
         Me.rdEspera.Text = "En Espera"
         Me.rdEspera.UseVisualStyleBackColor = True
         '
@@ -181,7 +182,7 @@ Partial Class FrmModificadorOrden
         Me.rdPendiente.Location = New System.Drawing.Point(6, 17)
         Me.rdPendiente.Name = "rdPendiente"
         Me.rdPendiente.Size = New System.Drawing.Size(82, 20)
-        Me.rdPendiente.TabIndex = 0
+        Me.rdPendiente.TabIndex = 4
         Me.rdPendiente.TabStop = True
         Me.rdPendiente.Text = "Pendiente"
         Me.rdPendiente.UseVisualStyleBackColor = True
@@ -191,10 +192,10 @@ Partial Class FrmModificadorOrden
         Me.chbDolar.AutoSize = True
         Me.chbDolar.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chbDolar.ForeColor = System.Drawing.Color.White
-        Me.chbDolar.Location = New System.Drawing.Point(521, 365)
+        Me.chbDolar.Location = New System.Drawing.Point(521, 328)
         Me.chbDolar.Name = "chbDolar"
         Me.chbDolar.Size = New System.Drawing.Size(55, 20)
-        Me.chbDolar.TabIndex = 95
+        Me.chbDolar.TabIndex = 8
         Me.chbDolar.Text = "Dolar"
         Me.chbDolar.UseVisualStyleBackColor = True
         '
@@ -203,7 +204,7 @@ Partial Class FrmModificadorOrden
         Me.lblResolucion.AutoSize = True
         Me.lblResolucion.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblResolucion.ForeColor = System.Drawing.Color.White
-        Me.lblResolucion.Location = New System.Drawing.Point(338, 153)
+        Me.lblResolucion.Location = New System.Drawing.Point(338, 119)
         Me.lblResolucion.Name = "lblResolucion"
         Me.lblResolucion.Size = New System.Drawing.Size(68, 16)
         Me.lblResolucion.TabIndex = 92
@@ -214,28 +215,28 @@ Partial Class FrmModificadorOrden
         Me.txtResolucion.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.txtResolucion.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtResolucion.ForeColor = System.Drawing.Color.White
-        Me.txtResolucion.Location = New System.Drawing.Point(328, 172)
+        Me.txtResolucion.Location = New System.Drawing.Point(328, 138)
         Me.txtResolucion.Multiline = True
         Me.txtResolucion.Name = "txtResolucion"
         Me.txtResolucion.Size = New System.Drawing.Size(244, 133)
-        Me.txtResolucion.TabIndex = 91
+        Me.txtResolucion.TabIndex = 2
         '
         'txtImporte
         '
         Me.txtImporte.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.txtImporte.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImporte.ForeColor = System.Drawing.Color.White
-        Me.txtImporte.Location = New System.Drawing.Point(385, 363)
+        Me.txtImporte.Location = New System.Drawing.Point(385, 326)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(130, 21)
-        Me.txtImporte.TabIndex = 90
+        Me.txtImporte.TabIndex = 7
         '
         'lblTFecha
         '
         Me.lblTFecha.AutoSize = True
         Me.lblTFecha.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.lblTFecha.ForeColor = System.Drawing.Color.White
-        Me.lblTFecha.Location = New System.Drawing.Point(332, 78)
+        Me.lblTFecha.Location = New System.Drawing.Point(337, 78)
         Me.lblTFecha.Name = "lblTFecha"
         Me.lblTFecha.Size = New System.Drawing.Size(63, 21)
         Me.lblTFecha.TabIndex = 87
@@ -246,7 +247,7 @@ Partial Class FrmModificadorOrden
         Me.lblOrden.AutoSize = True
         Me.lblOrden.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.lblOrden.ForeColor = System.Drawing.Color.White
-        Me.lblOrden.Location = New System.Drawing.Point(11, 78)
+        Me.lblOrden.Location = New System.Drawing.Point(16, 78)
         Me.lblOrden.Name = "lblOrden"
         Me.lblOrden.Size = New System.Drawing.Size(64, 21)
         Me.lblOrden.TabIndex = 86
@@ -257,7 +258,7 @@ Partial Class FrmModificadorOrden
         Me.lblDetalle.AutoSize = True
         Me.lblDetalle.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDetalle.ForeColor = System.Drawing.Color.White
-        Me.lblDetalle.Location = New System.Drawing.Point(17, 153)
+        Me.lblDetalle.Location = New System.Drawing.Point(17, 119)
         Me.lblDetalle.Name = "lblDetalle"
         Me.lblDetalle.Size = New System.Drawing.Size(53, 16)
         Me.lblDetalle.TabIndex = 85
@@ -268,18 +269,18 @@ Partial Class FrmModificadorOrden
         Me.txtFalla.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.txtFalla.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFalla.ForeColor = System.Drawing.Color.White
-        Me.txtFalla.Location = New System.Drawing.Point(12, 172)
+        Me.txtFalla.Location = New System.Drawing.Point(12, 138)
         Me.txtFalla.Multiline = True
         Me.txtFalla.Name = "txtFalla"
         Me.txtFalla.Size = New System.Drawing.Size(244, 133)
-        Me.txtFalla.TabIndex = 84
+        Me.txtFalla.TabIndex = 1
         '
         'lblImporte
         '
         Me.lblImporte.AutoSize = True
         Me.lblImporte.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblImporte.ForeColor = System.Drawing.Color.White
-        Me.lblImporte.Location = New System.Drawing.Point(325, 366)
+        Me.lblImporte.Location = New System.Drawing.Point(325, 329)
         Me.lblImporte.Name = "lblImporte"
         Me.lblImporte.Size = New System.Drawing.Size(53, 16)
         Me.lblImporte.TabIndex = 79
@@ -289,8 +290,8 @@ Partial Class FrmModificadorOrden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(600, 502)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(591, 502)
         Me.Controls.Add(Me.lblRegistroOrden)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.chbGarantia)
@@ -306,8 +307,11 @@ Partial Class FrmModificadorOrden
         Me.Controls.Add(Me.lblDetalle)
         Me.Controls.Add(Me.txtFalla)
         Me.Controls.Add(Me.lblImporte)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmModificadorOrden"
-        Me.Text = "FrmModificadorOrden"
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel1.ResumeLayout(False)
         Me.gboEstado.ResumeLayout(False)
         Me.gboEstado.PerformLayout()

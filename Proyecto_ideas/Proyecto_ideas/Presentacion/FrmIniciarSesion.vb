@@ -1,7 +1,6 @@
 ﻿Public Class FrmIniciarSesion
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
-
         Dim validacion = ManUsuario.getInstancia.iniciarSesion(Me.txtUsuario.Text, Me.txtContrasenia.Text)
 
         If validacion = True Then
@@ -29,9 +28,11 @@
             lblError.Text = "       " + "Usuario y contraseña vacíos."
             lblError.Visible = True
         End If
+
     End Sub
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
         Application.Exit()
+
     End Sub
 End Class

@@ -4,14 +4,12 @@
         If PrintDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.Scrollable)
         End If
+
     End Sub
 
     Private Sub btnCancelarImp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelarImp.Click
         Me.Hide()
         FrmListaOrden.Show()
-    End Sub
-
-    Private Sub FrmImprimirOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -85,7 +83,6 @@
         txtTel2.Text = objCliente.Telefono.ToString
         txtTMem.Text = TMem
         txtTMem2.Text = TMem
-    End Sub
 
-    'ByVal fecha As String, ByVal hora As String, ByVal idOrden As Integer, ByVal modelo As String, ByVal nombre As String, ByVal tel As String, ByVal pin As Integer, ByVal falla As String, ByVal bateria As Boolean, ByVal cargador As Boolean, ByVal estuche As Boolean, ByVal sim As Boolean, ByVal tapa As Boolean, ByVal tmemoria As Boolean, ByVal dolar As Boolean, ByVal importe As Integer
+    End Sub
 End Class

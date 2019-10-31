@@ -63,7 +63,7 @@
     Public Function buscarUsuario(ByVal obj As Usuario) As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "select * from usuario where nombreU like '" + obj.Nombre + "%';"
+        sentencia = "SELECT * FROM usuario WHERE nombreU LIKE '" + obj.Nombre + "%';"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 

@@ -19,7 +19,6 @@ Public Class ManOrden
             Me.hashOrden.Add(objO.IdOrden, objO)
         End While
         Return Me.hashOrden
-
     End Function
 
     Public Function modificarOrden(ByVal idOrden As Integer, ByVal falla As String, ByVal resolucion As String, ByVal importe As Integer, ByVal dolar As Boolean, ByVal garantia As Boolean, ByVal fecha As Date, ByVal hora As TimeSpan, ByVal estado As String, ByVal idU As Integer, ByVal idC As Integer, ByVal idD As Integer)
@@ -55,10 +54,6 @@ Public Class ManOrden
         End While
         Return Me.hashOrden
     End Function
-
-    Private Sub New()
-
-    End Sub
 
     Public Shared Function getInstancia()
         If instancia Is Nothing Then

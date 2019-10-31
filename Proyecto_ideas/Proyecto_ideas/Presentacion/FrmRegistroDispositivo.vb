@@ -34,23 +34,33 @@
             memoria = False
         End If
 
-
         ManDispositivo.getInstancia.crearDispositivo(Me.txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, Me.txtPIN.Text, Me.txtIDCli.Text)
+
         MsgBox("El dispositivo se ha creado exitosamente.")
 
+        FrmListaCliente.dgvListadoCliente.Rows.Clear()
+
+        Dim hashCliente As Hashtable
+        hashCliente = ManCliente.getInstancia.obtenerCliente()
+        FrmListaCliente.CargarDGV(hashCliente)
+
         Me.Close()
+
     End Sub
 
 
     Private Sub btnDCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDCancelar.Click
         Me.Close()
+
     End Sub
 
     Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
+
     End Sub
 
     Public Sub obtenerIDcli(ByVal id As Integer)
         txtIDCli.Text = id.ToString
+
     End Sub
 End Class

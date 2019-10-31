@@ -37,18 +37,15 @@
         End Set
     End Property
 
-
     Public Sub New(ByVal IdO As Integer, ByVal IdR As Integer, ByVal cuantos As Integer)
         Me._idO = IdO
         Me._idR = IdR
         Me._cuantos = cuantos
     End Sub
 
-
     Public Sub New(ByVal IdO As Integer)
         Me._idO = idO
     End Sub
-
 
     Public Function agregar()
         Dim obj As DAOUtiliza = New DAOUtiliza
@@ -56,20 +53,10 @@
 
     End Function
 
-    'Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
-    '    Dim obj As DAOUtiliza = New DAOUtiliza
-    '    Return obj.buscarUtiliza(Me)
-    'End Function
-
     Public Function obtenerUtilizados() As MySql.Data.MySqlClient.MySqlDataReader
         Dim obj As DAOUtiliza = New DAOUtiliza
         Return obj.obtenerUtilizados(Me)
     End Function
-
-    'Public Function modificar()
-    '    Dim obj As DAOUtiliza = New DAOUtiliza
-    '    Return obj.modificarRepuesto(Me)
-    'End Function
 
     Public Function eliminar()
         Dim obj As DAOUtiliza = New DAOUtiliza

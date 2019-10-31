@@ -41,6 +41,7 @@ Partial Class FrmListaOrden
         Me.idD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnCEliminar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnOModificar = New System.Windows.Forms.Button()
         Me.btnOImprimir = New System.Windows.Forms.Button()
         Me.btnOAgregar = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
@@ -50,7 +51,6 @@ Partial Class FrmListaOrden
         Me.txtBuscadorO = New System.Windows.Forms.TextBox()
         Me.btnBuscadorO = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
-        Me.btnOModificar = New System.Windows.Forms.Button()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -207,6 +207,18 @@ Partial Class FrmListaOrden
         Me.Panel1.Size = New System.Drawing.Size(857, 68)
         Me.Panel1.TabIndex = 2
         '
+        'btnOModificar
+        '
+        Me.btnOModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOModificar.FlatAppearance.BorderSize = 0
+        Me.btnOModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOModificar.Image = Global.Ideas.My.Resources.Resources.modify
+        Me.btnOModificar.Location = New System.Drawing.Point(497, 10)
+        Me.btnOModificar.Name = "btnOModificar"
+        Me.btnOModificar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOModificar.TabIndex = 5
+        Me.btnOModificar.UseVisualStyleBackColor = True
+        '
         'btnOImprimir
         '
         Me.btnOImprimir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
@@ -216,7 +228,7 @@ Partial Class FrmListaOrden
         Me.btnOImprimir.Location = New System.Drawing.Point(798, 10)
         Me.btnOImprimir.Name = "btnOImprimir"
         Me.btnOImprimir.Size = New System.Drawing.Size(46, 46)
-        Me.btnOImprimir.TabIndex = 6
+        Me.btnOImprimir.TabIndex = 7
         Me.btnOImprimir.UseVisualStyleBackColor = True
         '
         'btnOAgregar
@@ -250,7 +262,7 @@ Partial Class FrmListaOrden
         Me.btnORepuesto.FlatAppearance.BorderSize = 0
         Me.btnORepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnORepuesto.Image = Global.Ideas.My.Resources.Resources.repuestos
-        Me.btnORepuesto.Location = New System.Drawing.Point(331, 10)
+        Me.btnORepuesto.Location = New System.Drawing.Point(325, 10)
         Me.btnORepuesto.Name = "btnORepuesto"
         Me.btnORepuesto.Size = New System.Drawing.Size(46, 46)
         Me.btnORepuesto.TabIndex = 4
@@ -263,10 +275,10 @@ Partial Class FrmListaOrden
         Me.btnOEliminar.FlatAppearance.BorderSize = 0
         Me.btnOEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOEliminar.Image = Global.Ideas.My.Resources.Resources.remove
-        Me.btnOEliminar.Location = New System.Drawing.Point(645, 10)
+        Me.btnOEliminar.Location = New System.Drawing.Point(654, 10)
         Me.btnOEliminar.Name = "btnOEliminar"
         Me.btnOEliminar.Size = New System.Drawing.Size(46, 46)
-        Me.btnOEliminar.TabIndex = 5
+        Me.btnOEliminar.TabIndex = 6
         Me.btnOEliminar.UseVisualStyleBackColor = True
         '
         'lblListaOrden
@@ -317,18 +329,6 @@ Partial Class FrmListaOrden
         Me.btnVolver.Size = New System.Drawing.Size(46, 46)
         Me.btnVolver.TabIndex = 7
         Me.btnVolver.UseVisualStyleBackColor = True
-        '
-        'btnOModificar
-        '
-        Me.btnOModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnOModificar.FlatAppearance.BorderSize = 0
-        Me.btnOModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOModificar.Image = Global.Ideas.My.Resources.Resources.modify
-        Me.btnOModificar.Location = New System.Drawing.Point(497, 10)
-        Me.btnOModificar.Name = "btnOModificar"
-        Me.btnOModificar.Size = New System.Drawing.Size(46, 46)
-        Me.btnOModificar.TabIndex = 9
-        Me.btnOModificar.UseVisualStyleBackColor = True
         '
         'FrmListaOrden
         '

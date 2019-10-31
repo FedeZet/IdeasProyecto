@@ -33,14 +33,14 @@
     Public Function buscarCliente(ByVal obj As Cliente) As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "select * from cliente where nombreC like '" + obj.Nombre + "%';"
+        sentencia = "SELECT * FROM cliente WHERE nombreC LIKE '" + obj.Nombre + "%';"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 
     Public Function buscarClienteID(ByVal obj As Cliente) As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "select * from cliente where idC = " + obj.IdCliente.ToString + ";"
+        sentencia = "SELECT * FROM cliente WHERE idC = " + obj.IdCliente.ToString + ";"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 End Class

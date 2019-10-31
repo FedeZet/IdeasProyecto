@@ -1,5 +1,7 @@
 ﻿Public Class FrmModifUsuario
+
     Dim idUsuario As Integer
+
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUModificar.Click
 
         If txtCostoServicio.Text = "" Then
@@ -13,10 +15,12 @@
         hashUsuario = ManUsuario.getInstancia.obtenerUsuario()
         FrmListaUsuario.CargarDGV(hashUsuario)
         Me.Close()
+
     End Sub
 
     Private Sub btnUCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUCancelar.Click
         Me.Close()
+
     End Sub
 
     Public Function cargarUsuario(ByVal id As Integer, ByVal nick As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As String)
@@ -31,13 +35,16 @@
 
     Private Sub txtCostoU_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCostoServicio.KeyPress
         Numeros(e)
+
     End Sub
 
     Private Sub txtNombre_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNombre.KeyPress
         Letras(e)
+
     End Sub
 
     Private Sub txtTelefono_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtTelefono.KeyPress
         Numeros(e)
+
     End Sub
 End Class

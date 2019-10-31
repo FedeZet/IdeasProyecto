@@ -5,7 +5,6 @@
     Private _telefono As String
     Private _correo As String
 
-
     Public Property IdCliente() As Integer
         Get
             ' Return the value stored in the field.
@@ -27,6 +26,7 @@
             _nombre = Value
         End Set
     End Property
+
     Public Property Telefono() As String
         Get
             ' Return the value stored in the field.
@@ -37,6 +37,7 @@
             _telefono = Value
         End Set
     End Property
+
     Public Property correo() As String
         Get
             ' Return the value stored in the field.
@@ -72,7 +73,6 @@
     Public Function guardar()
         Dim obj As DAOCliente = New DAOCliente
         Return obj.guardar(Me)
-
     End Function
 
     Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader

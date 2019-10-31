@@ -7,7 +7,6 @@
     Private _telefono As String
     Private _costoServicio As Integer
    
-
     Public Property IdUsuario() As Integer
         Get
             ' Return the value stored in the field.
@@ -18,6 +17,7 @@
             _idUsuario = Value
         End Set
     End Property
+
     Public Property User() As String
         Get
             ' Return the value stored in the field.
@@ -28,6 +28,7 @@
             _user = Value
         End Set
     End Property
+
     Public Property Password() As String
         Get
             ' Return the value stored in the field.
@@ -38,6 +39,7 @@
             _password = Value
         End Set
     End Property
+
     Public Property Nombre() As String
         Get
             ' Return the value stored in the field.
@@ -48,6 +50,7 @@
             _nombre = Value
         End Set
     End Property
+
     Public Property Telefono() As String
         Get
             ' Return the value stored in the field.
@@ -58,6 +61,7 @@
             _telefono = Value
         End Set
     End Property
+
     Public Property costoServicio() As Integer
         Get
             ' Return the value stored in the field.
@@ -80,8 +84,6 @@
     End Sub
 
     Public Sub New(ByVal user As String, ByVal password As String, ByVal nombre As String, ByVal telefono As String, ByVal costoServicio As Integer)
-        'ByVal IdUsuario As Integer, 
-        'Me._idUsuario = IdUsuario
         Me._user = user
         Me._password = password
         Me._nombre = nombre

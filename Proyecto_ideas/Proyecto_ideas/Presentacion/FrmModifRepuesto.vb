@@ -3,6 +3,7 @@
 
     Private Sub btnRCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRCancelar.Click
         Me.Close()
+
     End Sub
 
     Private Sub btnModificarR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
@@ -20,6 +21,7 @@
         FrmListaRepuesto.CargarDGV(hashRepuesto)
 
         Me.Close()
+
     End Sub
 
     Public Function cargarRepuesto(ByVal id As Integer, ByVal nombre As String, ByVal cantidad As Integer, ByVal costo As Integer)
@@ -28,9 +30,11 @@
         nudRCantidad.Text = cantidad.ToString
         txtRCosto.Text = costo.ToString
         Return True
+
     End Function
 
     Private Sub txtMUcantidad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
+
     End Sub
 End Class

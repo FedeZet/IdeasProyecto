@@ -1,12 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class ManDispositivo
-
     Dim hashDispositivo As Hashtable = New Hashtable
     Private Shared instancia As ManDispositivo
 
     Public Function crearDispositivo(ByVal modelo As String, ByVal bateria As Boolean, ByVal sim As Boolean, ByVal cargador As Boolean, ByVal tapa As Boolean, ByVal estuche As Boolean, ByVal tmemoria As Boolean, ByVal pin As Integer, ByVal idC As Integer)
-
         Dim objDispositivo As Dispositivo = New Dispositivo(modelo, bateria, sim, cargador, tapa, estuche, tmemoria, pin, idC)
         objDispositivo.guardar()
         Return True
@@ -56,10 +54,6 @@ Public Class ManDispositivo
         End While
         Return Me.hashDispositivo
     End Function
-
-    Private Sub New()
-
-    End Sub
 
     Public Shared Function getInstancia()
         If instancia Is Nothing Then

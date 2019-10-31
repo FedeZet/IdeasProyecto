@@ -4,7 +4,6 @@ Public Class ManCliente
     Private Shared instancia As ManCliente
 
     Public Function crearCliente(ByVal nombre As String, ByVal telefono As String, ByVal correo As String)
-
         Dim objCliente As Cliente = New Cliente(nombre, telefono, correo)
         objCliente.guardar()
         Return True
@@ -54,11 +53,6 @@ Public Class ManCliente
         End While
         Return Me.hashCliente
     End Function
-
-    Private Sub New()
-
-    End Sub
-
 
     Public Shared Function getInstancia()
         If instancia Is Nothing Then

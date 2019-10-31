@@ -26,7 +26,6 @@ Public Class ConectorBD
             Return Nothing
         End If
         Return cmd.ExecuteReader()
-
     End Function
 
     Public Shared Function getInstancia()

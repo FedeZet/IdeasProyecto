@@ -1,4 +1,5 @@
 ﻿Module SoloNumeros
+
     Sub Numeros(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False

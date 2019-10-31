@@ -38,14 +38,21 @@
             ManOrden.getInstancia.agregarOrden(Me.txtFalla.Text, txtResolucion.Text, txtImporte.Text, dolar, garantia, fecha, hora, estado, idU, idC, idD)
 
             MsgBox("La orden se ha creado exitosamente.")
-            Me.Close()
 
+            FrmListaCliente.dgvListadoCliente.Rows.Clear()
+
+            Dim hashCliente As Hashtable
+            hashCliente = ManCliente.getInstancia.obtenerCliente()
+            FrmListaCliente.CargarDGV(hashCliente)
+
+            Me.Close()
         End If
 
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Close()
+
     End Sub
 
     Public Sub New()
@@ -56,40 +63,29 @@
         hashTecnico = ManUsuario.getInstancia.obtenerTecnico()
         Me.CargarTecnicos(hashTecnico)
 
-
     End Sub
 
     Sub CargarTecnicos(ByVal colTecnico As Hashtable)
-
         For Each DEntry As DictionaryEntry In colTecnico
             Dim objU As Usuario = CType(DEntry.Value, Usuario)
             cbTecnico.Items.Add(objU)
-
-
         Next
-    End Sub
-
-
-    Private Sub Registro_orden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub cbTecnico_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbTecnico.SelectedIndexChanged
-
         Dim objU As Usuario = CType(cbTecnico.SelectedItem, Usuario)
         idU = objU.IdUsuario.ToString
 
     End Sub
 
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
-
         FrmListaCliente.Show()
         FrmListaCliente.btnCSeleccionar.Enabled = True
 
     End Sub
 
     Private Sub btnDipositivo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDipositivo.Click
-
         If idC = Nothing Then
             MsgBox("Debe seleccionar a un cliente.")
         Else
@@ -101,7 +97,6 @@
     End Sub
 
     Public Sub obtenerCliente(ByVal idCliente As Integer, ByVal nombreCliente As String, ByVal telefonoCliente As String)
-
         idC = idCliente
         txtNombreCli.Text = nombreCliente
         txtTel.Text = telefonoCliente
@@ -109,7 +104,6 @@
     End Sub
 
     Public Sub obtenerDispositivo(ByVal idDispositivo As Integer, ByVal modelo As String)
-
         idD = idDispositivo
         txtModelo.Text = modelo
 
@@ -117,6 +111,6 @@
 
     Private Sub txtImporte_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtImporte.KeyPress
         Numeros(e)
-    End Sub
 
+    End Sub
 End Class

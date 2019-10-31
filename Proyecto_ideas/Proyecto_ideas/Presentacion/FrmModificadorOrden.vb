@@ -3,9 +3,6 @@
     Dim idC As Integer
     Dim idD As Integer
     Dim hora
-    Private Sub FrmModificadorOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Public Sub obtenerOrden(ByVal objOrden As Orden)
         lblNOrden.Text = objOrden.IdOrden.ToString
@@ -34,6 +31,7 @@
         idC = objOrden.idC
         idD = objOrden.idD
         hora = objOrden.Hora
+
     End Sub
 
     Private Sub btnModificarOrden_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnModificarOrden.Click
@@ -63,9 +61,11 @@
         MsgBox("Se modifico la orden.")
         FrmListaOrden.btnRefresh.PerformClick()
         Me.Close()
+
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Me.Close()
+
     End Sub
 End Class

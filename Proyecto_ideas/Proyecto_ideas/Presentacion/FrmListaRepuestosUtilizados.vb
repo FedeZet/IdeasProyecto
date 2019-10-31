@@ -1,5 +1,4 @@
 ﻿Public Class FrmListaRepuestosUtilizados
-
     Dim idOrden As Integer
     Dim cambios As Boolean = False
 
@@ -21,6 +20,7 @@
             Me.dgvListadoRepuesto(2, cantFilas).Value = objR.Cantidad.ToString
             Me.dgvListadoRepuesto(3, cantFilas).Value = objR.costo.ToString
         Next
+
     End Sub
 
     Sub CargarDGV2(ByVal colUtiliza As Hashtable)
@@ -55,11 +55,10 @@
             Next
             Me.dgvListadoRepuestosUtilizados(3, cantFilas).Value = costoT.ToString
         Next
+
     End Sub
 
-
     Public Sub obtenerOrden(ByVal idO As Integer)
-
         idOrden = idO
         Me.dgvListadoRepuestosUtilizados.Rows.Clear()
         Dim hashUtiliza As Hashtable
@@ -119,25 +118,18 @@
                 Dim costoRep As String = row.Cells("costoRep").Value
                 dgvListadoRepuestosUtilizados.Rows.Add(id, nombre, cantidadUtilizada, costoRep)
             End If
-        Else
-
-            'Dim cantidad As String = row.Cells("cantidad").Value
         End If
+
     End Sub
 
-
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRGuardar.Click
-
         ManUtiliza.getInstancia.eliminarUtiliza(idOrden)
 
         For Each row As DataGridViewRow In dgvListadoRepuestosUtilizados.Rows
             Dim idR As Integer = row.Cells("idRU").Value
             Dim cuantos As Integer = row.Cells("cantidadU").Value
 
-
-
             ManUtiliza.getInstancia.agregarRepuestosUtilizados(idOrden, idR, cuantos)
-
         Next
 
         For Each row As DataGridViewRow In dgvListadoRepuesto.Rows
@@ -145,11 +137,11 @@
             Dim cuantos As Integer = row.Cells("cantidad").Value
 
             ManRepuesto.getInstancia.modificarCantidadRepuesto(idR, cuantos)
-
         Next
 
         MsgBox("Se guardaron los repuestos utilizados correctamente.")
         cambios = False
+
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
@@ -194,4 +186,5 @@
             MsgBox("El repuesto no ha sido eliminado.")
         End If
     End Sub
+
 End Class

@@ -2,11 +2,13 @@
 
     Private Sub btnRAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRAgregar.Click
         FrmRegistroRepuesto.Show()
+
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
         FrmInicio.Show()
         Me.Close()
+
     End Sub
 
     Public Sub New()
@@ -27,15 +29,12 @@
             Me.dgvListadoRepuesto(2, cantFilas).Value = objR.Cantidad.ToString
             Me.dgvListadoRepuesto(3, cantFilas).Value = objR.costo.ToString
         Next
+
     End Sub
 
     Private Sub btnRModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRModificar.Click
         FrmModifRepuesto.Show()
         FrmModifRepuesto.cargarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString, dgvListadoRepuesto.CurrentRow.Cells("costoRep").Value.ToString)
-        'Dim objManRepuesto As ManRepuesto = New ManRepuesto
-        'objManRepuesto.modificarRepuesto(Me.dgvListadoRepuesto.SelectedRows)
-        'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("nombre").Value.ToString)
-        'MsgBox(dgvListadoRepuesto.CurrentRow.Cells("cantidad").Value.ToString)
 
     End Sub
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
@@ -50,6 +49,7 @@
         Else
             MsgBox("El repuesto no ha sido eliminado.")
         End If
+
     End Sub
 
     Private Sub btnBuscadorRep_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorRep.Click
@@ -57,6 +57,7 @@
         Dim hashRepuesto As Hashtable
         hashRepuesto = ManRepuesto.getInstancia.buscarRepuesto(Me.txtBuscadorRep.Text)
         Me.CargarDGV(hashRepuesto)
+
     End Sub
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
@@ -64,9 +65,6 @@
         Dim hashRepuesto As Hashtable
         hashRepuesto = ManRepuesto.getInstancia.obtenerRepuesto()
         Me.CargarDGV(hashRepuesto)
-    End Sub
-
-    Private Sub txtBuscadorRep_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscadorRep.TextChanged
 
     End Sub
 End Class

@@ -1,13 +1,5 @@
 ﻿Public Class FrmListaDispositivo
     Dim idCli As Integer
-    Public Sub New()
-        InitializeComponent()
-        'Dim objManDispositivo As ManDispositivo = New ManDispositivo
-        'Dim hashDispositivo As Hashtable
-        'hashDispositivo = objManDispositivo.obtenerDispositivo()
-        'Me.CargarDGV(hashDispositivo)
-
-    End Sub
 
     Sub CargarDGV(ByVal colDispositivo As Hashtable)
         For Each DEntry As DictionaryEntry In colDispositivo
@@ -55,17 +47,13 @@
             Me.dgvListadoDispositivo(7, cantFilas).Value = tmemoria
             Me.dgvListadoDispositivo(8, cantFilas).Value = objD.Pin.ToString
             Me.dgvListadoDispositivo(9, cantFilas).Value = objD.IdC.ToString
-
         Next
-
-    End Sub
-
-    Private Sub lista_dispositivos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
         Me.Close()
+
     End Sub
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
@@ -73,10 +61,10 @@
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.obtenerDispositivo()
         Me.CargarDGV(hashDispositivo)
+
     End Sub
 
     Private Sub btnBuscadorD_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBuscadorD.Click
-
         Me.dgvListadoDispositivo.Rows.Clear()
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.buscarDispositivo(Me.txtBuscadorD.Text)
@@ -87,6 +75,7 @@
     Private Sub btnDAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDAgregar.Click
         FrmRegistroDispositivo.Show()
         FrmRegistroDispositivo.obtenerIDcli(idCli)
+
     End Sub
 
     Private Sub btnDEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDEliminar.Click
@@ -102,10 +91,10 @@
         Else
             MsgBox("El dispositivo no ha sido eliminado.")
         End If
+
     End Sub
 
     Private Sub btnDModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDModificar.Click
-
         Me.Hide()
         FrmModifDispositivo.Show()
         Dim bateria, sim, cargador, tapa, estuche, tmemoria As Boolean
@@ -145,7 +134,6 @@
     End Sub
 
     Private Sub btnDSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDSeleccionar.Click
-
         FrmRegistroOrden.obtenerDispositivo(dgvListadoDispositivo.CurrentRow.Cells("idD").Value.ToString, dgvListadoDispositivo.CurrentRow.Cells("modelo").Value.ToString)
         Me.Close()
 
@@ -163,5 +151,6 @@
     Private Sub dgvListadoDispositivo_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvListadoDispositivo.SelectionChanged
         btnDEliminar.Enabled = True
         btnDModificar.Enabled = True
+
     End Sub
 End Class

@@ -24,5 +24,6 @@
 
     Private Sub nudRCantidad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles nudRCantidad.KeyPress
         Numeros(e)
+
     End Sub
 End Class

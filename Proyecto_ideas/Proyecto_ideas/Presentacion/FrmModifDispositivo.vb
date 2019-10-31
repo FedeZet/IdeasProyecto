@@ -27,10 +27,12 @@
         txtIDCli.Text = idC
 
         Return True
+
     End Function
 
     Private Sub btnDCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDCancelar.Click
         Me.Close()
+
     End Sub
 
     Private Sub btnDModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDModificar.Click
@@ -66,7 +68,6 @@
             memoria = False
         End If
 
-
         ManDispositivo.getInstancia.modificarDispositivo(idDispositivo, txtModelo.Text, bateria, sim, cargador, tapa, estuche, memoria, txtPIN.Text, txtIDCli.Text)
 
         MsgBox("El dispositivo ha sido modificado con éxito.")
@@ -78,9 +79,11 @@
         FrmListaCliente.CargarDGV(hashDispositivo)
 
         Me.Close()
+
     End Sub
 
     Private Sub txtPIN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         Numeros(e)
+
     End Sub
 End Class
