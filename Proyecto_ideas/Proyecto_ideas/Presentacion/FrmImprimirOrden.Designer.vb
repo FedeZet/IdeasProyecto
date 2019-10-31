@@ -48,14 +48,12 @@ Partial Class FrmImprimirOrden
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtPin = New System.Windows.Forms.TextBox()
         Me.txtTel = New System.Windows.Forms.TextBox()
-        Me.txtNSerie = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtModelo = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -75,12 +73,9 @@ Partial Class FrmImprimirOrden
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PrintForm2 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.Label34 = New System.Windows.Forms.Label()
@@ -103,7 +98,6 @@ Partial Class FrmImprimirOrden
         Me.Label43 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
@@ -111,7 +105,6 @@ Partial Class FrmImprimirOrden
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
-        Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
@@ -122,7 +115,6 @@ Partial Class FrmImprimirOrden
         Me.Label56 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label57 = New System.Windows.Forms.Label()
-        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.SuspendLayout()
         '
         'PrintForm1
@@ -338,14 +330,6 @@ Partial Class FrmImprimirOrden
         Me.txtTel.Size = New System.Drawing.Size(76, 20)
         Me.txtTel.TabIndex = 63
         '
-        'txtNSerie
-        '
-        Me.txtNSerie.Location = New System.Drawing.Point(276, 109)
-        Me.txtNSerie.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtNSerie.Name = "txtNSerie"
-        Me.txtNSerie.Size = New System.Drawing.Size(76, 20)
-        Me.txtNSerie.TabIndex = 62
-        '
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(276, 90)
@@ -401,16 +385,6 @@ Partial Class FrmImprimirOrden
         Me.Label11.Size = New System.Drawing.Size(45, 13)
         Me.Label11.TabIndex = 56
         Me.Label11.Text = "Modelo:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(229, 106)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 55
-        Me.Label10.Text = "NSerie:"
         '
         'Label9
         '
@@ -581,7 +555,7 @@ Partial Class FrmImprimirOrden
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(595, 788)
         Me.ShapeContainer1.TabIndex = 88
         Me.ShapeContainer1.TabStop = False
@@ -612,26 +586,6 @@ Partial Class FrmImprimirOrden
         Me.Label27.TabIndex = 90
         Me.Label27.Text = "* Importe estimado sujeto a REVISION  TECNICA"
         '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(210, 747)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(240, 13)
-        Me.Label28.TabIndex = 137
-        Me.Label28.Text = "* Importe estimado sujeto a REVISION  TECNICA"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(210, 734)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(260, 13)
-        Me.Label29.TabIndex = 136
-        Me.Label29.Text = "-Presentar este documento para la entrega del equipo"
-        '
         'Label30
         '
         Me.Label30.AutoSize = True
@@ -661,16 +615,6 @@ Partial Class FrmImprimirOrden
         Me.Label32.Size = New System.Drawing.Size(65, 13)
         Me.Label32.TabIndex = 133
         Me.Label32.Text = "00/00/0000"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(171, 760)
-        Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(302, 13)
-        Me.Label33.TabIndex = 131
-        Me.Label33.Text = "Firma: ____________________________________________"
         '
         'TextBox1
         '
@@ -871,14 +815,6 @@ Partial Class FrmImprimirOrden
         Me.TextBox11.Size = New System.Drawing.Size(76, 20)
         Me.TextBox11.TabIndex = 111
         '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(257, 517)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox12.TabIndex = 110
-        '
         'TextBox13
         '
         Me.TextBox13.Location = New System.Drawing.Point(257, 498)
@@ -938,16 +874,6 @@ Partial Class FrmImprimirOrden
         'PrintDialog2
         '
         Me.PrintDialog2.UseEXDialog = True
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(210, 514)
-        Me.Label48.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(42, 13)
-        Me.Label48.TabIndex = 103
-        Me.Label48.Text = "NSerie:"
         '
         'Label49
         '
@@ -1047,12 +973,6 @@ Partial Class FrmImprimirOrden
         Me.Label57.TabIndex = 92
         Me.Label57.Text = "Orden:"
         '
-        'RectangleShape2
-        '
-        Me.RectangleShape2.Location = New System.Drawing.Point(156, 733)
-        Me.RectangleShape2.Name = "RectangleShape2"
-        Me.RectangleShape2.Size = New System.Drawing.Size(350, 44)
-        '
         'FrmImprimirOrden
         '
         Me.AcceptButton = Me.btnImprimir
@@ -1061,12 +981,9 @@ Partial Class FrmImprimirOrden
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.btnCancelarImp
         Me.ClientSize = New System.Drawing.Size(595, 788)
-        Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.Label29)
         Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Label31)
         Me.Controls.Add(Me.Label32)
-        Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label35)
@@ -1088,14 +1005,12 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.Label43)
         Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox12)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.Label44)
         Me.Controls.Add(Me.Label45)
         Me.Controls.Add(Me.Label46)
         Me.Controls.Add(Me.Label47)
-        Me.Controls.Add(Me.Label48)
         Me.Controls.Add(Me.Label49)
         Me.Controls.Add(Me.Label50)
         Me.Controls.Add(Me.Label51)
@@ -1133,14 +1048,12 @@ Partial Class FrmImprimirOrden
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtPin)
         Me.Controls.Add(Me.txtTel)
-        Me.Controls.Add(Me.txtNSerie)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtModelo)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -1187,14 +1100,12 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents txtPin As System.Windows.Forms.TextBox
     Friend WithEvents txtTel As System.Windows.Forms.TextBox
-    Friend WithEvents txtNSerie As System.Windows.Forms.TextBox
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents txtModelo As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -1214,12 +1125,9 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
-    Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label31 As System.Windows.Forms.Label
     Friend WithEvents Label32 As System.Windows.Forms.Label
-    Friend WithEvents Label33 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label34 As System.Windows.Forms.Label
     Friend WithEvents Label35 As System.Windows.Forms.Label
@@ -1241,14 +1149,12 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label43 As System.Windows.Forms.Label
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
     Friend WithEvents Label44 As System.Windows.Forms.Label
     Friend WithEvents Label45 As System.Windows.Forms.Label
     Friend WithEvents Label46 As System.Windows.Forms.Label
     Friend WithEvents Label47 As System.Windows.Forms.Label
-    Friend WithEvents Label48 As System.Windows.Forms.Label
     Friend WithEvents Label49 As System.Windows.Forms.Label
     Friend WithEvents Label50 As System.Windows.Forms.Label
     Friend WithEvents Label51 As System.Windows.Forms.Label
@@ -1259,7 +1165,6 @@ Partial Class FrmImprimirOrden
     Friend WithEvents Label56 As System.Windows.Forms.Label
     Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
     Friend WithEvents Label57 As System.Windows.Forms.Label
-    Friend WithEvents RectangleShape2 As Microsoft.VisualBasic.PowerPacks.RectangleShape
     Friend WithEvents PrintForm2 As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
     Friend WithEvents PrintDialog2 As System.Windows.Forms.PrintDialog
 End Class

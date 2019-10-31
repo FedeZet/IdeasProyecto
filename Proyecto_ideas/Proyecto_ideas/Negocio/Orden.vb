@@ -1,6 +1,6 @@
 ﻿Public Class Orden
 
-    Private _idOrden As String
+    Private _idOrden As Integer
     Private _falla As String
     Private _resolucion As String
     Private _importe As Integer
@@ -13,12 +13,12 @@
     Private _idC As Integer
     Private _idD As Integer
 
-    Public Property IdOrden() As String
+    Public Property IdOrden() As Integer
         Get
             ' Return the value stored in the field.
             Return _idOrden
         End Get
-        Set(ByVal Value As String)
+        Set(ByVal Value As Integer)
             ' Store the value in the field.
             _idOrden = Value
         End Set
@@ -198,6 +198,11 @@
     Public Shared Function obtenerOrdenes() As MySql.Data.MySqlClient.MySqlDataReader
         Dim obj As DAOOrden = New DAOOrden
         Return obj.obtenerOrdenes()
+    End Function
+
+    Public Function obtenerOrden() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAOOrden = New DAOOrden
+        Return obj.obtenerOrden(Me)
     End Function
 
     Public Function modificar()

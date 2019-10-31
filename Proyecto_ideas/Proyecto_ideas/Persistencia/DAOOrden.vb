@@ -34,7 +34,14 @@
     Public Function buscarOrden(ByVal obj As Orden) As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "select * from orden where estado like '%" + obj.Estado + "%';"
+        sentencia = "select * from orden where estado like '" + obj.Estado + "%';"
+        Return objConexion.ejecutar(sentencia, True)
+    End Function
+
+    Public Function obtenerOrden(ByVal obj As Orden) As MySql.Data.MySqlClient.MySqlDataReader
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "select * from orden where idO = " + obj.IdOrden.ToString + ";"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 End Class

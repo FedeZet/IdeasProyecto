@@ -45,6 +45,17 @@ Public Class ManOrden
         Return Me.hashOrden
     End Function
 
+    Public Function buscarOrdenID(ByVal idOrden As Integer)
+        hashOrden.Clear()
+        Dim objO As Orden = New Orden(idOrden)
+        Dim datareader As MySqlDataReader = objO.obtenerOrden
+        While datareader.Read()
+            objO = New Orden(datareader("idO"), datareader("detalle"), datareader("resolucion"), datareader("importe"), datareader("dolar"), datareader("garantia"), datareader("fecha").ToString, datareader("hora"), datareader("estado"), datareader("idU"), datareader("idC"), datareader("idD"))
+            Me.hashOrden.Add(objO.IdOrden, objO)
+        End While
+        Return Me.hashOrden
+    End Function
+
     Private Sub New()
 
     End Sub

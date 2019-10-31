@@ -41,7 +41,7 @@
     Public Function buscarRepuesto(ByVal obj As Repuesto) As MySql.Data.MySqlClient.MySqlDataReader
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "select * from repuesto where nombreR like '%" + obj.Nombre + "%';"
+        sentencia = "select * from repuesto where nombreR like '" + obj.Nombre + "%';"
         Return objConexion.ejecutar(sentencia, True)
     End Function
 End Class

@@ -44,6 +44,17 @@ Public Class ManCliente
         Return Me.hashCliente
     End Function
 
+    Public Function buscarClienteID(ByVal idCliente As Integer)
+        hashCliente.Clear()
+        Dim objCliente As Cliente = New Cliente(idCliente)
+        Dim datareader As MySqlDataReader = objCliente.buscarID
+        While datareader.Read()
+            objCliente = New Cliente(datareader("idC"), datareader("nombreC"), datareader("telefonoC"), datareader("email"))
+            Me.hashCliente.Add(objCliente.IdCliente, objCliente)
+        End While
+        Return Me.hashCliente
+    End Function
+
     Private Sub New()
 
     End Sub

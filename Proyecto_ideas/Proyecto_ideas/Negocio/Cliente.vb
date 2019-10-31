@@ -6,12 +6,12 @@
     Private _correo As String
 
 
-    Public Property IdCliente() As String
+    Public Property IdCliente() As Integer
         Get
             ' Return the value stored in the field.
             Return _id_cliente
         End Get
-        Set(ByVal Value As String)
+        Set(ByVal Value As Integer)
             ' Store the value in the field.
             _id_cliente = Value
         End Set
@@ -78,6 +78,11 @@
     Public Function buscar() As MySql.Data.MySqlClient.MySqlDataReader
         Dim obj As DAOCliente = New DAOCliente
         Return obj.buscarCliente(Me)
+    End Function
+
+    Public Function buscarID() As MySql.Data.MySqlClient.MySqlDataReader
+        Dim obj As DAOCliente = New DAOCliente
+        Return obj.buscarClienteID(Me)
     End Function
 
     Public Shared Function obtenerClientes() As MySql.Data.MySqlClient.MySqlDataReader

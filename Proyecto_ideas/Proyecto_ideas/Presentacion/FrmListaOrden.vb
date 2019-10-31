@@ -51,14 +51,39 @@
     End Sub
 
     Private Sub btnOImprimir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOImprimir.Click
+
         Me.Hide()
+
+        Dim hashOrden As Hashtable
+        Dim objOrden As Orden
+        hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
+        For Each DEntry As DictionaryEntry In hashOrden
+            objOrden = CType(DEntry.Value, Orden)
+        Next
+
+        Dim hashCliente As Hashtable
+        hashCliente = ManCliente.getInstancia.buscarClienteID(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
+        Dim objCliente As Cliente
+        For Each DEntry As DictionaryEntry In hashCliente
+            objCliente = CType(DEntry.Value, Cliente)
+        Next
+
+        Dim hashDispositivo As Hashtable
+        hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
+        Dim objDispositivo As Dispositivo
+        For Each DEntry As DictionaryEntry In hashDispositivo
+            objDispositivo = CType(DEntry.Value, Dispositivo)
+        Next
+
+
         FrmImprimirOrden.Show()
+        FrmImprimirOrden.cargarOrden(objOrden, objCliente, objDispositivo)
     End Sub
 
     Private Sub btnOEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOEliminar.Click
         Dim resultado As Integer = MsgBox("Desea Eliminar esta orden? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            ManOrden.getInstancia.eliminarOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value.ToString)
+            ManOrden.getInstancia.eliminarOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
             MsgBox("La orden ha sido eliminada con éxito.")
             btnRefresh.PerformClick()
         Else
