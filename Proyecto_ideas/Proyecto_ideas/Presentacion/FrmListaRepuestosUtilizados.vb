@@ -67,11 +67,6 @@
 
     End Sub
 
-
-    Private Sub FrmListaRepuestosUtilizados_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnRAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRAgregar.Click
 
         Dim row As DataGridViewRow = dgvListadoRepuesto.CurrentRow
@@ -126,19 +121,11 @@
         Else
 
             'Dim cantidad As String = row.Cells("cantidad").Value
-
-
-
         End If
-
-
-
-
-
     End Sub
 
 
-    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
+    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRGuardar.Click
 
         ManUtiliza.getInstancia.eliminarRepuestosUtilizados(idOrden)
 

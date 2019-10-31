@@ -417,6 +417,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ideasIcon.ico" />
+    <None Include="Resources\save-file-option.png" />
+    <None Include="Resources\repuestos.png" />
     <None Include="Resources\AtomCore.png" />
     <None Include="Resources\ideasLogoTransparent.png" />
     <None Include="Resources\add-phone.png" />
