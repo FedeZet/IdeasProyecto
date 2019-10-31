@@ -70,7 +70,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.txtBuscadorRep.Location = New System.Drawing.Point(317, 65)
         Me.txtBuscadorRep.Name = "txtBuscadorRep"
         Me.txtBuscadorRep.Size = New System.Drawing.Size(117, 21)
-        Me.txtBuscadorRep.TabIndex = 18
+        Me.txtBuscadorRep.TabIndex = 1
         '
         'dgvListadoRepuesto
         '
@@ -213,7 +213,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.Panel1.Location = New System.Drawing.Point(0, 499)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(470, 68)
-        Me.Panel1.TabIndex = 25
+        Me.Panel1.TabIndex = 2
         '
         'btnREliminar
         '
@@ -224,7 +224,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnREliminar.Location = New System.Drawing.Point(412, 10)
         Me.btnREliminar.Name = "btnREliminar"
         Me.btnREliminar.Size = New System.Drawing.Size(46, 46)
-        Me.btnREliminar.TabIndex = 6
+        Me.btnREliminar.TabIndex = 4
         Me.btnREliminar.UseVisualStyleBackColor = True
         '
         'btnRGuardar
@@ -236,7 +236,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnRGuardar.Location = New System.Drawing.Point(213, 10)
         Me.btnRGuardar.Name = "btnRGuardar"
         Me.btnRGuardar.Size = New System.Drawing.Size(46, 46)
-        Me.btnRGuardar.TabIndex = 4
+        Me.btnRGuardar.TabIndex = 3
         Me.btnRGuardar.UseVisualStyleBackColor = True
         '
         'btnRAgregar
@@ -248,7 +248,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnRAgregar.Location = New System.Drawing.Point(12, 10)
         Me.btnRAgregar.Name = "btnRAgregar"
         Me.btnRAgregar.Size = New System.Drawing.Size(46, 46)
-        Me.btnRAgregar.TabIndex = 3
+        Me.btnRAgregar.TabIndex = 2
         Me.btnRAgregar.UseVisualStyleBackColor = True
         '
         'btnBuscadorRep
@@ -275,7 +275,7 @@ Partial Class FrmListaRepuestosUtilizados
         Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(46, 46)
-        Me.btnVolver.TabIndex = 22
+        Me.btnVolver.TabIndex = 5
         Me.btnVolver.UseVisualStyleBackColor = True
         '
         'FrmListaRepuestosUtilizados

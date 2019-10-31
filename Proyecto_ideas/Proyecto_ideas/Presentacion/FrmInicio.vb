@@ -15,7 +15,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub btnProductividad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnProductividad.Click
+    Private Sub btnProductividad_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -24,8 +24,8 @@
         timerHoraFecha.Enabled = True
 
         If UsuarioActivo.user <> "admin" Then
-            btnUsuario.Visible = False
-            btnProductividad.Visible = False
+            btnUsuario.Text = ""
+            btnUsuario.Enabled = False
         End If
 
         lblNombre.Text = UsuarioActivo.nombre

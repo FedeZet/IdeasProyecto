@@ -66,7 +66,7 @@ Partial Class FrmRegistroOrden
         Me.chbGarantia.Location = New System.Drawing.Point(388, 470)
         Me.chbGarantia.Name = "chbGarantia"
         Me.chbGarantia.Size = New System.Drawing.Size(77, 20)
-        Me.chbGarantia.TabIndex = 67
+        Me.chbGarantia.TabIndex = 14
         Me.chbGarantia.Text = "Garantia"
         Me.chbGarantia.UseVisualStyleBackColor = True
         '
@@ -103,7 +103,7 @@ Partial Class FrmRegistroOrden
         Me.gboEstado.Location = New System.Drawing.Point(65, 401)
         Me.gboEstado.Name = "gboEstado"
         Me.gboEstado.Size = New System.Drawing.Size(139, 119)
-        Me.gboEstado.TabIndex = 64
+        Me.gboEstado.TabIndex = 8
         Me.gboEstado.TabStop = False
         Me.gboEstado.Text = "Estado"
         '
@@ -113,7 +113,8 @@ Partial Class FrmRegistroOrden
         Me.rdEntregado.Location = New System.Drawing.Point(6, 95)
         Me.rdEntregado.Name = "rdEntregado"
         Me.rdEntregado.Size = New System.Drawing.Size(83, 20)
-        Me.rdEntregado.TabIndex = 3
+        Me.rdEntregado.TabIndex = 11
+        Me.rdEntregado.TabStop = True
         Me.rdEntregado.Text = "Entregado"
         Me.rdEntregado.UseVisualStyleBackColor = True
         '
@@ -123,7 +124,8 @@ Partial Class FrmRegistroOrden
         Me.rdReparado.Location = New System.Drawing.Point(6, 69)
         Me.rdReparado.Name = "rdReparado"
         Me.rdReparado.Size = New System.Drawing.Size(82, 20)
-        Me.rdReparado.TabIndex = 2
+        Me.rdReparado.TabIndex = 10
+        Me.rdReparado.TabStop = True
         Me.rdReparado.Text = "Reparado"
         Me.rdReparado.UseVisualStyleBackColor = True
         '
@@ -133,7 +135,8 @@ Partial Class FrmRegistroOrden
         Me.rdEspera.Location = New System.Drawing.Point(6, 43)
         Me.rdEspera.Name = "rdEspera"
         Me.rdEspera.Size = New System.Drawing.Size(78, 20)
-        Me.rdEspera.TabIndex = 1
+        Me.rdEspera.TabIndex = 9
+        Me.rdEspera.TabStop = True
         Me.rdEspera.Text = "En Espera"
         Me.rdEspera.UseVisualStyleBackColor = True
         '
@@ -144,7 +147,7 @@ Partial Class FrmRegistroOrden
         Me.rdPendiente.Location = New System.Drawing.Point(6, 17)
         Me.rdPendiente.Name = "rdPendiente"
         Me.rdPendiente.Size = New System.Drawing.Size(82, 20)
-        Me.rdPendiente.TabIndex = 0
+        Me.rdPendiente.TabIndex = 8
         Me.rdPendiente.TabStop = True
         Me.rdPendiente.Text = "Pendiente"
         Me.rdPendiente.UseVisualStyleBackColor = True
@@ -157,7 +160,7 @@ Partial Class FrmRegistroOrden
         Me.chbDolar.Location = New System.Drawing.Point(524, 446)
         Me.chbDolar.Name = "chbDolar"
         Me.chbDolar.Size = New System.Drawing.Size(55, 20)
-        Me.chbDolar.TabIndex = 63
+        Me.chbDolar.TabIndex = 13
         Me.chbDolar.Text = "Dolar"
         Me.chbDolar.UseVisualStyleBackColor = True
         '
@@ -170,7 +173,7 @@ Partial Class FrmRegistroOrden
         Me.cbTecnico.Location = New System.Drawing.Point(400, 186)
         Me.cbTecnico.Name = "cbTecnico"
         Me.cbTecnico.Size = New System.Drawing.Size(179, 24)
-        Me.cbTecnico.TabIndex = 62
+        Me.cbTecnico.TabIndex = 5
         '
         'lblTecnico
         '
@@ -203,7 +206,7 @@ Partial Class FrmRegistroOrden
         Me.txtResolucion.Multiline = True
         Me.txtResolucion.Name = "txtResolucion"
         Me.txtResolucion.Size = New System.Drawing.Size(244, 133)
-        Me.txtResolucion.TabIndex = 58
+        Me.txtResolucion.TabIndex = 7
         '
         'txtImporte
         '
@@ -213,7 +216,7 @@ Partial Class FrmRegistroOrden
         Me.txtImporte.Location = New System.Drawing.Point(388, 444)
         Me.txtImporte.Name = "txtImporte"
         Me.txtImporte.Size = New System.Drawing.Size(130, 21)
-        Me.txtImporte.TabIndex = 56
+        Me.txtImporte.TabIndex = 12
         '
         'txtTel
         '
@@ -280,7 +283,7 @@ Partial Class FrmRegistroOrden
         Me.txtFalla.Multiline = True
         Me.txtFalla.Name = "txtFalla"
         Me.txtFalla.Size = New System.Drawing.Size(244, 133)
-        Me.txtFalla.TabIndex = 50
+        Me.txtFalla.TabIndex = 6
         '
         'txtModelo
         '
@@ -291,7 +294,7 @@ Partial Class FrmRegistroOrden
         Me.txtModelo.Name = "txtModelo"
         Me.txtModelo.ReadOnly = True
         Me.txtModelo.Size = New System.Drawing.Size(179, 21)
-        Me.txtModelo.TabIndex = 49
+        Me.txtModelo.TabIndex = 3
         Me.txtModelo.TabStop = False
         '
         'txtNombreCli
@@ -303,8 +306,7 @@ Partial Class FrmRegistroOrden
         Me.txtNombreCli.Name = "txtNombreCli"
         Me.txtNombreCli.ReadOnly = True
         Me.txtNombreCli.Size = New System.Drawing.Size(187, 21)
-        Me.txtNombreCli.TabIndex = 48
-        Me.txtNombreCli.TabStop = False
+        Me.txtNombreCli.TabIndex = 1
         '
         'lblModelo
         '
@@ -348,7 +350,7 @@ Partial Class FrmRegistroOrden
         Me.Panel1.Location = New System.Drawing.Point(0, 542)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(619, 57)
-        Me.Panel1.TabIndex = 70
+        Me.Panel1.TabIndex = 15
         '
         'btnCrearOrden
         '
@@ -358,7 +360,7 @@ Partial Class FrmRegistroOrden
         Me.btnCrearOrden.Location = New System.Drawing.Point(145, 10)
         Me.btnCrearOrden.Name = "btnCrearOrden"
         Me.btnCrearOrden.Size = New System.Drawing.Size(139, 35)
-        Me.btnCrearOrden.TabIndex = 4
+        Me.btnCrearOrden.TabIndex = 15
         Me.btnCrearOrden.Text = "Crear orden"
         Me.btnCrearOrden.UseVisualStyleBackColor = True
         '
@@ -372,7 +374,7 @@ Partial Class FrmRegistroOrden
         Me.btnCancelar.Location = New System.Drawing.Point(357, 10)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(115, 35)
-        Me.btnCancelar.TabIndex = 5
+        Me.btnCancelar.TabIndex = 16
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
@@ -396,7 +398,7 @@ Partial Class FrmRegistroOrden
         Me.btnDipositivo.Location = New System.Drawing.Point(585, 155)
         Me.btnDipositivo.Name = "btnDipositivo"
         Me.btnDipositivo.Size = New System.Drawing.Size(18, 18)
-        Me.btnDipositivo.TabIndex = 69
+        Me.btnDipositivo.TabIndex = 4
         Me.btnDipositivo.UseVisualStyleBackColor = True
         '
         'btnCliente
@@ -408,7 +410,7 @@ Partial Class FrmRegistroOrden
         Me.btnCliente.Location = New System.Drawing.Point(275, 155)
         Me.btnCliente.Name = "btnCliente"
         Me.btnCliente.Size = New System.Drawing.Size(18, 18)
-        Me.btnCliente.TabIndex = 68
+        Me.btnCliente.TabIndex = 2
         Me.btnCliente.UseVisualStyleBackColor = True
         '
         'FrmRegistroOrden

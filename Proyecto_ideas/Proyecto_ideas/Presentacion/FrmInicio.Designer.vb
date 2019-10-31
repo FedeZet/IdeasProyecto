@@ -33,7 +33,6 @@ Partial Class FrmInicio
         Me.lblHoraFecha = New System.Windows.Forms.Label()
         Me.timerHoraFecha = New System.Windows.Forms.Timer(Me.components)
         Me.btnUsuario = New System.Windows.Forms.Button()
-        Me.btnProductividad = New System.Windows.Forms.Button()
         Me.btnRepuesto = New System.Windows.Forms.Button()
         Me.btnOrden = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -150,31 +149,14 @@ Partial Class FrmInicio
         Me.btnUsuario.ForeColor = System.Drawing.Color.White
         Me.btnUsuario.Image = Global.Ideas.My.Resources.Resources.employees
         Me.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnUsuario.Location = New System.Drawing.Point(31, 126)
+        Me.btnUsuario.Location = New System.Drawing.Point(385, 122)
         Me.btnUsuario.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUsuario.Name = "btnUsuario"
         Me.btnUsuario.Size = New System.Drawing.Size(136, 105)
-        Me.btnUsuario.TabIndex = 1
+        Me.btnUsuario.TabIndex = 3
         Me.btnUsuario.Text = "Usuarios"
         Me.btnUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnUsuario.UseVisualStyleBackColor = False
-        '
-        'btnProductividad
-        '
-        Me.btnProductividad.BackColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(15, Byte), Integer))
-        Me.btnProductividad.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProductividad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductividad.ForeColor = System.Drawing.Color.White
-        Me.btnProductividad.Image = Global.Ideas.My.Resources.Resources.resources
-        Me.btnProductividad.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnProductividad.Location = New System.Drawing.Point(451, 126)
-        Me.btnProductividad.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnProductividad.Name = "btnProductividad"
-        Me.btnProductividad.Size = New System.Drawing.Size(136, 105)
-        Me.btnProductividad.TabIndex = 4
-        Me.btnProductividad.Text = "Productividad"
-        Me.btnProductividad.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnProductividad.UseVisualStyleBackColor = False
         '
         'btnRepuesto
         '
@@ -184,11 +166,11 @@ Partial Class FrmInicio
         Me.btnRepuesto.ForeColor = System.Drawing.Color.White
         Me.btnRepuesto.Image = Global.Ideas.My.Resources.Resources.smartphone
         Me.btnRepuesto.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnRepuesto.Location = New System.Drawing.Point(311, 126)
+        Me.btnRepuesto.Location = New System.Drawing.Point(245, 122)
         Me.btnRepuesto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRepuesto.Name = "btnRepuesto"
         Me.btnRepuesto.Size = New System.Drawing.Size(136, 105)
-        Me.btnRepuesto.TabIndex = 3
+        Me.btnRepuesto.TabIndex = 2
         Me.btnRepuesto.Text = "Repuestos"
         Me.btnRepuesto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnRepuesto.UseVisualStyleBackColor = False
@@ -201,11 +183,11 @@ Partial Class FrmInicio
         Me.btnOrden.ForeColor = System.Drawing.Color.White
         Me.btnOrden.Image = Global.Ideas.My.Resources.Resources.package
         Me.btnOrden.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnOrden.Location = New System.Drawing.Point(171, 126)
+        Me.btnOrden.Location = New System.Drawing.Point(105, 122)
         Me.btnOrden.Margin = New System.Windows.Forms.Padding(2)
         Me.btnOrden.Name = "btnOrden"
         Me.btnOrden.Size = New System.Drawing.Size(136, 105)
-        Me.btnOrden.TabIndex = 2
+        Me.btnOrden.TabIndex = 1
         Me.btnOrden.Text = "Ordenes"
         Me.btnOrden.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnOrden.UseVisualStyleBackColor = False
@@ -231,7 +213,6 @@ Partial Class FrmInicio
         Me.ClientSize = New System.Drawing.Size(624, 301)
         Me.Controls.Add(Me.plSistema)
         Me.Controls.Add(Me.btnUsuario)
-        Me.Controls.Add(Me.btnProductividad)
         Me.Controls.Add(Me.lblHoraFecha)
         Me.Controls.Add(Me.btnRepuesto)
         Me.Controls.Add(Me.PictureBox1)
@@ -244,7 +225,7 @@ Partial Class FrmInicio
         Me.Name = "FrmInicio"
         Me.Opacity = 0.95R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menu_Inicio"
+        Me.Text = "Ide@s"
         Me.plSistema.ResumeLayout(False)
         Me.plSistema.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -254,7 +235,6 @@ Partial Class FrmInicio
     End Sub
     Friend WithEvents btnOrden As System.Windows.Forms.Button
     Friend WithEvents btnRepuesto As System.Windows.Forms.Button
-    Friend WithEvents btnProductividad As System.Windows.Forms.Button
     Friend WithEvents btnUsuario As System.Windows.Forms.Button
     Friend WithEvents plSistema As System.Windows.Forms.Panel
     Friend WithEvents lblHoraFecha As System.Windows.Forms.Label

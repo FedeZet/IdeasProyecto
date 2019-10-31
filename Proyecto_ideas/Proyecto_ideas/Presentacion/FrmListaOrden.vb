@@ -55,7 +55,7 @@
         Me.Hide()
 
         Dim hashOrden As Hashtable
-        Dim objOrden As Orden
+        Dim objOrden As Orden = Nothing
         hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
         For Each DEntry As DictionaryEntry In hashOrden
             objOrden = CType(DEntry.Value, Orden)
@@ -63,14 +63,14 @@
 
         Dim hashCliente As Hashtable
         hashCliente = ManCliente.getInstancia.buscarClienteID(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objCliente As Cliente
+        Dim objCliente As Cliente = Nothing
         For Each DEntry As DictionaryEntry In hashCliente
             objCliente = CType(DEntry.Value, Cliente)
         Next
 
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objDispositivo As Dispositivo
+        Dim objDispositivo As Dispositivo = Nothing
         For Each DEntry As DictionaryEntry In hashDispositivo
             objDispositivo = CType(DEntry.Value, Dispositivo)
         Next
