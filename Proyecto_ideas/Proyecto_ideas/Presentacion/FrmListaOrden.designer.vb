@@ -41,15 +41,16 @@ Partial Class FrmListaOrden
         Me.idD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnCEliminar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblListaOrden = New System.Windows.Forms.Label()
-        Me.txtBuscadorO = New System.Windows.Forms.TextBox()
-        Me.btnBuscadorO = New System.Windows.Forms.Button()
-        Me.btnVolver = New System.Windows.Forms.Button()
         Me.btnOImprimir = New System.Windows.Forms.Button()
         Me.btnOAgregar = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnORepuesto = New System.Windows.Forms.Button()
         Me.btnOEliminar = New System.Windows.Forms.Button()
+        Me.lblListaOrden = New System.Windows.Forms.Label()
+        Me.txtBuscadorO = New System.Windows.Forms.TextBox()
+        Me.btnBuscadorO = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.btnOModificar = New System.Windows.Forms.Button()
         CType(Me.dgvListaOrdenes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -194,6 +195,7 @@ Partial Class FrmListaOrden
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnOModificar)
         Me.Panel1.Controls.Add(Me.btnOImprimir)
         Me.Panel1.Controls.Add(Me.btnOAgregar)
         Me.Panel1.Controls.Add(Me.btnRefresh)
@@ -204,6 +206,68 @@ Partial Class FrmListaOrden
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(857, 68)
         Me.Panel1.TabIndex = 2
+        '
+        'btnOImprimir
+        '
+        Me.btnOImprimir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOImprimir.FlatAppearance.BorderSize = 0
+        Me.btnOImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOImprimir.Image = Global.Ideas.My.Resources.Resources.printing_tool
+        Me.btnOImprimir.Location = New System.Drawing.Point(798, 10)
+        Me.btnOImprimir.Name = "btnOImprimir"
+        Me.btnOImprimir.Size = New System.Drawing.Size(46, 46)
+        Me.btnOImprimir.TabIndex = 6
+        Me.btnOImprimir.UseVisualStyleBackColor = True
+        '
+        'btnOAgregar
+        '
+        Me.btnOAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOAgregar.FlatAppearance.BorderSize = 0
+        Me.btnOAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOAgregar.Image = Global.Ideas.My.Resources.Resources.add
+        Me.btnOAgregar.Location = New System.Drawing.Point(159, 10)
+        Me.btnOAgregar.Name = "btnOAgregar"
+        Me.btnOAgregar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOAgregar.TabIndex = 3
+        Me.btnOAgregar.UseVisualStyleBackColor = True
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnRefresh.FlatAppearance.BorderSize = 0
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRefresh.Image = Global.Ideas.My.Resources.Resources.refresh1
+        Me.btnRefresh.Location = New System.Drawing.Point(12, 10)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(46, 46)
+        Me.btnRefresh.TabIndex = 2
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
+        'btnORepuesto
+        '
+        Me.btnORepuesto.Enabled = False
+        Me.btnORepuesto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnORepuesto.FlatAppearance.BorderSize = 0
+        Me.btnORepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnORepuesto.Image = Global.Ideas.My.Resources.Resources.repuestos
+        Me.btnORepuesto.Location = New System.Drawing.Point(331, 10)
+        Me.btnORepuesto.Name = "btnORepuesto"
+        Me.btnORepuesto.Size = New System.Drawing.Size(46, 46)
+        Me.btnORepuesto.TabIndex = 4
+        Me.btnORepuesto.UseVisualStyleBackColor = True
+        '
+        'btnOEliminar
+        '
+        Me.btnOEliminar.Enabled = False
+        Me.btnOEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOEliminar.FlatAppearance.BorderSize = 0
+        Me.btnOEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOEliminar.Image = Global.Ideas.My.Resources.Resources.remove
+        Me.btnOEliminar.Location = New System.Drawing.Point(645, 10)
+        Me.btnOEliminar.Name = "btnOEliminar"
+        Me.btnOEliminar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOEliminar.TabIndex = 5
+        Me.btnOEliminar.UseVisualStyleBackColor = True
         '
         'lblListaOrden
         '
@@ -254,67 +318,17 @@ Partial Class FrmListaOrden
         Me.btnVolver.TabIndex = 7
         Me.btnVolver.UseVisualStyleBackColor = True
         '
-        'btnOImprimir
+        'btnOModificar
         '
-        Me.btnOImprimir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnOImprimir.FlatAppearance.BorderSize = 0
-        Me.btnOImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOImprimir.Image = Global.Ideas.My.Resources.Resources.printing_tool
-        Me.btnOImprimir.Location = New System.Drawing.Point(798, 10)
-        Me.btnOImprimir.Name = "btnOImprimir"
-        Me.btnOImprimir.Size = New System.Drawing.Size(46, 46)
-        Me.btnOImprimir.TabIndex = 6
-        Me.btnOImprimir.UseVisualStyleBackColor = True
-        '
-        'btnOAgregar
-        '
-        Me.btnOAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnOAgregar.FlatAppearance.BorderSize = 0
-        Me.btnOAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOAgregar.Image = Global.Ideas.My.Resources.Resources.add
-        Me.btnOAgregar.Location = New System.Drawing.Point(201, 10)
-        Me.btnOAgregar.Name = "btnOAgregar"
-        Me.btnOAgregar.Size = New System.Drawing.Size(46, 46)
-        Me.btnOAgregar.TabIndex = 3
-        Me.btnOAgregar.UseVisualStyleBackColor = True
-        '
-        'btnRefresh
-        '
-        Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnRefresh.FlatAppearance.BorderSize = 0
-        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRefresh.Image = Global.Ideas.My.Resources.Resources.refresh1
-        Me.btnRefresh.Location = New System.Drawing.Point(12, 10)
-        Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(46, 46)
-        Me.btnRefresh.TabIndex = 2
-        Me.btnRefresh.UseVisualStyleBackColor = True
-        '
-        'btnORepuesto
-        '
-        Me.btnORepuesto.Enabled = False
-        Me.btnORepuesto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnORepuesto.FlatAppearance.BorderSize = 0
-        Me.btnORepuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnORepuesto.Image = Global.Ideas.My.Resources.Resources.repuestos
-        Me.btnORepuesto.Location = New System.Drawing.Point(407, 10)
-        Me.btnORepuesto.Name = "btnORepuesto"
-        Me.btnORepuesto.Size = New System.Drawing.Size(46, 46)
-        Me.btnORepuesto.TabIndex = 4
-        Me.btnORepuesto.UseVisualStyleBackColor = True
-        '
-        'btnOEliminar
-        '
-        Me.btnOEliminar.Enabled = False
-        Me.btnOEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.btnOEliminar.FlatAppearance.BorderSize = 0
-        Me.btnOEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOEliminar.Image = Global.Ideas.My.Resources.Resources.remove
-        Me.btnOEliminar.Location = New System.Drawing.Point(612, 10)
-        Me.btnOEliminar.Name = "btnOEliminar"
-        Me.btnOEliminar.Size = New System.Drawing.Size(46, 46)
-        Me.btnOEliminar.TabIndex = 5
-        Me.btnOEliminar.UseVisualStyleBackColor = True
+        Me.btnOModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.btnOModificar.FlatAppearance.BorderSize = 0
+        Me.btnOModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOModificar.Image = Global.Ideas.My.Resources.Resources.modify
+        Me.btnOModificar.Location = New System.Drawing.Point(497, 10)
+        Me.btnOModificar.Name = "btnOModificar"
+        Me.btnOModificar.Size = New System.Drawing.Size(46, 46)
+        Me.btnOModificar.TabIndex = 9
+        Me.btnOModificar.UseVisualStyleBackColor = True
         '
         'FrmListaOrden
         '
@@ -364,4 +378,5 @@ Partial Class FrmListaOrden
     Friend WithEvents lblListaOrden As System.Windows.Forms.Label
     Friend WithEvents btnBuscadorO As System.Windows.Forms.Button
     Friend WithEvents txtBuscadorO As System.Windows.Forms.TextBox
+    Friend WithEvents btnOModificar As System.Windows.Forms.Button
 End Class

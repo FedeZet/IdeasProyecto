@@ -55,7 +55,7 @@
         Me.Hide()
 
         Dim hashOrden As Hashtable
-        Dim objOrden As Orden = Nothing
+        Dim objOrden As Orden
         hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
         For Each DEntry As DictionaryEntry In hashOrden
             objOrden = CType(DEntry.Value, Orden)
@@ -63,14 +63,14 @@
 
         Dim hashCliente As Hashtable
         hashCliente = ManCliente.getInstancia.buscarClienteID(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objCliente As Cliente = Nothing
+        Dim objCliente As Cliente
         For Each DEntry As DictionaryEntry In hashCliente
             objCliente = CType(DEntry.Value, Cliente)
         Next
 
         Dim hashDispositivo As Hashtable
         hashDispositivo = ManDispositivo.getInstancia.buscarDispositivoCli(dgvListaOrdenes.CurrentRow.Cells("idC").Value)
-        Dim objDispositivo As Dispositivo = Nothing
+        Dim objDispositivo As Dispositivo
         For Each DEntry As DictionaryEntry In hashDispositivo
             objDispositivo = CType(DEntry.Value, Dispositivo)
         Next
@@ -130,5 +130,23 @@
     Private Sub btnORepuesto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnORepuesto.Click
         FrmListaRepuestosUtilizados.Show()
         FrmListaRepuestosUtilizados.obtenerOrden(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
+    End Sub
+
+
+
+
+    Private Sub btnOModificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOModificar.Click
+        Dim hashOrden As Hashtable
+        Dim objOrden As Orden
+        hashOrden = ManOrden.getInstancia.buscarOrdenID(dgvListaOrdenes.CurrentRow.Cells("idO").Value)
+        For Each DEntry As DictionaryEntry In hashOrden
+            objOrden = CType(DEntry.Value, Orden)
+        Next
+        FrmModificadorOrden.Show()
+        FrmModificadorOrden.obtenerOrden(objOrden)
+    End Sub
+
+    Private Sub FrmListaOrden_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

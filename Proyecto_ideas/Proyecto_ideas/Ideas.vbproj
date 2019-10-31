@@ -207,6 +207,12 @@
     <Compile Include="Presentacion\FrmModifDispositivo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\FrmModificadorOrden.designer.vb">
+      <DependentUpon>FrmModificadorOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmModificadorOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrmModifRepuesto.Designer.vb">
       <DependentUpon>FrmModifRepuesto.vb</DependentUpon>
     </Compile>
@@ -302,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmModifDispositivo.resx">
       <DependentUpon>FrmModifDispositivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmModificadorOrden.resx">
+      <DependentUpon>FrmModificadorOrden.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmModifRepuesto.resx">
       <DependentUpon>FrmModifRepuesto.vb</DependentUpon>

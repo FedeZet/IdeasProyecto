@@ -18,7 +18,7 @@
     Public Function modificarOrden(ByVal obj As Orden)
         Dim sentencia As String
         Dim objConexion As ConectorBD = New ConectorBD
-        sentencia = "UPDATE orden SET detalle = '" + obj.Falla + "' , resolucion = '" + obj.Resolucion + "', importe = " + obj.Importe.ToString + ", dolar = " + obj.Dolar.ToString + ", garantia = " + obj.Garantia.ToString + ", fecha = STR_TO_DATE('" + obj.Fecha + "', '%d/%m/%Y'), hora = '" + obj.Hora.ToString + "', estado = '" + obj.Estado + "', idU = " + obj.idU.ToString + ", idC = " + obj.idC.ToString + ", idD = " + obj.idD.ToString + " WHERE idO = " + obj.IdOrden.ToString + ";"
+        sentencia = "UPDATE orden SET detalle = '" + obj.Falla + "' , resolucion = '" + obj.Resolucion + "', importe = " + obj.Importe.ToString + ", dolar = " + obj.Dolar.ToString + ", garantia = " + obj.Garantia.ToString + ", estado = '" + obj.Estado + "' WHERE idO = " + obj.IdOrden.ToString + ";"
         objConexion.ejecutar(sentencia, False)
         Return True
     End Function
