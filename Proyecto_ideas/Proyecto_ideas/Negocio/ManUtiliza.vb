@@ -28,9 +28,15 @@ Public Class ManUtiliza
     '    Return True
     'End Function
 
-    Public Function eliminarRepuestosUtilizados(ByVal idOrden As Integer)
+    Public Function eliminarUtiliza(ByVal idOrden As Integer)
         Dim obj As Utiliza = New Utiliza(idOrden)
         obj.eliminar()
+        Return True
+    End Function
+
+    Public Function eliminarRepuestoUtilizado(ByVal idOrden As Integer, ByVal idRepuesto As Integer, ByVal cuantos As Integer)
+        Dim obj As Utiliza = New Utiliza(idOrden, idRepuesto, cuantos)
+        obj.eliminarRepuesto()
         Return True
     End Function
 

@@ -41,7 +41,7 @@
     Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
         Dim resultado As Integer = MsgBox("Desea Eliminar este repuesto? ", vbYesNo + vbQuestion)
         If resultado = vbYes Then
-            ManRepuesto.getInstancia.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
+            ManUtiliza.getInstancia.eliminarRepuesto(dgvListadoRepuesto.CurrentRow.Cells("idR").Value.ToString)
             MsgBox("El repuesto ha sido eliminado con éxito.")
             Me.dgvListadoRepuesto.Rows.Clear()
             Dim hashRepuesto As Hashtable

@@ -31,6 +31,14 @@
         Return True
     End Function
 
+    Public Function eliminarRepuestoUtilizado(ByVal obj As Utiliza)
+        Dim sentencia As String
+        Dim objConexion As ConectorBD = New ConectorBD
+        sentencia = "DELETE FROM utiliza WHERE idR = " + obj.idR.ToString + ";"
+        objConexion.ejecutar(sentencia, False)
+        Return True
+    End Function
+
     'Public Function buscarUtiliza(ByVal obj As Utiliza) As MySql.Data.MySqlClient.MySqlDataReader
     '    Dim sentencia As String
     '    Dim objConexion As ConectorBD = New ConectorBD

@@ -217,7 +217,6 @@ Partial Class FrmListaRepuestosUtilizados
         '
         'btnREliminar
         '
-        Me.btnREliminar.Enabled = False
         Me.btnREliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.btnREliminar.FlatAppearance.BorderSize = 0
         Me.btnREliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat

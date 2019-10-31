@@ -44,8 +44,9 @@
         Me._cuantos = cuantos
     End Sub
 
+
     Public Sub New(ByVal IdO As Integer)
-        Me._idO = IdO
+        Me._idO = idO
     End Sub
 
 
@@ -73,5 +74,10 @@
     Public Function eliminar()
         Dim obj As DAOUtiliza = New DAOUtiliza
         Return obj.eliminarUtiliza(Me)
+    End Function
+
+    Public Function eliminarRepuesto()
+        Dim obj As DAOUtiliza = New DAOUtiliza
+        Return obj.eliminarRepuestoUtilizado(Me)
     End Function
 End Class

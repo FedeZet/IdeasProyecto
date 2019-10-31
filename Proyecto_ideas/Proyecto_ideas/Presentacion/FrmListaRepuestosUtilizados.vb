@@ -1,6 +1,7 @@
 ﻿Public Class FrmListaRepuestosUtilizados
 
     Dim idOrden As Integer
+    Dim cambios As Boolean = False
 
     Public Sub New()
         InitializeComponent()
@@ -68,7 +69,7 @@
     End Sub
 
     Private Sub btnRAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRAgregar.Click
-
+        cambios = True
         Dim row As DataGridViewRow = dgvListadoRepuesto.CurrentRow
 
         Dim existe As Boolean
@@ -127,7 +128,7 @@
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRGuardar.Click
 
-        ManUtiliza.getInstancia.eliminarRepuestosUtilizados(idOrden)
+        ManUtiliza.getInstancia.eliminarUtiliza(idOrden)
 
         For Each row As DataGridViewRow In dgvListadoRepuestosUtilizados.Rows
             Dim idR As Integer = row.Cells("idRU").Value
@@ -152,6 +153,45 @@
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
-        Me.Close()
+        If cambios = True Then
+            Dim resultado As Integer = MsgBox("Desea Guardar los cambios efectuados? ", vbYesNo + vbQuestion)
+            If resultado = vbYes Then
+                btnRGuardar.PerformClick()
+                Me.Close()
+            Else
+                MsgBox("No se guardaron los cambios.")
+                Me.Close()
+            End If
+        Else
+            Me.Close()
+        End If
+
+    End Sub
+
+    Private Sub btnREliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnREliminar.Click
+        cambios = True
+
+        Dim resultado As Integer = MsgBox("Desea Eliminar este repuesto utilizado? ", vbYesNo + vbQuestion)
+        If resultado = vbYes Then
+            Dim cantidad As Integer = dgvListadoRepuestosUtilizados.CurrentRow.Cells("CantidadU").Value
+
+            For Each Row As DataGridViewRow In dgvListadoRepuesto.Rows
+
+                If Row.Cells("idR").Value = dgvListadoRepuestosUtilizados.CurrentRow.Cells("idRU").Value Then
+                    Row.Cells("cantidad").Value += cantidad
+
+                End If
+
+            Next
+
+            ManUtiliza.getInstancia.eliminarRepuestoUtilizado(idOrden, dgvListadoRepuestosUtilizados.CurrentRow.Cells("idRU").Value.ToString, dgvListadoRepuestosUtilizados.CurrentRow.Cells("costoRepU").Value.ToString)
+            MsgBox("El repuesto utilizado ha sido eliminado con éxito.")
+            Me.dgvListadoRepuestosUtilizados.Rows.Clear()
+            Dim hashUtiliza As Hashtable
+            hashUtiliza = ManUtiliza.getInstancia.obtenerRepuesto(idOrden)
+            Me.CargarDGV2(hashUtiliza)
+        Else
+            MsgBox("El repuesto no ha sido eliminado.")
+        End If
     End Sub
 End Class
