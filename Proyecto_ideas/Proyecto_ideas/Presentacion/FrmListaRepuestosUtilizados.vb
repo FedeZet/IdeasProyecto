@@ -149,7 +149,7 @@
         Next
 
         MsgBox("Se guardaron los repuestos utilizados correctamente.")
-
+        cambios = False
     End Sub
 
     Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click

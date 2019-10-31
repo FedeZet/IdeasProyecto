@@ -189,7 +189,7 @@ Partial Class FrmInicio
         Me.btnRepuesto.Name = "btnRepuesto"
         Me.btnRepuesto.Size = New System.Drawing.Size(136, 105)
         Me.btnRepuesto.TabIndex = 3
-        Me.btnRepuesto.Text = "Repuesto"
+        Me.btnRepuesto.Text = "Repuestos"
         Me.btnRepuesto.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnRepuesto.UseVisualStyleBackColor = False
         '
@@ -206,7 +206,7 @@ Partial Class FrmInicio
         Me.btnOrden.Name = "btnOrden"
         Me.btnOrden.Size = New System.Drawing.Size(136, 105)
         Me.btnOrden.TabIndex = 2
-        Me.btnOrden.Text = "Orden"
+        Me.btnOrden.Text = "Ordenes"
         Me.btnOrden.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnOrden.UseVisualStyleBackColor = False
         '
